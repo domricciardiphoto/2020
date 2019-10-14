@@ -115,8 +115,6 @@ fetch('/catalog/flyerContent.jsp?'+url_to_products)
         for (var i = 0; i < data.length; i++) {
             var div = document.createElement("li");
 
-         
-
             str = data[i].relatedColorCodes
             res = str.split(";");
 
@@ -163,10 +161,8 @@ fetch('/catalog/flyerContent.jsp?'+url_to_products)
             } else {
                 console.log('Standard pricing')
               
-
                 div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>';
                 
-
 
                 if(data[i].regularPriceStrikeThrough === 'Yes') {
                 Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
@@ -174,15 +170,14 @@ fetch('/catalog/flyerContent.jsp?'+url_to_products)
                 }
 
                
-
                 if(data[i].showPriceInCartOnly === 'Yes') {
                 div.innerHTML = '<div class="product-tile"><div class="product-image"><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="prodImage"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'" ></a></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div></div><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="product-name">'+data[i].displayName+'</a><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="priceMsg">Price Lower in Cart<span class="pcr-tooltip">?<small class="tooltip-body top center"> Why don&rsquo;t we show the price? As a retailer, we set our prices independently, but in some cases the manufacturer does not allow us to show our price until you take further action. Don&rsquo;t worry; you&rsquo;ll be able to see the price in checkout before you decide to buy it.</small></span></div></div></div></div>'
                 }
 
                 if(data[i].showPriceInCheckoutOnly === 'Yes') {
-                    Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
-                    div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
-                    }
+                Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+                div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+                }
 
                
 
@@ -229,14 +224,14 @@ function live_singleproduct(url_to_products) {
             var div = document.createElement("li");
 
             if(priceing_promotional === 1) {
-                console.log('Hide Pricing')
+            console.log('Hide Pricing')
             
-                div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile product-tile_100" ><div class="BUYNOW">Buy Now</div><div class="product-image product-image_100"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container product-details-container_100"><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice"><img  style="margin-top:6px;" src="/images/promos/bf-asset-logo-price-d.png"></div></div></div></div></a>';
+            div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile product-tile_100" ><div class="BUYNOW">Buy Now</div><div class="product-image product-image_100"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container product-details-container_100"><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice"><img  style="margin-top:6px;" src="/images/promos/bf-asset-logo-price-d.png"></div></div></div></div></a>';
 
             } else {
-                console.log('Standard pricing')
+            console.log('Standard pricing')
 
-                div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile product-tile_100" ><div class="BUYNOW">Buy Now</div><div class="product-image product-image_100"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container product-details-container_100"><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>';
+            div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile product-tile_100" ><div class="BUYNOW">Buy Now</div><div class="product-image product-image_100"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container product-details-container_100"><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>';
             
 
             if(data[i].regularPriceStrikeThrough === 'Yes') {
@@ -250,9 +245,9 @@ function live_singleproduct(url_to_products) {
             }
 
             if(data[i].showPriceInCheckoutOnly === 'Yes') {
-                Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
-                div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
-                }
+            Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+            div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+            }
 
             }
 
