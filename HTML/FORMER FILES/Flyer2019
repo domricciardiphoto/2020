@@ -1,0 +1,44 @@
+MENU------------------------------------
+<div class="submenu_button" data="0" data_image="/images/promos/menu-item2019a-6.png" data_name="Computers"></div>
+
+data = page number
+data_image = img used for icon
+data_name = used to define catagory
+
+
+put in div #ae4
+Example
+ <div id="ae4" class="submenu_overflow">
+                <div class="submenu_button" data="0" data_image="/images/promos/menu-item2019a-6.png" data_name="Computers"></div>
+                <div class="submenu_button" data="1" data_image="/images/promos/menu-item2019a-1.png" data_name="Flat Panel TVs"></div>
+                <div class="submenu_button" data="4" data_image="/images/product/detail/D_UAONEARBTRED.jpg"data_name="Electronics"></div>
+                <div class="submenu_button" data="5" data_image="/images/product/detail/D_NX58H5600SS.jpg" data_name="Appliances"></div>
+                <div class="submenu_button" data="7" data_image="/images/product/detail/D_QKK-00001.jpg"data_name="Computers"></div>
+ </div>
+
+PAGE SETUP-------------------------
+  <div class="fsi"  >
+  <div id="pg0" class="internalflyer"  data2="Computers"></div> 
+   <script type="text/javascript">
+   var load0 = ''
+   </script>
+   </div>
+   
+  id = page number -1
+  data2 = Catagory
+  var load[] = page content   var must equal page id number. 
+  example  pg0  and load0  || pg1 and load1 etc..
+  
+  LAST PAGE MUST CONTAIN A VAR WITH THE LAST PAGES NUMBER + 1 TO KEEP THE CONSOLE CLEAR OF ERRORS.
+  IE if there is 20 pages. the last var would be load19. but need to include an empty load20.
+  
+  LINK SETUP--------------------------
+  SVG CREATED IN ILLUSTRATOR
+  MULTIPLE MODEL NUMBERS xlink:href="43S405+75S425+55S425+NH-Q3FAA-007+XB271HU-IPS
+  SINGLE MODEL NUMBERS   xlink:href="43S405
+  LANDING PAGE   class="direct" xlink:href="/category/TV-Video/Flat-Panel-TVs/_/N-1ellc99"
+  NOTE--- LANDING PAGE LINKS MUST CONTAIN A CLASS OF "direct"
+  
+  
+  
+  

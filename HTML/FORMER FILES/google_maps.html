@@ -1,0 +1,54 @@
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?client=gme-pcrichard&amp;v=3"></script>
+<style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #map {
+        height: 100%;
+        min-height: 500px;
+        width: 1200px;
+    }
+</style>
+<div class="map">
+    <div id="map"></div>
+</div>
+
+
+
+<script type="text/javascript">
+    var locations = [
+      ['Carle Place', 40.74403, -73.61877, 8],
+      ['Elmont', 40.68971, -73.72337, 7],
+      ['Greenvale', 40.81115, -73.62446, 6],
+      ['Levittown', 40.7255, -73.52545, 5],
+      ['New Hyde Park', 40.74267, -73.69546, 4],
+      ['Oceanside', 40.6405, -73.65518, 3],
+      ['Plainview', 40.78506, -73.44812, 2],
+      ['Rockville Centre', 40.65756, -73.64285, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(40.74403, -73.61877),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+

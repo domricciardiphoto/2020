@@ -1,0 +1,769 @@
+<link rel="stylesheet" href="/images/promos/fontawesome.min.css">
+<style type="text/css">
+.four-across{
+	float: left;
+	width: 21%;
+	margin: 1em;
+	position: relative;
+    border-collapse: separate;
+}
+	.two-across{
+		float: left;
+		width: 45%;
+		margin: 1em 1.7em 3px 0;
+		position: relative;
+		border-collapse: separate;
+	}
+	.three-across{
+		float: left;
+		width: 30%;
+		margin: 1em 1em 3px 0;
+		position: relative;
+		border-collapse: separate;
+	}
+	.three-times-size{
+		float: left;
+		margin: 1em 1.8em 3px 0;
+		position: relative;
+    	border-collapse: separate;
+		width: 60%;
+	}
+	.first-row-input{
+		clear:left;
+	}
+@media all and (max-width: 768px){
+	.four-across, .two-across, .three-across, .three-times-size{
+		float: none;
+		width: 90%;
+		margin: 1em auto;
+	}
+}
+	
+	
+	.page-header{
+		text-align: left;
+		padding-bottom: 25px;
+		height: 210px;
+	}
+	
+	.page-header .fa{
+		font-size: 6em;
+		color: #034694;
+	}
+	.header-graphic{
+		padding-left: 12px;
+		width: 16%;
+		float: left;
+	}
+	.header-content{
+		width:83%;
+		float: left;
+	}
+	
+	.return-page-title{
+		font-size: 27px;
+		line-height: 34px;
+		font-weight: 700;
+		display: block;
+		padding-top: 10px;
+	}
+	.return-page-sub-title{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	.explain-text{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 400;
+		display: block;
+	}
+	.return-home-btn{
+		 border: 1px solid #FFF;
+        color: #FFF;
+        border-radius: 2px;
+        background-color: #034694;
+        height: 45px;
+        margin: 20px auto;
+     	display: block;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+		width: 46%;
+	}
+	
+	.return-home-btn:hover {
+       border: 1px solid #034694;
+        color: #034694;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+	@media all and (max-width: 768px){
+		.header-graphic{
+			display: none;
+		}
+		.page-header{
+			text-align: center;
+			height: 160px;
+		}
+		.header-content{
+			width:100%;
+			float: none;
+
+		}
+	}
+	@media all and (max-width: 768px){
+		.explain-text{
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+		.page-header{
+			 margin: 10px 0 5px;
+		}
+	}
+	@media all and (max-width: 420px){
+		.return-page-title{
+			font-size: 24px;
+			line-height: 30px;
+			padding-top: 10px;
+		}
+		.explain-text{
+			font-size: 14px;
+			line-height: 18px;
+
+		}
+		
+		.return-page-sub-title{
+			font-size: 15px;
+			line-height: 21px;
+			margin-bottom: 6px;
+		}
+		.page-header{
+			padding: 2px 5px;
+		}
+	}
+	
+	@media all and (max-width: 375px){
+		.return-page-title{
+			font-size: 20px;
+			line-height: 27px;
+			padding-top: 3px;
+		}
+		.explain-text{
+			font-size: 12px;
+			line-height: 17px;
+
+		}
+
+	}
+	
+	@media all and (max-width: 320px){
+		.explain-text{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.return-page-sub-title{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.page-header{
+			padding: 2px 0;
+			 margin: 10px 0 0;
+		}
+	}
+	
+	.form-field .form-control{
+		padding: 9px 2px;
+		height: auto;
+	}
+	/*.form-field option{
+		padding: 4px 2px;
+		border-bottom: 1px solid #CCCCCC;
+		margin-bottom: 3px;
+	}*/
+
+    .label-text {
+        padding: 5px 0 10px 4px;
+        float: left;
+        text-align: left;
+
+    }
+	label sup{
+		top: -0.1em;
+	}
+    .fields {
+        width: 240px;
+        height: 40px;
+        float: left;
+        margin-right: 340px
+    }
+    .input-group {
+        height: 60px;
+    }
+
+	.input-field{
+		border: 1px solid #CCCCCC;
+   		 border-radius: 2px;
+    	display: inline-block;
+		padding: 9px 2px;
+		width: 100%;
+	}
+	
+.error{
+	font-style: italic;
+	color: #D41920;
+	font-size: 13px;
+	display: none;
+}
+.error:before {
+	content: "\00BB \0020";
+	color: #D41920;
+}
+.show-el{display: block !important;}
+	.big-text{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 500;
+	}
+	
+	.section-wrap{
+		min-height: 180px;
+		height: 100%;
+		width: 100%;
+		margin: 20px 0;
+		padding: 5px 10px;
+		position: relative;	
+	}
+	.return-info-wrap{
+		height: 280px;
+	}
+	
+	.section-header{
+		padding:20px 0 20px 10px;
+	}
+	.section-header h2{
+		font-size: 18px;
+        font-weight: 700;
+	}
+	#your_comments, #text_remaining{
+		width: 98%;
+		margin: 4px auto 0;
+    	display: block;
+	}
+	.success-message{
+		width: 90%;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.success-message h2{
+		font-size: 32px;
+		line-height: 44px;
+		font-weight: 700;
+	}
+	.success-message p{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	form{
+		margin: 10px auto 100px;
+	}
+	 .form-submit-btn{
+        border: 1px solid #FFF;
+        color: #FFF;
+        border-radius: 2px;
+        background-color: #D71920;
+        height: 45px;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: all .4s ease-in-out;
+		 position: relative;
+		 bottom: 0; 
+		 right: 20%;
+    }
+    .form-submit-btn:hover{
+       border: 1px solid #D71920;
+        color: #D71920;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+	
+	.hours-list{
+		width: 400px;
+		height: auto;
+		padding: 10px;
+		border: 3px solid #034694;
+		border-radius: 6px;
+		margin: 10px auto 0;
+	}
+	.hours-list h2{
+		text-align: center;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	
+	.hours-list ul{
+		list-style-type: none;
+	}
+	
+	.hours-list ul li{
+		font-size: 17px;
+		font-weight: 500;
+		margin: 5px 0;
+		text-align: left;
+		padding-left: 5%;
+	}
+@media all and (max-width: 768px){
+	#your_comments, #text_remaining{
+		width: 100%;
+	}
+
+	.form-submit-btn{
+		margin-left: 0;
+		right: 0;
+		width: 100%;
+	}
+	.return-info-wrap{
+		height: 460px;
+	}
+	
+	.label-text{
+		float: none;
+	}
+	.input-field{
+		display: block;
+		width: 100%;
+	}
+}
+	@media all and (max-width: 460px){
+		.hours-list{
+		width: 276px;
+		}
+		.hours-list h2{
+			font-size: 14px;
+		}
+		.hours-list ul li{
+			font-size: 13px;
+			padding-left: 12px;
+		}
+		.success-message p{
+			font-size: 14px;
+			line-height: 19.5px;
+		}
+	}
+
+</style>
+<main class="container">
+	<header class="page-header">
+		<div class="header-graphic"><i class="fa fa-history" aria-hidden="true"></i></div>
+		<div class="header-content">
+			<h1 class="return-page-title">Return or Exchange an Item</h1>
+			<p class="return-page-sub-title">Need to return an item? We’re happy to help!</p>
+			<p class="explain-text">Please complete and submit the form below, and a customer service agent will contact you soon.</p>
+			<p class="explain-text">All returns must fall within our <a href="https://www.pcrichard.com/customer-service/return-policy">policy guidelines</a>.</p>
+			<p class="explain-text">For all other comments and questions, please <a title="Contact Us" href="/global/modals/modal-contact.jsp?modal=true" data-toggle="modal" data-target="#pcrModal">contact us here</a>.</p>
+		</div>
+	</header>
+	<form id="return_auth_form" action="">
+		<section class="cust-info-wrap row section-wrap">
+		<header class="col-xs-12 section-header">
+			<h2>Customer Information: </h2>
+		</header>
+           
+			<div class="three-times-size">
+                 <label for="cust_name" class="label-text">Name</label>
+                 <input id="cust_name" name="cust_name" class="input-field your-name" aria-labelledby="Name" type="text" maxlength="50" placeholder="Your Name" />
+                 <p class="error name-err">Please Add a Valid Name</p>
+            </div>
+            
+             <div class="three-across">
+                 <label for="cust_phone" class="label-text">Phone</label>
+                 <input id="cust_phone" name="cust_phone" class="input-field your-phone masked" aria-labelledby="Phone" type="tel"  pattern="\(\d{3}\) \d{3}-\d{4}?" title="Phone Number" maxlength="14" placeholder="(555) 555-5555" />
+                 <p class="error phone-err">Please Add a Valid Phone Number</p>
+             </div>
+
+             <div class="three-times-size">
+                 <label for="cust_email" class="label-text">Email <sup>*</sup></label>
+                 <input id="cust_email" name="cust_email" class="input-field your-email" aria-labelledby="Email" type="email" maxlength="40" placeholder="name@example.com" required />
+                 <p class="error email-err">Please Add a Valid Email</p>
+             </div>
+
+			 
+
+
+		</section>
+		<section class="return-info-wrap section-wrap">
+		<header class="col-xs-12 section-header">
+			<h2>Return Information: </h2>
+		</header>
+			<div class="two-across first-row-input">
+                 <label for="cust_invoice" class="label-text">Invoice <sup>*</sup></label>
+                 <input id="cust_invoice" name="cust_invoice" class="input-field your-invoice" aria-labelledby="Invoice" type="text"  maxlength="11" placeholder="123-4567890" required />
+                 <p class="error invoice-err">Please Add a Valid Invoice Number</p>
+             </div>
+             
+			<div class="two-across">
+                 <label for="model_num" class="label-text">Model Number <sup>*</sup></label>
+                 <input id="model_num" name="model_num" class="input-field model-number" type="text"  maxlength="12" placeholder="Model Number" required/>
+                 <p class="error model-err">Please Add a Valid Model Number</p>
+             </div>
+			 
+			
+             
+			<div class="form-field form-group three-across return-reason first-row-input">
+			 <label for="return_reason" class="label-text">Return Reason <sup>*</sup></label>
+				<select class="form-control" id="return_reason" name="return_reason" required>	
+					<option value="" disabled selected>Select a Reason</option>
+					<option name="Damaged" value="Damaged">Damaged</option>
+					<option name="Defective" value="Defective">Defective</option>
+					<option name="Not the right model ordered" value="Not the right model ordered">Wrong Model Ordered</option> 
+					<option name="Changed Mind" value="Changed Mind">Changed Mind</option>
+					<option name="Other" value="Other">Other</option>
+				</select>
+				<p class="error ret-reason-err">Please make a Selection</p>
+			</div>
+			
+			<div class="form-field form-group three-across return-type">
+			 <label for="return_type" class="label-text">Return Type <sup>*</sup></label>
+				<select class="form-control" id="return_type" name="return_type" required>
+					<option value="" disabled selected>Select a Type</option>
+					<option name="return for refund" value="return for refund">Refund</option> 
+					<option name="return for store credit" value="return for store credit">Store credit</option> 
+					<option name="even exchange" value="even exchange">even exchange</option>
+					<option naem="exchange for different model" value="exchange for different model">exchange for different model</option>
+				</select>
+				<p class="error ret-type-err">Please make a Selection</p>
+			</div>
+			
+			<div class="form-field form-group three-across return-packaging">
+			<label for="return_packaging" class="label-text">Return Packaging <sup>*</sup></label>
+				<select class="form-control" id="return_packaging" name="return_packaging" required>
+					<option value="" disabled selected>Select Packaging</option>
+					<option name="never opened" value="never opened">never opened</option>
+					<option name="opened but in original new condition" value="opened but in original new condition">opened but in original new condition</option>
+					<option name="opened but does not have packaging" value="opened but does not have packaging">opened but does not have packaging</option>
+				</select>
+				<p class="error ret-packaging-err">Please make a Selection</p>
+			</div>
+			
+		</section>
+		
+		<section class="comments-wrap section-wrap">
+			<header class="col-xs-12 section-header">
+				<h2>Comments </h2>
+			</header>
+			<div class="form-field col-xs-12">
+				<textarea id="cust_comments" name="your_comments" class="form-control your-comments" cols="25" rows="7" maxlength="1000"></textarea>
+				<p id="text_remaining"></p>
+				<p class="error comments-err">Please add a Valid Comment</p>
+			</div>
+		</section>
+		
+		<section class="submit-wrap section-wrap">
+			<button class="btn btn-primary form-submit-btn pull-right" type="submit">Submit</button> 
+		</section>
+		
+		
+	</form>
+</main>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		
+		var formGood, 
+			emailGood, 
+			nameGood, 
+			phoneGood,
+			modelGood,
+			invoiceGood,
+			typeGood, 
+			reasonGood, 
+			packagingGood,
+			commentsGood;
+		
+		textCountdown($('#cust_comments'), $('#text_remaining'));
+		
+		$('#cust_phone').on('keyup', function(){
+			$(this).val($(this).val().replace(/\(?(\d{3})\)?(\d{3})\-?(\d{4})/,'($1) $2-$3'));
+		});
+		
+		$('#cust_invoice').on('keyup', function(){
+			$(this).val($(this).val().replace(/(\d{3})\-?(\d{7})/,'$1-$2'));
+		});
+	
+		
+		removeErrorsChange($('#return_packaging'), $('.ret-packaging-err'));
+		removeErrorsChange($('#return_reason'), $('.ret-reason-err'));
+		removeErrorsChange($('#return_type'), $('.ret-type-err'));
+		removeErrorsChange($('#cust_email'), $('.email-err'));
+		removeErrorsChange($('#cust_invoice'), $('.invoice-err'));
+		removeErrorsChange($('#cust_name'), $('.name-err'));
+		removeErrorsChange($('#cust_phone'), $('.phone-err'));
+		removeErrorsChange($('#cust_comments'), $('.comments-err'));
+		removeErrorsChange($('#model_num'), $('.model-err'));
+		
+		
+		$('.form-submit-btn').on('click', function(e){
+			e.preventDefault();
+			handleFormSubmit();
+		});
+		
+	});
+	//End Document Ready
+	
+		function handleReturnHome(){
+			window.location.href = "https://www.pcrichard.com";
+		}
+	
+		function runValidityChecks(){
+			checkPhone();
+			checkEmail();
+			checkModel();
+			checkInvoiceNumber();
+			checkSelects($('#return_packaging'), $('.ret-packaging-err'), $('.ret-packaging-err').hasClass('show-el') ? packagingGood = false : packagingGood = true);
+			checkSelects($('#return_reason'), $('.ret-reason-err'), $('.ret-reason-err').hasClass('show-el') ? reasonGood = false : reasonGood = true);
+			checkSelects($('#return_type'), $('.ret-type-err'), $('.ret-type-err').hasClass('show-el') ? typeGood = false : typeGood = true);
+		}
+		
+		function validityCheckSum(){
+			
+			if(emailGood === true && phoneGood === true && modelGood === true && invoiceGood === true && packagingGood === true && reasonGood === true && typeGood === true){
+				formGood = true;
+			} else {
+				animCodeError($('.form-submit-btn'));
+				formGood = false;
+			}
+		}
+		
+		function checkName(){
+			var $custName = $('#cust_name');
+			var custNameVal = $custName.val();
+			if(custNameVal == ''){
+				animCodeError($('.form-submit-btn'));
+					$('.name-err').addClass('show-el');
+					nameGood = false;
+				} else {
+					nameGood = true;
+			}
+		}
+		
+		function checkPhone(){
+			var $custPhone = $('#cust_phone');
+			var custPhoneVal = $custPhone.val();
+			var phoneVal = custPhoneVal.replace(/[\s- )(]/g,"");
+			var phonergx = /^\d{10}$/; 
+			var phoneCheck = phonergx.test(phoneVal);
+			var phoneLength = phoneVal.length;
+			if(phoneLength >= 1){
+				if(!phoneCheck){
+					animCodeError($('.form-submit-btn'));
+						$('.phone-err').addClass('show-el');
+						phoneGood = false;
+					} else {
+						phoneGood = true;
+				}
+			} else {
+				phoneGood = true;
+			}
+			
+		}
+		
+		function checkEmail(){
+			var $custEmail = $('#cust_email');
+			var emailrgx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; 
+			var emailVal = $custEmail.val();
+			var emailCheck = emailrgx.test(emailVal);	
+				if(!emailCheck){
+					animCodeError($('.form-submit-btn'));
+					$('.email-err').addClass('show-el');
+					emailGood = false;
+				} else {
+					emailGood = true;
+				}
+		}
+		
+		function checkModel(fromServer){
+			var $custModel = $('#model_num');
+			var custModelVal = $custModel.val();
+			var modelServer = fromServer;
+			if(custModelVal == '' || custModelVal == undefined || modelServer == 'bad'){
+				animCodeError($('.form-submit-btn'));
+					$('.model-err').addClass('show-el');
+					modelGood = false;
+				} else {
+					modelGood = true;
+			}
+		}
+		
+		function checkInvoiceNumber(fromServer){
+			var invoiceRgx = /^[0-9]{1,3}\-[0-9]{1,7}$/; 
+			var invoiceInput = $('#cust_invoice').val();
+			var invoiceCheck = invoiceRgx.test(invoiceInput);
+			var invoiceServer = fromServer;
+			if(!invoiceCheck || invoiceServer == 'bad'){
+					$('.invoice-err').addClass('show-el');
+					invoiceGood = false;
+				animCodeError($('.form-submit-btn'));
+				} else {
+					invoiceGood = true;
+				}
+		}
+		
+		function checkComments(){
+			var $custComments = $('#cust_comments');
+			var custCommentsVal = $custComments.val();
+			
+			if(custCommentsVal == ''){
+				animCodeError($('.form-submit-btn'));
+					$('.comments-err').addClass('show-el');
+					commentsGood = false;
+				} else {
+					commentsGood = true;
+			}
+			
+		}
+	
+		function checkSelects(element, errorEl){
+			var elementVal = element.val();
+
+			if(elementVal == null || elementVal == ''){
+				animCodeError($('.form-submit-btn'));
+				errorEl.addClass('show-el');	
+			}
+
+		}
+		
+		
+		function removeErrorsChange(element, errorEl){
+			element.change(function(){
+				errorEl.removeClass('show-el');
+				if(element == $('#cust_email') ){
+					checkEmail();
+				} else if(element == $('#cust_invoice')){
+					checkInvoiceNumber();
+				} else if(element == $('#cust_phone')){
+					checkPhone();
+				} else if(element == $('#cust_comments')){
+					checkComments();
+				} else if(element == $('#model_num')){
+					checkModel();
+				}else{
+					checkSelects(element, errorEl);
+				}
+				
+			})
+		}	
+	
+	function animCodeError(target){
+			target.addClass('error-shake');
+			target.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e){
+			  target.delay(200).removeClass('error-shake'); /*ahashakeheartache*/
+			});
+			
+		}
+		
+		//handle textarea length countdown
+		function textCountdown(id, feedback){
+			var maxLength= 1000;
+			$(feedback).html(maxLength + ' characters remaining');
+			$(id).on('keyup', function(){
+				var textLength = $(id).val().length;
+				var textRemaining = maxLength - textLength;
+				$(feedback).html(textRemaining + ' characters remaining');
+				
+			})
+
+		}
+	
+	function handleFormSubmit(){
+			$('.error').removeClass('show-el');
+			var endPoint = "https://apps.pcrichard.com/www/return-authorization/";
+			var phoneVal = $('#cust_phone').val().replace(/[\s- )(]/g,"");
+			var data = {
+				name: $('#cust_name').val(),
+				email: $('#cust_email').val(), 
+				phone: phoneVal, 
+				invoice: $('#cust_invoice').val(),
+				modelnum: $('#model_num').val(),
+				returnReason: $('#return_reason').val(),
+				returnType: $('#return_type').val(),
+				returnPackaging: $('#return_packaging').val(),
+				comments: $('#cust_comments').val()
+			}
+			
+			validityCheckSum(runValidityChecks());
+			//if email and form is completed
+			doAjaxConditional(data, endPoint);
+		}
+	
+	function doAjaxConditional(ajaxdata, ajaxendpoint){
+
+				if(formGood){
+				var formSubmit = $.ajax({
+					type: "POST",
+					xhrFields: {
+						withCredentials: true
+					},
+					data: ajaxdata,
+					crossDomain: true,
+					url: ajaxendpoint	
+				});
+				formSubmit.done(function(data){
+					var parseData = JSON.parse(data);
+					var rescode = parseData.res_code;
+					if(rescode == 1){
+					$('html').scrollTop(0);
+					$('main.container').html('<div class="success-message"> <h2> Thank you!</h2><p>We have received your return request.</p><p>A member of our customer service team will reply by email or phone shortly.</p><article class="hours-list"><h2>Customer Service Hours of Operation:</h2><ul><li>Monday – Friday: 9am - 7pm EST</li><li>Saturday: 9am - 5pm EST</li><li>Sunday: 11am - 5pm EST</li></ul></article><button type="submit" aria-labelledby="Submit" onclick="handleReturnHome()" class="btn btn-primary return-home-btn">Return Home</button>');
+					} else if(rescode == 2){
+						$('#return_auth_form').find('.server-err').remove();
+						var errFields = parseData.res_error_fields;
+						var errMsg = parseData.error_message;
+						var mappedErrFields = errFields.map(function(item){ return item });
+						var fieldsMsg = '<p class="error show-el server-err big-text">Please review form for errors</p>';
+						var genericErrMsg = '<p class="error show-el server-err big-text">There was an error processing your form: ' 
+										 + errMsg + 
+										 '</p>';
+						if(errFields.length > 0){
+							$('#return_auth_form').append(fieldsMsg);
+
+							errFields.forEach(function(item){
+								switch(item){
+								case 'email':
+									checkEmail();
+								case 'invoice':
+									console.log('invoicewrong');
+									checkInvoiceNumber('bad');
+								case 'modelnum':
+									console.log('modelwrong');
+									checkModel('bad');
+								case 'returnReason':
+									checkSelects($('#return_reason'), $('.ret-reason-err'), $('.ret-reason-err').hasClass('show-el') ? reasonGood = false : reasonGood = true);
+								case 'returnType':
+									checkSelects($('#return_type'), $('.ret-type-err'), $('.ret-type-err').hasClass('show-el') ? typeGood = false : typeGood = true);
+								case 'returnPackaging':
+									checkSelects($('#return_packaging'), $('.ret-packaging-err'), $('.ret-packaging-err').hasClass('show-el') ? packagingGood = false : packagingGood = true);
+							
+								default:
+									break;	
+							}
+							})
+							
+						}
+						if(errMsg.length > 0){
+							$('#return_auth_form').append(genericErrMsg);
+						}
+						
+					}
+				})
+				.fail(function(exception){
+					console.log('whoops ', exception);
+				});
+			}else{
+				//handle form errors from form
+				console.log('didnt pass formGood')
+			}
+			
+			}
+</script>
+

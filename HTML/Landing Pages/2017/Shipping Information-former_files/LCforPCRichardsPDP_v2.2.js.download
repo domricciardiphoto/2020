@@ -1,0 +1,293 @@
+/**
+* Created by Gerardo at Liveclicker
+* for PC Richards PDP
+* January  2017
+* Implements the video in the product page.
+*
+*/
+
+
+var listOfWidgets;
+var oldwid;
+//defaults
+var player_ID =3625;
+var videoWidth = 300;
+var videoHeight = 530;
+var div_ID = "lcVideo";
+var div_thumb_Class='lcThumbs';
+var dim1;
+var dim2;
+var dim3;
+var dim4;
+var dim5;
+var dim6;
+var dim7;
+var dim8;
+var dim9;
+var videoTitle = true;
+var theresVideo=false;
+var carouselCreated=false;
+jQuery(document).ready(function($){
+
+    var href = window.location.href;
+
+    var prodIdStartsFrom = href.lastIndexOf("/");
+
+    var prodIdEndsBy = href.lastIndexOf(".");
+
+    var prodId = href.substring(prodIdStartsFrom + 1, prodIdEndsBy);
+
+//    var dimVal = prodId;
+
+
+    if (!( typeof dimVal ===  'undefined')) {
+        if (!(  dimVal ==  '')) {
+            dim1=dimVal;
+            theresVideo=true;
+        }
+    }
+
+
+
+    /// Global Variables
+    //This section retrieves the variables set on the page.
+
+    if (! (typeof _LCvideoTitle === 'undefined')){
+        videoTitle=_LCvideoTitle;
+    }
+
+    if (! (typeof _LCplayer_ID === 'undefined')){
+        player_ID=_LCplayer_ID ;
+    }
+    if (! (typeof _LCvideoWidth === 'undefined')){
+        videoWidth=_LCvideoWidth;
+    }
+    if (! (typeof _LCvideoHeight  === 'undefined')){
+        videoHeight=_LCvideoHeight ;
+    }
+
+    if  (!(typeof _LCdiv_ID === 'undefined')){
+        div_ID=_LCdiv_ID ;
+    }
+
+
+    if  (theresVideo ==true) {
+
+        //creates the html code for the video container and appends it to the video player div
+
+        var lcInterval = setInterval( function() {
+
+            if (!window.lc) return;
+            clearInterval(lcInterval);
+
+            lc.account_id = 7106;
+
+            //this is the liveclicker query for videos
+            lc({
+                'dim1': dim1,
+                'dim2': dim2,
+                'dim3': dim3,
+                'dim4': dim4,
+                'dim5': dim5,
+                'dim6': dim6,
+                'dim7': dim7,
+                'dim8': dim8,
+                'dim9': dim9,
+                'order': 'recent',
+                'extra_options' : {
+                    'include_description' : 'true'
+                }
+            }).isReady(function(){
+                var i = 0;
+                    var maxListLength =15;
+                var listLength = lc(this).length;
+                listOfWidgets = lc(this);
+                var index = 0;
+                var lcLastIMG ="";
+                if (listLength > 0) { //if there are videos for this product
+
+                        if (jQuery("#photo2").length> 0){
+                            lcLastIMG=jQuery("#photo2");
+                        }else{
+                            if ($('.image-carousel-wrapper').hasClass('hidden'))
+                              $('.image-carousel-wrapper').removeClass('hidden').trigger('resize');
+                            lcLastIMG=jQuery(".image-carousel li").eq(jQuery(".image-carousel li").length-1);
+                            $('#stageImage').removeClass('singleImg');
+                        }
+                        jQuery(lcLastIMG).after('<li id="videoPhoto" class="spx-liveclicker-preview"><a id="lcVideoThumb"></a></li>');
+                        jQuery("#stageImage").after('<div id="lcWrap" class="prod-details-page"></div>');
+                        var myCode = '<div id="lcVideo"></div>';
+                        $("#lcWrap").append(myCode);
+                        myCode = '<div id ="LiveclickerVideoDiv" > </div> ';
+                        $("#"+div_ID).append(myCode);
+                        $("#lcVideo").hide();
+                        //add the video thumbnail to the thumbnail strip on the right
+                        lc(this).getByIndex(i).getThumbnail({
+                            'width' :195,
+                            'height' :110
+                        }).appendTo($("#lcVideoThumb"));
+                        var lcplaybtn='<div class="playbtn"></div>';
+                        $(lcplaybtn).appendTo($("#lcVideoThumb"));
+                        $("#lcWrap").hide();
+
+                        $("#lcVideoThumb").on('click', function(){
+                            $("#stageImage").hide(); //new
+                            $("#lcWrap").show();
+                            buildCarousel();
+                            $('#lcVideoThumb').addClass('video-selected');
+                        });
+
+                var carousel = $('.jcarousel').data('jcarousel');
+                carousel.destroy();
+                $('.jcarousel').jcarousel();
+                $('.image-carousel img').on('click', function(){
+                            $('#lcVideoThumb').removeClass('video-selected');
+                            $("#LiveclickerVideoDiv").empty();
+                            $("#lcWrap").hide();
+                            $("#stageImage").show();
+                        });
+
+
+
+
+                        if (listLength > 1){
+
+
+                            myCode = '<div class="lcThumbs"><div  id="LiveclickerThumbnailDiv" class="jcarousel-skin-lc" > <ul id="lcmycarousel"></ul> </div></div>';
+                            $("#lcVideo").after(myCode);
+
+
+
+                            while ((i < maxListLength) && (i < listLength)) //loop throug the video list, create the li elenents for the carousel and add them to the correspondant div
+                            {
+                                $("#lcmycarousel").append('<li class="lcelement" id="lcelement'+i+'"> <div id="lcthumbnail'+i+'" class="lcthumb"><div id="playbtn'+i+'" class="playbtn"></div></div><div id="lctitle'+(i)+'" class="lctitle"></div></li>');
+                                lc(this).getByIndex(i).getThumbnail({
+                                    'width' :88,
+                                    'height' :64
+                                })
+                                .appendTo($("#lcthumbnail"+i))        ;
+
+                                $("#lcthumbnail"+i).attr("index",i);
+
+                                $("#lcthumbnail"+i).append('<div id="lcthumBorder'+(i)+'" class="lcthumBorder">');
+
+                                $("#lcelement"+(i)).click(function(){ //asociates the click function that launches the video player
+
+                                    var objt= $(this);
+                                    if(($(this).attr("class")=="playbtn")||
+                                        ($(this).attr("class")=="lcthumb")||
+                                        ($(this).attr("class")=="lctitle") ||
+                                        ($(this).attr("class")=="lctitleBG")){
+                                        objt= $(this).parent();
+                                    }
+                                    globalElementID=$(objt).attr("id");
+                                    var thumbhtml =objt.children(".lcthumb");
+                                    var values = thumbhtml.html().split("widget_id");
+                                    var wid= values[1];
+                                    wid = wid.split(" ");
+                                    wid=wid[0];
+                                    wid= wid.replace(/"/g, '');
+                                    wid= wid.replace(/=/g, '');
+                                    //  $("#lcVideo").show();
+                                    //  $("#mainimage").hide();
+
+
+
+                                    $("#LiveclickerVideoDiv").empty();
+
+                                    listOfWidgets.getByWidgetId(wid).getPlayer({
+                                        'player_id': player_ID,
+                                        'width':videoWidth,
+                                        'height' : videoHeight,
+                                        'autoplay':true,
+                                        'responsive':true,
+                                        'div_id':'LiveclickerVideoDiv'
+                                    }).appendPlayerTo({
+                                        'id' : 'LiveclickerVideoDiv'
+                                    }).show();
+
+                                    $(".selected").removeClass("selected");
+
+
+                                    $(thumbhtml).addClass("selected");
+                                    var id=  $(thumbhtml).attr('id');
+                                    $("#"+id+" ~ div").hide();
+
+                                    $(".lctitle").show();
+                                    $(".lctitleBG").show();
+                                    if($("#LiveclickerVideoDiv > div").size()>1){
+                                        $("#LiveclickerVideoDiv :div first").remove();
+                                    }
+
+
+                                });
+
+                                $("#lctitle"+(i)).append(listOfWidgets.getByIndex(i).title);
+                                i++;
+                            }
+
+
+
+                        }
+
+
+
+                        function buildCarousel(){
+
+                            if(1> $("#LiveclickerVideoDiv > div").size()){
+
+
+                                listOfWidgets.getByIndex(0).getPlayer({
+                                    'player_id': player_ID,
+                                    'width':videoWidth,
+                                    'height' : videoHeight,
+                                        'responsive':true,
+                                        'div_id':'LiveclickerVideoDiv'
+                                }).appendPlayerTo({
+                                    'id' : 'LiveclickerVideoDiv'
+                                }).show();
+                                oldwid= listOfWidgets.getByIndex(0).widget_id;
+                            }
+                            //     if("#LiveclickerVideoDiv :children").size()>
+                            $("#lcthumbnail0").addClass("selected");
+                            $("#lcVideo").show();
+
+                            if (!carouselCreated){
+
+                                carouselCreated=true;
+
+
+
+                                if ($("#lcmycarousel > li").size()>3){ //creates carousel if there are more than three videos for that product
+
+                                    $('#lcmycarousel').jcarousel({
+                                        wrap: 'circular',
+                                        scroll: 1,
+                                        visible: null
+                                    });
+
+
+                                }else{
+
+                                    $("#LiveclickerThumbnailDiv").width("400px");
+                                    $("#LiveclickerThumbnailDiv").css("text-align", "left");
+                                    $("#lcmycarousel").css("margin-left","20");
+                                    $("#lcmycarousel").css("margin-top","4");
+                                    $("#lcmycarousel").css("list-style-type","none");
+                                }
+                            }
+
+                        /*    if($("#LiveclickerVideoDiv > div").size()>1){
+                                    $("#LiveclickerVideoDiv :div first").remove();
+                                }*/
+                        }
+
+
+                }
+
+            });
+        }, 100);
+    }
+
+
+});

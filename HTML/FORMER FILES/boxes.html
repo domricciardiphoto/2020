@@ -1,0 +1,372 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style type="text/css">
+        html {
+            background-color: #23313e;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .whatiam {
+            width: 100%;
+            background-color: #4e5658;
+            height: 50px;
+            text-align: left;
+            line-height: 50px;
+            color: #333;
+            margin-top: 0px;
+            position: absolute;
+            left: 0px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0px;
+        }
+
+        #w1 {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            font-size: 1.5em;
+        }
+
+        #w2 {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 0.825em;
+        }
+
+        .myinput {
+            width: 49%;
+            margin-right: 5px;
+            float: left;
+            min-height: 300px;
+            background-color: #ccc;
+            margin-top: 0.5%;
+        }
+
+        #copymetext {
+            width: 97%;
+            user-select: all;
+            zoom: 0.8;
+            padding: 25px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            min-height: 750px;
+            margin-left: 15px;
+            float: left
+        }
+
+        .box50 {
+            width: 50%;
+            float: left;
+            min-height: 250px;
+            background-color: #4e5658;
+
+        }
+
+        .internal {
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4e5658;
+    float: left;
+    top: 60px;
+    padding-top: 15px;
+    left: 0px;
+}
+
+        .label_input {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+.label_input textarea {
+    width: 80%;
+    min-height: 60px;
+    background-color: #333;
+    color: #fff;
+    line-height: 20px;
+    padding-left: 5px;
+}
+.label {
+    float: left;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+
+.container {
+    width: 47%;
+    background-color: #4e5658;
+    min-height: 500px;
+    margin-bottom: 100px;
+    position: relative;
+    float: left;
+    margin-left: 0px;
+    padding: 1%;
+    color: #fff;
+}
+
+.addtobox, .addtobox2{ 
+    width: 100px;
+    height: 35px;
+}
+
+.addtobox2 {
+    background-color: #000;
+    color:#fff;
+    width: 150px;
+}
+
+.pre_loader {
+    width: 100%;
+    background-color: #ccc;
+    color: #333;
+    float: left;
+    min-height: 500px;
+    font-size: 0.775em;
+    display: none
+}
+
+.preview_all {
+    width: 100%;
+    min-height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-bottom: 30px;
+}
+
+.preview_all div.promo-video-container {
+    margin-left: 1.125rem;
+    margin-right: 0.9375rem;
+}
+
+
+.promo-video-outer {
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.promo-video {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: -0.18px;
+    color: #4c4c4c;
+    min-height: 375px;
+    width: 376px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1.875rem;
+    margin-left: 0.4375rem;
+    margin-right: 0.375rem;
+    margin-top: 0.875rem;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+
+.video-player {
+    width: 315px;
+    height: 205px;  
+}
+
+ .promo-video-outer div.promo-video div.video-player img, .page-block.product-finder .promo-video-outer div.promo-video div.video-player img {
+    max-width: 315px;
+    max-height: 315px;
+}
+
+ .promo-video-outer div.promo-video div.learn-more, .page-block.product-finder .promo-video-outer div.promo-video div.learn-more {
+    margin-top: 0.9375rem;
+    padding-bottom: 0.1875rem;
+}
+ .promo-video-outer div.promo-video div.learn-more a:visited, .category-cartridge-container .promo-video-outer div.promo-video div.learn-more a:hover, .page-block.product-finder .promo-video-outer div.promo-video div.learn-more a:visited, .page-block.product-finder .promo-video-outer div.promo-video div.learn-more a:hover {
+    color: #4c4c4c;
+}
+
+ .promo-video-outer div.promo-video div.disclaimer, .page-block.product-finder .promo-video-outer div.promo-video div.disclaimer {
+    margin-top: 0.625rem;
+    font-size: 0.75rem;
+}
+
+h4 {
+    margin: 1.0625rem 0rem 0.3125rem 0rem;
+    font-weight: normal;
+    font-size: 1.3125rem;
+    color: #4c4c4c;
+    letter-spacing: 0.58px;
+}
+
+ div.learn-more a {
+    text-decoration: none;
+    color: #4c4c4c;
+    padding-bottom: 0.1875rem;
+    border-bottom: 3px solid #d71920;
+    font-weight: 400;
+}
+
+.deleteme {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #d71920;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.ui-state-highlight { height: 393px; width: 300px; float: left; margin-top: 32px; }
+
+
+    </style>
+</head>
+
+
+
+<html>
+
+<body>
+
+    <div class="whatiam">
+        <span id="w1">Promotional Boxes Builder</span>
+        <span id="w2">BY: DOMINICK RICCIARDI</span>
+    </div>
+
+
+
+
+
+    <div class="internal">
+
+        <div class="box50 container">
+            <div class="label">TITLE</div>
+            <div class="label_input"><textarea id="store_descript_txt1" type="text">Soundbars</textarea></div>
+            <br><br><br>
+            <div class="label">DESCRIPTION</div>
+            <div class="label_input"><textarea id="store_descript_txt2" type="text">Get big sound for your TV with a soundbar backed by our Buy & Try Guarantee.</textarea></div>
+            <br><br><br>
+            <div class="label">IMAGE URL</div>
+            <div class="label_input"><textarea id="store_descript_txt5" type="text">https://www.pcrichard.com/images/promos/BOSEBUNDL700_315x190.jpg</textarea></div>
+            <br><br><br>
+            <div class="label">LINK</div>
+            <div class="label_input"><textarea id="store_descript_txt4" type="text">https://www.pcrichard.com/images/promos/BOSEBUNDL700_315x190.jpg</textarea></div>
+            <br><br><br>
+            <div class="label">CALL TO ACTION</div>
+            <div class="label_input"><textarea id="store_descript_txt3" type="text">Shop Now</textarea></div>
+            
+
+            <button class="addtobox">ADD BOX</button>
+            <button class="addtobox2" data='0'>DELETE BOXES OFF</button>
+
+        </div>
+        <div class="box50">
+
+
+<div class="pre_loader">
+        <span id="block0">&#60;link href="/images/promos/promotional_box-2019-d.css" rel="stylesheet" type="text/css"&#62;</span>
+        <span id="spacer"></span>
+        <span id="block1">&#60;div class="promo-video-container"&#62;</span>
+        <span id="spacer"></span>  
+        <span id="addtothis"></span>
+        <span id="spacer"></span>
+        <span id="block3">&#60;/div&#62;</span>
+
+</div>
+
+
+
+            <textarea id="copymetext" spellcheck="false"></textarea>
+        </div>
+
+
+    </div>
+
+<div style="width: 100%;
+min-height: 500px;
+background-color: #fff;
+position: absolute;
+top: 715px;
+left: 0px;
+padding-bottom: 30px;">
+<div class="preview_all"></div>
+</div>
+
+
+
+    
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+addcontent = 0
+deletecontent = 0
+$(document).ready(function () {
+
+$('.addtobox').on('click' , function() {
+
+title = $('#store_descript_txt1').val() 
+DESCRIPTION = $('#store_descript_txt2').val()
+SHOP_NOW = $('#store_descript_txt3').val()
+LINK = $('#store_descript_txt4').val()
+IMAGEURL = $('#store_descript_txt5').val()
+
+core = '&#60;div rev="addcontent'+addcontent+'" class="promo-video-outer"&#62;&#60;br&#62;&#60;div class="promo-video" style="height: 395px;"&#62;&#60;div class="video-player"&#62;&#60;a href="'+LINK+'"&#62;&#60;img alt="'+title+'" src="'+IMAGEURL+'" data-blzsrc="/assets/images/default-img.png" data-src="'+IMAGEURL+'" class="lazy-loaded"&#62; &#60;/a&#62;&#60;/div&#62;&#60;h4&#62;'+title+'&#60;/h4&#62;&#60;div&#62;'+DESCRIPTION+'&#60;/div&#62;&#60;div class="disclaimer"&#62;&#60;/div&#62;&#60;div class="learn-more"&#62;&#60;a href="'+LINK+'"&#62;'+SHOP_NOW+'&#60;/a&#62;&#60;/div&#62;&#60;/div&#62;&#60;/div&#62;'
+
+
+
+$('#addtothis').append('<span class="addcontent'+addcontent+'" data="'+addcontent+'"></span>')
+$('.addcontent'+addcontent).append(core),
+
+$('#copymetext').text($('.pre_loader').text())
+$('.preview_all').html($('#addtothis').text())
+addcontent++
+$( ".preview_all" ).sortable({
+      placeholder: "ui-state-highlight",
+      change: function() {setTimeout(resort)}
+    });
+    $( ".preview_all" ).disableSelection();
+});
+
+
+
+
+$('.addtobox2').on('click' , function() {
+
+$('.promo-video-outer').each(function() {
+    $(this).append('<div class="deleteme" data="'+$(this).attr('rev')+'">X</div>');
+    $('.addtobox2').text('DELETE BOXES ON').css('background-color' , '#d71920').attr('data' , '1');
+  
+})
+
+function resort() {
+
+alert('hi')
+}
+
+
+
+$('.deleteme').on('click' , function() {
+whatimgonnadelete = $(this).parent('div').attr('rev');
+$( "div[rev='"+whatimgonnadelete+"']" ).remove();
+$('.'+whatimgonnadelete).remove();
+$('#copymetext').text($('.pre_loader').text())   
+})
+
+
+
+})
+
+
+    });
+</script>

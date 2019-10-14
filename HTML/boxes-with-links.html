@@ -1,0 +1,908 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="SHORTCUT ICON" href="http://10.4.6.20/webtest/favicon.ico" type="image/x-icon" />
+    <base href="https://www.pcrichard.com/" target="_blank">
+    <title>Promotional Boxes Builder</title>
+    <style type="text/css">
+      html {
+     background-color: #23313e;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .whatiam {
+     width: 100%;
+     background-color: #4e5658;
+     height: 50px;
+     text-align: left;
+     line-height: 50px;
+     color: #333;
+     margin-top: 0px;
+     position: absolute;
+     left: 0px;
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+     top: 0px;
+ }
+
+ #w1 {
+     position: absolute;
+     left: 20px;
+     top: 0px;
+     font-size: 1.5em;
+ }
+
+ #w2 {
+     position: absolute;
+     right: 20px;
+     top: 10px;
+     font-size: 0.825em;
+ }
+
+ .myinput {
+     width: 49%;
+     margin-right: 5px;
+     float: left;
+     min-height: 300px;
+     background-color: #ccc;
+     margin-top: 0.5%;
+ }
+
+ #copymetext,
+ #copymetext2 {
+     width: 97%;
+     max-width: 1800px;
+     user-select: all;
+     zoom: 0.8;
+     padding: 25px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+     min-height: 750px;
+     margin-left: 15px;
+     float: left
+ }
+
+ #copymetext2 {
+     min-height: 250px;
+     border: none;
+ }
+
+ .box50 {
+     width: 50%;
+     float: left;
+     min-height: 250px;
+     background-color: #4e5658;
+ }
+
+ .internal {
+     width: 100%;
+     position: absolute;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #4e5658;
+     float: left;
+     top: 59px;
+     padding-top: 5px;
+     left: 0px;
+ }
+
+ .label_input {
+     width: 100%;
+     float: left;
+     margin-bottom: 5px;
+ }
+
+ .label_input textarea {
+     width: 95%;
+     min-height: 40px;
+     background-color: #333;
+     color: #fff;
+     line-height: 20px;
+     padding-left: 5px;
+ }
+
+ .label {
+     float: left;
+     width: 100%;
+     margin-bottom: 3px;
+ }
+
+ .container {
+     width: 47%;
+     background-color: #4e5658;
+     min-height: 500px;
+     margin-bottom: 10px;
+     position: relative;
+     float: left;
+     margin-left: 0px;
+     padding: 1%;
+     color: #fff;
+     padding-top: 0px;
+     font-size: 0.875em;
+ }
+
+ .addtobox,
+ .addtobox2,
+ .addtobox3,
+ .addtobox4 {
+     width: 100px;
+     height: 35px;
+     cursor: pointer;
+     float: left;
+     margin-right: 10px
+ }
+
+ .addtobox2 {
+     background-color: #000;
+     color: #fff;
+     width: 150px;
+ }
+
+ .addtobox3 {
+     color: #000;
+     background-color: #ccc;
+     margin-right: 2.7%;
+ }
+
+ .pre_loader {
+     width: 100%;
+     background-color: #ccc;
+     color: #333;
+     float: left;
+     min-height: 500px;
+     font-size: 0.775em;
+     display: none
+ }
+
+ .preview_all {
+     width: 100%;
+     min-height: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 1200px;
+     padding-bottom: 30px;
+ }
+
+ .preview_all div.promo-video-container-d {
+     margin-left: 1.125rem;
+     margin-right: 0.9375rem;
+ }
+
+ .promo-video-outer {
+     overflow: hidden;
+     float: left;
+     position: relative;
+ }
+
+ .promo-video {
+     font-family: Helvetica, Arial, sans-serif;
+     font-size: 0.875rem;
+     letter-spacing: -0.18px;
+     color: #4c4c4c;
+     min-height: 375px;
+     width: 376px;
+     float: left;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 1.875rem;
+     margin-left: 0.4375rem;
+     margin-right: 0.375rem;
+     margin-top: 0.875rem;
+     border: 1px solid #d0d0d0;
+     background-color: #fff;
+ }
+
+ .video-player {
+     width: 315px;
+     height: 205px;
+ }
+
+ .promo-video-outer div.promo-video div.video-player img,
+ .page-block.product-finder .promo-video-outer div.promo-video div.video-player img {
+     max-width: 315px;
+     max-height: 315px;
+ }
+
+ .promo-video-outer div.promo-video div.learn-more,
+ .page-block.product-finder .promo-video-outer div.promo-video div.learn-more {
+     margin-top: 0.9375rem;
+     padding-bottom: 0.1875rem;
+ }
+
+ .promo-video-outer div.promo-video div.learn-more a:visited,
+ .category-cartridge-container .promo-video-outer div.promo-video div.learn-more a:hover,
+ .page-block.product-finder .promo-video-outer div.promo-video div.learn-more a:visited,
+ .page-block.product-finder .promo-video-outer div.promo-video div.learn-more a:hover {
+     color: #4c4c4c;
+ }
+
+ .promo-video-outer div.promo-video div.disclaimer,
+ .page-block.product-finder .promo-video-outer div.promo-video div.disclaimer {
+     margin-top: 0.625rem;
+     font-size: 0.75rem;
+ }
+
+ h4 {
+     margin: 1.0625rem 0rem 0.3125rem 0rem;
+     font-weight: normal;
+     font-size: 1.3125rem;
+     color: #4c4c4c;
+     letter-spacing: 0.58px;
+ }
+
+ div.learn-more a {
+     text-decoration: none;
+     color: #4c4c4c;
+     padding-bottom: 0.1875rem;
+     border-bottom: 3px solid #d71920;
+     font-weight: 400;
+ }
+
+ .deleteme {
+     position: absolute;
+     left: 0px;
+     top: 10px;
+     width: 30px;
+     height: 30px;
+     background-color: #d71920;
+     color: #fff;
+     text-align: center;
+     line-height: 32px;
+     cursor: pointer;
+     -webkit-border-radius: 5px 5px 5px 5px;
+     border-radius: 5px 5px 5px 5px;
+     -webkit-box-shadow: 2px 2px 5px 2px #828282;
+     box-shadow: 2px 2px 5px 2px #828282;
+ }
+
+ .deleteme:hover {
+     background-color: #4D0404;
+ }
+
+ .ui-state-highlight {
+     height: 393px;
+     width: 300px;
+     float: left;
+     margin-top: 32px;
+ }
+
+ /*----------------------------*/
+ .category-container {
+     height: 250px;
+     width: 376px;
+     float: left;
+     padding: 0rem 0.625rem;
+     margin: 0rem 0.375rem 0.625rem 0.4375rem;
+     border: 1px solid #e6e6e6;
+     position: relative;
+ }
+
+ .category-container-outer {
+     overflow: hidden;
+     float: left;
+ }
+
+ .category-subcat-container {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     color: #000;
+     width: 50%;
+     float: left;
+     padding: 1rem 0rem 0rem 0.625rem;
+ }
+
+ .category-container-d {
+     height: 250px;
+     width: 365px;
+     float: left;
+     padding: 0rem 0.625rem;
+     margin: 0rem 0.375rem 0.625rem 0.4375rem;
+     border: 1px solid #e6e6e6;
+     position: relative;
+ }
+
+ h2 {
+     margin: 0.9375rem 0rem 0rem 0rem;
+     padding-bottom: 0.3125rem;
+     text-transform: uppercase;
+     font-size: 1.125rem;
+     letter-spacing: 0.44px;
+     line-height: 1;
+     border-bottom: 3px solid #d71920;
+ }
+
+ .category-image img {
+     vertical-align: middle;
+     max-height: 280px;
+     max-width: 175px;
+     width: 90%;
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     margin-top: 0px;
+ }
+
+ li {
+     padding-bottom: 0.9375rem;
+     display: inline-block;
+     width: 100%;
+ }
+
+ div.subcategory-container-d {
+     width: auto;
+     font-size: 81.25%;
+     letter-spacing: -0.21px;
+ }
+
+ div.subcategory-container-d ul li a:visited {
+     color: #4c4c4c;
+ }
+
+ h2 a {
+     background-color: rgba(0, 0, 0, 0);
+     border-bottom-color: rgb(0, 0, 0);
+     border-bottom-style: none;
+     border-bottom-width: 0px;
+     border-image-outset: 0px;
+     border-image-repeat: stretch;
+     border-image-slice: 100%;
+     border-image-source: none;
+     border-image-width: 1;
+     border-left-color: rgb(0, 0, 0);
+     border-left-style: none;
+     border-left-width: 0px;
+     border-right-color: rgb(0, 0, 0);
+     border-right-style: none;
+     border-right-width: 0px;
+     border-top-color: rgb(0, 0, 0);
+     border-top-style: none;
+     border-top-width: 0px;
+     box-sizing: border-box;
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+     display: inline;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     height: auto;
+     letter-spacing: 0.44px;
+     line-height: 18px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     margin-right: 0px;
+     margin-top: 0px;
+     padding-bottom: 0px;
+     padding-left: 0px;
+     padding-right: 0px;
+     padding-top: 0px;
+     text-decoration-color: rgb(0, 0, 0);
+     text-decoration-line: none;
+     text-decoration-style: solid;
+     text-rendering: optimizelegibility;
+     text-size-adjust: 100%;
+     text-transform: uppercase;
+     vertical-align: baseline;
+     width: auto;
+     -webkit-font-smoothing: subpixel-antialiased;
+ }
+
+ a {
+     text-decoration: none;
+     color: #4c4c4c;
+ }
+
+ .category-subcat-container {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     color: #000;
+     width: 47%;
+     float: left;
+     padding: 1rem 0rem 0rem 0.625rem;
+ }
+
+ .cat-title-wrapper.small-cartridge {
+     display: none;
+ }
+
+ .category-image {
+     width: 50%;
+     white-space: nowrap;
+     float: left;
+     padding-top: 1rem;
+ }
+
+ .subcategory-container-d ul li {
+     padding-bottom: 0.6375rem;
+     display: inline-block;
+     width: 100%;
+     font-size: 0.9em;
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+     height: auto;
+     width: 100%;
+     margin-top: 0px;
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+ }
+
+ .load_content {
+     display: none
+ }
+
+ .loader {
+     width: 97%;
+     min-height: 50px;
+     line-height: 50px;
+     text-align: center;
+     font-size: 1em;
+     cursor: pointer;
+     background-color: #333;
+     float: left;
+     margin-bottom: 10px;
+     margin-left: 1.5%;
+     color: #fff;
+ }
+
+ .maxtrix_title-d {
+    width: 80%;
+    float: left;
+    color: #034694;
+    font-size: 131.25% !important;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    margin-left: 14%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ .maxtrix_title-d h3 {
+    font-weight: 400;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.adddtitleonly {
+    width: 140px;
+    text-align: center;
+    background-color: #ccc;
+    color: #333;
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    margin-top: -30px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 0.775em;
+    display: none;
+}
+
+#version {
+    display: none
+}
+    </style>
+</head>
+
+
+
+<html>
+
+<body>
+
+    <div class="whatiam">
+        <span id="w1"  style="user-select: none;">Promotional Boxes Builder <span style="font-size: 0.475em"><span id="version"></span></span></span>
+        <span id="w2">BY: DOMINICK RICCIARDI</span>
+    </div>
+    
+    
+    
+    
+    
+    <div class="internal">
+
+
+
+
+
+    
+        <div class="box50 container">
+            <div class="label" style="user-select: none;">Matrix Title</div>
+            <div class="label_input"><textarea style="min-height:26px; max-height:26px;"
+                    placeholder="Shop By Category" id="store_descript_txt20" type="text"></textarea></div>
+
+                    <div class="adddtitleonly">Add / Change / Remove</div>
+            <br><br><br>
+            <hr style="width:97%; border:1px solid #ccc; margin-top: 10px; margin-bottom:10px; float:left" />
+    
+            <div class="label" style="user-select: none;">IMAGE</div>
+            <div class="label_input"><textarea style="min-height:26px; max-height:26px;"
+                    placeholder="/images/promos/outdoor-televisions.png" id="store_descript_txt2" type="text"></textarea>
+            </div>
+            <br><br><br>
+    
+            <div class="label" style="user-select: none;">IMAGE / TITLE LINK</div>
+            <div class="label_input"><textarea style="min-height:26px; max-height:26px;"
+                    placeholder="/category/TV-Video/Flat-Panel-TVs/_/N-1ellc99" id="store_descript_txt3"
+                    type="text"></textarea></div>
+            <br><br><br>
+    
+            <hr style="width:97%; border:1px solid #ccc; margin-top: 10px; margin-bottom:10px; float:left" />
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 1 TEXT</div>
+                <div class="label_input"><textarea placeholder="TV Stands" id="store_descript_txt4" type="text"></textarea>
+                </div>
+            </div>
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 1</div>
+                <div class="label_input"><textarea id="store_descript_txt5"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/Flat-Panel-TV-Mounts/_/N-12mclan"
+                        type="text"></textarea></div>
+            </div>
+    
+    
+            <br><br><br>
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 2 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt6" placeholder="Flat Panel TV Mounts"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 2</div>
+                <div class="label_input"><textarea id="store_descript_txt7"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/Security-Camera-Accessories/_/N-fggi4s"
+                        type="text"></textarea></div>
+            </div>
+    
+    
+            <br><br><br>
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 3 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt8" placeholder="Video Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 3</div>
+                <div class="label_input"><textarea id="store_descript_txt9"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 4 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt10" placeholder="Security Camera Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 4</div>
+                <div class="label_input"><textarea id="store_descript_txt11"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 5 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt12" placeholder="TV Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 5</div>
+                <div class="label_input"><textarea id="store_descript_txt13"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+    
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 6 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt14" placeholder="TV Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 6</div>
+                <div class="label_input"><textarea id="store_descript_txt15"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+    
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 7 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt16" placeholder="TV Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 7</div>
+                <div class="label_input"><textarea id="store_descript_txt17"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+    
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 8 TEXT</div>
+                <div class="label_input"><textarea id="store_descript_txt18" placeholder="TV Accessories"
+                        type="text"></textarea></div>
+            </div>
+            <div style="width:50%;float:left">
+                <div class="label" style="user-select: none;">LINK 8</div>
+                <div class="label_input"><textarea id="store_descript_txt19"
+                        placeholder="/category/TV-Video/TV-Video-Accessories/TV-Accessories/_/N-1gw8vvl"
+                        type="text"></textarea></div>
+            </div>
+    
+            <br><br><br>
+    
+    
+            <button class="addtobox">ADD BOX</button>
+            <button class="addtobox4">Clear All Fields</button>
+            <button class="addtobox2" data='0'>DELETE BOXES</button>
+            <button class="addtobox3" data='0'>LOAD HTML</button>
+    
+        </div>
+        <div class="box50">
+    
+    
+            <div class="pre_loader">
+                <span id="block0">&#60;link href="/images/promos/promotional_box-2019-d.css" rel="stylesheet" type="text/css"&#62;</span>
+                <span id="l-title-maybe">&#60;div class="maxtrix_title-d"&#62;&#60;h3&#62;<span id="loadtitle"></span>&#60;/h3&#62;&#60;/div&#62;</span>
+                <span id="spacer"></span>
+                <span id="block1">&#60;div class="promo-video-container-d"&#62;</span>
+                <span id="spacer"></span>
+                <span id="addtothis"></span>
+                <span id="spacer"></span>
+                <span id="block3">&#60;/div&#62;</span>
+    
+            </div>
+    
+    
+    
+            <textarea id="copymetext" spellcheck="false" placeholder="THIS IS THE HTML YOU COPY TO THE SITE"></textarea>
+        </div>
+    
+        <div class="load_content" style="   
+        width: 48.50%;
+    margin-left: 0.32%;
+    background-color: #fff;
+    min-height: 150px;
+    margin-bottom: 15px;
+    float: left;
+    display: block;
+    padding-top: 8px;display:none">
+            <textarea id="copymetext2" spellcheck="false"
+                placeholder="PASTE HTML HERE -- JUST BOXES!! NOT THE CONTAINING DIVS OR CSS"></textarea>
+            <div class="loader">Load This HTML</div>
+        </div>
+    
+    
+        <div style="width: 100%;
+    min-height: 500px;
+    background-color: #fff;
+    position: relative; float: left;
+    
+    padding-bottom: 30px;">
+    
+    
+            <div id="title_loader-2" class="maxtrix_title-d"><h3></h3></div>
+            <div class="preview_all"><br><br>PREVIEW OF PROMOTIONAL BOXES WILL APPEAR HERE....<br><br> PREVIEW / RE-ORDER / DELETE </div>
+        </div>
+    
+    
+    </div>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+addcontent = 0
+deletecontent = 0
+version = '1.0'
+$(document).ready(function () {
+$('#version').delay(800).text('v'+version).fadeIn(800)
+function test() {
+    $('#addtothis').text($('.preview_all').html());
+    $('#copymetext').text($('.pre_loader').text())
+}
+
+
+    function resort() {
+      $('#copymetext').text('loading.....')
+     setTimeout( test , 1500)
+    }
+
+$('.addtobox').on('click' , function() {
+$('.addtobox2').text('DELETE BOXES').css('background-color' , '#333').attr('data' , '0');
+
+$('#store_descript_txt20').animate({width : '75%'});
+$('.adddtitleonly').fadeIn();
+
+title = $('#store_descript_txt1').val() 
+IMAGEURL = $('#store_descript_txt2').val()
+IMAGE_LINK = $('#store_descript_txt3').val()
+
+LINK_TEXT0 = $('#store_descript_txt4').val()
+LINK0 = $('#store_descript_txt5').val()
+
+LINK_TEXT1 = $('#store_descript_txt6').val()
+LINK1 = $('#store_descript_txt7').val()
+
+LINK_TEXT2 = $('#store_descript_txt8').val()
+LINK2 = $('#store_descript_txt9').val()
+
+LINK_TEXT3 = $('#store_descript_txt10').val()
+LINK3 = $('#store_descript_txt11').val()
+
+LINK_TEXT4 = $('#store_descript_txt12').val()
+LINK4 = $('#store_descript_txt13').val()
+
+LINK_TEXT5 = $('#store_descript_txt14').val()
+LINK5 = $('#store_descript_txt15').val()
+
+LINK_TEXT6 = $('#store_descript_txt16').val()
+LINK6 = $('#store_descript_txt17').val()
+
+LINK_TEXT7 = $('#store_descript_txt18').val()
+LINK7 = $('#store_descript_txt19').val()
+
+LINK_TEXT8 = $('#store_descript_txt20').val()
+
+
+var core = '&#60;/div&#62;&#60;div rev="addcontent'+addcontent+'" class="category-container-d" style="height: 250px;"&#62;&#60;div class="cat-title-wrapper full-cartridge-d"&#62;&#60;h2&#62;&#60;a title="'+title+'" href="'+IMAGE_LINK.replace('https://www.pcrichard.com' , '')+'"&#62;'+title+'&#60;/a&#62;&#60;/h2&#62;&#60;/div&#62;&#60;div class="category-image"&#62; &#60;a title="'+title+'" href="'+IMAGE_LINK.replace('https://www.pcrichard.com' , '')+'"&#62; &#60;img src="'+IMAGEURL.replace('https://www.pcrichard.com' , '')+'" data-src="'+IMAGEURL.replace('https://www.pcrichard.com' , '')+'" alt="'+title+'"&#62;&#60;/a&#62;&#60;/div&#62;&#60;div class="category-subcat-container"&#62;&#60;div class="cat-title-wrapper small-cartridge"&#62;&#60;a class="cartridge-nav-ico" href="javascript:void(0);" onclick="cartridgeNavToggle($(this))"&#62;&#60;div class="cartridge-nav-link cat-long"&#62;'+title+'   &#60;/div&#62;&#60;/a&#62;&#60;/div&#62;&#60;div class="subcategory-container-d"&#62;&#60;ul&#62;&#60;li&#62;&#60;a title="'+LINK_TEXT0+'" href="'+LINK0.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT0.replace('https://www.pcrichard.com' , '')+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a title="'+LINK_TEXT1+'" href="'+LINK1.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT1.replace('https://www.pcrichard.com' , '')+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a title="'+LINK_TEXT2+'" href="'+LINK2.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT2.replace('https://www.pcrichard.com' , '')+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a title="'+LINK_TEXT3+'" href="'+LINK3.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT3+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a title="'+LINK_TEXT4+'" href="'+LINK4.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT4+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a  title="'+LINK_TEXT5+'" href="'+LINK5.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT5.replace('https://www.pcrichard.com' , '')+'&#60;/a&#62;&#60;/li&#62;&#60;li&#62;&#60;a  title="'+LINK_TEXT6+'" href="'+LINK6.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT6.replace('https://www.pcrichard.com' , '')+'&#60;/a&#62;&#60;/li&#62; &#60;li&#62;&#60;a title="'+LINK_TEXT7+'" href="'+LINK7.replace('https://www.pcrichard.com' , '')+'"&#62;'+LINK_TEXT7+'&#60;/a&#62;&#60;/li&#62;&#60;/ul&#62;&#60;/div&#62;&#60;/div&#62;&#60;/div&#62;'
+
+
+
+$('#addtothis').append('<span class="addcontent'+addcontent+'" data="'+addcontent+'"></span>');
+
+
+
+if(LINK_TEXT8 === '') {
+$('#l-title-maybe').html('')
+$('#title_loader-2').css('display' , 'none');
+} else {
+$('#title_loader-2').css('display' , 'block');
+$('#l-title-maybe').html('&#60;div class="maxtrix_title-d"&#62;&#60;h3&#62;<span id="loadtitle"></span>&#60;/h3&#62;&#60;/div&#62;')
+$('#loadtitle').text(LINK_TEXT8)
+ $('#title_loader-2').text(LINK_TEXT8)
+}
+
+
+
+
+$('.addcontent'+addcontent).append(core),
+
+
+$('.preview_all').html($('#addtothis').text())
+$('.deleteme').each(function() {$(this).remove()})  
+$('.subcategory-container-d ul li a').each(function() {
+    if ($(this).is(':empty')){
+  $(this).parent('li').remove();
+}
+})
+
+
+$('#addtothis').text($('.preview_all').html());
+$('#copymetext').text($('.pre_loader').text())
+addcontent++
+$( ".preview_all" ).sortable({
+      placeholder: "ui-state-highlight",
+      change: function() {resort()}
+    });
+    $( ".preview_all" ).disableSelection();
+});
+
+
+
+$('.addtobox2').on('click' , function() {
+if( $(this).attr('data') === '1') {
+    $('.addtobox2').text('DELETE BOXES OFF').css('background-color' , '#333').attr('data' , '0');
+    $('.deleteme').each(function() {$(this).remove()})  
+}  else {
+    $('.addtobox2').text('DELETE BOXES ON').css('background-color' , '#d71920').attr('data' , '1');
+    $('.category-container-d').each(function() {
+$(this).append('<div class="deleteme" data="'+$(this).attr('rev')+'">X</div>');
+})
+}
+
+
+
+
+
+$('.deleteme').on('click' , function() {
+whatimgonnadelete = $(this).parent('div').attr('rev');
+$( "div[rev='"+whatimgonnadelete+"']" ).remove();
+$('.'+whatimgonnadelete).remove();
+$('.deleteme').each(function() {$(this).remove()})  
+$('#addtothis').text($('.preview_all').html());
+$('#copymetext').text($('.pre_loader').text());
+$('.addtobox2').text('DELETE BOXES OFF').css('background-color' , '#333').attr('data' , '0');
+})
+
+})
+
+$('.addtobox3').on('click' , function() {
+    if( $(this).attr('data') === '1') {
+        $('.load_content').slideUp()
+        $(this).attr('data' , '0')
+        $('.addtobox3').text('LOAD HTML')
+    } else {
+        $('.load_content').slideDown(); 
+        $(this).attr('data' , '1') 
+        $('.addtobox3').text('HIDE LOADER')
+    }
+
+})
+
+$('.addtobox4').on('click' , function() {
+    $('.label_input textarea').not('#store_descript_txt20').val('')
+} )
+
+
+$('.adddtitleonly').on('click' , function() {
+$('#title_loader-2').css('display' , 'block')
+LINK_TEXT8 = $('#store_descript_txt20').val()
+if(LINK_TEXT8 === '') {
+$('#l-title-maybe').html('')
+$('#title_loader-2').css('display' , 'none');
+} else {
+    $('#l-title-maybe').html('&#60;div class="maxtrix_title-d"&#62;&#60;h3&#62;<span id="loadtitle"></span>&#60;/h3&#62;&#60;/div&#62;');
+    $('#loadtitle').text($('#store_descript_txt20').val())
+    $('#title_loader-2').text($('#store_descript_txt20').val())
+}
+
+
+
+
+
+$('#copymetext').text($('.pre_loader').text());
+})
+
+
+
+$('.loader').on('click' , function() {
+  $('.load_content').slideUp(800);
+  $('#addtothis').text($('#copymetext2').val())
+  $('#copymetext').text($('.pre_loader').text());
+  $('.preview_all').html($('#addtothis').text());
+  $('.addtobox3').text('LOAD HTML').attr('data' , '0');
+  $('#store_descript_txt20').animate({width : '75%'});
+  $('.adddtitleonly').fadeIn()
+  $( ".preview_all" ).sortable({
+      placeholder: "ui-state-highlight",
+      change: function() {resort()}
+    });
+  
+})
+$('#l-title-maybe').html('')
+  $('#title_loader-2').css('display' , 'none');
+
+    });
+</script>
+
+

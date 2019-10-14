@@ -1,0 +1,603 @@
+.by-region .page-title {
+    display: none !important;
+}
+
+
+.wrapper-d {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.structure-d {
+    width: 100%;
+    float: left;
+}
+
+.titlelist {
+    background-color: transparent;
+    background-image: url(/images/promos/map_image-2018-d1.svg);
+    padding-bottom: 45px;
+    padding-top: 45px;
+    background-size: cover;
+    width: 99% !important;
+    margin-left: 1% !important;
+}
+
+
+.store_list {
+    padding-top: 35px
+}
+
+
+.store_list ul li {
+    width: 32.3%;
+    height: 70px;
+    border-radius: 2px;
+    background-color: #EFEFEF;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    padding-left: 2%;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    line-height: 60px;
+
+}
+
+.store_list ul> :first-child {
+    border-bottom: 1px solid #ccc !important;
+    font-size: 2em !important;
+    padding-left: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent !important;
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    margin-bottom: 20px;
+    cursor: default
+}
+
+
+.new-york {
+    padding-top: 0px !important;
+}
+
+.store_amount {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 0.850em;
+    color: #333;
+}
+
+.findastore-d {
+    width: 50%;
+    margin-left: 25%;
+    min-height: 42px;
+    font-size: 0.875em;
+    padding-left: 4%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    background-image: url(/images/promos/hg-dom-icon-2018.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 4.5%;
+}
+
+.pg-name {
+    text-align: left;
+    width: 97%;
+    font-size: 1.6em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 15px;
+    margin-left: 3%;
+    font-weight: 500;
+}
+
+.google_map {
+    width: 98%;
+    min-height: 255px;
+    float: left;
+    margin-left: 1%;
+    display: none;
+    overflow: hidden
+}
+
+.region_explainantion {
+    width: 98%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    display: none;
+}
+
+.filterby-d {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 600;
+    float: left;
+    padding-left: 1%;
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.store_list-small {
+    width: 99%;
+    float: left;
+    margin-left: .5%;
+}
+
+.store_list-small ul li {
+    width: 32%;
+    float: left;
+    min-height: 105px;
+    border: 1px solid #ccc;
+    margin: 0.5%;
+}
+
+.actual_stores {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 32%;
+    float: left;
+    min-height: 115px;
+    border: 1px solid #ccc;
+    margin: 0.5%;
+    list-style: none;
+}
+
+.store_addresss {
+    width: 60%;
+    font-size: 0.855em;
+    padding-left: 2%;
+    color: #034694;
+}
+
+
+
+.store_name {
+    float: left;
+    padding-left: 2%;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 0.5%;
+    font-weight: 600;
+    color: #333;
+}
+
+.see_details {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 33.4%;
+    text-align: left;
+    line-height: 18px;
+    font-size: 0.875em;
+    color: #034694;
+}
+
+.openuntil {
+    display: none;
+}
+
+.openuntil,
+.whenstore_open {
+    position: absolute;
+    right: 80px;
+    top: 30.5%;
+    line-height: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.whenstore_open {
+    top: 35.0%;
+    line-height: 10px;
+    display: none;
+}
+
+
+
+
+.actual_stores {
+    position: relative;
+}
+
+.green-d {
+    color: green;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.whenstore_open .green-d {
+    color: #d71920;
+    text-decoration: none;
+}
+
+.store_rat {
+    width: 100%;
+    position: absolute;
+    left: 2%;
+    bottom: 10px;
+}
+
+.factors-d {
+    width: 100%;
+    float: left;
+}
+
+
+.facets-d {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 0.6%;
+    float: left;
+    border: 1px solid #034694;
+    font-size: 0.675em;
+    font-weight: 500;
+    color: #034694;
+    margin-top: 10px;
+    zoom: 0.85;
+    cursor: pointer;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    border-radius: 18px 18px 18px 18px;
+}
+
+.factors-d :first-child {
+    margin-left: 0px !important;
+}
+
+
+
+.opened-d {
+    width: 98% !important;
+}
+
+.theex {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 0.775em;
+    font-weight: 500;
+    color: #034694;
+    display: none;
+}
+
+.full-h1-d {
+    width: 99%;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.full-h1-d h1 {
+    font-weight: 500;
+    font-size: 2em;
+    color: #333;
+}
+
+.rc {
+    color: #333;
+    text-decoration: none;
+}
+
+.region_explainantion h2 {
+    font-size: 1.3985em;
+    line-height: 0px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+.heightlight-d {
+    font-size: 0.985em;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+
+#storeZip::placeholder {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em
+}
+
+.bv_stars_component_container {
+    zoom: 0.65;
+}
+
+@media (max-width:1023px) {
+    .store_list-small ul li {
+        width: 49%;
+        float: left;
+        min-height: 105px;
+        border: 1px solid #ccc;
+        margin: 0.5%;
+    }
+
+    .opened-d {
+        width: 96% !important;
+    }
+
+}
+
+#storeLocator input {
+    height: 40px;
+    background-color: #df0005;
+    font-weight: bold;
+    border: 1px solid #ccc !important;
+    color: #fff !important;
+
+}
+
+#storeZip {
+    background-color: #fff !important;
+    padding-top: 0px;
+}
+
+
+
+@media (width:768px) {
+
+    .store_list ul li {
+        font-size: 0.99em !important;
+    }
+
+    .actual_stores {
+        width: 49%;
+    }
+
+    .store_amount {
+        position: absolute;
+        right: 15px;
+        font-size: 0.650em;
+    }
+
+
+    .region_explainantion h2 {
+        font-size: 1.285em;
+        line-height: 25px;
+        font-weight: 600;
+    }
+
+}
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+
+
+    .actual_stores {
+        width: 49%;
+    }
+
+
+}
+
+
+
+@media (max-width:767px) {
+
+
+
+    #storeLocator input {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+        height: 45px;
+        background-color: #d71920;
+        font-weight: bold;
+        color: #fff !important;
+        border: 1px solid #ccc !important;
+    }
+
+
+    #storeZip {
+        font-size: 0.775em;
+        background-color: #fff !important;
+    }
+
+
+
+    .findastore-d {
+        min-height: 42px;
+        font-size: 0.875em;
+        padding-left: 10%;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        background-image: url(/images/promos/hg-dom-icon-2018.svg);
+        background-repeat: no-repeat;
+        background-position: 5px;
+        background-size: 7.5%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .heightlight-d {
+        font-size: 0.875em;
+        line-height: 17px;
+        font-weight: 500;
+    }
+
+    .region_explainantion h2 {
+        font-size: 1.725em;
+        line-height: 30px;
+    }
+
+
+
+    .full-h1-d h1 {
+        font-weight: bold;
+        line-height: 25px;
+        font-size: 1.272em;
+        text-align: left;
+    }
+
+    .store_list-small ul li {
+        width: 98%;
+        float: left;
+        min-height: 105px;
+        border: 1px solid #ccc;
+        margin: 0.5%;
+    }
+
+    .facets-d {
+        width: 48%;
+        margin-left: 0px !important;
+        margin-right: 5px;
+        text-align: center;
+        padding: 0.8%;
+        float: left;
+        border-radius: 3px;
+        border: 1px solid #034694;
+        font-size: 0.675em;
+        color: #034694;
+        margin-top: 10px;
+        zoom: 1;
+        cursor: pointer;
+        -webkit-border-radius: 15px 15px 15px 15px;
+        border-radius: 15px 15px 15px 15px;
+
+    }
+
+    .store_list ul li {
+        width: 98% !important;
+        height: 60px;
+        border-radius: 2px;
+        background-color: #EFEFEF;
+        float: left;
+        margin-left: 1%;
+        margin-bottom: 15px;
+        font-size: 1em;
+        padding-left: 2%;
+        font-weight: 500;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .rc {
+        font-size: 1em;
+        padding-left: 2%;
+    }
+
+    .store_amount {
+        right: 6px;
+        font-size: 0.80em;
+        font-weight: bold;
+    }
+
+
+    .mobile_large {
+        width: 96% !important;
+        margin-left: 2% !important;
+    }
+
+    .opened-d {
+        width: 96% !important;
+        background-color: transparent;
+        font-weight: bold;
+        text-align: left;
+        font-size: 1.3em;
+        padding-left: 5%;
+    }
+
+    .actual_stores {
+
+        width: 99%;
+        float: left;
+        min-height: 115px;
+        border: 1px solid #ccc;
+        margin: 0.5%;
+        list-style: none;
+    }
+
+    .theex {
+        position: absolute;
+        left: 1%;
+        top: 0%;
+        font-size: 1em;
+        font-weight: 500;
+
+    }
+
+    .store_amount {
+        line-height: 10px !important;
+        position: absolute !important;
+        top: 26px !important;
+        width: 30% !important;
+        right: -10% !important;
+    }
+
+    .openuntil,
+    .whenstore_open {
+        right: 90px;
+    }
+
+    .opened-d .store_amount {
+        display: none;
+    }
+
+    .region_explainantion h2 {
+        font-size: 1.585em;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (width:320px) {
+
+    .store_addresss {
+        width: 60%;
+        font-size: 0.755em;
+        padding-left: 2%;
+        color: #034694;
+    }
+
+    .openuntil,
+    .whenstore_open {
+        right: 80px;
+        top: 23.7%;
+    }
+
+
+    .see_details {
+        float: right;
+        position: absolute;
+        right: 15px;
+        top: 28.1%;
+        text-align: left;
+        line-height: 18px;
+        font-size: 0.775em;
+        color: #034694;
+    }
+
+    .facets-d {
+        font-size: 0.575em;
+
+    }
+
+    .region_explainantion h2 {
+        font-size: 1.385em;
+        line-height: 25px;
+        font-weight: 600;
+    }
+
+
+
+}
+
+.page-title {
+    pointer-events: none !important;
+}

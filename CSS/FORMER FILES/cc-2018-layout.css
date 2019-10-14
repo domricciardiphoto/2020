@@ -1,0 +1,389 @@
+
+    .mobile_only,
+    .mobile_only2 {
+        display: none
+    }
+
+    .bold_class-fin,
+    .inner_half_gray h2 strong,
+    .inner_half_white strong,
+    .promo_red {
+        font-weight: 700
+    }
+
+    .mobile_only {
+        width: 100%;
+        min-height: 50px;
+        float: left
+    }
+
+    #finacing_header h1 {
+        font-size: 1.6em !important
+    }
+
+    #finacing_header {
+        margin-bottom: 30px
+    }
+
+    .half_box {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+        text-align: left
+    }
+
+    .inner_half_gray,
+    .inner_half_white {
+        padding: 10px;
+        min-height: 80px;
+        margin-bottom: 25px;
+        width: 100%
+    }
+
+    .inner_half_gray {
+        background-color: #ccc;
+        padding: 10px;
+        min-height: 80px;
+        margin-bottom: 25px;
+        width: 100%
+    }
+
+    .inner_half_white {
+        font-size: .75em
+    }
+
+    #finacing_footer2,
+    #finacing_footer3,
+    #finacing_footer4 {
+        min-height: 50px;
+        position: relative;
+        height: auto
+    }
+
+    .promotion_buttons {
+        width: 20%;
+        text-align: center;
+        font-size: 1.3em;
+        float: left;
+        font-weight: 700;
+        line-height: 10px;
+        color: #24408e
+    }
+
+    .promo_red,
+    .red_class-fin {
+        color: #d12229;
+        text-decoration: none;
+    }
+
+    .promo_red {
+        font-size: 1em
+    }
+
+    #wrapper-financing {
+        width: 98%;
+        margin-left: 1%;
+        min-height: 300px;
+        max-width: 1100px;
+        position: relative;
+        font-family: Arial;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        float: left
+    }
+
+    .margin-button_fin,
+    .promo_title_first {
+        margin-bottom: 10px
+    }
+
+    #finacing_footer1,
+    #finacing_footer1 img,
+    #finacing_header,
+    #finacing_header img,
+    .font_text_fin {
+        width: 100%
+    }
+
+    #finacing_footer2 {
+        width: 100%;
+        background-color: #e5e6e7;
+        margin-top: 20px
+    }
+
+    #finacing_footer3 {
+        width: 100%
+    }
+
+    #finacing_footer4 {
+        width: 100%;
+        float: left
+    }
+
+    #laptop_footer {
+        position: absolute;
+        left: 5px;
+        bottom: 0
+    }
+
+    #fin_laptop_img {
+        display: block;
+        width: 105%
+    }
+
+    #cus_info {
+        width: 70%;
+        text-align: center;
+        float: right;
+        font-size: .875em;
+        padding-top: 10px
+    }
+
+    #footer1_img1 {
+        display: block
+    }
+
+    #footer1_img2,
+    .mobile_show1 {
+        display: none
+    }
+
+    .bold_class-fin {
+        font-size: 1em;
+        padding-bottom: 5px;
+        padding-top: 10px
+    }
+
+    .font_size_class-fin {
+        font-size: .75em;
+        line-height: 16px
+    }
+
+    #center_info-fin {
+        width: 100%;
+        height: auto
+    }
+
+    .half_div_fin1 {
+        width: 65%;
+        float: left;
+        min-height: 230px
+    }
+
+    .half_div_fin2 {
+        width: 30%;
+        float: left
+    }
+
+    .blue_class_fin {
+        color: #24408e;
+        display: block;
+    }
+
+    .hundered_img {
+        width: 100%;
+        margin-top: 10px
+    }
+
+    .fifty_img {
+        width: 100%;
+        height: auto
+    }
+
+    .font_text_fin2 {
+        width: 50%;
+        float: left;
+        position: relative
+    }
+
+    #center_buttons_fin {
+        width: 50%
+    }
+
+    .promo_title,
+    .promo_title_first,
+    .promo_title_minor {
+        width: 99%;
+        margin-left: 1%;
+        font-weight: 700
+    }
+
+    .promo_title_first {
+        font-size: 1.125em;
+        border-bottom: 1px solid #333;
+        margin-top: 20px
+    }
+
+    .promo_title {
+        font-size: 1em
+    }
+
+    .promo_title_minor {
+        font-size: .875em;
+        margin-top: 15px
+    }
+
+    .promo_content {
+        font-size: .75em;
+        width: 98%;
+        margin-top: 5px;
+        margin-left: 2%
+    }
+
+    .promo_content span {
+        font-weight: 700
+    }
+
+    .appliance_offers_offers,
+    .electronic_offers,
+    .mattress_offers_offers {
+        width: 100%
+    }
+
+    .add_margin-fin {
+        width: 95%;
+        margin-left: 5%
+    }
+
+    .top_fin_line {
+        font-size: 2em;
+        font-weight: 200;
+        margin-top: 10px
+    }
+
+    .black_button_fin {
+        text-align: center;
+        font-size: 2.1em;
+        color: #fff !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #000
+    }
+
+    .secondary_fin {
+        font-size: .75em
+    }
+
+    .buttons_fin_bottom,
+    .buttons_fin_bottom2 {
+        height: 40px;
+        color: #fff;
+        background-color: #d2342b;
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 700;
+        line-height: 40px
+    }
+
+    .buttons_fin_bottom {
+        width: 25%;
+        float: right;
+        margin: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px
+    }
+
+    .buttons_fin_bottom2 {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px
+    }
+
+    @media (max-width:768px) {
+        .mobile_only,
+        .mobile_only2 {
+            display: none
+        }
+        .promo_red {
+            font-size: .75em
+        }
+        .half_div_fin2 {
+            width: 25%;
+            margin-top: -70px;
+            position: absolute;
+            right: 1%;
+            top: 60px
+        }
+        .half_div_fin1 {
+            width: 70%
+        }
+        #finacing_header {
+            margin-bottom: 0
+        }
+        .half_box {
+            width: 46%;
+            margin-left: 1%;
+            margin-right: 1%
+        }
+        .inner_half_gray {
+            min-height: 115px
+        }
+        .mobile_only {
+            width: 100%;
+            min-height: 50px;
+            float: left
+        }
+    }
+
+    @media (max-width:508px) {
+        #musthindmobile,
+        .half_div_fin2,
+        .promotion_buttons {
+            display: none
+        }
+        .mobile_only2,
+        .promo_red {
+            width: 98%;
+            margin-left: 1%;
+            text-align: left
+        }
+        .half_box {
+            width: 98%;
+            margin-left: 1%
+        }
+        .half_div_fin1 {
+            width: 98%;
+            margin-left: 1%;
+            min-height: 150px;
+            margin-bottom: 10px
+        }
+        #makesmaller {
+            font-size: 1.125em;
+            font-weight: 700
+        }
+        .mobile_only,
+        .mobile_only2,
+        .promo_red {
+            display: block
+        }
+        #finacing_header {
+            margin-bottom: 5px
+        }
+        .inner_half_gray {
+            min-height: 75px
+        }
+        .promo_content {
+            font-size: .625em;
+            margin-bottom: 12px
+        }
+        .secondary_fin {
+            font-size: .625em;
+            margin-top: 7px
+        }
+        #top_info_06 {
+            font-size: .625em;
+            margin-bottom: 10px;
+            margin-top: 10px
+        }
+        .make_smaller_05 {
+            font-size: .95em
+        }
+        .mobile_only2 {
+            min-height: 30px;
+            line-height: 35px
+        }
+    }

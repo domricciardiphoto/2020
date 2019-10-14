@@ -1,0 +1,330 @@
+#lcVideoThumb {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    width: 160px !important;
+    border: 2px solid transparent;
+    float: left;
+}
+
+#lcVideoThumb img {
+    display: block;
+    position: relative;
+    left: 0;
+    height: 90px;
+    width: 160px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#lcWrap {
+  width:100%;
+}
+
+.lcthumb{
+    float:left;
+    position: relative;
+    height: 64px !important;
+}
+
+#LiveclickerVideoDiv{
+    padding-bottom: 54%;
+    width: 90%;
+margin: 0 auto;
+}
+
+#lcWrap img{
+    float: left;
+    cursor: pointer;
+}
+
+.lcelement{
+    padding: 3px;
+    width: 106px;
+    float: left;
+}
+
+.lcThumbs {
+    height: 140px;
+    margin-top: 15px;
+}
+
+.playbtn{
+    background: url("http://edge.liveclicker.net/scripts/client/7106/redptn.png") no-repeat scroll 0 0 transparent;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+
+    cursor: pointer;
+    top:0;right:0;bottom:0;
+    left: 37%;
+    margin-top: 20px;
+}
+
+.lctitleBG{
+    height: 60px;
+    float: left;
+    margin-top: -30px;
+    z-index: 5;
+    position: relative;
+    width: 156px;
+    background-color: black;
+    margin-left: 0px;
+    overflow: hidden;
+    font-weight: bold;
+    z-index: 4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.box-content div.selected .lcthumBorder {
+    width: 87px;
+}
+
+div.selected .lcthumBorder{
+    width: 88px;
+    height: 65px;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #CB121A;
+}
+
+.lcthumbBG{
+    background-color: black;
+    opacity: 0.25;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+    filter: alpha(opacity=25);
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    width: 156px;
+    height: 88px;
+}
+
+.lctitle{
+    height: 78px;
+    float: left;
+    margin-top: 0;
+    z-index: 5;
+    position: relative;
+    width: 100px;
+    color: black;
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 12px;
+    overflow: hidden;
+    padding-top: 5px;
+    margin-left: -2px;
+}
+
+.lcprev {
+    border-style:none !important;
+    margin-left: -2px;
+    width: 20px;
+    height: 20px;
+    margin-top:10px;
+}
+
+.lcnext{
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+    border-style:none;
+    margin-left: 447px;
+    width: 20px;
+    height: 20px;
+    margin-top:10px;
+}
+
+
+
+#lclclcmycarousel{
+    float:left;
+    margin-left: 20px;
+    height: 120px;
+}
+
+#lcarrows{
+    margin-top: 32px;
+}
+
+#LiveclickerThumbnailDiv{
+    float: left;
+    text-align: left;
+}
+
+jcarousel-skin-lc .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.jcarousel-skin-lc .jcarousel-container-horizontal {
+    padding: 2px 0px;
+    width: 420px;
+    margin-left: 45px;
+}
+
+.jcarousel-skin-lc .jcarousel-clip {
+    overflow: hidden;
+}
+jcarousel-skin-lc .jcarousel-clip-horizontal {
+    height: 110px;
+    width: 270px;
+    margin-left:40px;
+}
+
+jcarousel-skin-lc .jcarousel-item {
+    height: 90px;
+    width: 90px;
+}
+
+jcarousel-skin-lc .jcarousel-item-horizontal {
+    margin-left: 0;
+}
+
+jcarousel-skin-lc .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+jcarousel-skin-lc .jcarousel-item-placeholder {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+jcarousel-skin-lc .jcarousel-next-horizontal {
+    background: url("http://edge.liveclicker.net/images/client/1915/imageassets/image1943.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    right: 1px;
+    top: 18px;
+    width: 32px;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+jcarousel-skin-lc .jcarousel-next-disabled-horizontal, jcarousel-skin-lc .jcarousel-next-disabled-horizontal:hover, jcarousel-skin-lc .jcarousel-next-disabled-horizontal:focus, jcarousel-skin-lc .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+}
+
+jcarousel-skin-lc .jcarousel-prev-horizontal {
+    background: url("http://edge.liveclicker.net/images/client/1915/imageassets/image1943.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    top: 18px;
+    width: 32px;
+
+}
+
+jcarousel-skin-lc .jcarousel-prev-disabled-horizontal, jcarousel-skin-lc .jcarousel-prev-disabled-horizontal:hover, jcarousel-skin-lc .jcarousel-prev-disabled-horizontal:focus, jcarousel-skin-lc .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+}
+
+/*Overlay Styles*/
+.liveclicker .box-window {
+    padding: 50px 30px 30px;
+    width: 410px;
+}
+
+.liveclicker #lcWrap {
+    float: none;
+    margin: 0 auto;
+}
+
+.product-view-right .product-shop {
+    position: relative;
+}
+
+/*
+ *	The video icon is being pulled from our servers for #lc-video
+*/
+
+/* hide video icon on desktop */
+#lc-video {
+    border: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    z-index: 10;
+}
+#lcVideo{
+    width:100%;
+
+margin-bottom: -54%;
+}
+/* Hide video thumb play button under 865px - the default player fits well until this point, so to prevent play I am
+hiding between 865px and 768px where I enable the video icon play button which opens the player in a modal. */
+@media only screen and (max-width: 767px) {
+
+    #lcWrap,#lcVideoThumb {
+        display: block;
+    }
+    #lcMobilePlay{
+        position:absolute;
+        top:0px;
+        display:block;
+        cursor:pointer;
+    }
+    #lcMobilePlay img{
+        width: 40%;
+    }
+
+    #lcVideoThumb {
+        height: 360px;
+        overflow: hidden;
+        position: relative;
+        width: 360px !important;
+        border: 2px solid transparent;
+        float: left;
+    }
+
+    #lcVideoThumb img {
+        display: block;
+        position: relative;
+        left: 0;
+        height: 90px;
+        width: 360px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .playbtn{
+      background: url(http://edge.liveclicker.net/scripts/client/7106/redptn.png) no-repeat scroll 0 0 transparent;
+      z-index: 5;
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 43%;
+      margin-top: 50px;
+    }
+}
+
+
+@media only screen and (min-width:768px){
+
+    #lcMobilePlay{
+        display:none;
+
+    }
+
+}
+
+
+@media only screen and (min-width:768px){
+
+    }

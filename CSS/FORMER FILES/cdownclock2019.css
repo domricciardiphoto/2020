@@ -1,0 +1,293 @@
+#url-cc {
+    width: 100%;
+    position: relative;
+}
+
+#clock2019 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #dd211f
+}
+
+#clockcontainer {
+    width: 100%;
+    min-height: 100px;
+    line-height: 60px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    max-height: 100px;
+    display: none;
+
+
+
+}
+
+.whitebox {
+    width: 50px;
+    float: right;
+    background-color: #fff;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 2.1%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #dd211f;
+    max-height: 40px;
+    line-height: 40px
+}
+
+.main_container-d {
+    float: right;
+    margin-right: 18.7%;
+    margin-top: 2%
+}
+
+.clock_dots {
+    color: #dd211f;
+    width: 10px;
+    padding: 0;
+    float: right;
+    font-size: 3em;
+    text-align: left;
+    padding-right: 7px;
+    margin-right: 4px;
+    margin-left: 2px;
+    line-height: 40px;
+    font-family: -webkit-body
+}
+
+.wh {
+    width: 100%;
+    color: #fff;
+    font-size: .35em;
+    margin-top: -10px
+}
+
+
+@media (max-width:1000px) {
+    .main_container-d {
+        margin-right: 17%;
+        margin-top: 1.5%;
+
+    }
+}
+
+@media (max-width:920px) {
+    .main_container-d {
+        margin-right: 17%;
+        width: 83%;
+        margin-top: 1%;
+    }
+
+    .whitebox {
+        width: 6%;
+    }
+
+
+    .clock_dots {
+        color: #dd211f;
+        width: 10px;
+        padding: 0;
+        float: right;
+        font-size: 2.3em;
+        text-align: left;
+        padding-right: 7px;
+        margin-right: 4px;
+        margin-left: 5px;
+        line-height: 65px
+    }
+
+}
+
+
+@media (width:823px) {
+
+    .main_container-d {
+        margin-top: 0%;
+    }
+
+    #clockcontainer {
+        min-height: 75px !important;
+
+    }
+
+
+}
+
+
+@media (width:768px) {
+
+    #clockcontainer {
+        min-height: 70px !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    #clockcontainer {
+        min-height: 70px;
+
+    }
+
+    .main_container-d {
+        margin-right: 17%;
+        margin-top: 0%;
+
+    }
+
+    .wh {
+        margin-top: -8px;
+        font-size: .3em
+    }
+
+    .whitebox {
+        width: 34px;
+        float: right;
+        background-color: #fff;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        margin-top: 2.1%;
+        text-align: center;
+        font-size: 1.2em;
+        max-height: 32px;
+        line-height: 32px
+    }
+
+    .clock_dots {
+        color: #dd211f;
+        width: 10px;
+        padding: 0;
+        float: right;
+        font-size: 2em;
+        text-align: left;
+        padding-right: 10px;
+        margin-right: 4px;
+        margin-left: 5px
+    }
+}
+
+
+
+
+@media (max-width:719px) {
+    #clockcontainer {
+        background-size: contain;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        background-position: left;
+        min-height: 420px;
+    }
+
+    .main_container-d {
+        margin-right: 8%;
+        margin-top: 27%;
+    }
+
+
+
+    .whitebox {
+        width: 15%;
+        margin-top: 2.1%;
+        font-size: 3.2em;
+        line-height: 58px;
+        padding-top: 0px;
+        max-height: 60px;
+    }
+
+
+    .clock_dots {
+        line-height: 45px;
+        font-size: 3.8em;
+        padding-right: 15px;
+
+    }
+}
+
+
+
+@media (max-width:600px) {
+
+
+    .main_container-d {
+        margin-right: 6%;
+        margin-top: 24%;
+        background-position: left;
+        max-height: 400px;
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    .whitebox {
+        width: 14%;
+        font-size: 2.5em
+    }
+
+    .clock_dots {
+        font-size: 3em;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width:414px) {
+
+    .clock_dots {
+        line-height: 75px;
+    }
+
+
+}
+
+
+@media (max-width:400px) {
+    .whitebox {
+        width: 14%;
+        font-size: 2em;
+        line-height: 42px;
+        max-height: 45px;
+    }
+}
+
+
+@media (max-width:375px) {
+
+    .clock_dots {
+        line-height: 55px;
+    }
+
+
+}
+
+@media (max-width:360px) {
+
+    .clock_dots {
+        line-height: 55px;
+    }
+
+
+}
+
+@media (max-width:350px) {
+    .whitebox {
+        width: 14%;
+        font-size: 1.8em;
+        line-height: 42px;
+        max-height: 45px;
+    }
+}
+
+
+@media (max-width:320px) {
+
+    .clock_dots {
+        line-height: 55px;
+    }
+
+
+}

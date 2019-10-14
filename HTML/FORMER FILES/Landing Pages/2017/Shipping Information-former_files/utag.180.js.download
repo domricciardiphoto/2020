@@ -1,0 +1,6 @@
+//tealium universal tag - utag.180 ut4.0.201509101132, Copyright 2015 Tealium.com Inc. All Rights Reserved.
+try{(function(id,loader,u){try{u=utag.o[loader].sender[id]={}}catch(e){u=utag.sender[id]};u.ev={'view':1};u.t='@@',u.i=[],u.p=["https://cdn.bronto.com/popup/delivery.js","","","","","","",""];u.cachebust="disabled";u.cachevar=""||"_rnd";u.map={};u.extend=[];u.send=function(a,b,c,d){if(u.ev[a]){for(c=0;c<u.p.length;c++){if(u.p[c]!=""){var x=u.rp(u.p[c],b);if(x!=""){if(u.cachebust=="enabled"&&x.indexOf("_rnd")<0){x+="&"+u.cachevar+"="+Math.random();}
+d=document.createElement("script");d.setAttribute('id','180-'+c);d.setAttribute('src',x);d.setAttribute('bronto-popup-id','28cb1d54-f878-4b92-b26d-3b2e816c3fec');document.body.appendChild(d);}}}}}
+u.rp=function(a,b){if(typeof a!="undefined"&&a.indexOf(u.t)>0){a=a.replace(/@@([^@]+)@@/g,function(m,d){if(b[d]){return encodeURIComponent(b[d]);}else{return'';}});}
+return a;}
+try{utag.o[loader].loader.LOAD(id)}catch(e){utag.loader.LOAD(id)}})('180','pcrichard.main');}catch(error){utag.DB(error);}

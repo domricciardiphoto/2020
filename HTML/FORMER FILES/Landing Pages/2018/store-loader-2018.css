@@ -1,0 +1,1037 @@
+#setStore {
+    padding: 0.5em 1em;
+    background-image: none;
+    background-color: transparent;
+    color: #034694 !important;
+    height: 30px;
+    border: 1px #034694;
+    width: 100%;
+}
+
+.review-box {
+    display: none !important;
+}
+
+.customer-service {
+    border: 0px;
+}
+
+.wrapper-d {
+    width: 100%;
+    position: relative
+}
+
+.content_100 {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    float: left
+}
+
+.wrapper-d:first-child {
+    border: none;
+    margin: 0px;
+}
+
+.store_photo {
+    width: 65%;
+    min-height: 250px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left
+}
+
+.store_map {
+    width: 35%;
+    min-height: 250px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.store_map iframe {
+    width: 100%;
+    min-height: 250px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.store_info {
+    width: 60%;
+    min-height: 150px;
+    float: left;
+}
+
+.store_hrs {
+    width: 40%;
+    min-height: 150px;
+    float: left;
+    background-color: #f2f2f2;
+    padding-left: 3%;
+    padding-bottom: 40px;
+}
+
+.store_description {
+    padding: 10px;
+}
+
+.wrapper-d hr {
+    width: 100%;
+    height: 5px;
+    background-color: #ff0000;
+}
+
+.store_titles {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 20px;
+    float: left
+}
+
+.store_titles h2 {
+    font-size: 1.6em;
+    line-height: 45px;
+}
+
+.feature_box {
+    width: 32.83%;
+    min-height: 125px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+}
+
+.store_reviews {
+    border: 0px;
+    min-height: 400px;
+}
+
+.store_manger_info {
+    border: 0px;
+    min-height: 200px;
+}
+
+.feature_image {
+    width: 30%;
+    float: left;
+    min-height: 120px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature_description {
+    width: 70%;
+    float: left;
+    min-height: 120px;
+}
+
+.description_title {
+    width: 98%;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 4%
+}
+
+.description_title h3 {
+    font-weight: bold;
+    font-size: 1.12em;
+}
+
+.description_info {
+    width: 98%;
+    font-size: 0.75em;
+    margin-left: 2%;
+    margin-top: 4%;
+    padding-right: 3%;
+}
+
+.cfmi {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+    text-align: right;
+    font-size: 0.85em;
+    padding-right: 2%;
+    color: rgb(3, 70, 148);
+}
+
+.store_manager_img {
+    width: 32%;
+    float: left;
+    margin-top: 15px;
+}
+
+.store_manager_info {
+    width: 50%;
+    float: left;
+    margin-top: 15px;
+}
+
+.store_manager_email {
+    width: 18%;
+    float: left;
+    margin-top: 15px;
+}
+
+.email_link {
+    width: 110px;
+    height: 40px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.manager_picture {
+    width: 50%;
+    float: left;
+    min-height: 120px;
+    background-color: #333;
+}
+
+.manager_name {
+    width: 50%;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 4%;
+    float: left;
+}
+
+.store_event {
+    width: 49.5%;
+    float: left;
+    background-color: #f2f2f2;
+}
+
+.store_event_photo {
+    width: 40%;
+    float: left;
+    min-height: 50px;
+    overflow: hidden;
+    margin-top: 3%
+}
+
+.store_event_photo img {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 3%
+}
+
+.store_event_info {
+    width: 60%;
+    float: left;
+    min-height: 50px;
+    padding-bottom: 2%;
+    padding-top: 2%
+}
+
+.event_title {
+    width: 100%;
+    color: #333;
+    padding-top: 2%;
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: 1em
+}
+
+.event_des {
+    width: 100%;
+    color: #333;
+    padding-top: 3%;
+    padding-left: 3%;
+    font-size: 0.875em;
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+#location_store {
+    min-height: 250px;
+    border: 0px;
+}
+
+.store_name {
+    font-size: 2.4em;
+}
+
+.store_address {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.store_address:hover {
+    color: #034694
+}
+
+.store_phone_number {
+    color: #0094ff;
+    font-size: 1em
+}
+
+.store_rating,
+.store_mystore {
+    min-height: 25px;
+    margin-bottom: 5px;
+    width: 39%;
+    min-height: 25px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store_name,
+.store_address,
+.store_phone_number {
+    text-align: center;
+    width: 100%;
+}
+
+.heresthedate {
+    font-weight: 200;
+    zoom: 0.8;
+}
+
+.store_hrs_block {
+    width: auto;
+    height: auto;
+    float: left;
+    zoom: 0.8;
+    -moz-transform: scale(0.90);
+    padding: 2px;
+    padding-top: 5px;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 3px;
+    min-height: 110px;
+    color: #333;
+    line-height: 1.3;
+    min-width: 12.4%;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    pointer-events: none;
+    padding-bottom: 7px;
+}
+
+.boldname {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.open_today_until {
+    width: 100%;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: -5.2%;
+    font-size: 1.2em;
+}
+
+.bv-cv2-cleanslate .bv-core-container-35 .bv-action-bar {
+    border-bottom: 6px solid #ff0000 !important;
+    padding-left: 25px !important;
+}
+
+.bv-cv2-cleanslate .bv-core-container-35 .bv-action-bar-header {
+    font-weight: normal !important;
+}
+
+.bv-cv2-cleanslate .bv-core-container-35 .bv-action-bar-header,
+.bv-cv2-cleanslate .bv-core-container-35 .bv-mbox-breadcrumb {
+    font-weight: normal !important;
+}
+
+.buttons {
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#store_events,
+#store_features {
+    border: 0px;
+}
+
+.pcr-btn {
+    -webkit-box-shadow: none;
+    max-height: 25px;
+    text-align: center;
+    border: 1px solid #034694;
+    line-height: 0px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.store_phone_number a {
+    color: #034694;
+}
+
+.pcr-btn:hover {
+    color: #fff;
+}
+
+.noblue {
+    color: #333;
+}
+
+.noblue:hover {
+    color: #333;
+}
+
+#icons2018-1 {
+    background-image: url('/images/promos/Apple-catagory-2018.jpg')
+}
+
+#icons2018-2 {
+    background-image: url('/images/promos/Car_Audio-catagory-2018.jpg')
+}
+
+#icons2018-3 {
+    background-image: url('/images/promos/Mattresses-catagory-2018.jpg')
+}
+
+#icons2018-4 {
+    background-image: url('/images/promos/Appliances_Housewares-catagory-2018.jpg')
+}
+
+#icons2018-5 {
+    background-image: url('/images/promos/STORE-LOC2018-HDTVS.png')
+}
+
+#icons2018-6 {
+    background-image: url('/images/promos/Surface-catagory-2018.jpg')
+}
+
+#icons2018-7 {
+    background-image: url('/images/promos/TV-catagory-2018.jpg')
+}
+
+#icons2018-8 {
+    background-image: url('/images/promos/Designer_Appliances-catagory-2018.jpg')
+}
+
+#icons2018-9 {
+    background-image: url('/images/promos/Home_audio-catagory-2018.jpg')
+}
+
+#icons2018-10 {
+    background-image: url('/images/promos/Smart_home-catagory-2018.jpg')
+}
+
+#icons2018-11 {
+    background-image: url('/images/promos/Recliners_Furniture-catagory-2018.jpg')
+}
+
+#icons2018-12 {
+    background-image: url('/images/promos/Yeti-catagory-2018.jpg')
+}
+
+.feature_box:nth-child(3n) {
+    border-right: 1px solid #ccc;
+}
+
+#mattress,
+#Designer,
+#surface {
+    border-right: 1px solid #ccc;
+}
+
+#HDTVs,
+#mattress {
+    margin-bottom: 55px;
+}
+
+#store_description-parent {
+    border: none;
+}
+
+@media (max-width: 320px) {
+
+    .store_hrs {
+        min-height: 110px;
+        padding-bottom: 26px;
+        padding-top: 10px;
+    }
+    .store_hrs_block {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .store_hrs_block {
+        zoom: 0.7;
+    }
+}
+
+@media (max-width: 375px) {
+    .store_hrs_block {
+        zoom: 0.73;
+    }
+}
+
+@media (max-width: 411px) {
+    .content_100 {
+        zoom: 1;
+    }
+    .store_hrs_block {
+        zoom: 0.7;
+        width: 13.6%;
+    }
+}
+
+@media (max-width: 731px) {
+    .store_description {
+        font-size: 1.2em;
+    }
+    .heresthedate {
+        font-weight: 500;
+    }
+    .store_photo {
+        width: 100%;
+        max-width: 800px;
+    }
+    .store_hrs_block {
+        zoom: 0.95;
+    }
+    .open_today_until {
+        font-size: 2em;
+        zoom: 1;
+    }
+    .store_hrs_block {
+        zoom: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 13.7%;
+    }
+    .content_100 {
+        zoom: 0.8;
+    }
+    #store_events,
+    #store_features {
+        border: 0px;
+        zoom: 1;
+    }
+    .description_info {
+        padding-bottom: 30px;
+    }
+    .cfmi {
+        bottom: 7px;
+    }
+    #setStore {
+        font-size: 500;
+    }
+}
+
+@media (max-width: 767px) {
+    #HDTVs,
+    #mattress {
+        margin-bottom: 0px;
+    }
+    .store_photo {
+        width: 80%;
+        max-width: 638px;
+    }
+    .store_map {
+        width: 20%;
+        box-shadow: rgb(28, 26, 27) 10px 0px 50px 5px;
+    }
+    .store_info {
+        width: 100% !important;
+        padding-bottom: 13px;
+        padding-top: 5px;
+    }
+    .store_hrs {
+        width: 100% !important;
+    }
+    .store_hrs {
+        padding-left: 1%;
+    }
+    .open_today_until {
+        margin-left: 0%;
+    }
+    .pcr-btn {
+        -webkit-box-shadow: none;
+        max-height: 35px;
+        text-align: center;
+        border: 1px solid #034694;
+        line-height: 17px;
+        margin-top: 10px;
+        padding-top: 5px;
+        height: 30px;
+        width: 150px;
+        margin-left: -7px;
+    }
+    .store_titles {
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 3.8%;
+        float: left;
+        text-align: left;
+    }
+    .feature_box {
+        zoom: 1;
+        width: 100%;
+        border-right: 1px solid #ccc;
+        border-top: none;
+    }
+    .feature_box:first-of-type {
+        border-top: 1px solid #ccc;
+    }
+    .feature_description {
+        width: 70%;
+    }
+    .feature_image {
+        width: 30%;
+    }
+    .store_titles h2 {
+        zoom: 0.85;
+    }
+    .scroller {
+        position: relative;
+        width: 190%
+    }
+    .store_photo {
+        width: 100%;
+        max-width: 800px;
+    }
+    .store_map {
+        width: 54%;
+    }
+    #location_store {
+        overflow: auto;
+        position: relative;
+    }
+    .boldname {
+        font-size: 1.2em;
+    }
+    #setStore {
+        font-weight: 600;
+    }
+    .store_hrs_block {
+        zoom: 0.7;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .boldname {
+        line-height: 45px;
+    }
+    .description_info {
+        font-size: 1.0em;
+    }
+}
+
+@media (min-width: 768px) {
+    .store_hrs_block {
+        zoom: 0.6;
+    }
+    .store_hrs {
+        padding-left: 1%;
+        padding-top: 20px;
+        width: 50%;
+        min-height: 230px;
+    }
+    .store_info {
+        width: 50%;
+    }
+    .open_today_until {
+        margin-left: -5%;
+        font-size: 1em;
+        text-align: center;
+        zoom: 1.2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .feature_box {
+        zoom: 0.8;
+        margin-top: 0.5%;
+    }
+    .feature_image {
+        width: 100%;
+        margin-top: 2px;
+    }
+    .feature_description {
+        width: 100%;
+    }
+    .feature_image {
+        width: 100%;
+        background-position: center;
+    }
+    .description_title {
+        width: 98%;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-left: 2%;
+        margin-top: 4%;
+    }
+    .store_hrs_block {
+        zoom: .8;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (width: 768px) {
+    #HDTVs,
+    #mattress,
+    #appliances {
+        margin-bottom: 0px !important;
+    }
+    .store_address {
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+    .store_name {
+        font-size: 2.4em;
+        margin-top: 10px;
+    }
+    .store_rating,
+    .store_mystore {
+        margin-top: 10px;
+    }
+    .description_info {
+        font-size: 1em;
+    }
+    .feature_box {
+        min-height: 300px;
+    }
+    .cfmi {
+        bottom: 10px;
+    }
+
+    .open_today_until {
+        margin-left: 0% !important;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    .store_description {
+        font-size: 1.1em;
+    }
+    .feature_description {
+        width: 70%;
+        min-height: 185px;
+    }
+    .feature_image {
+        width: 30%;
+    }
+    .store_info {
+        width: 60%;
+    }
+    .store_hrs {
+        width: 40%;
+    }
+    .description_info {
+        font-size: 1.1em;
+        margin-top: 3%;
+    }
+    .heresthedate {
+        font-weight: 700;
+        zoom: 0.8;
+    }
+    .cfmi {
+        font-size: 0.85em;
+    }
+    .store_info {
+        width: 60%;
+    }
+    .store_hrs {
+        width: 40%;
+    }
+    .feature_box {
+        min-height: 160px;
+    }
+    .store_hrs {
+        padding-left: 3%;
+        padding-top: 20px;
+        min-height: 230px;
+    }
+    .store_phone_number {
+        margin-top: 1%
+    }
+    .store_name {
+        margin-top: 2.5%
+    }
+}
+
+@media (min-width: 1025px) {
+    .feature_box {
+        width: 32.83% !important;
+        margin-left: 0% !important;
+    }
+    .store_hrs {
+        width: 40% !important;
+    }
+    .store_info {
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 770px) {
+    .store_hrs {
+        width: 53%;
+    }
+    .store_info {
+        width: 47%;
+    }
+    .feature_box {
+        min-height: 200px;
+        width: 48.4%;
+        margin-left: 1%;
+    }
+    #HDTVs,
+    #mattress,
+    #appliances {
+        margin-bottom: 5px;
+    }
+}
+
+@media (width: 360px) {
+
+    .open_today_until {
+        font-size: 1.6em;
+        zoom: 1;
+    }
+    .store_hrs {
+        padding-top: 20px;
+        min-height: 200px;
+    }
+}
+
+@media (width: 640px) {
+    .store_hrs_block {
+        zoom: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-width: 100px;
+        min-width: 50px;
+        margin: 5px;
+    }
+}
+
+@media (width: 731px) {
+    .store_hrs_block {
+        zoom: 1.1;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-width: 100px;
+        min-width: 50px;
+        margin: 8px;
+    }
+}
+
+@media (width: 823px) {
+    .feature_description {
+        width: 70%;
+        min-height: 187px;
+        font-size: 0.90em;
+    }
+    .store_info {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .store_hrs {
+        width: 100%;
+    }
+    .store_hrs_block {
+        zoom: 1.2;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 6px;
+    }
+    .open_today_until {
+        margin-left: 0%;
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+/** ----------------------------------- Mico adjustments **/
+
+
+@media (min-width: 1024px) {
+    .store_phone_number  {
+        margin-bottom: 4px !important;
+        margin-top: 8px !important;
+    }
+
+    .store_rating {
+        zoom: 0.9;
+        padding-left: 6%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 44%;
+
+    }
+
+    .store_description {
+        padding: 10px;
+        padding-bottom: 0;
+        padding-top: 0px;
+    }
+    #store_features {
+        padding: 0.0%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #store_features {
+        padding: 0.5%;
+    }
+
+    .store_description {
+        padding: 3%;
+        padding-bottom: 0;
+        padding-top: 0px;
+    }
+
+
+    #monly {
+        display: none;   
+       }
+
+    .store_address h2 {
+        line-height: 25px;
+    }
+
+    .store_phone_number  {
+        margin-bottom: -10px;
+        margin-top: 8px;  
+    }
+
+}  
+
+
+@media (min-width: 770px) {
+#HDTVs, #mattress, #appliances {
+    margin-bottom: 0px;
+}
+}
+
+@media (max-width: 767px) {
+
+    .store_phone_number  {
+        margin-bottom: 0px;
+        margin-top: -5px;  
+    }
+
+
+
+    .store_address h2 {
+        line-height: 38px;
+    }
+
+    .pcr-btn {
+    -webkit-box-shadow: none;
+    max-height: 35px;
+    text-align: center;
+    border: 1px solid #034694;
+    line-height: 22px;
+    margin-top: 0px;
+    padding-top: 5px;
+    height: 70px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: -17%;
+}
+
+
+.store_phone_number {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
+
+.store_address {
+    padding-top: 10px;
+    font-size: 1.8em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.store_name {
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+.feature_box {
+    border-top: none !important;
+}
+
+.feature_description {
+    margin-bottom: 10px;
+}
+
+.store_rating {
+    width: 39% !important;
+}
+
+.store_hrs_block {
+    zoom: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.870em;
+    font-weight: 600;
+    width: 13.5%;
+    line-height: 20px;
+}
+
+.boldname {
+    line-height: 35px;
+}
+
+[data-bv-show="rating_summary"] {  
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 0.95;
+    margin-top: 7px;
+}
+
+
+}
+
+@media (width: 320px) {
+    .store_hrs_block {
+        zoom: 0.80 !important;
+    }
+}
+

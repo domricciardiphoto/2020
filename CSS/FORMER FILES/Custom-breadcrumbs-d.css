@@ -1,0 +1,35 @@
+.breadcrumbs {
+    margin-left: 2.5%
+}
+
+ul.breadcrumbs li a {
+    color: #034694 !important;
+    font-size: .97rem !important;
+    font-weight: 300 !important
+}
+
+ul.breadcrumbs li {
+    float: left
+}
+
+.page #breadcrumbs li a:after,
+.page #breadcrumbs li>a:after,
+.page .breadcrumbs li a:after,
+.page .breadcrumbs li>a:after {
+    content: none
+}
+
+.page #breadcrumbs li a,
+.page #breadcrumbs li>a,
+.page .breadcrumbs li a,
+.page .breadcrumbs li>a {
+    padding: 0 5px
+}
+
+.back-arrow {
+    font-weight: 300
+}
+
+.lineheight-d {
+    line-height:45px;
+}
