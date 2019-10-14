@@ -179,17 +179,16 @@ fetch('/catalog/flyerContent.jsp?'+url_to_products)
                 div.innerHTML = '<div class="product-tile"><div class="product-image"><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="prodImage"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'" ></a></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div></div><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="product-name">'+data[i].displayName+'</a><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="priceMsg">Price Lower in Cart<span class="pcr-tooltip">?<small class="tooltip-body top center"> Why don&rsquo;t we show the price? As a retailer, we set our prices independently, but in some cases the manufacturer does not allow us to show our price until you take further action. Don&rsquo;t worry; you&rsquo;ll be able to see the price in checkout before you decide to buy it.</small></span></div></div></div></div>'
                 }
 
+                if(data[i].showPriceInCheckoutOnly === 'Yes') {
+                    Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+                    div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+                    }
+
                
 
             }
 
-        
-
-
           
-        
-
-            
 
             $('.product-grid').append(div)
             $('.livehtmld').each(function() {$(this).html($(this).text())})
@@ -249,6 +248,11 @@ function live_singleproduct(url_to_products) {
             Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
             div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile product-tile_100" ><div class="BUYNOW">Buy Now</div><div class="product-image product-image_100"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container product-details-container_100"><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';    
             }
+
+            if(data[i].showPriceInCheckoutOnly === 'Yes') {
+                Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+                div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+                }
 
             }
 
@@ -353,7 +357,6 @@ if (arrow_param_loading === 0) {
 
 $('.breadcrumbs').after('<div class="flyer_header"><h1><span class="mobile-hide-title">P.C. Richard &amp; Son :</span><span id="ae6"> Weekly Circular</span></h1></div>');
 $('#submenu').after('<div id="menu_box_desktop_name"><h2><strong>Categories</strong></h2></div><div id="menu_box_desktop"><div class="page_num"><div id="ae1"><div id="ae2">PAGE&nbsp;</div><input id="pageof" aria-label="Type a page number to jump to and press Enter" alt="Type a page number to jump to and press Enter" role="textbox" maxlength="2">&nbsp;OF&nbsp;&nbsp;<span id="pages_total"></span></div></div><div class="menu_number_overflow"></div></div>');
-//$('#fsi_wrapper').prepend('<div id="menu_box_mobile">Click Here for Menu | Swipe Left For Next Page</div><div class="mobilemenu_content"></div><div class="productdrilldown"></div>');
 $('.submenu_button').each(function () {
     $(this).append('<img src="' + $(this).attr('data_image') + '"><div class="undermenu">' + $(this).attr('data_name') + '</div>');
 });
@@ -816,3 +819,34 @@ return false;
 
 });
            
+
+//--------------Countdown Clock
+
+window.addEventListener("DOMContentLoaded", function () {   
+    ! function (e) {
+
+$('#clockcontainer').html('<div class="main_container-d"> <div id="b1" class="whitebox"></div><div class="clock_dots">:</div><div id="b2" class="whitebox"></div><div class="clock_dots">:</div><div id="b3" class="whitebox"></div></div>');
+
+$('#clockcontainer').wrap('<a title="'+alt_and_title+'" alt="'+alt_and_title+'" href="'+url+'"></a>')
+
+        function sizer() {
+    if ($(window).width() < 769) {$("#clockcontainer").css('min-height' ,  $('#clockcontainer').width() - ($('#clockcontainer').width() * .42))}else {}
+    $('#clockcontainer').fadeIn()
+}
+
+        e("#url-cc").attr("href", url), e("#url-cc").attr("alt", alt_and_title), e("#url-cc").attr("title", alt_and_title), e(window).width() < 721 ?  e("#clockcontainer").css("background-image", "url(" + mobile_url + ")") : e("#clockcontainer").css("background-image", "url(" + desktop_img + ")"), e(window).resize(function () {
+            e(window).width() < 721 ? e("#clockcontainer").css("background-image", "url(" + mobile_url + ")").css('min-height' , $('#clockcontainer').width() - ($('#clockcontainer').width() * .42)-5) : e("#clockcontainer").css("background-image", "url(" + desktop_img + ")").css('min-height' , $('#clockcontainer').width() - ($('#clockcontainer').width() * .91)+3)
+        }), livedate = new Date((new Date).getFullYear(), (new Date).getMonth(), (new Date).getDate() + 1);
+        var t = new Date(livedate).getTime(),
+            n = setInterval(function () {
+                var e = (new Date).getTime(),
+                    a = t - e,
+                    i = (Math.floor(a / 864e5), Math.floor(a % 864e5 / 36e5)),
+                    o = Math.floor(a % 36e5 / 6e4),
+                    c = Math.floor(a % 6e4 / 1e3);
+                document.getElementById("b3").innerHTML = i + '<div class="wh">Hours</div>', document.getElementById("b2").innerHTML = o + '<div class="wh">Minutes</div>', document.getElementById("b1").innerHTML = c + '<div class="wh">Seconds</div>', a < 0 && (clearInterval(n), $('.whitebox').html('0'))
+            }, 1e3)
+
+            setTimeout(sizer, 500)
+    }(jQuery)
+});
