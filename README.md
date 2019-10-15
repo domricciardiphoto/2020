@@ -57,7 +57,9 @@ Place at the end of document:
 ```
 
 ### MENU BREAKDOWN
+```HTML
  <div class="submenu_button" data="0" data_image="/images/promos/appliance_menu_image-2019.png" data_name="Appliances"></div>
+ ```
  data = page #\
  data_image = menu image\
  data_name = catagory defined in bottom boxes and promotions\
