@@ -51,3 +51,47 @@ Place at the end of document:
 
                 </div>
   </div>
+```
+
+
+## PAGES
+
+```HTML
+   <div class="fsi_wrapper dragscroll">
+            
+                  <div class="internal-scroll">
+                    <div id="pg0" class="internalflyer"   category="LG"></div> 
+                    <div id="pg1" class="internalflyer"   category="LG"></div> 
+                    <div id="pg2" class="internalflyer"   category="LG"></div> 
+                    <div id="pg3" class="internalflyer"   category="LG"></div> 
+                    <div id="pg4" class="internalflyer"   category="LG"></div> 
+                    <div id="pg5" class="internalflyer"   category="LG"></div> 
+                    <div id="pg6" class="internalflyer"   category="LG"></div> 
+                    <div id="pg7" class="internalflyer"   category="LG"></div> 
+                </div>
+
+            </div>
+            ```
+
+
+
+  ## BOTTOM PROMOTIONS CATEGORY VAR CONTAINERS
+```JAVASCRIPT
+            var Computers = '';
+            var Flat_Panel_TVs = '';
+            var Electronics = '';
+            var Appliances= '';
+            var Home_Audio = '';
+            var Portable_Audio = '';
+            var Vacuums = '';
+            var Vacuums_small = '';
+            var Smart_Home = '';
+            var Laundry = '';
+            var Samsung = '';
+            var Recliners = '';
+            var Mattresses = '';
+            var Small_Appliances = '';
+            var LG = '
+```
+
+
