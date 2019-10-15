@@ -23,7 +23,7 @@ Place at the beginning of document:
 ```HTML
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link type="text/css" rel="stylesheet" href="/images/promos/paperflyer-v7-min.css"> 
+<link type="text/css" rel="stylesheet" href="/images/promos/paperflyer-v8-min.css"> 
 ```
 
 Place at the end of document:
@@ -47,7 +47,7 @@ Place at the end of document:
                   <div class="submenu_button" data="22" data_image="/images/promos/computers_menu_image-2019.png" data_name="Computers"></div>
                   <div class="submenu_button" data="23" data_image="/images/promos/electronics_menu_image-2019.png"data_name="Electronics"></div>  
                   <div class="submenu_button" data="25" data_image="/images/promos/menu-item2019a-8.png"data_name="Mattresses"></div>
-                  <div class="submenu_button" data="27" data_image="/images/promos/home_audio_menu_image-2019.png"data_name="Home Audio"></div>
+                  <div class="submenu_button" data="27" data_image="/images/promos/home_audio_menu_var load0 = 'image-2019.png"data_name="Home Audio"></div>
 
                 </div>
   </div>
@@ -75,7 +75,7 @@ Place at the end of document:
 
 
 
-  ## BOTTOM PROMOTIONS CATEGORY VAR CONTAINERS
+  ## BOTTOM PROMOTIONS CATEGORY CONTAINER VARS
 
 ```JAVASCRIPT
             var Computers = '';
@@ -92,7 +92,20 @@ Place at the end of document:
             var Recliners = '';
             var Mattresses = '';
             var Small_Appliances = '';
-            var LG = '
+            var LG = ''
 ```
 
+  ## PAGE SVG CONTAINER VARS
 
+```JAVASCRIPT
+var load0 = ''
+var load1 = ''
+var load2 = ''
+var load3 = ''
+var load4 = ''
+var load5 = ''
+var load6 = ''
+var load7 = ''
+var load8 = ''
+var load9 = ''
+```
