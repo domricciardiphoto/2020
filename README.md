@@ -71,11 +71,12 @@ Place at the end of document:
                 </div>
 
             </div>
-            ```
+```
 
 
 
   ## BOTTOM PROMOTIONS CATEGORY VAR CONTAINERS
+
 ```JAVASCRIPT
             var Computers = '';
             var Flat_Panel_TVs = '';
