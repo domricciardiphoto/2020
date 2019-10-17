@@ -261,7 +261,6 @@ function live_singleproduct(url_to_products) {
         
 
 
-
             $('.product-grid').append(div);
             $('.livehtmld').each(function() {$('.livehtmld').html($(this).text())})
 
