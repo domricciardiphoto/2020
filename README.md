@@ -108,6 +108,14 @@ category = defines bottom boxes and promotions
  var Small_Appliances = '';
  var LG = ''
 ```
+ ## POPUP TOP ASSETS VARS
+
+```JAVASCRIPT
+ var popup_header_message = 'Product List'
+ var popup_icon = '/images/promos/100logo-d2019.png';
+ var popup_message = 'Guaranteed Lowest Prices';
+ var popup_link = '/content/low_price_guarantee';
+```
 
   ## PAGE SVG CONTAINER VARS
 
