@@ -36,7 +36,6 @@ Place at the end of document:
 
 ```HTML
 
-  <div class="dconpop"><div class="plist">Product List</div><div class="close_box"><div class="close_box_icon">X</div></div><div class="dconpop_content"><img class="promotional_title_img" src="/images/promos/100logo-d2019.png"><div class="messaging-d">Guaranteed Lowest Prices <span class="right-call-to"><a target="_blank" style="color:#fff" href="/content/low_price_guarantee">View Details &gt; &nbsp;&nbsp;</a></span></div><ul class="product-grid"></ul></div></div><div class="blackout"></div><div class="header2"><div class="progress-container"><div class="progress-bar" id="myBar"></div></div></div>
 
   <div id="submenu">
                 <div id="ae4" class="submenu_overflow">

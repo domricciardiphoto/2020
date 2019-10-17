@@ -44,6 +44,9 @@ var LG_small = '';
 window.addEventListener('DOMContentLoaded', function() {
     var load = '';
     eval('load'+$('.internalflyer').length + " = " + '0');
+
+    $('#submenu').after('<div class="dconpop"><div class="plist">'+popup_header_message+'</div><div class="close_box"><div class="close_box_icon">X</div></div><div class="dconpop_content"><img class="promotional_title_img" src="'+popup_icon+'"><div class="messaging-d">'+popup_message+' <span class="right-call-to"><a target="_blank" style="color:#fff" href="'+popup_link+'">View Details &gt; &nbsp;&nbsp;</a></span></div><ul class="product-grid"></ul></div></div><div class="blackout"></div><div class="header2"><div class="progress-container"><div class="progress-bar" id="myBar"></div></div></div>');
+
     $('.dragscroll').after('<div id="arrows_containers"><div class="left_arrow"></div><div class="right_arrow"></div></div><div class="maxtrix_title-d" style="margin-top: -30px;"><h3 style="padding-left: 1.4%">Promotions</h3></div><div class="promotion_boxes_container"></div> <div class="cf promo-single-container"></div>');
 
 (function($) {
@@ -57,11 +60,11 @@ window.addEventListener('DOMContentLoaded', function() {
         width = $('.customer-service').css('width').replace('px', '') - 40;
     }
 var widthofpages = (pagecount * width);
-$("#pages_total").text(pagecount)
+$("#pages_total").text(pagecount);
 $('.internalflyer').width(width);
 $('.internal-scroll').width(widthofpages);
 $('.submenu_overflow').width(widthofpages);
-$('.submenu_button').width(width)
+$('.submenu_button').width(width);
 //-------------------Marketing Function
 
     function marketing() {
@@ -188,13 +191,6 @@ fetch('/catalog/flyerContent.jsp?'+url_to_products)
 
             }
 
-        
-
-
-          
-        
-
-            
 
             $('.product-grid').append(div)
             $('.livehtmld').each(function() {$(this).html($(this).text())})
