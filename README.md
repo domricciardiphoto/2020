@@ -29,7 +29,7 @@ Place at the beginning of document:
 Place at the end of document:
 
 ```HTML
-<script type="text/Javascript" src="/images/promos/paperflyer-v7.js" ></script> 
+<script type="text/Javascript" src="/images/promos/paperflyer-v8.js" ></script> 
 ```
 
 ## MENU
