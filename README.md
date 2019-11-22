@@ -23,13 +23,14 @@ Place at the beginning of document:
 ```HTML
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link type="text/css" rel="stylesheet" href="/images/promos/paperflyer-v8-min.css"> 
+<link type="text/css" rel="stylesheet" href="/images/promos/paperflyer-v10-min.css"> 
 ```
 
 Place at the end of document:
 
 ```HTML
-<script type="text/Javascript" src="/images/promos/paperflyer-v8.js" ></script> 
+<script type="text/Javascript"  src="/images/promos/bottomboxes-paperflyer-v5.js" ></script>
+<script type="text/Javascript" src="/images/promos/paperflyer-v10-1.js" ></script> 
 ```
 
 ## MENU

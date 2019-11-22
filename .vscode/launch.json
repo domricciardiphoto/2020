@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Testing Server",
-            "url": "http://10.4.6.20/webtest/",
+            "url": "http://10.4.6.20/webtest/uploader_dom/dompageV2.php?gamelaunch=black-friday--CORE--1.html",
             "webRoot": "${workspaceFolder}"
         }
 
