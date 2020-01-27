@@ -1,29 +1,48 @@
+window.addEventListener('DOMContentLoaded', function() {(function($) {
+    mynum = 0;
+    mypage = 1
+    $('.wrapper-d').prepend('<div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
+    $('.pg_internal').each(function() {
+   $('<div id="'+$(this).attr('data')+'" class="whatiam">'+$(this).attr('data')+'</div>').insertBefore(this)
+   $(this).attr('pagenum' , mypage)
+   page_position = $(this).position()
+   $(this).attr('pos' , page_position.top )
+   mypage++
+   })
+   var menu_l = (100 / $('.submenu-d').length) + '%'
+   $('#myPageCount').text($('.pg_internal').length)
+   $('.submenu-d').each(function() {
+       $(this).append('<img title="'+$(this).attr('title')+'" src="'+$(this).attr('img')+'" /><div class="submenu_title">'+$(this).attr('title')+'</div>').width(menu_l).wrap('<a class="scrollLink" href="#'+$(this).attr('data')+'"></a>').delay(700).fadeIn();
+   })
+
+   $('.scrollLink').on('click', function() {
+      event.preventDefault();
+      whereimgoing = $($(this).attr('href')).attr('pos') - 218
+      $('.pages').animate({ scrollTop: whereimgoing} , 1000);
+      return false;
+       });
+
+       $(window).resize(function () {
+           menu_l = (100 / $('.submenu-d').length) + '%'
+           $('.submenu-d').width(menu_l)
+       });
+       var d = new Date();
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var n = month[d.getMonth()];
+var j = d.getDate()
+       $('.myname-d').append(' '+n+ ' '+j)
 
 
-
-
-
-
-
-
-
-
-
-
-
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1100 1048" style="enable-background:new 0 0 1100 1048;" xml:space="preserve">
-
-<image style="overflow:visible;" width="1100" height="1048" xlink:href="/images/promos/FSI_01_09_PG18c.jpg" >
-</image>
-<rect x="19" y="13" class="st0" width="1081" height="133"/>
-<a xlink:href="/category/TV-Video/Flat-Panel-TVs/Sony/_/N-1ellc99Zgx8ferZ5287me?nofollow=1&amp;pagetype=category" >
-	<rect x="19" y="146" class="st0" width="540.5" height="573"/>
-</a>
-<a xlink:href="/category/TV-Video/Flat-Panel-TVs/Sony/_/N-1ellc99Zm9fj67Z5287me?nofollow=1&amp;pagetype=category" >
-	<rect x="559.5" y="146" class="st0" width="540.5" height="573"/>
-</a>
-<a xlink:href="TYSBX130+JBLSB3-1" >
-	<rect x="19" y="722" class="st0" width="1074" height="306"/>
-</a>
-</svg>
+})(jQuery);});

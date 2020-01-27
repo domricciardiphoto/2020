@@ -1,0 +1,1341 @@
+<style type="text/css">
+    .flyer_title {
+        width: 100%;
+        font-size: .875em;
+        font-weight: 500;
+        color: #fff;
+        background-color: #d71920;
+        float: left;
+        padding: 5px;
+        margin-top: 10px
+    }
+   
+    .wrapper-d {
+        width: 98%;
+        margin-left: 1%;
+        height: auto;
+        float: left;
+        position: relative
+    }
+   
+    .topmenu {
+        width: 100%;
+        margin-top: 8px;
+        float: left;
+        margin-bottom: 10px;
+        position: relative;
+        padding-bottom: 5px;
+        min-height: 110px
+    }
+   
+    .topmenu img {
+        padding: 5%;
+        position: relative;
+        margin-left: 20%;
+        float: left;
+        height: auto;
+        width: 50%
+    }
+   
+    .submenu-d {
+        width: 16.66666666666%;
+        float: left;
+        min-height: auto;
+        cursor: pointer;
+        opacity: 1;
+        max-height: 10%;
+        position: relative;
+        display: none
+    }
+   
+    .submenu-d:hover {
+        opacity: .8
+    }
+   
+    .scrollLink {
+        color: #333
+    }
+   
+    .submenu_title {
+        width: 100%;
+        text-align: center;
+        float: left;
+        font-size: .865em;
+        font-weight: 500
+    }
+   
+    .flyer_content {
+        width: 100%;
+        min-height: 600px;
+        float: left;
+        margin-bottom: 15px
+    }
+   
+    .pages {
+        width: 100%;
+        float: left;
+        height: auto
+    }
+   
+    .pg_internal {
+       width: 100%;
+       float: left;
+       min-height: 1000px;
+       position: relative;
+       background-color: #fff;
+       overflow: auto;
+   }
+   
+    .pg_internal:first-of-type {
+        border-top: none !important
+    }
+   
+    .pg_internal .promo_box_100 {
+        width: 100%;
+        float: left;
+        position: relative
+    }
+   
+    .pg_internal .promo_box_50 {
+        width: 49%;
+        margin-left: .5%;
+        float: left;
+        position: relative;
+        border: 1px solid #ccc
+    }
+   
+    .pg_internal .promo_box_33 {
+        width: 32.7%;
+        margin-left: 0;
+        float: left;
+        position: relative
+    }
+   
+    .promo_box_100 img,
+    .promo_box_33 img,
+    .promo_box_50 img {
+        width: 100%
+    }
+   
+    .promo_box_100 object,
+    .promo_box_33 object,
+    .promo_box_50 object {
+        width: 100%
+    }
+   
+    .gridproducts {
+        width: 100%;
+        float: left;
+        min-height: 370px
+    }
+   
+    .myname-d {
+        width: 20%;
+        float: left;
+        padding-left: 5px
+    }
+   
+    .mypage-d {
+        width: 30%;
+        float: right;
+        padding-right: 5px;
+        text-align: right
+    }
+   
+    .product-tile {
+        width: 32%;
+        float: left;
+        border-right: none;
+        min-height: 370px;
+        position: relative;
+        margin-left: 1%;
+        margin-right: .5%;
+        background-color: #fff;
+        margin-bottom: 1%;
+        margin-top: .5%;
+        border: 1px solid #ccc;
+        border-top: none;
+        border-bottom: none;
+        border-left: none
+    }
+   
+    li,
+    ol,
+    ul {
+        list-style: none
+    }
+   
+    .product-tile:first-child {
+        margin-left: .8%
+    }
+   
+    .gridproducts li:nth-child(3) .product-tile {
+        border-right: none
+    }
+   
+    .BUYNOW {
+        position: absolute;
+        bottom: 4%;
+        right: 7%;
+        z-index: 99;
+        background-color: #d31b28;
+        color: #fff;
+        width: 105px;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        font-weight: 500;
+        font-size: .875em;
+        border-radius: 5px
+    }
+   
+    .product-image {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 230px;
+        margin-top: 2px;
+        max-width: 320px
+    }
+   
+    .product-image img {
+        margin-left: 15%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+        max-height: 200px;
+        width: auto
+    }
+   
+    .product-details-container {
+        width: 98%;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 1%;
+        font-size: .875em;
+        font-weight: 400;
+        padding-bottom: 10px;
+        max-width: 350px
+    }
+   
+    .product-details-container .livehtmld {
+        float: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden
+    }
+   
+    .model {
+        font-size: .75em;
+        color: #757575
+    }
+   
+    .price-container {
+        text-align: left
+    }
+   
+    .salePrice {
+        color: #000;
+        font-size: 1.8em;
+        font-weight: 500;
+        padding-bottom: 5px;
+        margin-top: 0
+    }
+   
+    .originalPrice {
+        font-size: .8em;
+        margin-top: -5px;
+        color: #757575
+    }
+   
+    .savings {
+        text-align: left;
+        font-size: .875em;
+        color: #d71920;
+        margin-top: 5px;
+        font-weight: 300
+    }
+   
+    .variantList {
+        width: 100%;
+        float: left;
+        margin-bottom: 6px
+    }
+   
+    .variant {
+        float: left;
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 8px;
+        cursor: pointer
+    }
+   
+    .variant img {
+        width: 100%
+    }
+   
+    .package .product-tile {
+        width: 25% !important;
+        border: none;
+        margin: 0 !important
+    }
+   
+    .showdual .product-tile {
+        width: 49.5% !important;
+        margin-left: 0
+    }
+   
+    .topmenu-scroll {
+        width: 98%;
+        margin-top: 8px;
+        float: left;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        position: fixed;
+        z-index: 999999999999;
+        max-width: 1176px;
+        background-color: #fff;
+        top: 139px;
+        min-height: 115px
+    }
+   
+    .whatiam {
+        width: 100%;
+        height: auto;
+        padding-left: 1%;
+        float: left;
+        font-size: 1em;
+        text-align: left;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f7f7f7;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+   
+    .singleproduct {
+        width: 32%
+    }
+   
+    .singleproduct .product-tile {
+        border: none !important;
+        width: 100%
+    }
+   
+    .largeProduct {
+        min-height: auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        background-color: #000;
+        background-repeat: no-repeat
+    }
+   
+    .largeProduct .product-tile {
+        width: 98%;
+        max-height: 300px;
+        min-height: 300px;
+        border: none;
+        background-color: transparent
+    }
+   
+    .largeProduct .product-tile .BUYNOW {
+        position: absolute;
+        bottom: 4%;
+        right: 1%;
+        z-index: 99;
+        background-color: #d31b28;
+        color: #fff;
+        width: 135px;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        font-weight: 500;
+        font-size: 1.2em;
+        border-radius: 5px
+    }
+   
+    .largeProduct .product-tile .product-image {
+        width: 50%;
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: 2px;
+        max-width: 290px;
+        float: left;
+        overflow: hidden;
+        position: relative
+    }
+   
+    .largeProduct .product-tile .product-image img {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+        max-height: none;
+        width: 100%
+    }
+   
+    .largeProduct .product-tile .product-details-container {
+        width: 50%;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 1%;
+        font-size: .875em;
+        font-weight: 400;
+        padding-bottom: 10px;
+        max-width: inherit;
+        float: right;
+        margin-top: 45px
+    }
+   
+    .largeProduct .product-tile .product-details-container .livehtmld {
+        float: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 1.9em;
+        width: 100%;
+        color: #fff !important;
+        text-align: right
+    }
+   
+    .largeProduct .product-tile .salePrice {
+        color: #fff;
+        font-size: 2.8em;
+        font-weight: 500;
+        padding-bottom: 5px;
+        margin-top: 0
+    }
+   
+    .largeProduct .product-tile .price-container {
+        text-align: right
+    }
+   
+    .largeProduct .product-tile .model {
+        font-size: .75em;
+        color: #757575;
+        text-align: right
+    }
+   
+    .showdual .product-image {
+        width: 60%;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 230px;
+        margin-top: 2px;
+        max-width: 320px
+    }
+   
+    .showdual .product-image img {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 0;
+        max-height: initial;
+        width: auto
+    }
+   
+    .showdual .product-details-container {
+        width: 56%;
+        padding-left: 8%;
+        padding-right: 1%;
+        font-size: .875em;
+        font-weight: 400;
+        padding-bottom: 10px;
+        max-width: 350px;
+        float: left;
+        position: absolute;
+        right: 0;
+        top: 90px
+    }
+   
+    .showdual .product-variant-container {
+        display: none
+    }
+   
+    .showdual .product-details-container .livehtmld {
+        float: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 1.1em
+    }
+   
+    .showdual .product-tile {
+       width: 48% !important;
+       border: none;
+       border-bottom: none;
+       min-height: 320px;
+   }
+   
+    .showdual {
+        min-height: 200px
+    }
+   
+    .flyer_title-scroll {
+        position: fixed;
+        top: 108px;
+        z-index: 9999;
+        max-width: 1176px;
+        width: 98%
+    }
+   
+    .nomaxheight {
+        max-height: fit-content !important;
+    }
+   
+   
+   
+    .priceonly {
+       width: 100%;
+       min-height: 400px;
+   }
+   .priceonly .product-tile .product-details-container .livehtmld ,  .priceonly .product-tile .model {
+       display: none !important;
+   }
+   
+   .priceonly .product-tile .price-container {
+       text-align: left;
+   }
+   
+   .priceonly  .product-tile .salePrice {
+       font-size: 2.4em;
+   }
+   
+   .priceonly .product-tile .product-details-container {
+       width: 100%;
+       position: absolute;
+       padding-left: 4%;
+       letter-spacing: 2px;
+       padding-right: 1%;
+       font-size: 240%;
+       font-weight: 800;
+       padding-bottom: 10px;
+       max-width: inherit;
+       float: left;
+       margin-top: 45px;
+       bottom: -15px;
+   }
+   .priceonly .product-tile .salePrice {
+       color: #fff;
+       font-size: 240%;
+       font-weight: 500;
+       padding-bottom: 5px;
+       margin-top: 0;
+       text-align: left;
+   }
+   
+   .priceonly object {
+       position: absolute;
+       width: 100%;
+       height: auto;
+   }
+   
+   .priceonly .product-tile {
+       width: 98%;
+       max-height: 370px;
+       min-height: 370px;
+       border: none;
+       background-color: transparent;
+   }
+   
+   
+   .priceonly  .BUYNOW {
+   display: none;
+   }
+   
+   
+   .small_info .product-tile {
+    min-height: auto;
+    width: 23.5%;
+    border: none !important;
+}
+
+.small_info .originalPrice , .small_info .savings , .small_info .variantList , .small_info .product-image , .small_info .BUYNOW{    
+    display: none;
+}
+.small_info .gridproducts {
+    min-height: auto;
+}
+.small_info {
+    min-height: fit-content;
+    border-top: none;
+    margin-top: -8.5%;
+}
+   
+
+.small_info .product-details-container {
+    padding-bottom: 2px;
+
+}
+
+.small_info .product-details-container .livehtmld {
+    font-size: 0.775em;
+}
+  
+.small_info .product-tile {
+    min-height: auto;
+    width: 10%;
+    border: none !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    float: right;
+}
+
+.small_info .salePrice {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.pages {
+    width: 100%;
+    max-height: 1700px;
+    overflow: auto;
+}
+   
+   
+    @media (width:768px) {
+       .submenu_title {
+       font-size: .765em;
+   }
+   .topmenu {
+       width: 100%;
+       margin-top: 18px;
+       float: left;
+       margin-bottom: 0px;
+       position: relative;
+       padding-bottom: 0px;
+       min-height: 70px;
+   }
+   .flyer_title-scroll {
+       position: fixed;
+       top: 50px;
+       z-index: 9999;
+       max-width: 1176px;
+       width: 100%;
+       left: 0%;
+   }
+   .topmenu-scroll {
+       width: 100%;
+       margin-top: 8px;
+       float: left;
+       border: 1px solid #ccc;
+       margin-bottom: 10px;
+       padding-bottom: 5px;
+       position: fixed;
+       z-index: 999999999999;
+       max-width: 1176px;
+       background-color: #fff;
+       top: 81px;
+       min-height: 65px;
+       left: 0px;
+   }
+   
+   .product-image img {
+       margin-left: 0%;
+   }
+   .showdual .product-image {
+       width: 50%;
+   }
+   
+   .showdual .product-image img {
+       width: 100%;
+   }
+   .showdual .product-details-container {
+       top: 37px;
+       font-size: .775em;
+   }
+   
+   .showdual .product-tile {
+       min-height: 210px;
+   }
+   
+   
+   
+    }
+   
+   
+   
+   
+    @media (max-width:767px) {
+        .topmenu {
+            min-height: 75px
+        }
+   
+        .whatiam {
+            margin-top: 0;
+            margin-bottom: 00px
+        }
+   
+        .package .product-tile {
+            width: 98% !important
+        }
+   
+        .product-image {
+            width: 30%;
+            margin-left: inherit;
+            margin-right: inherit;
+            float: left;
+            max-height: 230px;
+            margin-top: 2px;
+            max-width: 320px
+        }
+   
+        .product-image img {
+            margin-left: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 0;
+            max-height: 200px;
+            width: 100%;
+            height: auto
+        }
+   
+        .product-details-container {
+            width: 68%;
+            float: left;
+            position: relative;
+            padding-left: 5%;
+            padding-right: 1%;
+            font-size: .875em;
+            font-weight: 400;
+            padding-bottom: 10px;
+            max-width: 350px
+        }
+   
+        .product-tile {
+            width: 98% !important;
+            margin-left: 1% !important;
+            float: left;
+            border: none;
+            border-right: none;
+            border-top: none;
+            min-height: auto;
+            position: relative;
+            margin-left: 1%;
+            margin-right: 1%;
+            background-color: #fff;
+            margin-bottom: 1% !important;
+            margin-top: .5%;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 5px
+        }
+   
+        .variantList {
+            display: none
+        }
+   
+        .BUYNOW {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            z-index: 99;
+            background-color: #d31b28;
+            color: #fff;
+            width: 85px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            font-weight: 500;
+            font-size: .875em;
+            border-radius: 5px
+        }
+   
+        .myname-d,
+        .mypage-d {
+            width: 50%
+        }
+   
+        .savings {
+            font-weight: 500
+        }
+   
+        .topmenu-scroll {
+            width: 100%;
+            margin-left: -1%;
+            margin-top: 8px;
+            float: left;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            position: fixed;
+            z-index: 999999999999;
+            max-width: 1176px;
+            background-color: #fff;
+            top: 75px;
+            border-top: none
+        }
+   
+        .flyer_title-scroll {
+            width: 100%;
+            margin-left: -1%;
+            font-size: .875em;
+            font-weight: 500;
+            color: #fff;
+            background-color: #d71920;
+            float: left;
+            padding: 5px;
+            margin-top: 10px;
+            position: fixed;
+            z-index: 9999999999;
+            top: 40px;
+            border-bottom: 5px solid #fff
+        }
+   
+        .topmenu img {
+            padding: 5%;
+            position: relative;
+            margin-left: 15%;
+            float: left;
+            height: auto;
+            width: 70%;
+            padding-top: 5px;
+            padding-bottom: 5px
+        }
+   
+        .submenu_title {
+            width: 100%;
+            text-align: center;
+            float: left;
+            font-size: .365em;
+            font-weight: 500
+        }
+   
+        .showdual .product-tile {
+       width: 98% !important;
+       margin-left: 1% !important;
+       float: left;
+       border: none;
+       border-right: none;
+       border-top: none;
+       min-height: auto;
+       position: relative;
+       margin-left: 1%;
+       margin-right: 1%;
+       background-color: #fff;
+       margin-bottom: 1% !important;
+       margin-top: .5%;
+       border-bottom: 1px solid #ccc;
+       margin-bottom: 5px;
+   }
+   
+        .showdual .product-details-container {
+       width: 68%;
+       float: left;
+       position: relative;
+       padding-left: 5%;
+       padding-right: 1%;
+       font-size: .875em;
+       font-weight: 400;
+       padding-bottom: 10px;
+       max-width: 350px;
+       top: 0px;
+   }
+   
+   .showdual .product-image {
+       width: 30%;
+       float: left;
+       margin-left: auto;
+       margin-right: auto;
+       max-height: 230px;
+       margin-top: 2px;
+       max-width: 320px;
+   }
+   
+   .showdual .product-image img {
+            width: 100%
+    }
+   
+        .pg_internal .promo_box_50 {
+            width: 100%;
+            float: left;
+            position: relative
+        }
+   
+        .singleproduct {
+            width: 100%
+        }
+   
+        .largeProduct {
+            min-height: auto;
+            margin-bottom: 0;
+            overflow: hidden;
+            background-color: #000;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 200px
+        }
+   
+        .largeProduct .product-tile {
+            width: 98%;
+            max-height: 200px;
+            min-height: 200px;
+            border: none;
+            background-color: transparent
+        }
+   
+        .largeProduct .product-tile .product-details-container {
+            width: 100%;
+            position: relative;
+            padding-left: 5%;
+            padding-right: 1%;
+            font-size: .875em;
+            font-weight: 400;
+            padding-bottom: 10px;
+            max-width: inherit;
+            float: right;
+            margin-top: 5px
+        }
+   
+        .largeProduct .product-tile .product-details-container .livehtmld {
+            float: left;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            font-size: 1.4em;
+            width: 100%;
+            margin-top: 10px;
+            color: #fff !important;
+            text-align: left
+        }
+   
+        .largeProduct .product-tile .BUYNOW {
+            position: absolute;
+            bottom: 10%;
+            right: 2%;
+            z-index: 99;
+            background-color: #d31b28;
+            color: #fff;
+            width: 85px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            font-weight: 500;
+            font-size: .875em;
+            border-radius: 5px
+        }
+   
+        .largeProduct .product-tile .salePrice {
+            color: #fff;
+            font-size: 2em;
+            font-weight: 500;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-top: 10px
+        }
+   
+        .largeProduct .product-tile .model {
+            font-size: .75em;
+            color: #fff;
+            text-align: right;
+            margin-top: 70px;
+            margin-right: 5px
+        }
+   
+        .pg_internal .promo_box_33 {
+            width: 98%;
+            margin-left: .5%;
+            float: left;
+            position: relative;
+            border: 1px solid #ccc
+        }
+   
+        .singleproduct {
+            width: 100%;
+            max-height: 135px;
+            min-height: 135px
+        }
+   
+        .priceonly {
+    min-height: 168px;
+    max-height: 168px;
+   }
+   
+   .priceonly .product-tile .price-container {
+       text-align: left;
+       position: absolute;
+       top: 750%;
+       font-size: 130%;
+   }
+   
+
+
+
+
+
+   .small_info {
+
+    margin-top: 0%;
+}
+.small_info .originalPrice, .small_info .savings, .small_info .variantList, .small_info .product-image, .small_info .BUYNOW {
+    display: block;
+}
+
+   
+    }
+   </style>
+   
+   <style type="text/css">
+   
+   @media (max-width: 767px) {
+   .mobile0 {
+       background-image: url('/images/promos/bose-PROMO1-M.jpg') !important;
+   }
+   .mobile1 {
+       background-image: url('/images/promos/coffee-PROMO1-M.jpg') !important;
+   }
+   .mobile2 {
+       background-image: url('/images/promos/glasses-PROMO1-M.jpg') !important;
+   }
+   .mobile3 {
+       background-image: url('/images/promos/mattress-PROMO1-M.jpg') !important;
+   }
+   }
+   </style>
+   
+   
+   
+   
+   <div class="wrapper-d">
+       
+   
+       <div class="topmenu">
+           <div class="submenu-d" title="Appliances" img="/images/promos/kitchen-appliances.png" data="section0" ></div>
+           <div class="submenu-d" title="Small Appliances" img="/images/promos/small-appliances.png"  data="section1" ></div>
+           <div class="submenu-d" title="Vacuums" img="/images/promos/vacuums.png"  data="section2" ></div>
+           <div class="submenu-d" title="Television" img="/images/promos/tv-cat-redesign1-200x228.jpg"  data="section3"></div>
+           <div class="submenu-d" title="Electronics" img="/images/promos/portable-audio.png"  data="section4" ></div>
+           <div class="submenu-d" title="Computers" img="/images/promos/comp-tab-item3-200x228.jpg"  data="section5"> </div>
+           <div class="submenu-d" title="Mattresses" img="/images/promos/mattress-bedset-200x228.jpg"  data="section6" ></div>
+       </div>
+   
+   
+       <div class="flyer_content">
+   
+   <div class="pages">
+
+
+
+    
+           <div id="section0" class="pg_internal" data="Appliances">
+               <div class=promo_box_100>
+                   <object data=/images/promos/backtogrid-appliances2020-9.svg type=image/svg+xml height="100%"width="100%"></object>
+                </div> 
+              <!-- <div class="gridproducts small_info" data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>-->
+               <div class="gridproducts package" data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>
+               <div class=promo_box_100>
+                   <object data=/images/promos/backtogrid-promo1.svg type=image/svg+xml height="100%"width="100%"></object>
+               </div>
+               <div class=promo_box_33>
+                   <object data=/images/promos/backtogrid-midpromo.svg type=image/svg+xml height="100%"width="100%"></object>
+               </div>
+               <div class="gridproducts singleproduct" data=DW80R9950UG></div>
+               <div class="gridproducts singleproduct" data=DW80R9950UT></div>
+               <div class=gridproducts data=DW80R5060US+GDT655SSJSS+FGID2466QF></div>
+               <div class=promo_box_100>
+                   <object data=/images/promos/SAMSUNG-PROMO1-D.svg type=image/svg+xml height="100%"width="100%"></object>
+               </div>
+               <div class=gridproducts data=WRF954CIHV+WRF954CIHZ+WRF954CIHW></div>
+               <div class=gridproducts data=WRF954CIHB+WRV986FDEM+WRF550CDHZ></div>
+           </div>
+           <div id="section1" class="pg_internal" data="Small Appliances">
+               <div class="gridproducts largeProduct mobile1" data=EB24DSXB1
+                   style=background-image:url(/images/promos/coffee-PROMO1-D.jpg)> </div> <div class=gridproducts
+                   data=MRCOFFEEDR5+KELITESILVER+K55BLACK></div>
+               <div class=promo_box_50><object data=/images/promos/KITCHENAID-PROMO1-D.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class=promo_box_50><object data=/images/promos/KITCHENAID-PROMO2-D.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class=gridproducts data=KSM150PSBM+KSM150PSBW+KSM150PSBY></div>
+               <div class=gridproducts data=KHM512BY+KHM512ER+KHM512GU></div>
+           </div>
+           <div id="section2" class="pg_internal" data="Vacuums">
+               <div class=promo_box_100><object data=/images/promos/dyson-PROMO1-D.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class=gridproducts data=227635-01+227633-01+206033-01></div>
+               <div class=gridproducts data=NV42+NV501+AZ1002></div>
+               <div class=gridproducts data=2488+1825+2043></div>
+           </div>
+           <div id="section3" class="pg_internal" data="Television">
+               <div class=promo_box_100><object data=/images/promos/backtogrid-TVS2020-9.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class=gridproducts data=QN43Q60+QN49Q60+QN55Q60></div>
+               <div class=gridproducts data=QN65Q60+QN75Q60+QN82Q60></div>
+               <div class=promo_box_100><object data=/images/promos/backtogrid-TVS2020-9.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class=gridproducts data=QN49Q70+QN55Q70+QN65Q70></div>
+               <div class=gridproducts data=QN75Q70+QN82Q70+QN85Q70></div>
+               <div class=promo_box_100><object data=/images/promos/backtogrid-TVS2020-9.svg height=100% type=image/svg+xml
+                       width=100%></object></div>
+               <div class="gridproducts showdual" data=QN55Q80+QN65Q80></div>
+           </div>
+           <div id="section4" class="pg_internal" data="Electronics">
+               <div class=promo_box_100><object data=/images/promos/backtogrid-apple2020-9.svg height=100% width=100%
+                       type=image/svg+xml> </object> </div> <div class=gridproducts data=MTXN2LL-A+MU0Y2LL-A+MU0T2LL-A></div>
+               <div class=gridproducts data=MTXQ2LL-A+MTXR2LL-A+MTEL2LL-A></div>
+               <div class=promo_box_50><object data=/images/promos/BOSE-PROMO1-D2.svg height=100% width=100%></object></div>
+               <div class=promo_box_50><object data=/images/promos/SONY-PROMO1-D2.svg height=100% width=100%></object></div>
+               <div class=gridproducts data=SNDSPRTWLSNC+SNDSPRTWLSFR+SNDSPRTWLSOR></div>
+               <div class="gridproducts largeProduct mobile0" data=QC35WRLSIIBK
+                   style=background-image:url(/images/promos/headphone-PROMO1-D.jpg)> </div> <div class="gridproducts showdual"
+                   data=QC35WRLSIISL+QC35WRLSIIBK></div>
+               <div class="gridproducts showdual" data=SNDSPRTIEPRA+SNDSPRTWLSCT></div>
+               <div class="gridproducts largeProduct mobile2" data=BOSEFRMALTSM style=background-image:url(/images/promos/bose-PROMO1-D.jpg)> </div> 
+               <div class="gridproducts showdual"data=BOSEFRAMERON+BOSEFRAMEALT></div>
+           </div>
+           <div id="section5" class="pg_internal" data="Computers">
+               <div class=promo_box_100>
+                   <object data=/images/promos/backtogrid-computer2020-9.svg type=image/svg+xml  height="100%"width="100%"> </object>
+               </div> 
+               <div class="gridproducts largeProduct priceonly" data=F510QA-DS99 > 
+                   <object data=/images/promos/backtogrid-computer2020-DY.svg type=image/svg+xml  height="100%"width="100%"> </object>
+               </div> 
+               <div class=gridproducts data=X540BA-RB94+F510QA-DS99+PH3155272RG></div>
+           </div>
+           <div id="section6" class="pg_internal" data="Mattresses">
+       
+               <div class="gridproducts largeProduct mobile3" data=525139-61K style=background-image:url(/images/promos/mattress-PROMO1-D.jpg)> </div> 
+               <div class=gridproducts data=525138-61K+525137-61K+525139-61K></div>
+               <div class=gridproducts data=523350-61K+523354-61K+523351-61K></div>
+               <div class=gridproducts data=526740-61K+526123-61K+523322-51Q></div>
+               <div class=promo_box_33>
+                   <object data=/images/promos/MATT-PROMO1-D.svg height=100% type=image/svg+xml width=100%></object>
+               </div>
+               <div class=promo_box_33>
+                   <object data=/images/promos/MATT-PROMO2-D.svg height=100% type=image/svg+xml width=100%></object>
+               </div>
+               <div class=promo_box_33>
+                   <object data=/images/promos/MATT-PROMO3-D.svg height=100% type=image/svg+xml width=100%></object>
+               </div>
+               <div class=gridproducts data=41761WH-K+41764GR-K+41763BR-K></div>
+           </div>
+       
+       
+       
+       </div>
+   
+   
+    </div>
+   </div>
+   
+   
+   
+   
+   <script type="text/javascript">
+   
+   section0 = '';
+   
+   section1 = '';
+   
+   section2 = '';
+   
+   section3 = '';
+   
+   section4 = '';
+   
+   section5 = '';
+   
+   section6 = '';
+   
+   </script>
+   
+   
+   
+   
+   
+   
+   
+   <script type="text/javascript">
+   
+   window.addEventListener('DOMContentLoaded', function() {(function($) {
+       mynum = 0;
+       mypage = 1
+       $('.wrapper-d').prepend('<div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
+       $('.pg_internal').each(function() {
+       $(this).prepend('<div id="'+$(this).attr('data')+'" class="whatiam">'+$(this).attr('data')+'</div>');
+       $(this).attr('pagenum' , mypage)
+       mypage++
+       })
+       var menu_l = (100 / $('.submenu-d').length) + '%'
+       $('.submenu-d').each(function() {
+           $(this).append('<img title="'+$(this).attr('title')+'" src="'+$(this).attr('img')+'" /><div class="submenu_title">'+$(this).attr('title')+'</div>').width(menu_l).wrap('<a class="scrollLink" href="#'+$(this).attr('data')+'"></a>').delay(700).fadeIn();
+       })
+   
+   function removeheight(whatsectionheight) {
+   //alert(whatsectionheight)
+   $(whatsectionheight).delay(1000).addClass('nomaxheight')
+   }
+      
+       
+       !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function i(){var b,c,d={height:f.innerHeight,width:f.innerWidth};return d.height||(b=e.compatMode,(b||!a.support.boxModel)&&(c="CSS1Compat"===b?g:e.body,d={height:c.clientHeight,width:c.clientWidth})),d}function j(){return{top:f.pageYOffset||g.scrollTop||e.body.scrollTop,left:f.pageXOffset||g.scrollLeft||e.body.scrollLeft}}function k(){if(b.length){var e=0,f=a.map(b,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(c=c||i(),d=d||j();e<b.length;e++)if(a.contains(g,f[e][0])){var h=a(f[e]),k={height:h[0].offsetHeight,width:h[0].offsetWidth},l=h.offset(),m=h.data("inview");if(!d||!c)return;l.top+k.height>d.top&&l.top<d.top+c.height&&l.left+k.width>d.left&&l.left<d.left+c.width?m||h.data("inview",!0).trigger("inview",[!0]):m&&h.data("inview",!1).trigger("inview",[!1])}}}var c,d,h,b=[],e=document,f=window,g=e.documentElement;a.event.special.inview={add:function(c){b.push({data:c,$element:a(this),element:this}),!h&&b.length&&(h=setInterval(k,250))},remove:function(a){for(var c=0;c<b.length;c++){var d=b[c];if(d.element===this&&d.data.guid===a.guid){b.splice(c,1);break}}b.length||(clearInterval(h),h=null)}},a(f).on("scroll resize scrollstop",function(){c=d=null}),!g.addEventListener&&g.attachEvent&&g.attachEvent("onfocusin",function(){d=null})});
+   
+   
+   
+   $('#myPageCount').text($('.pg_internal').length)
+         
+       
+           $(window).resize(function () {
+               menu_l = (100 / $('.submenu-d').length) + '%'
+               $('.submenu-d').width(menu_l)
+           });
+   
+   
+   function contentloader(append_Products) {
+       url_to_products = $(append_Products).attr('data');
+   
+       fetch('/catalog/flyerContent.jsp?'+url_to_products)
+               .then(function (response) {
+                   return response.json();
+               })
+               .then(function (data) {
+                   appendData(data);
+               })
+               .catch(function (err) {
+                   console.log('error: ' + err);
+               });
+   
+               function appendData(data) {
+           for (var i = 0; i < data.length; i++) {
+               var div = document.createElement("li");
+   
+               str = data[i].relatedColorCodes
+               res = str.split(";");
+   
+           if(res[0] === undefined || res[0] === null || res[0] === 'undefined' || res[0] === '') {
+               color0 = ''
+           } else {
+               color0 = res[0];
+               color0 = '<li class="variant"><img data="/'+res[0].slice(0,-4)+'" src="/images/promos/'+color0.slice(-3).toLowerCase()+'.jpg"></li>';
+           }
+           if(res[1] === undefined || res[1] === null || res[1] === 'undefined' || res[1] === '') {
+               color1 = ''
+           } else {
+               color1 = res[1];
+               color1 ='<li class="variant"><img  data="/'+res[1].slice(0,-4)+'" src="/images/promos/'+color1.slice(-3).toLowerCase()+'.jpg"></li>';
+           }
+           if(res[2] === undefined || res[2] === null || res[2] === 'undefined' || res[2] === '') {
+               color2 = ''
+           } else {
+               color2 = res[2];
+               color2 = '<li class="variant"><img  data="/'+res[2].slice(0,-4)+'" src="/images/promos/'+color2.slice(-3).toLowerCase()+'.jpg"></li>';
+           }
+           if(res[3] === undefined || res[3] === null || res[3] === 'undefined' || res[3] === '') {
+               color3 = ''
+           } else {
+               color3 = res[3];
+               color3 = '<li class="variant"><img  data="/'+res[3].slice(0,-4)+'" src="/images/promos/'+color3.slice(-3).toLowerCase()+'.jpg"></li>';
+           }
+           if(res[4] === undefined || res[4] === null || res[4] === 'undefined' || res[4] === '') {
+               color4 = ''
+           } else {
+               color4 = res[4];
+               color4= '<li class="variant"><img  data="/'+res[4].slice(0,-4)+'" src="/images/promos/'+color4.slice(-3).toLowerCase()+'.jpg"></li>';
+           }
+   
+             
+   
+                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>';
+                   
+   
+   
+                   if(data[i].regularPriceStrikeThrough === 'Yes') {
+                   Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+                   }
+   
+                  
+   
+                   if(data[i].showPriceInCartOnly === 'Yes') {
+                   div.innerHTML = '<div class="product-tile"><div class="product-image"><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="prodImage"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'" ></a></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div></div><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="product-name">'+data[i].displayName+'</a><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="priceMsg">Price Lower in Cart<span class="pcr-tooltip">?<small class="tooltip-body top center"> Why don&rsquo;t we show the price? As a retailer, we set our prices independently, but in some cases the manufacturer does not allow us to show our price until you take further action. Don&rsquo;t worry; you&rsquo;ll be able to see the price in checkout before you decide to buy it.</small></span></div></div></div></div>'
+                   }
+   
+                   if(data[i].showPriceInCheckoutOnly === 'Yes') {
+                   Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
+                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
+                   }
+   
+   
+                   if($(append_Products).hasClass('largeProduct')) {
+                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"></div><div class="product-details-container"><div  class="product-variant-container"></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>'  
+                   }
+   
+               $(append_Products).append(div)
+               $('.livehtmld').each(function() {$(this).html($(this).text())})
+           
+               
+           }
+       }
+   
+   
+   }
+   //fdjghsdfkljghsdfjlkghkjflghdsfkgjhsdkfgjhsdflkgjhsdfkgjhsdfklgjhsdfkljghsdfkjghdslfkjghsdlfghsdjflkghkjfghfsdlkhjghjfkghjksdfghskdjfghjksldf
+
+
+   $('.pg_internal').on('inview', function (event, visible) {
+   whatSection = $(this).attr('id').replace('#' , '');  
+   //$(this).not('.content_loaded').append(eval(whatSection))
+   setTimeout(removeheight('#'+$(this).attr('id')) , 3500)
+   $(this).addClass('content_loaded');
+   $(this).children('.gridproducts').not('.imloaded').on('inview', function (event, visible) {
+     if (visible == true) {
+        $('#whatPageImOn').text($(this).parent('.pg_internal').attr('pagenum'))
+       if($(this).hasClass( "imloaded" )) {
+           return false;
+       } else {
+       $(this).attr('id' , 'list'+mynum)
+       
+      mynum++
+      append_Products = '#'+$(this).attr('id');
+      contentloader(append_Products);
+      $(this).addClass('imloaded')
+       }
+   
+     }
+   })
+   })
+   
+   
+   
+   
+   $(window).scroll(function (event) {
+       var scroll = $(window).scrollTop();
+     if(scroll > 100) {
+         $('.topmenu').addClass('topmenu-scroll')
+         $('.flyer_title').addClass('flyer_title-scroll')
+     } else {
+         $('.topmenu').removeClass('topmenu-scroll')
+         $('.flyer_title').removeClass('flyer_title-scroll')
+     }
+   });
+   
+   
+   
+   
+   $('.scrollLink').on('click', function() {
+          event.preventDefault();
+          $(".pages").scrollTop($($(this).attr("href")).offset().top -240);
+          
+          $($(this).delay(800).attr("href")).addClass('nomaxheight')
+          return false;
+           });
+   
+   
+   })(jQuery);});
+    
+   </script>
+   
