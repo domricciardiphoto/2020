@@ -1,5 +1,3 @@
-
-
 <style type="text/css">
  .wrapper-d {
         width: 98%;
@@ -24,6 +22,27 @@
     overflow: auto;
     float: left;
     position:relative;
+    border: 1px solid #f0f0f0;
+}
+
+.down_arr {
+    position: fixed;
+    z-index: 9999999999;
+    right: -60px;
+    bottom: 515px;
+    max-width: 70px;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+    border-right: 0px;
+    padding: 5px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    -webkit-box-shadow: inset 0 0 5px 2px #E8E8E8;
+    box-shadow: inset 0 0 5px 2px #E8E8E8;
+}
+
+#monetate_selectorBanner_547a18a2_00 {
+    display: none !important;
 }
 
 /*-----------------------------------*/
@@ -34,23 +53,23 @@
         }
    
 
-.topmenu {
-        width: 100%;
-        margin-top: 8px;
-        float: left;
-        margin-bottom: 10px;
-        position: relative;
-        padding-bottom: 5px;
-        min-height: 110px
-    }
+        .topmenu {
+    width: 100%;
+    margin-top: 8px;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+    padding-bottom: 5px;
+    min-height: 90px;
+}
    
     .topmenu img {
     padding: 5%;
     position: relative;
-    margin-left: 25%;
+    margin-left: 30%;
     float: left;
     height: auto;
-    width: 50%;
+    width: 40%;
 }
 
     .submenu-d:hover {
@@ -65,7 +84,7 @@
         width: 100%;
         text-align: center;
         float: left;
-        font-size: .865em;
+        font-size: .765em;
         font-weight: 500
     }
 
@@ -125,7 +144,7 @@
     .pg_internal {
        width: 100%;
        float: left;
-       /* min-height: 1000px; */
+       min-height: 1000px;
        position: relative;
        background-color: #fff;
        overflow: auto;
@@ -144,7 +163,8 @@
         font-family: Arial, Helvetica, sans-serif;
         background-color: #f7f7f7;
         margin-top: 20px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        overflow: hidden;
     }
     .whatiam:first-of-type {
         margin-top: 0px;
@@ -155,7 +175,8 @@
     .pg_internal .promo_box_100 {
         width: 100%;
         float: left;
-        position: relative
+        position: relative;
+        min-height: 250px;
     }
    
     .pg_internal .promo_box_50 {
@@ -163,7 +184,8 @@
         margin-left: .5%;
         float: left;
         position: relative;
-        border: 1px solid #ccc
+        border: 1px solid #ccc;
+        min-height: 220px;
     }
    
     .pg_internal .promo_box_33 {
@@ -171,7 +193,7 @@
     margin-left: 0;
     float: left;
     position: relative;
-    max-height: 370px;
+    max-height: 385px;
 }
    
     .promo_box_100 img,
@@ -411,7 +433,7 @@
     }
    
     .showdual .product-details-container {
-        width: 56%;
+        width: 53%;
         padding-left: 8%;
         padding-right: 1%;
         font-size: .875em;
@@ -453,7 +475,8 @@
         margin-bottom: 0;
         overflow: hidden;
         background-color: #000;
-        background-repeat: no-repeat
+        background-repeat: no-repeat;
+        background-size: cover;
     }
    
     .largeProduct .product-tile {
@@ -604,6 +627,59 @@
    display: none;
    }
 
+   .topmenu-scroll {
+        width: 98%;
+        margin-top: 8px;
+        float: left;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        position: fixed;
+        z-index: 999999999999;
+        max-width: 1176px;
+        background-color: #fff;
+        top: 139px;
+        min-height: 90px
+    }
+
+    .flyer_title-scroll {
+        position: fixed;
+        top: 108px;
+        z-index: 9999;
+        max-width: 1176px;
+        width: 98%
+    }
+
+    .t_make_small {
+        font-size: 0.65em;
+    }
+
+
+
+
+    .pages::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.pages::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.pages::-webkit-scrollbar:horizontal {
+    height: 40px;
+}
+
+.pages::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.pages::-webkit-scrollbar-track { 
+    background-color: #fff; 
+    border-radius: 8px; 
+} 
+
 
    @media (width:768px) {
        .submenu_title {
@@ -671,6 +747,13 @@
 
 
     @media (max-width:767px) {
+
+
+        .pages {
+    border:none;
+}
+
+
         .topmenu {
             min-height: 75px
         }
@@ -755,10 +838,18 @@
             border-radius: 5px
         }
    
-        .myname-d,
-        .mypage-d {
-            width: 50%
-        }
+        .myname-d, .mypage-d {
+    width: 25%;
+}
+
+.myname-d {
+    float: left;
+    padding-left: 5px;
+    width: 65% !important;
+    font-size: 0.775em;
+    margin-top: 3px;
+}
+
    
         .savings {
             font-weight: 500
@@ -974,9 +1065,6 @@
    
 
 
-
-
-
    .small_info {
 
     margin-top: 0%;
@@ -985,8 +1073,29 @@
     display: block;
 }
 
+.down_arr {
+    max-width: 60px;
+    bottom: 115px;
+}
+.pg_internal .promo_box_100 {
+    min-height: 100px;
+    margin-bottom: 15px;
+}
    
     }
+
+    @media (max-width: 360px) {
+.submenu_title {
+    display: none;
+}
+.topmenu {
+    min-height: 25px;
+}
+
+
+    }
+
+
 
 </style>
 
@@ -1005,6 +1114,11 @@
     .mobile3 {
         background-image: url('/images/promos/mattress-PROMO1-M.jpg') !important;
     }
+
+    .mobile4 {
+        background-image: url('/images/promos/vidgame-PROMO1-M.jpg') !important;
+    }
+
     }
     </style>
 
@@ -1012,187 +1126,171 @@
 
 
 <div class="wrapper-d">
-
+    
     <div class="topmenu">
-        <div class="submenu-d" title="Appliances" img="/images/promos/kitchen-appliances.png" data="section0" ></div>
-        <div class="submenu-d" title="Television" img="/images/promos/tv-cat-redesign1-200x228.jpg"  data="section1"></div>
-        <div class="submenu-d" title="Electronics" img="/images/promos/portable-audio.png"  data="section2" ></div>
-        <div class="submenu-d" title="Small Appliances" img="/images/promos/small-appliances.png"  data="section3" ></div>
-        <div class="submenu-d" title="Vacuums" img="/images/promos/vacuums.png"  data="section4" ></div>
-        <div class="submenu-d" title="Computers" img="/images/promos/comp-tab-item3-200x228.jpg"  data="section5"> </div>
-        <div class="submenu-d" title="Mattresses" img="/images/promos/mattress-bedset-200x228.jpg"  data="section6" ></div>
+        <div class="submenu-d" title="Appliances" img="/images/promos/kitchen-appliances.png" page="0" ></div>
+        <div class="submenu-d" title="Television" img="/images/promos/tv-cat-redesign1-200x228.jpg"  page="1"></div>
+        <div class="submenu-d" title="Electronics" img="/images/promos/portable-audio.png"  page="2" ></div>
+        <div class="submenu-d" title="Small Appliances" img="/images/promos/small-appliances.png"  page="3" ></div>
+        <div class="submenu-d" title="Vacuums" img="/images/promos/vacuums.png"  page="4" ></div>
+        <div class="submenu-d" title="Computers" img="/images/promos/comp-tab-item3-200x228.jpg"  page="5"> </div>
+        <div class="submenu-d" title="Mattresses" img="/images/promos/mattress-bedset-200x228.jpg"  page="6" ></div>
+        <div class="submenu-d" title="Video Games" img="/images/product/detail/D_3003346.jpg"  page="7" ></div>
     </div>
 
 
     <div class="flyer_content">
-<div class="pages">
+<div id="pages" class="pages">
 
 
  
     <div id="section0" class="pg_internal" data="Appliances">
-        <div class=promo_box_100>
-            <object data=/images/promos/backtogrid-appliances2020-9.svg type=image/svg+xml height="100%"width="100%"></object>
-         </div> 
-       <!-- <div class="gridproducts small_info" data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>-->
-        <div class="gridproducts package" data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>
-        <div class=promo_box_100>
-            <object data=/images/promos/backtogrid-promo1.svg type=image/svg+xml height="100%"width="100%"></object>
-        </div>
-        <div class=promo_box_33>
-            <object data=/images/promos/backtogrid-midpromo.svg type=image/svg+xml height="100%"width="100%"></object>
-        </div>
-        <div class="gridproducts singleproduct" data=DW80R9950UG></div>
-        <div class="gridproducts singleproduct" data=DW80R9950UT></div>
-        <div class=gridproducts data=DW80R5060US+GDT655SSJSS+FGID2466QF></div>
-        <div class=promo_box_100>
-            <object data=/images/promos/SAMSUNG-PROMO1-D.svg type=image/svg+xml height="100%"width="100%"></object>
-        </div>
-        <div class=gridproducts data=WRF954CIHV+WRF954CIHZ+WRF954CIHW></div>
-        <div class=gridproducts data=WRF954CIHB+WRV986FDEM+WRF550CDHZ></div>
+        <div class="svg promo_box_100" data="backtogrid-appliances2020-9.svg"></div>
+        <div class="gridproducts package"data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>
+        <div class="svg promo_box_100" style="min-height:66px" data="backtogrid-promo1.svg"></div>
+        <div class="svg promo_box_33" data="backtogrid-midpromo.svg"></div>
+        <div class="gridproducts singleproduct"data="DW80R9950UG"></div>
+        <div class="gridproducts singleproduct"data="DW80R9950UT"></div>
+        <div class="gridproducts" data="DW80R5060US+GDT655SSJSS+FGID2466QF"></div>
+        <div class="svg promo_box_100" data="SAMSUNG-PROMO1-D.svg"></div>
+        <div class="gridproducts" data="WRF954CIHV+WRF954CIHZ+WRF954CIHW+WRF954CIHB+WRV986FDEM+WRF550CDHZ"></div>
+ 
     </div>
-  
-   
+
     <div id="section1" class="pg_internal" data="Television">
-        <div class=promo_box_100><object data=/images/promos/SAMSUNG-4K-PROMO2-D.svg height=100% type=image/svg+xml
-                width=100%></object></div>
-        <div class=gridproducts data=QN55Q900+QN65Q900+QN75Q900></div>
-
-        <div class=promo_box_100><object data=/images/promos/backtogrid-qled-S2020-D3.svg height=100% type=image/svg+xml
-            width=100%></object></div>
-        <div class="gridproducts showdual" data=QN55Q80+QN65Q80></div>
-
-
-        <div class=promo_box_100><object data=/images/promos/SONY-PROMO-D1.svg height=100% type=image/svg+xml
-                width=100%></object></div>
-        <div class="gridproducts showdual" data=XBR98Z9G+XBR85Z9G></div>
-
-
-        
+        <div class="svg promo_box_100" data="SAMSUNG-4K-PROMO2-D.svg"></div>
+        <div class="gridproducts" data="QN55Q900+QN65Q900+QN75Q900"></div>
+        <div class="svg promo_box_100" data="backtogrid-qled-S2020-D3.svg"></div>
+        <div class="gridproducts showdual"data="QN55Q80+QN65Q80"></div>
+        <div class="svg promo_box_100" data="SONY-PROMO-D1.svg"></div>
+        <div class="gridproducts showdual" data="XBR98Z9G+XBR85Z9G"></div>
     </div>
 
 
     <div id="section2" class="pg_internal" data="Electronics">
-        <div class=promo_box_100><object data=/images/promos/backtogrid-apple2020-9.svg height=100% width=100%
-                type=image/svg+xml> </object> </div>
-         <div class=gridproducts data=MTXN2LL-A+MU0Y2LL-A+MU0T2LL-A></div>
-        <div class=gridproducts data=MTXQ2LL-A+MTXR2LL-A+MTEL2LL-A></div>
-        <div class=promo_box_50><object data=/images/promos/BOSE-PROMO1-D2.svg height=100% width=100%></object></div>
-        <div class=promo_box_50><object data=/images/promos/SONY-PROMO1-D2.svg height=100% width=100%></object></div>
-        <div class=gridproducts data=SNDSPRTWLSNC+SNDSPRTWLSFR+SNDSPRTWLSOR></div>
-        <div class="gridproducts largeProduct mobile0" data=QC35WRLSIIBK
-            style=background-image:url(/images/promos/headphone-PROMO1-D.jpg)> </div> <div class="gridproducts showdual"
-            data=QC35WRLSIISL+QC35WRLSIIBK></div>
-        <div class="gridproducts showdual" data=SNDSPRTIEPRA+SNDSPRTWLSCT></div>
-        <div class="gridproducts largeProduct mobile2" data=BOSEFRMALTSM style=background-image:url(/images/promos/bose-PROMO1-D.jpg)> </div> 
-        <div class="gridproducts showdual"data=BOSEFRAMERON+BOSEFRAMEALT></div>
+        <div class="svg promo_box_100" data="backtogrid-apple2020-9.svg"></div>
+        <div class="gridproducts" data="MTXN2LL-A+MU0Y2LL-A+MU0T2LL-A+MTXQ2LL-A+MTXR2LL-A+MTEL2LL-A"></div>
+        <div class="svg promo_box_50"  data="BOSE-PROMO1-D2.svg"></div>
+        <div class="svg promo_box_50" data="SONY-PROMO1-D2.svg"></div>
+        <div class="gridproducts" data="SNDSPRTWLSNC+SNDSPRTWLSFR+SNDSPRTWLSOR"></div>
+        <div class="gridproducts largeProduct mobile0"data="QC35WRLSIIBK" style="background-image:url(/images/promos/headphone-PROMO1-D.jpg)"></div>
+        <div class="gridproducts showdual"data="QC35WRLSIISL+QC35WRLSIIBK+SNDSPRTIEPRA+SNDSPRTWLSCT"></div>
+        <div class="gridproducts largeProduct mobile2"data="BOSEFRMALTSM" style="background-image:url(/images/promos/bose-PROMO1-D.jpg)"></div>
+        <div class="gridproducts showdual"data="BOSEFRAMERON+BOSEFRAMEALT"></div>
     </div>
 
 
-    <div id="section3" class="pg_internal" data="Small Appliances">
-        <div class="gridproducts largeProduct mobile1" data=EB24DSXB1
-            style=background-image:url(/images/promos/coffee-PROMO1-D.jpg)> </div> <div class=gridproducts
-            data=MRCOFFEEDR5+KELITESILVER+K55BLACK></div>
-        <div class=promo_box_50><object data=/images/promos/KITCHENAID-PROMO1-D.svg height=100% type=image/svg+xml
-                width=100%></object></div>
-        <div class=promo_box_50><object data=/images/promos/KITCHENAID-PROMO2-D.svg height=100% type=image/svg+xml
-                width=100%></object></div>
-        <div class=gridproducts data=KSM150PSBM+KSM150PSBW+KSM150PSBY></div>
-        <div class=gridproducts data=KHM512BY+KHM512ER+KHM512GU></div>
+    <div id="section3" class="pg_internal" data="Small Appliances"> 
+        <div class="gridproducts largeProduct mobile1" data="EB24DSXB1" style="background-image:url(/images/promos/coffee-PROMO1-D.jpg)"></div>
+        <div class="gridproducts" data="MRCOFFEEDR5+KELITESILVER+K55BLACK"></div>
+        <div class="svg promo_box_50" data="KITCHENAID-PROMO1-D.svg"></div>
+        <div class="svg promo_box_50" data="KITCHENAID-PROMO2-D.svg"></div>
+        <div class="gridproducts" data="KSM150PSBM+KSM150PSBW+KSM150PSBY+KHM512BY+KHM512ER+KHM512GU"></div>
     </div>
-
+    
+    
     <div id="section4" class="pg_internal" data="Vacuums">
-        <div class=promo_box_100><object data=/images/promos/dyson-PROMO2-D.svg height=100% type=image/svg+xml
-                width=100%></object></div>
-        <div class=gridproducts data=227635-01+227633-01+206033-01></div>
-        <div class=gridproducts data=NV42+NV501+AZ1002></div>
-        <div class=gridproducts data=2488+1825+2043></div>
+        <div class="svg promo_box_100" data="dyson-PROMO2-D.svg"></div>
+        <div class="gridproducts" data="227635-01+227633-01+206033-01+NV42+NV501+AZ1002+2488+1825+2043"></div>
     </div>
-
 
     <div id="section5" class="pg_internal" data="Computers">
-        <div class=promo_box_100>
-            <object data=/images/promos/backtogrid-computer2020-9.svg type=image/svg+xml  height="100%"width="100%"> </object>
-        </div> 
-        <div class=gridproducts data=X540BA-RB94+F510QA-DS99+PH3155272RG></div>
-        <div class=gridproducts data=UM-FX1AA-001+UM-JX1AA-001+XB271HU-IPS></div>
-
-<!--
-        <div class="gridproducts largeProduct priceonly" data="UM-JX1AA-001" > 
-            <object data=/images/promos/backtogrid-computer2020-DY.svg type=image/svg+xml  height="100%"width="100%"> </object>
-        </div> 
-
-    -->
-
-
-        <div class=promo_box_100>
-            <object data=/images/promos/surface_promo-d.svg type=image/svg+xml  height="100%"width="100%"> </object>
-        </div> 
-
-        <div class=gridproducts data=LAK-00001+LAH-00001+LAM-00001></div>
-
-        <div class=promo_box_100><object data=/images/promos/brother-printer-promo-d.svg height=100% width=100%
-            type=image/svg+xml> </object> </div>
-
-        <div class=gridproducts data=OJPRO7740WF+OJPRO9015+MFC-L2710DW></div>
+        <div class="svg promo_box_100" data="backtogrid-computer2020-9.svg"></div>
+        <div class="gridproducts" data="X540BA-RB94+F510QA-DS99+PH3155272RG"></div>
+        <div class="gridproducts" data="UM-FX1AA-001+UM-JX1AA-001+XB271HU-IPS"></div>
+        <div class="svg promo_box_100" data="surface_promo-d.svg"></div>
+        <div class="gridproducts" data="LAK-00001+LAH-00001+LAM-00001"></div>
+        <div class="svg promo_box_100" data="brother-printer-promo-d2.svg"></div>
+        <div class="gridproducts" data="OJPRO7740WF+OJPRO9015+MFC-L2710DW"></div>
     </div>
 
 
     <div id="section6" class="pg_internal" data="Mattresses">
-
-        <div class="gridproducts largeProduct mobile3" data=525139-61K style=background-image:url(/images/promos/mattress-PROMO1-D.jpg)> </div> 
-        <div class=gridproducts data=525138-61K+525137-61K+525139-61K></div>
-        <div class=gridproducts data=523350-61K+523354-61K+523351-61K></div>
-        <div class=gridproducts data=526740-61K+526123-61K+523322-51Q></div>
-        <div class=promo_box_33>
-            <object data=/images/promos/MATT-PROMO1-D2.svg height=100% type=image/svg+xml width=100%></object>
-        </div>
-        <div class=promo_box_33>
-            <object data=/images/promos/MATT-PROMO2-D2.svg height=100% type=image/svg+xml width=100%></object>
-        </div>
-        <div class=promo_box_33>
-            <object data=/images/promos/MATT-PROMO3-D2.svg height=100% type=image/svg+xml width=100%></object>
-        </div>
-        <div class=gridproducts data=41761WH-K+41764GR-K+41763BR-K></div>
+        <div class="gridproducts largeProduct mobile3" data="525139-61K" style="background-image:url(/images/promos/mattress-PROMO1-D.jpg)"></div>
+        <div class="gridproducts" data="525138-61K+525137-61K+525139-61K+523347-51Q+523354-61K+523351-61K+526740-61K+526123-61K+523322-51Q"></div>
+        <div class="svg promo_box_33" data="MATT-PROMO1-D2.svg"></div>
+        <div class="svg promo_box_33" data="MATT-PROMO2-D2.svg"></div>
+        <div class="svg promo_box_33" data="MATT-PROMO3-D2.svg"></div>
+        <div class="gridproducts" data="41761WH-K+41764GR-K+41763BR-K"></div> 
     </div>
 
+    <div id="section7" class="pg_internal" data="Video Games">
+        <div class="gridproducts largeProduct mobile4" data="CYV-00411" style="background-image:url(/images/promos/vidgame-PROMO1-D.jpg)"></div>
+        <div class="gridproducts" data="234-01020+CYV-00411+FMP-00130"></div>
+        <div class="svg promo_box_100" data="vidgame-PROMO2-D.svg"></div>
+        <div class=gridproducts data="3003868+3003346+3004132"></div>
+        <div class="svg promo_box_100" data="vidgame-PROMO3-D.svg"></div>
+        <div class="gridproducts showdual" data="HADSKABAA+HADSKAAAA"></div>
+        <div class="svg promo_box_100" data="vidgame-PROMO4-D.svg"></div>
+        <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
 
+    </div>
 
 </div>
 
 </div>
 
 </div>
+
 
 
 <script type="text/javascript">
-   
     window.addEventListener('DOMContentLoaded', function() {(function($) {
+        mynum = 0;mypage = 1;mywhatiam = 0;highlight_button = 0;
+
+        function swipedetect(a,b){var c,d,f,g,h,i,j,k=a,l=b||function(){};k.addEventListener("touchstart",function(a){var b=a.changedTouches[0];c="none",dist=0,d=b.pageX,f=b.pageY,j=new Date().getTime(),a.preventDefault()},!1),k.addEventListener("touchmove",function(a){a.preventDefault()},!1),k.addEventListener("touchend",function(a){var b=a.changedTouches[0];g=b.pageX-d,h=b.pageY-f,i=new Date().getTime()-j,i<=200&&(Math.abs(g)>=5&&Math.abs(h)<=100?c=0>g?"left":"right":Math.abs(h)>=5&&Math.abs(g)<=100&&(c=0>h?"up":"down")),l(c),a.preventDefault()},!1)}
+
 
         !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function i(){var b,c,d={height:f.innerHeight,width:f.innerWidth};return d.height||(b=e.compatMode,(b||!a.support.boxModel)&&(c="CSS1Compat"===b?g:e.body,d={height:c.clientHeight,width:c.clientWidth})),d}function j(){return{top:f.pageYOffset||g.scrollTop||e.body.scrollTop,left:f.pageXOffset||g.scrollLeft||e.body.scrollLeft}}function k(){if(b.length){var e=0,f=a.map(b,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(c=c||i(),d=d||j();e<b.length;e++)if(a.contains(g,f[e][0])){var h=a(f[e]),k={height:h[0].offsetHeight,width:h[0].offsetWidth},l=h.offset(),m=h.data("inview");if(!d||!c)return;l.top+k.height>d.top&&l.top<d.top+c.height&&l.left+k.width>d.left&&l.left<d.left+c.width?m||h.data("inview",!0).trigger("inview",[!0]):m&&h.data("inview",!1).trigger("inview",[!1])}}}var c,d,h,b=[],e=document,f=window,g=e.documentElement;a.event.special.inview={add:function(c){b.push({data:c,$element:a(this),element:this}),!h&&b.length&&(h=setInterval(k,250))},remove:function(a){for(var c=0;c<b.length;c++){var d=b[c];if(d.element===this&&d.data.guid===a.guid){b.splice(c,1);break}}b.length||(clearInterval(h),h=null)}},a(f).on("scroll resize scrollstop",function(){c=d=null}),!g.addEventListener&&g.attachEvent&&g.attachEvent("onfocusin",function(){d=null})});
 
-        jQuery.fn.scrollTo = function(elem, speed) { 
-    $(this).animate({
-        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
-    }, speed == undefined ? 1000 : speed); 
-    return this; 
+        jQuery.fn.scrollTo = function(elem, speed) {$(this).animate({scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top}, speed === undefined ? 1000 : speed);return this;};
+
+
+
+ $.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) {
+        return null;
+    }
+    return decodeURI(results[1]) || 0;
 }
 
-        mynum = 0;
-        mypage = 1;
-        mywhatiam = 0;
-        $('.wrapper-d').prepend('<div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
+function replaceUrlParam(paramName, paramValue) {
+    var url = window.location.href;
+
+    if (paramValue == null) {
+        paramValue = '';
+    }
+
+    var pattern = new RegExp('\\b(' + paramName + '=).*?(&|#|$)');
+    if (url.search(pattern) >= 0) {
+        return url.replace(pattern, '$1' + paramValue + '$2');
+    }
+
+    url = url.replace(/[?#]$/, '');
+    return url + (url.indexOf('?') > 0 ? '&' : '?') + paramName + '=' + paramValue;
+}
+
+let searchParams = new URLSearchParams(window.location.search)
+
+
+        $('.wrapper-d').prepend('<div id="menu_block41" class="down_arr"><img id="back_to_top" src="/images/promos/back_to_top-2-2020.svg" style="width: 100%;"><img id="up_arrow" src="/images/promos/up_arr_logo-2-2020.svg" style="width: 100%;"><img id="down_arrow" src="/images/promos/down_arr_logo-2-2020.svg" style="width: 100%;"></div><div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
         $('.pg_internal').each(function() {
-       $('<div id="'+$(this).attr('data')+'" class="whatiam">'+$(this).attr('data')+'</div>').insertBefore(this)
-       $(this).attr('pagenum' , mypage)
-       page_position = $(this).position()
-       $(this).attr('pos' , parseInt(page_position.top) - 216)
+        $('<div id="'+$(this).attr('id').replace('section' , 'listview')+'" class="whatiam">'+$(this).attr('data')+'</div>').insertBefore(this)
+
        mypage++
        })
        var menu_l = (100 / $('.submenu-d').length) + '%'
        $('#myPageCount').text($('.pg_internal').length)
        $('.submenu-d').each(function() {
-           $(this).append('<img title="'+$(this).attr('title')+'" src="'+$(this).attr('img')+'" /><div class="submenu_title">'+$(this).attr('title')+'</div>').width(menu_l).wrap('<a class="scrollLink" data="#'+$(this).attr('data')+'"></a>').delay(700).fadeIn();
+           $(this).append('<img title="'+$(this).attr('title')+'" src="'+$(this).attr('img')+'" /><div class="submenu_title">'+$(this).attr('title')+'</div>').width(menu_l).wrap('<a class="scrollLink" data="'+$(this).attr('page')+'"></a>').delay(700).fadeIn();
        })
+
+
+
+function show_arrow_now() {
+    $(".down_arr").animate({"right":"0px"})
+}
 
 
 $('.scrollLink').on('click', function() {
@@ -1200,40 +1298,81 @@ $('.scrollLink').on('click', function() {
         return false;
     } else {
         $(this).addClass('imclicked');
+        $(window).scrollTop(0);
         $('.scrollLink').not(this).removeClass('imclicked');
-         whereimgoing2 = $(this).attr('data')
-        $(".pages").scrollTo(whereimgoing2);
-        return false;
+        whereimgoing = '#listview'+$(this).attr('data');
+        $(".pages").delay(500).scrollTo(whereimgoing);
+        what_page_amI_on = parseInt($(this).attr('data')) + 1
+        $("#whatPageImOn").delay(800).text(what_page_amI_on)
     }
+
 })
 
-           $(window).resize(function () {
-               menu_l = (100 / $('.submenu-d').length) + '%'
-               $('.submenu-d').width(menu_l)
-           });
-           var d = new Date();
-var month = new Array();
-month[0] = "January";
-month[1] = "February";
+
+
+
+ $(window).resize(function () {
+       $(".submenu-d").width((100 / $(".submenu-d").length) + "%");
+  });
+
+
+
+var d = new Date();
+var month = [];
+month[0] = "Jan.";
+month[1] = "Feb.";
 month[2] = "March";
 month[3] = "April";
 month[4] = "May";
 month[5] = "June";
 month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+month[7] = "Aug.";
+month[8] = "Sept.";
+month[9] = "Oct.";
+month[10] = "Nov.";
+month[11] = "Dec.";
+
+var day = [];
+day[1] = "1<span class='t_make_small'>st</span>";
+day[2] = "2<span class='t_make_small'>nd</span>";
+day[3] = "3<span class='t_make_small'>rd</span>";
+day[4] = "4<span class='t_make_small'>th</span>";
+day[5] = "5<span class='t_make_small'>th</span>";
+day[6] = "6<span class='t_make_small'>th</span>";
+day[7] = "7<span class='t_make_small'>th</span>";
+day[8] = "8<span class='t_make_small'>th</span>";
+day[9] = "9<span class='t_make_small'>th</span>";
+day[10] = "10<span class='t_make_small'>th</span>";
+day[11] = "11<span class='t_make_small'>th</span>";
+day[12] = "12<span class='t_make_small'>th</span>";
+day[13] = "13<span class='t_make_small'>th</span>";
+day[14] = "14<span class='t_make_small'>th</span>";
+day[15] = "15<span class='t_make_small'>th</span>";
+day[16] = "16<span class='t_make_small'>th</span>";
+day[17] = "17<span class='t_make_small'>th</span>";
+day[18] = "18<span class='t_make_small'>th</span>";
+day[19] = "19<span class='t_make_small'>th</span>";
+day[20] = "20<span class='t_make_small'>th</span>";
+day[21] = "21<span class='t_make_small'>st</span>";
+day[22] = "22<span class='t_make_small'>nd</span>";
+day[23] = "23<span class='t_make_small'>rd</span>";
+day[24] = "24<span class='t_make_small'>th</span>";
+day[25] = "25<span class='t_make_small'>th</span>";
+day[26] = "26<span class='t_make_small'>th</span>";
+day[27] = "27<span class='t_make_small'>th</span>";
+day[28] = "28<span class='t_make_small'>th</span>";
+day[29] = "29<span class='t_make_small'>th</span>";
+day[30] = "30<span class='t_make_small'>th</span>";
+day[31] = "31<span class='t_make_small'>st</span>";
+
 var n = month[d.getMonth()];
-var j = d.getDate()
-var yr =d.getYear()
-$('.myname-d').append(' '+n+ ' '+j+ ' ' +'2020')
+var j = day[d.getDate()];
+var yr = d.getYear();
+$(".myname-d").append(" " + n + " " + j + " " + "2020");
 
 
 function contentloader(append_Products) {
        url_to_products = $(append_Products).attr('data');
-   
        fetch('/catalog/flyerContent.jsp?'+url_to_products)
                .then(function (response) {
                    return response.json();
@@ -1282,37 +1421,30 @@ function contentloader(append_Products) {
                color4 = res[4];
                color4= '<li class="variant"><img  data="/'+res[4].slice(0,-4)+'" src="/images/promos/'+color4.slice(-3).toLowerCase()+'.jpg"></li>';
            }
-   
-             
-   
                    div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>';
-                   
-   
-   
+                  
                    if(data[i].regularPriceStrikeThrough === 'Yes') {
                    Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
                    div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
                    }
-   
-                  
-   
                    if(data[i].showPriceInCartOnly === 'Yes') {
                    div.innerHTML = '<div class="product-tile"><div class="product-image"><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="prodImage"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'" ></a></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div></div><a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" class="product-name">'+data[i].displayName+'</a><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="priceMsg">Price Lower in Cart<span class="pcr-tooltip">?<small class="tooltip-body top center"> Why don&rsquo;t we show the price? As a retailer, we set our prices independently, but in some cases the manufacturer does not allow us to show our price until you take further action. Don&rsquo;t worry; you&rsquo;ll be able to see the price in checkout before you decide to buy it.</small></span></div></div></div></div>'
                    }
-   
                    if(data[i].showPriceInCheckoutOnly === 'Yes') {
                    Savings = parseFloat(data[i].listPrice) - parseFloat(data[i].salePrice)
                    div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"><img src="'+data[i].detailImg+'" alt="'+data[i].displayName+'"></div><div class="product-details-container"><div class="product-variant-container"><ul class="variantList">'+color0+color1+color2+color3+'</ul></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].salePrice+'</div><div class="originalPrice">reg $'+data[i].listPrice+'</div><div class="savings">Save $'+Savings.toFixed(2)+'!</div></div></div></div></a>';
                    }
-   
-   
                    if($(append_Products).hasClass('largeProduct')) {
-                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"></div><div class="product-details-container"><div  class="product-variant-container"></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>'  
+                   div.innerHTML = '<a href="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'"><div class="product-tile"><div class="BUYNOW">Buy Now</div><div class="product-image"></div><div class="product-details-container"><div  class="product-variant-container"></div><span class="livehtmld" style="color:#333">'+data[i].displayName+'</span><div class="model"><span class="hide-for-large-up">Model:&nbsp;</span>'+data[i].sku+'</div><div class="ratings-container"><div data-bv-show="inline_rating" data-bv-productid="'+data[i].sku+'" data-bv-redirect-url="'+data[i].seoLink.replace('https://www.pcrichard.com' , '')+'" data-bv-ready="true"></div></div><div id="price-container-'+data[i].sku+'" class="price-container plp-price-container-js" href="'+data[i].seoLink+'"><div class="salePrice">$'+data[i].listPrice+'</div></div></div></div></a>'
                    }
    
                $(append_Products).append(div)
                $('.livehtmld').each(function() {$(this).html($(this).text())})
-           
+               $('.gridproducts li a').on('click' , function() {
+    pageloader = $(this).parent('li').parent('div').parent('div').attr('id').replace('section' , '');
+    var newurldd = replaceUrlParam('page', pageloader);
+    history.pushState(null, null, newurldd);;
+})
                
            }
        }
@@ -1321,26 +1453,97 @@ function contentloader(append_Products) {
    }
 
 
-   $('.pg_internal').on('inview', function (event, visible) {
-   whatSection = $(this).attr('id').replace('#' , '');  
-   $(this).addClass('content_loaded');
-   $(this).children('.gridproducts').not('.imloaded').on('inview', function (event, visible) {
-     if (visible == true) {
-        $('#whatPageImOn').text($(this).parent('.pg_internal').attr('pagenum'))
-       if($(this).hasClass( "imloaded" )) {
-           return false;
-       } else {
-       $(this).attr('id' , 'list'+mynum)
-       
-      mynum++
-      append_Products = '#'+$(this).attr('id');
-      contentloader(append_Products);
-      $(this).addClass('imloaded')
-       }
-   
+
+   $(".whatiam").on("inview", function (event, visible) {
+    what_page_amI_on = parseInt($(this).attr('id').replace('listview' , '')) + 1
+    $("#whatPageImOn").delay(800).text(what_page_amI_on)
+   })
+
+
+
+
+$(".pg_internal").on("inview", function (event, visible) {
+    whatSection = $(this).attr("id").replace("#" , "");
+    whereimgoing = $(this).attr('id');
+    //$('#'+whereimgoing).not('.content_loaded').html(eval(whereimgoing.replace('#' , '')));
+    $('#'+whereimgoing).children('.svg').not('.completed').each(function() {
+    $(this).html('<object data=/images/promos/'+$(this).attr('data')+' height=100% type=image/svg+xml width=100%></object>');
+    $(this).addClass('completed');
+    })
+    $(this).addClass("content_loaded");
+  
+$('#'+whereimgoing).children('.gridproducts').not('.imloaded').each(function() {
+    $(this).attr("id" , "list"+mynum);
+    mynum++;
+    append_Products = "#"+$(this).attr("id");
+    contentloader(append_Products);
+    $(this).addClass("imloaded");
+})
+
+   })
+
+   $(window).scroll(function (event) {
+       var scroll = $(window).scrollTop();
+     if(scroll > 170) {
+         $(".topmenu").addClass("topmenu-scroll");
+         $(".flyer_title").addClass("flyer_title-scroll");
+         $(".scrollLink").removeClass("imclicked");
+     } else {
+         $(".topmenu").removeClass("topmenu-scroll");
+         $(".flyer_title").removeClass("flyer_title-scroll");
      }
+   });
+
+
+
+
+$("#down_arrow").on("touchstart click" , function() {
+       $(".pages").animate({scrollTop: "+=600px"});
+       $('.scrollLink').removeClass('imclicked');
+})
+
+$("#up_arrow").on("touchstart click" , function() {
+       $(".pages").animate({scrollTop: "-=600px"});
+       $('.scrollLink').removeClass('imclicked');
    })
-   })
+
+$('#back_to_top').on('touchstart click' , function() {
+    $(".pages").animate({scrollTop: "0px"} , 500);  
+})
+
+
+var el1 = document.getElementById('up_arrow')
+var el2 = document.getElementById('down_arrow')
+
+
+
+swipedetect(el1, function(swipedir){
+    if (swipedir =='left')
+    $('#menu_block41').animate({"right":"0"})
+})
+
+swipedetect(el1, function(swipedir){
+    if (swipedir =='right')
+    $('#menu_block41').animate({"right":"-40px"})
+})
+swipedetect(el2, function(swipedir){
+    if (swipedir =='left')
+    $('#menu_block41').animate({"right":"0"})
+})
+
+swipedetect(el2, function(swipedir){
+    if (swipedir =='right')
+    $('#menu_block41').animate({"right":"-40px"})
+})
+
+if (searchParams.has('page') === true) {
+   whereimgoing = '#listview'+$.urlParam('page')
+   $(".pages").scrollTo(whereimgoing);
+} else {
+    window.history.pushState("object or string", "Weekly Circular", document.location + "?page=0");
+}
+
+setTimeout(show_arrow_now , 2500)
 
     })(jQuery);});
      
