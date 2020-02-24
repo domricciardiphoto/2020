@@ -103,6 +103,9 @@ background-color: #034694
     min-height: 190px;
 }
 
+.topmenu {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
 @media (width: 768px) {
 
@@ -423,7 +426,21 @@ min-height: 380px;
 <script type="text/Javascript" >
 
 window.addEventListener('DOMContentLoaded', function() {(function($) {
-    mynum = 0;mypage = 1;mywhatiam = 0;highlight_button = 0;
+    mynum = 0;mypage = 1;mywhatiam = 0;highlight_button = 0; 
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+    if ( isIE ) {
+        console.log('im IE or lower')
+    } else {
+        console.log('not IE');
+        $.getScript( "/images/promos/gopageURL2020.js", function( data, textStatus, jqxhr ) {
+  console.log( data ); // Data returned
+  console.log( textStatus ); // Success
+  console.log( jqxhr.status ); // 200
+  console.log( "Load was performed." );
+});
+
+    }
 
     function swipedetect(a,b){var c,d,f,g,h,i,j,k=a,l=b||function(){};k.addEventListener("touchstart",function(a){var b=a.changedTouches[0];c="none",dist=0,d=b.pageX,f=b.pageY,j=new Date().getTime(),a.preventDefault()},!1),k.addEventListener("touchmove",function(a){a.preventDefault()},!1),k.addEventListener("touchend",function(a){var b=a.changedTouches[0];g=b.pageX-d,h=b.pageY-f,i=new Date().getTime()-j,i<=200&&(Math.abs(g)>=5&&Math.abs(h)<=100?c=0>g?"left":"right":Math.abs(h)>=5&&Math.abs(g)<=100&&(c=0>h?"up":"down")),l(c),a.preventDefault()},!1)}
 
@@ -438,9 +455,21 @@ window.addEventListener('DOMContentLoaded', function() {(function($) {
 
     !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function i(){var b,c,d={height:f.innerHeight,width:f.innerWidth};return d.height||(b=e.compatMode,(b||!a.support.boxModel)&&(c="CSS1Compat"===b?g:e.body,d={height:c.clientHeight,width:c.clientWidth})),d}function j(){return{top:f.pageYOffset||g.scrollTop||e.body.scrollTop,left:f.pageXOffset||g.scrollLeft||e.body.scrollLeft}}function k(){if(b.length){var e=0,f=a.map(b,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(c=c||i(),d=d||j();e<b.length;e++)if(a.contains(g,f[e][0])){var h=a(f[e]),k={height:h[0].offsetHeight,width:h[0].offsetWidth},l=h.offset(),m=h.data("inview");if(!d||!c)return;l.top+k.height>d.top&&l.top<d.top+c.height&&l.left+k.width>d.left&&l.left<d.left+c.width?m||h.data("inview",!0).trigger("inview",[!0]):m&&h.data("inview",!1).trigger("inview",[!1])}}}var c,d,h,b=[],e=document,f=window,g=e.documentElement;a.event.special.inview={add:function(c){b.push({data:c,$element:a(this),element:this}),!h&&b.length&&(h=setInterval(k,250))},remove:function(a){for(var c=0;c<b.length;c++){var d=b[c];if(d.element===this&&d.data.guid===a.guid){b.splice(c,1);break}}b.length||(clearInterval(h),h=null)}},a(f).on("scroll resize scrollstop",function(){c=d=null}),!g.addEventListener&&g.attachEvent&&g.attachEvent("onfocusin",function(){d=null})});
 
+    
+
     jQuery.fn.scrollTo = function(elem, speed) {$(this).animate({scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top}, speed === undefined ? 1000 : speed);return this;};
 
+
+/*
+if ( isIE ) {
+    console.log('Im IE 11 or less')
+ return false;
+} else {
+    console.log('Not IE')
     $.urlParam=function(a){var b=new RegExp("[?&]"+a+"=([^&#]*)").exec(window.location.href);return null==b?null:decodeURI(b[1])||0};function replaceUrlParam(a,b){var c=window.location.href;null==b&&(b="");var d=new RegExp("\\b("+a+"=).*?(&|#|$)");return 0<=c.search(d)?c.replace(d,"$1"+b+"$2"):(c=c.replace(/[?#]$/,""),c+(0<c.indexOf("?")?"&":"?")+a+"="+b)}let searchParams=new URLSearchParams(window.location.search);
+}
+
+*/
 
 
     $('.wrapper-d').prepend('<div id="menu_block41" class="down_arr"><img id="back_to_top" src="/images/promos/back_to_top-2-2020.svg" style="width: 100%;"><img id="up_arrow" src="/images/promos/up_arr_logo-2-2020.svg" style="width: 100%;"><img id="down_arrow" src="/images/promos/down_arr_logo-2-2020.svg" style="width: 100%;"></div><div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
@@ -556,6 +585,9 @@ $(".myname-d").append(" " + n + " " + j + " " + "2020");
 
 function contentloader(append_Products) {
    url_to_products = $(append_Products).attr('data');
+   
+   
+  /*---------------------------------------------------- 
    fetch('/catalog/flyerContent.jsp?'+url_to_products)
            .then(function (response) {
                return response.json();
@@ -566,6 +598,19 @@ function contentloader(append_Products) {
            .catch(function (err) {
                console.log('error: ' + err);
            });
+
+*/
+
+$.ajax({
+  url: '/catalog/flyerContent.jsp?'+url_to_products +'+end',
+  context: "application/json",
+  dataType: "json"
+}).done(function(data) {
+    //appendData(data);
+    setTimeout(function() {appendData(data);} , 500)
+});
+
+
 
            function appendData(data) {
        for (var i = 0; i < data.length; i++) {

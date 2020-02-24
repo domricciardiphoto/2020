@@ -1,430 +1,9 @@
 
-<link type="text/css" rel="stylesheet" href="/images/promos/gridflyer-beta1.css"> 
-
-
-<style type="text/css">
-/* micro fixes append to full css file in beta 2 */
-.pg_internal {
-    min-height: 2200px;
-}
-.gridproducts li:nth-child(6) .product-tile , .gridproducts li:nth-child(9) .product-tile , .gridproducts li:nth-child(12) .product-tile {
-    border-right: none;
-}
-.flyer_title {
-background-color: #034694
-}
-
-.internal_menu {
-    width: 90%;
-    position: relative;
-    float: left;
-    overflow: auto;
-    max-width: 1100px;
-}
-
-.internal_overflow {
-    position: relative;
-    float: left;
-    width: 180%;
-}
-
-.myarrowsd {
-    width: 5%;
-    float: left;
-    position: relative;
-    background-size: cover;
-    min-height: 50px;
-    max-height: 10%;
-    
-    cursor: pointer;
-
-}
-
-.myarrowsd img {
-    padding: 0;
-    width: 65%;
-    padding-top: 38%;
-    display: none;
-}
-
-
-.myarrowsd img:hover {
-    padding-top: 34%;
-}
-.submenu-d {
-    max-width: 130px;
-
-}
-
-
-.internal_menu::-webkit-scrollbar {
-  display: none;
-}
-
-.whatiam {
-    border-top: 1px solid #034694;
-}
-
-.pg_internal .promo_box_100, .pg_internal .promo_box_50, .pg_internal .promo_box_33 {
-    max-height: 600px;
-    overflow: hidden;
-}
-
-.promo_box_100 object, .promo_box_33 object, .promo_box_50 object {
-    max-height: 600px;
-}
-
-.see_me_at_the_bottom {
-    position: fixed;
-    bottom: 20px;
-    min-height: 80px;
-    width: 100%;
-    z-index: 9999;
-    max-width: 1175px;
-    pointer-events: none;
-    opacity: 1;
-    display: none;
-}
-
-.gridproducts {
-    padding-top: 3px;
-}
-
-#down_arrow2 {
-    width: 50%;
-    max-height: 70px;
-    float: right;
-    max-width: 60px;
-    pointer-events: all;
-    margin-right: -70px;
-}
-
-.pg_internal .promo_box_50 {
-    min-height: 190px;
-}
-
-
-@media (width: 768px) {
-
-    .pg_internal .promo_box_50 {
-    min-height: 150px;
-}
-
-.package .product-tile {
-min-height: 380px;
-}
-
-.product-details-container {
-    font-size: .775em;
-}
-
-.variantList {
-    display: none;
-}
-.submenu_title {
-    font-size: .665em;
-}
-
-.BUYNOW {
-    width: 80px;
-    height: 30px;
-    line-height: 30px;
-    font-size: .8em;
-}
-.package {
-    min-height: 320px;
-}
-
-.package .product-image {
-    width: 100%;
-}
-
-.package .product-image img {
-    margin-left: 0%;
-    width: 100%;
-    max-height: 220px;
-}
-
-.package .product-tile {
-    min-height: 320px;
-}
-.product-tile {
-    min-height: 330px;
-}
-
-.pg_internal .promo_box_100 {
-    min-height: initial;
-}
-
-.submenu-d {
-    max-width: 80px;
-}
-
-
-}
-
-@media (max-width: 767px) {
-    .submenu-d {
-    max-width: 60px;
-}
-.myarrowsd {
-    width: 10%;
-}
-.myarrowsd img:hover {
-    padding-top: 38%;
-}
-
-.myarrowsd img {
-    padding: 0;
-    width: 65%;
-    padding-top: 68%;
-}
-.internal_menu {
-    width: 80%;
-}
-.pg_internal .promo_box_100 {
-    margin-bottom: 0px;
-}
-
-.pg_internal .promo_box_100, .pg_internal .promo_box_50, .pg_internal .promo_box_33 {
-    max-height: 600px;
-    overflow: hidden;
-    min-height: auto;
-}
-
-#down_arrow2 {
-    margin-right: 10px;
-}
-
-}
-
-/* ---------------typical sizes refrain from main main file--------------------- */
-
-#section0 {
-    min-height: 2881px;
-}
-#section1 {
-    min-height: 2116px;
-}
-#section2 {
-    min-height: 3461px;
-}
-#section3 {
-    min-height: 1718px; 
-}
-#section4 {
-    min-height: 1573px; 
-}
-#section5 {
-    min-height: 2563px;
-}
-#section6 {
-    min-height: 2247px;  
-}
-#section7 {
-    min-height: 3111px;   
-}
-
-
-
-</style>
-
-
-<style type="text/css">
-   
-    @media (max-width: 767px) {
-    .mobile0 {
-        background-image: url('/images/promos/bose-PROMO1-M.jpg') !important;
-    }
-    .mobile1 {
-        background-image: url('/images/promos/coffee-PROMO1-M.jpg') !important;
-    }
-    .mobile2 {
-        background-image: url('/images/promos/glasses-PROMO1-M.jpg') !important;
-    }
-    .mobile3 {
-        background-image: url('/images/promos/mattress-PROMO1-M.jpg') !important;
-    }
-
-    .mobile4 {
-        background-image: url('/images/promos/vidgame-PROMO1-M.jpg') !important;
-    }
-
-    }
-    </style>
-
-
-
-
-<div class="wrapper-d">
-
-    <div class="topmenu">
-        <div class="myarrowsd left_menu"><img src="/images/promos/l2_arr_logo-2-2020.svg"/></div>
-
-        <div class="internal_menu">
-            <div class="internal_overflow">
-        <div class="submenu-d" title="Appliances" img="/images/promos/kitchen-appliances.png" page="0"></div>
-        <div class="submenu-d" title="Television" img="/images/promos/tv-cat-redesign1-200x228.jpg" page="1"></div>
-        <div class="submenu-d" title="Electronics" img="/images/promos/portable-audio.png" page="2"></div>
-        <div class="submenu-d" title="Small Appliances" img="/images/promos/small-appliances.png" page="3"></div>
-        <div class="submenu-d" title="Vacuums" img="/images/promos/vacuums.png" page="4"></div>
-        <div class="submenu-d" title="Computers" img="/images/promos/comp-tab-item3-200x228.jpg" page="5"> </div>
-        <div class="submenu-d" title="Mattresses" img="/images/promos/mattress-bedset-200x228.jpg" page="6"></div>
-        <div class="submenu-d" title="Video Games" img="/images/product/detail/D_3003346.jpg" page="7"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="8"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="9"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="10"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="11"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="12"></div>
-        <div class="submenu-d" title="Im Extra" img="/images/promos/portable-audio.png" page="13"></div>
-
-    </div>
-
-         </div>
-
-         <div class="myarrowsd right_menu"><img src="/images/promos/r2_arr_logo-2-2020.svg"/></div>
-    </div>
-
-
-    <div class="flyer_content">
-        <div id="pages" class="pages">
-
-
-            
-
-            <div id="section0" class="pg_internal" data="Appliances">
-                <div class="svg promo_box_100" data="backtogrid-appliances2020-9.svg"></div>
-                <div class="gridproducts package" data="KBFN502EBS+KDTM704EBS+KFGD500EBS+KMHC319ESS"></div>
-
-
-
-                <div class="svg promo_box_100" style="min-height:66px" data="backtogrid-promo1.svg"></div>
-                <div class="svg promo_box_33" data="backtogrid-midpromo.svg"></div>
-                <div class="gridproducts singleproduct" data="DW80R9950UG"></div>
-                <div class="gridproducts singleproduct" data="DW80R9950UT"></div>
-                <div class="gridproducts" data="DW80R5060US+GDT655SSJSS+FGID2466QF"></div>
-                <div class="svg promo_box_100" style="background-color:#000" data="SAMSUNG-PROMO1-D.svg"></div>
-                <div class="gridproducts" style="background-color:#000" data="WRF954CIHV+WRF954CIHZ+WRF954CIHW+WRF954CIHB+WRV986FDEM+WRF550CDHZ">
-                </div>
-
-            </div>
-
-            <div id="section1" class="pg_internal" data="Television" >
-                <div class="svg promo_box_100" data="SAMSUNG-4K-PROMO2-D-1.svg"></div>
-                <div class="gridproducts" data="QN55Q900+QN65Q900+QN75Q900"></div>
-
-
-                <div class="svg promo_box_50" data="LG1-promo-2020-1.svg"></div>
-                <div class="svg promo_box_50" data="LG2-promo-2020-1.svg"></div>
-                <div class="svg promo_box_50" data="LG3-promo-2020-1.svg"></div>
-                <div class="svg promo_box_50" data="LG4-promo-2020-1.svg"></div>
-
-                <div class="gridproducts" data="OLED55C9+OLED65C9+OLED77C9"></div>
-
-                <div class="svg promo_box_100" data="SONY-PROMO-D1-2.svg"></div>
-                <div class="gridproducts showdual" data="XBR98Z9G+XBR85Z9G"></div>
-
-                <div class="svg promo_box_100" data="backtogrid-qled-S2020-D3.svg"></div>
-                <div class="gridproducts showdual" data="QN55Q80+QN65Q80"></div>
-            </div>
-
-
-            <div id="section2" class="pg_internal" data="Electronics" >
-                <div class="svg promo_box_100" data="backtogrid-apple2020-9.svg"></div>
-                <div class="gridproducts" data="MTXN2LL-A+MU0Y2LL-A+MU0T2LL-A+MTXQ2LL-A+MTXR2LL-A+MTEL2LL-A"></div>
-                <div class="svg promo_box_50" data="BOSE-PROMO1-D2.svg"></div>
-                <div class="svg promo_box_50" data="SONY-PROMO1-D2.svg"></div>
-                <div class="gridproducts" data="SNDSPRTWLSNC+SNDSPRTWLSFR+SNDSPRTWLSOR"></div>
-                <div class="gridproducts largeProduct mobile0" data="QC35WRLSIIBK" style="background-image:url(/images/promos/headphone-PROMO1-D.jpg)"></div>
-                <div class="gridproducts showdual" style="background-color: #000;" data="QC35WRLSIISL+QC35WRLSIIBK+SNDSPRTIEPRA+SNDSPRTWLSCT"></div>
-                <div class="gridproducts largeProduct mobile2" data="BOSEFRMALTSM"
-                    style="background-image:url(/images/promos/bose-PROMO1-D.jpg)"></div>
-                <div class="gridproducts showdual" data="BOSEFRAMERON+BOSEFRAMEALT"></div>
-            </div>
-
-
-            <div id="section3" class="pg_internal" data="Small Appliances" >
-                <div class="gridproducts largeProduct mobile1" data="EB24DSXB1"
-                    style="background-image:url(/images/promos/coffee-PROMO1-D.jpg)"></div>
-                <div class="gridproducts" data="MRCOFFEEDR5+KELITESILVER+K55BLACK"></div>
-                <div class="svg promo_box_50" data="KITCHENAID-PROMO1-D.svg"></div>
-                <div class="svg promo_box_50" data="KITCHENAID-PROMO2-D.svg"></div>
-                <div class="gridproducts" data="KSM150PSBM+KSM150PSBW+KSM150PSBY+KHM512BY+KHM512ER+KHM512GU"></div>
-            </div>
-
-
-            <div id="section4" class="pg_internal" data="Vacuums" >
-                <div class="svg promo_box_100" data="dyson-PROMO2-D.svg"></div>
-                <div class="gridproducts" data="227635-01+227633-01+206033-01+NV42+NV501+AZ1002+2488+1825+2043"></div>
-            </div>
-
-            <div id="section5" class="pg_internal" data="Computers" >
-                <div class="svg promo_box_100" data="backtogrid-computer2020-9.svg"></div>
-                <div class="gridproducts" style="background-color: #333;" data="X540BA-RB94+F510QA-DS99+PH3155272RG"></div>
-                <div class="gridproducts" data="UM-FX1AA-001+UM-JX1AA-001+XB271HU-IPS"></div>
-                <div class="svg promo_box_100" data="surface_promo-d.svg"></div>
-                <div class="gridproducts" style="background-color: #333;" data="LAK-00001+LAH-00001+LAM-00001"></div>
-                <div class="svg promo_box_100" data="brother-printer-promo-d2.svg"></div>
-                <div class="gridproducts" data="OJPRO7740WF+OJPRO9015+MFC-L2710DW+RAX120100NAS+RAX80-100NAS+XR700-100NAS+BYVG0020BBK+BYNN0010BBK+BS4B0020BBK"></div>
-            </div>
-
-
-            <div id="section6" class="pg_internal" data="Mattresses" >
-                <div class="gridproducts largeProduct mobile3" data="525139-61K" style="background-image:url(/images/promos/mattress-PROMO1-D.jpg)"></div>
-                <div class="gridproducts" data="525138-61K+525137-61K+525139-61K+523347-51Q+523354-61K+523351-61K+526740-61K+526123-61K+523322-51Q"></div>
-                <div class="svg promo_box_33" data="MATT-PROMO1-D2.svg"></div>
-                <div class="svg promo_box_33" data="MATT-PROMO2-D2.svg"></div>
-                <div class="svg promo_box_33" data="MATT-PROMO3-D2.svg"></div>
-                <div class="gridproducts" data="41761WH-K+41764GR-K+41763BR-K"></div>
-            </div>
-
-            <div id="section7" class="pg_internal" data="Video Games" >
-                <div class="gridproducts largeProduct mobile4" data="CYV-00411" style="background-image:url(/images/promos/vidgame-PROMO1-D.jpg)"></div>
-                <div class="gridproducts" data="234-01020+CYV-00411+FMP-00130"></div>
-                <div class="svg promo_box_100" data="vidgame-PROMO2-D.svg"></div>
-                <div class=gridproducts data="3003868+3003346+3004132"></div>
-                <div class="svg promo_box_100" data="vidgame-PROMO3-D.svg"></div>
-                <div class="gridproducts showdual" data="HADSKABAA+HADSKAAAA"></div>
-                <div class="svg promo_box_100" data="vidgame-PROMO4-D.svg"></div>
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-
-
-            <div id="section8"  class="pg_internal" data="Im Extra" >
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-            <div id="section9"  class="pg_internal" data="Im Extra" >
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-            <div id="section10" class="pg_internal" data="Im Extra">
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-            <div id="section11" class="pg_internal" data="Im Extra" >
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-            <div id="section12" class="pg_internal" data="Im Extra" >
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-            <div id="section13" class="pg_internal" data="Im Extra" >
-                <div class=gridproducts data="HDHSYAZAA+HDHSGAZAA+HDHSBAZAA"></div>
-            </div>
-
-
-
-
-        </div>
-        <div class="see_me_at_the_bottom"><img id="down_arrow2" src="/images/promos/down_arr_logo-2-2020.svg"></div>
-
-    </div>
-
-</div>
-
-
-<script type="text/Javascript" >
-
 window.addEventListener('DOMContentLoaded', function() {(function($) {
-    mynum = 0;mypage = 1;mywhatiam = 0;highlight_button = 0;
-
+    mynum = 0;mypage = 1;mywhatiam = 0;highlight_button = 0; 
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+   
     function swipedetect(a,b){var c,d,f,g,h,i,j,k=a,l=b||function(){};k.addEventListener("touchstart",function(a){var b=a.changedTouches[0];c="none",dist=0,d=b.pageX,f=b.pageY,j=new Date().getTime(),a.preventDefault()},!1),k.addEventListener("touchmove",function(a){a.preventDefault()},!1),k.addEventListener("touchend",function(a){var b=a.changedTouches[0];g=b.pageX-d,h=b.pageY-f,i=new Date().getTime()-j,i<=200&&(Math.abs(g)>=5&&Math.abs(h)<=100?c=0>g?"left":"right":Math.abs(h)>=5&&Math.abs(g)<=100&&(c=0>h?"up":"down")),l(c),a.preventDefault()},!1)}
 
     $.fn.scrollStopped = function(callback) {
@@ -438,12 +17,12 @@ window.addEventListener('DOMContentLoaded', function() {(function($) {
 
     !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function i(){var b,c,d={height:f.innerHeight,width:f.innerWidth};return d.height||(b=e.compatMode,(b||!a.support.boxModel)&&(c="CSS1Compat"===b?g:e.body,d={height:c.clientHeight,width:c.clientWidth})),d}function j(){return{top:f.pageYOffset||g.scrollTop||e.body.scrollTop,left:f.pageXOffset||g.scrollLeft||e.body.scrollLeft}}function k(){if(b.length){var e=0,f=a.map(b,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(c=c||i(),d=d||j();e<b.length;e++)if(a.contains(g,f[e][0])){var h=a(f[e]),k={height:h[0].offsetHeight,width:h[0].offsetWidth},l=h.offset(),m=h.data("inview");if(!d||!c)return;l.top+k.height>d.top&&l.top<d.top+c.height&&l.left+k.width>d.left&&l.left<d.left+c.width?m||h.data("inview",!0).trigger("inview",[!0]):m&&h.data("inview",!1).trigger("inview",[!1])}}}var c,d,h,b=[],e=document,f=window,g=e.documentElement;a.event.special.inview={add:function(c){b.push({data:c,$element:a(this),element:this}),!h&&b.length&&(h=setInterval(k,250))},remove:function(a){for(var c=0;c<b.length;c++){var d=b[c];if(d.element===this&&d.data.guid===a.guid){b.splice(c,1);break}}b.length||(clearInterval(h),h=null)}},a(f).on("scroll resize scrollstop",function(){c=d=null}),!g.addEventListener&&g.attachEvent&&g.attachEvent("onfocusin",function(){d=null})});
 
-    jQuery.fn.scrollTo = function(elem, speed) {$(this).animate({scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top}, speed === undefined ? 1000 : speed);return this;};
+    
 
-    $.urlParam=function(a){var b=new RegExp("[?&]"+a+"=([^&#]*)").exec(window.location.href);return null==b?null:decodeURI(b[1])||0};function replaceUrlParam(a,b){var c=window.location.href;null==b&&(b="");var d=new RegExp("\\b("+a+"=).*?(&|#|$)");return 0<=c.search(d)?c.replace(d,"$1"+b+"$2"):(c=c.replace(/[?#]$/,""),c+(0<c.indexOf("?")?"&":"?")+a+"="+b)}let searchParams=new URLSearchParams(window.location.search);
+    jQuery.fn.scrollTo = function(elem, speed) {$(this).animate({scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top}, speed === undefined ? 1500 : speed);return this;};
 
 
-    $('.wrapper-d').prepend('<div id="menu_block41" class="down_arr"><img id="back_to_top" src="/images/promos/back_to_top-2-2020.svg" style="width: 100%;"><img id="up_arrow" src="/images/promos/up_arr_logo-2-2020.svg" style="width: 100%;"><img id="down_arrow" src="/images/promos/down_arr_logo-2-2020.svg" style="width: 100%;"></div><div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
+    $('.wrapper-d').prepend('<div class="flyer_title"><div class="myname-d"> Weekly Circular for</div><div class="mypage-d">Page <span id="whatPageImOn">1</span> of <span id="myPageCount"></span></div></div>');
     $('.pg_internal').each(function() {
     $('<div id="'+$(this).attr('id').replace('section' , 'listview')+'" class="whatiam">'+$(this).attr('data')+'</div>').insertBefore(this)
 
@@ -556,7 +135,19 @@ $(".myname-d").append(" " + n + " " + j + " " + "2020");
 
 function contentloader(append_Products) {
    url_to_products = $(append_Products).attr('data');
-   fetch('/catalog/flyerContent.jsp?'+url_to_products)
+   
+   
+if ( isIE ) {
+$.ajax({
+  url: '/catalog/flyerContent.jsp?'+url_to_products +'+end',
+  context: "application/json",
+  dataType: "json"
+}).done(function(data) {
+    //appendData(data);
+    setTimeout(function() {appendData(data);} , 300)
+});
+} else {
+    fetch('/catalog/flyerContent.jsp?'+url_to_products)
            .then(function (response) {
                return response.json();
            })
@@ -566,6 +157,9 @@ function contentloader(append_Products) {
            .catch(function (err) {
                console.log('error: ' + err);
            });
+}
+
+
 
            function appendData(data) {
        for (var i = 0; i < data.length; i++) {
@@ -688,55 +282,26 @@ $("#down_arrow2").on("touchstart click" , function() {
 })
 
 
-//------------------------------------------------
-
-$("#down_arrow").on("touchstart click" , function() {
-   $(".pages").animate({scrollTop: "+=600px"});
-   $('.scrollLink').removeClass('imclicked');
-})
 
 
-$("#up_arrow").on("touchstart click" , function() {
-   $(".pages").animate({scrollTop: "-=600px"});
-   $('.scrollLink').removeClass('imclicked');
-})
 
-$('#back_to_top').on('touchstart click' , function() {
-$(".pages").animate({scrollTop: "0px"} , 500);  
-})
+if(isIE) {
+    return false;
+} else {
 
-
-var el1 = document.getElementById('up_arrow')
-var el2 = document.getElementById('down_arrow')
-
-swipedetect(el1, function(swipedir){
-if (swipedir =='left')
-$('#menu_block41').animate({"right":"0"})
-})
-
-swipedetect(el1, function(swipedir){
-if (swipedir =='right')
-$('#menu_block41').animate({"right":"-40px"})
-})
-swipedetect(el2, function(swipedir){
-if (swipedir =='left')
-$('#menu_block41').animate({"right":"0"})
-})
-
-swipedetect(el2, function(swipedir){
-if (swipedir =='right')
-$('#menu_block41').animate({"right":"-40px"})
-})
-
-//--------------------------------------------------
-
-
-if (searchParams.has('page') === true) {
+    $.getScript( "/images/promos/gopageURL2020.js", function( data, textStatus, jqxhr ) {
+        if (window.location.search.has('page') === true) {
 whereimgoing = '#listview'+$.urlParam('page')
 $(".pages").scrollTo(whereimgoing);
 } else {
 window.history.pushState("object or string", "Weekly Circular", document.location + "?page=0");
 }
+
+});
+
+}
+
+
 
 setTimeout(show_arrow_now , 2000)
 
@@ -765,8 +330,3 @@ $('.pages').scrollStopped(function(ev){
 
 
 })(jQuery);});
-
-</script>
-
-
-
