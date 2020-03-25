@@ -1,0 +1,8 @@
+
+
+
+<div style="width:100%; max-width:1200px;margin-left:auto;margin-right:auto;font-family:arial;float:left">
+<div style="width:100%;color:#a71c21; border:1px solid #a71c21;Text-align:center;margin-bottom:10px;font-size:120%;font-weight:600;padding-top:5px;padding-bottom:5px">Inportant Message for New Jersey Customers</div>
+<div style="width:100%;font-weight:600;font-size:0.875em;line-height:18px">As a precaution to mitigate potential exposure to COVID-19, the Governor for the State of New Jersey has ordered the closure of all "non-essential retail businesses". In accordance with this order, our stores across the state will be closed starting on Saturday, March 21st at 7pm.
+    Please call <a href="tel:1-800-727-1909">1-800-727-1909</a> for any assistance you require for purchases, deliveries, installations or service calls. We apologize for this inconvenience, and we sincerely thank you for your understanding.</div>
+</div>
