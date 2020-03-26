@@ -3,6 +3,5 @@
 </style>
 
 <div class="wrapper-dd">
-    <div class="title-message">Essential products arriving daily!</div>
+    <div class="title-message">Shipments of essential products arriving daily!</div>
 </div>
-

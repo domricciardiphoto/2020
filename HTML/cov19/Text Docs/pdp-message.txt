@@ -1,0 +1,130 @@
+<style type="text/css">
+
+ .make_red {
+     color: #ff0000;
+ }
+    
+
+ .topmessage {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 0%;
+    border: 5px solid #ff0000;
+    float: left;
+    background-color: #ff0000;
+    max-width: 1200px;
+} 
+    
+    .icon-l {
+        width: 5%;
+        float: left;
+        background-color: #ff0000;
+        min-height: 50px;
+        margin-right: 1%;
+        MARGIN-LEFT: 1%;
+    }
+
+    .icon-l svg {
+        width: 100%;
+    }
+
+    .text-r {
+        width: 93%;
+        float: left;
+        background-color: #fff;
+        PADDING: 1%;
+    }
+
+
+    .boldbull {
+        font-weight: bold;
+    }
+
+    .smallerbull {
+        font-size: 0.875em;
+    }
+
+    .topmessage  ul {
+        list-style: disc;
+        margin-left: 2%;
+    }
+
+    .topmessage  ul li {
+        font-size: 0.875em; 
+    }
+
+
+    
+        @media (max-width: 767px) {
+        
+            .topmessage {
+                font-size: 0.875em;
+            }
+
+            .smallerbull {
+                font-size: 0.875em;
+                line-height: 25px;
+            }
+
+
+            .icon-l {
+                width: 10%;
+                float: left;
+                background-color: #ff0000;
+                min-height: 50px;
+                margin-right: 2%;
+                MARGIN-LEFT: 1%;
+            }
+
+            .text-r {
+                width: 87%;
+                float: left;
+                background-color: #fff;
+                PADDING: 1%;
+            }
+
+
+            .topmessage ul {
+                list-style: disc;
+                margin-left: 5%;
+            }
+            .mhide {
+                display: none;
+            }
+    
+        }
+    
+  
+
+ 
+
+  
+    </style>
+
+<div class="topmessage">
+
+<div class="icon-l">
+    <!--?xml version="1.0" encoding="utf-8"?-->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{fill:#FFF}.st1{fill:#D0171F}</style><g> <circle class="st0" cx="50" cy="51" r="47"></circle> </g> <rect x="45.5" y="38" class="st1" width="10" height="45"></rect> <circle class="st1" cx="50.5" cy="27.17" r="7.5"></circle> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+</div>
+<div class="text-r">
+    <span class="make_red">Currently offering &quot;Contactless&quot; Doorstep Delivery</span><br><br>
+
+<span class="make_red">Contactless Doorstep Delivery includes:</span><br>
+<ul>
+    <li>Unboxing of product</li>
+    <li>Delivery to your doorstep or an open garage</li>
+</ul>
+
+<span class="make_red">Optinal Haul-away &amp; Recycling for additinal charge<br class="mhide"> (details in checkout)</span><br>
+<ul>
+    <li>Product must be outside the home</li>
+    <li>Please wipe surfaces using sanitizing wipes or solution</li>
+</ul>
+
+
+</div>
+
+    </div>

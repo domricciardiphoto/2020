@@ -1,0 +1,150 @@
+.message_container {
+    width: 100%;
+    float: left;
+}
+    
+    .wrapper-dd1  ,.wrapper-dd2 {
+        width: 100%;
+        position: relative;
+        max-width: 1170px;
+        background-color: #b03137;
+        font-weight: 600;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .wrapper-dd2 {
+        background-color: #fff;
+        width: 98%;
+        margin-left: 1%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+
+.title-content1, .title-message1 {
+    font-size: 1em;
+    line-height: inherit;
+    color: #d0191e;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #fff;
+    font-weight: 600;
+    width: 90%;
+    float: right;
+}
+
+    .call-i {
+        width: 10%;
+        float: left;
+        min-height: 40px;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+
+    .title-message1 {
+        font-size: 2.4em;
+        color: #d0191e;
+        margin-bottom: 10px
+    }
+
+    .cta-m {
+        width: 100%;
+        margin-bottom: 15px;
+        float: left
+    }
+
+    .cta_but-d {
+        float: right;
+        background-color: #d0171f;
+        color: #fff;
+        padding: 7px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px
+    }
+
+    .call-i {
+        width: 10%;
+        float: left
+    }
+
+    .call-i svg {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 13%
+    }
+
+    .content-line {
+        background-color: #d0171f;
+        float: left;
+        border: 3px solid #d0171f
+    }
+
+    .wrapper-dd2 ul {
+        list-style: disc;
+        margin-left: 5%;
+    }
+
+    .make_red {
+    color: #b03137;  
+    }
+
+    @media (max-width:768px) {
+        .wrapper-dd1 {
+            width: 98%
+        }
+
+        .cta-m {
+            width: 80%;
+            margin-bottom: 15px;
+            float: right;
+            margin-left: 10%;
+            font-size: .875em;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 10px
+        }
+    }
+
+    @media (max-width:767px) {
+
+        .title-content1, .title-message1 {
+            font-size: 1em;
+            color: #d0191e;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            background-color: #fff;
+            padding-left: 2%;
+            line-height: 16px;
+            width: 88%;
+            margin-right: 0px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .call-i {
+            width: 10%;
+            float: left;
+            min-height: 40px;
+            background-size: 100%;
+            margin-top: 10px;
+        }
+
+        .call-i svg {
+            width: 70%;
+            margin-top: 0
+        }
+
+        .make_red {
+            color: #b03137;
+            font-size: 0.875em;
+        }
+
+        .prod-details-page .shipping-options li {
+            margin-left: 20px;
+            list-style-type: disc;
+            font-size: 0.875em;
+        }
+    }
