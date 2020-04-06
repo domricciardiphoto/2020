@@ -1,0 +1,54 @@
+
+<head>
+<style type="text/css">
+    
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3em;
+}
+.container {
+    height: auto;
+    min-height: 100%;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+
+@keyframes moveIT{
+    from{transform: translateX(0px);}
+    to{transform: translateX(-200px);}
+}
+
+#video-bkgrnd {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1000;
+overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Deliverying Web Video Experiences</h1>
+<h2>The basic code</h2>
+<p>Here is an example of the source attribute:</p>
+
+<video id="video-bkgrnd" muted autoplay loop poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" width="100%"  >
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm"/>
+    <track src="/ddd"/>
+Your browser doesnt`t support the HTML5 video element.
+</video>
+</body>
+
+
+
+
+</div>
