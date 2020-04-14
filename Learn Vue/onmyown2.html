@@ -69,14 +69,30 @@
 
         <div class="component">
             <div class="container">
-                <div v-on:click='isOpen = !isOpen'  class="question">{{question}}</div>
+                <div v-on:click='isOpen0 = !isOpen0' @click.prevent="process"  class="question">{{question}}</div>
             </div>
-            <div id="theX"><span v-if="!isOpen">{{theX}}</span><span v-if="isOpen">{{thedash}}</span></div>
-            <div v-cloak v-show="isOpen" class="answer">{{answer}}</div>
+            <div id="theX"><span v-if="!isOpen0">{{theX}}</span><span v-if="isOpen0">{{thedash}}</span></div>
+            <div v-cloak v-show="isOpen0" class="answer">{{answer}}</div>
+
+
+            <div class="container">
+                <div v-on:click='isOpen1 = !isOpen1' @click.prevent="process1"  class="question">{{question2}}</div>
+            </div>
+            <div id="theX"><span v-if="!isOpen1">{{theX}}</span><span v-if="isOpen1">{{thedash}}</span></div>
+            <div v-cloak v-show="isOpen1" class="answer">{{answer2}}</div>
+
+
+
+
+
+
+
+
+
         </div>
 
         
-
+      
 
 
     </div>
@@ -87,15 +103,29 @@
 
     var quest = 'I am the Question'
 
-    new Vue({
+  vm =  new Vue({
         el: '.component',
         data: {
             question: quest,
+            question2: quest,
             answer: 'I am the answer!!',
+            answer2: 'I am the answer2!!',
             theX: 'X',
             thedash: '-',
-            isOpen: false
+            isOpen0: false,
+            isOpen1: false,
+        },
+
+        methods: {
+         process: function() {
+            vm.isOpen1 = false
+         },
+
+         process1: function() {
+            vm.isOpen0 = false
+         },
         }
+
     
     });
-</script>
+</script>    

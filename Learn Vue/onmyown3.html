@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<style type="text/css">
+
+</style>
+
+<body>
+
+
+    <div id="app"><my-component></my-component></div>
+
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    Vue.component('my-component', {
+
+        data: function () { 
+            return {
+                question: 'I am a question'
+            }
+        },
+        template: '<div claass="question">{{question}}</div>'
+    });
+
+
+    var vm = new Vue({
+        el: "#app"
+
+
+    })
+</script>
