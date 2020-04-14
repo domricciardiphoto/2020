@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style type="text/css">
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app">
+    <div class="container">
+        <div @click="process3">{{mytext1}}</div>
+        <div v-show="submitted" v-cloak >{{mytext2}}</div>
+
+    </div>
+
+    <form>
+        <button @click.prevent="process" type="submit">Submit</button>
+        <button v-show="submitted" @click.prevent="process2" type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script type="text/javascript">
+    vm = new Vue({
+        el: "#app",
+        data: {
+            mytext1: 'taco',
+            mytext2: 'taco2',
+            submitted: false
+        },
+
+        methods: {
+            process: function () {
+                $('div').css('background-color', '#ccc');
+
+            },
+            process2: function () {
+                this.submitted = false
+            },
+            process3: function () {
+                this.submitted = true
+
+            }
+        }
+
+
+    })
+</script>

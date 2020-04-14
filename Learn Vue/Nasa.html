@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<style type="text/css">
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app">
+    <div class="container">
+        <h2 v-show="submitted" v-cloak class="mt-5">{{text1}}</h2>
+        <h2 v-show="submitted" v-cloak class="mt-5">{{text2}}</h2>
+        <h2 v-show="submitted" v-cloak class="mt-5">{{text3}}</h2>
+        <form>
+            <button v-show="!submitted" @click.prevent="process" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    vm = new Vue({
+        el: '#app',
+        data: {
+            email: 'dom@aol.com',
+            submitted: false,
+            text1: 'im 1',
+            text2: 'im 2',
+            text3: 'im 3',
+         
+        },
+        methods: {
+            process: function () {
+                this.submitted = true
+                alert('hi')
+            }
+        }
+
+    })
+
+
+
+    
+</script>

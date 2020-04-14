@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    [v-cloak] {
+        display: none;
+    }
+
+    #app {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        position: relative;
+    }
+
+    .component {
+        width: 100%;
+
+        position: relative;
+        float: left;
+    }
+
+    .question {
+        width: 100%;
+        min-height: 35px;
+        line-height: 35px;
+        float: left;
+
+        color: #000;
+        padding-left: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .answer {
+        width: 100%;
+        min-height: 65px;
+        line-height: 65px;
+        float: left;
+        background-color: #fafafa;
+        color: #333;
+        padding-left: 10px;
+
+    }
+
+    #theX {
+        background-color: #fff;
+        float: right;
+        width: 5%;
+        text-align: center;
+        font-size: 1.5em;
+        color: #000;
+    }
+
+    .container {
+        width: 95%;
+        float: left;
+    }
+</style>
+
+<body>
+
+
+    <div id="app">
+
+
+        <div class="component">
+            <div class="container">
+                <div v-on:click='isOpen = !isOpen'  class="question">{{question}}</div>
+            </div>
+            <div id="theX"><span v-if="!isOpen">{{theX}}</span><span v-if="isOpen">{{thedash}}</span></div>
+            <div v-cloak v-show="isOpen" class="answer">{{answer}}</div>
+        </div>
+
+        
+
+
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+
+    var quest = 'I am the Question'
+
+    new Vue({
+        el: '.component',
+        data: {
+            question: quest,
+            answer: 'I am the answer!!',
+            theX: 'X',
+            thedash: '-',
+            isOpen: false
+        }
+    
+    });
+</script>

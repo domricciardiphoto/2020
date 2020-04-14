@@ -1,0 +1,21 @@
+
+
+atg-image
+/images/content/fish-tacos-feat.jpg
+
+atg-excerpt  
+Create tasty Boneless Pork Loin burgers with a Weber Grill and this tasty recipe!
+
+Pizza on the grill is always a wow factor, create BBQ Chicken Pizza with a Weber Grill and this tasty recipe!
+
+Create BBQ Bacon Wrapped Meatballs with a Weber Grill and this tasty recipe!
+
+
+index
+yes
+
+placement
+All
+
+model-number
+SSC0586DS
