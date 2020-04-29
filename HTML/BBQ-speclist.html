@@ -1,0 +1,780 @@
+
+
+<style type="text/css">
+    .wrapper-d {
+        width: 98%;
+        max-width: 1200px;
+        font-size: .875em;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        padding-left: 1%;
+        margin-bottom: 10px;
+        position: relative;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .product_cat_title {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        float: left
+    }
+
+    .product_cat_title:first-of-type {
+        margin-top: 0
+    }
+
+    .product_cat_title2 {
+        background-color: #f2f2f2;
+        width: 80%;
+        margin-left: 20%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .product_cat_title3 {
+        background-color: #f2f2f2;
+        width: 37%;
+        margin-left: 20%;
+        margin-right: .8%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .product_cat_title4 {
+        background-color: #f2f2f2;
+        width: 37%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .app {
+        width: 100%;
+        position: relative;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        background-color: #fff;
+        padding-bottom: 10px;
+        padding-top: 3px;
+        background-color: #f2f2f2
+    }
+
+    .app_scroll {
+        width: max-content;
+        position: relative;
+        float: left
+    }
+
+    .content-d {
+        width: 78%;
+        float: left;
+        overflow: auto
+    }
+
+    .product_block {
+        width: 15%;
+        float: left;
+        background-color: #f2f2f2;
+        max-height: 600px;
+        max-width: 150px;
+        min-width: 150px
+    }
+
+    .product_image {
+        width: 94%;
+        background-color: #fff;
+        margin-left: 3%;
+        margin-top: 10px
+    }
+
+    .product_image img {
+        width: 80%;
+        margin-left: 10%
+    }
+
+    .product_specs {
+        width: 94%;
+        margin-left: 3%;
+        background-color: #fff;
+        min-height: 420px;
+        margin-bottom: 20px
+    }
+
+    .product_specs ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        padding-left: 5px
+    }
+
+    .product_specs ul li {
+        padding: 2px;
+        margin-bottom: 8px;
+        font-size: 63%;
+        min-height: 17px;
+        line-height: 15px;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        padding-right: 3px;
+        padding-left: 0;
+        list-style: none
+    }
+
+    .product_specs ul li:last-of-type {
+        border: none
+    }
+
+    .product_specs ul li:first-of-type {
+        background-color: brown;
+        color: #fff;
+        margin-top: 10px;
+        padding-left: 10px
+    }
+
+    .product_specs ul li:first-of-type {
+        margin-top: 8px
+    }
+
+    .matrix-d {
+        width: 20%;
+        float: left;
+        max-height: 600px;
+        max-width: 240px
+    }
+
+    .matrix-d .product_specs {
+        background-color: transparent;
+        text-align: right
+    }
+
+    .matrix-d .product_image {
+        background-color: transparent;
+        width: 59.2%;
+        min-width: 142px
+    }
+
+    .matrix-d .product_image img {
+        opacity: 0
+    }
+
+    .standardline .product_block .product_specs {
+        min-height: 360px !important;
+        max-height: 360px
+    }
+
+    .product_cat_title sup {
+        font-size: 0.6em;
+    }
+
+    .topheader {
+       margin-bottom: 0px; 
+    }
+
+    .topheader h1 {
+        font-weight: 600;
+    }
+
+    @media (max-width:768px) {
+
+        .product_specs ul li {
+            padding: 2px;
+            margin-bottom: 8px;
+            font-size: 50%;
+            min-height: 20px;
+            line-height: 15px;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            padding-right: 3px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+
+    }
+
+    @media (max-width:767px) {
+        .content-d {
+            width: 58%;
+            float: left;
+            overflow: auto;
+            min-height: 800px
+        }
+
+        .product_specs ul li {
+            min-height: 40px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1em;
+        }
+
+        .matrix-d {
+            min-height: 630px
+        }
+
+        .product_specs ul li:last-of-type {
+            line-height: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .product_specs ul li:first-of-type {
+            margin-top: 8px;
+            line-height: 30px;
+            font-size: .7em;
+            font-weight: 500;
+        }
+
+        .wrapper-d {
+            width: 100%;
+            padding: 0;
+            POSITION: relative;
+            float: left;
+            margin-top: 10px
+        }
+
+        .product_cat_title {
+            padding-left: 10px
+        }
+
+        .standardline {
+            min-height: 600px;
+            max-height: 640px
+        }
+
+        .matrix-d .product_specs ul li:last-of-type {
+            line-height: normal
+        }
+
+        .matrix-d .product_specs li {
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .standardline .product_block .product_specs {
+            max-height: 550px;
+            background-color: #fff;
+        }
+
+        
+
+    }
+</style>
+<div class="wrapper-d" itemscope="" itemtype="http://schema.org/LocalBusiness">
+<meta itemprop="url" content="https://www.pcrichard.com/compare-weber-grills" />  
+    <div class="product_cat_title topheader"><h1>Compare Weber Grills</h1></div>  
+    <div class="product_cat_title">GENESIS &reg; II</div>
+    <div class="app standardline">
+        <div class="product_block matrix-d">
+            <div class="product_image"> <img class="lazy"  data-src="/images/product/detail/D_47510001.jpg" data-srcset="/images/product/detail/D_47510001.jpg"title="Grill Specs" alt="Grill Specs"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+            <div class="product_specs">
+                <ul>
+                    <li>GRILLING SYSTEM</li>
+                    <li>Stainless Steel Flavorizer &reg; bars</li>
+                    <li>Porcelain-Enameled, Cast Iron Cooking</li>
+                    <li>7mm Stainless Steel Cooking Grates</li>
+                    <li>9mm Stainless Steel Cooking Grates</li>
+                    <li>Side burner</li>
+                    <li>Sear Station &reg;</li>
+                    <li>Handle light</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-d">
+            <div class="app_scroll">
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_47510001.jpg" data-srcset="/images/product/detail/D_47510001.jpg" title="E-310" alt="E-310"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-310</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-310-3-Burner-Propane-Gas-Grill-Black/61011001.pcrp"
+                                    title="Black (LP) 61011001"> Black (LP) 61011001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-310-3-Burner-Natural-Gas-Grill-Black/66011001.pcrp"
+                                    title="Black (NG) 66011001"> Black (NG) 66011001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_61001001.jpg" data-srcset="/images/product/detail/D_61001001.jpg"title="S-310" alt="S-310"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>S-310</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-S-310-3-Burner-Propane-Gas-Grill/61001001.pcrp"
+                                    title="SS (LP) 61001001">SS (LP) 61001001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-S-310-3-Burner-Natural-Gas-Grill/66001001.pcrp"
+                                    title="SS (NG) 66001001">SS (NG) 66001001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_61015001.jpg" data-srcset="/images/product/detail/D_61015001.jpg"title="E-315" alt="E-315"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-315</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-315-3-Burner-Propane-Gas-Grill-Black/61015001.pcrp"
+                                    title="Black (LP) 61015001">Black (LP) 61015001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-315-3-Burner-Natural-Gas-Grill-Black/66015001.pcrp"
+                                    title="Black (NG) 66015001">Black (NG) 66015001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-315-3-Burner-Propane-Gas-Grill-Copper/61025001.pcrp"
+                                    title="Copper(LP) 61025001">Copper(LP) 61025001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_66012001.jpg" data-srcset="/images/product/detail/D_66012001.jpg"title="E-330" alt="E-330"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-330</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-330-3-Burner-Propane-Gas-Grill-Black/61012001.pcrp"
+                                    title="Black (LP) 61012001"> Black (LP) 61012001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-330-3-Burner-Natural-Gas-Grill-Black/66012001.pcrp"
+                                    title="Black (NG) 66012001">Black (NG) 66012001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-330-3-Burner-Propane-Gas-Grill-Copper/61022001.pcrp"
+                                    title="Copper(LP) 61022001"> Copper(LP) 61022001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-330-3-Burner-Propane-Gas-Grill-Crimson/61032001.pcrp"
+                                    title="Crimson(LP) 61032001"> Crimson(LP) 61032001</a><br><a
+                                    href="/Weber/Weber-Genesis-II-E-330-3-Burner-Propane-Gas-Grill-Gray/61052001.pcrp"
+                                    title="Smoke(LP) 61052001"> Smoke(LP) 61052001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_61016001.jpg" data-srcset="/images/product/detail/D_61016001.jpg"title="E-335" alt="E-335"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-335</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-335-3-Burner-Propane-Gas-Grill-Black/61016001.pcrp"
+                                    title="Black (LP) 61016001"> Black (LP) 61016001</a> <br><a
+                                    href="/Weber/Weber-Genesis-II-E-335-3-Burner-Natural-Gas-Grill-Black/66016001.pcrp"
+                                    title="Black (NG) 66016001"> Black (NG) 66016001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_61006001.jpg" data-srcset="/images/product/detail/D_61006001.jpg"title="S-335" alt="S-335"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li>S-335</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-S-335-3-Burner-Propane-Gas-Grill-Stainless-Steel/61006001.pcrp"
+                                    title="SS (LP) 61006001"> SS (LP) 61006001</a> <br><a
+                                    href="/Weber/Weber-Genesis-II-S-335-3-Burner-Natural-Gas-Grill-Stainless-Steel/66006001.pcrp"
+                                    title="SS (NG) 66006001"> SS (NG) 66006001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_47510001.jpg" data-srcset="/images/product/detail/D_47510001.jpg"title="E-410" alt="E-410"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-410</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-410-4-Burner-Propane-Gas-Grill-Black/62011001.pcrp"
+                                    title="Black (LP) 62011001"> Black (LP) 62011001</a><br><a
+                                    href="/Weber/Weber-Genesis-E-410-4-Burner-Natural-Gas-Grill-Black/67011001.pcrp"
+                                    title="Black (NG) 67011001"> Black (NG) 67011001</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_67016001.jpg" data-srcset="/images/product/detail/D_67016001.jpg"title="E-435" alt="E-435"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-435</h2></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-E-435-4-Burner-Propane-Gas-Grill-Black/62016001.pcrp"
+                                    title="Black (LP) 62016001"> Black (LP) 62016001</a> <br><a
+                                    href="/Weber/Weber-Genesis-II-E-435-4-Burner-Natural-Gas-Grill-Black/67016001.pcrp"
+                                    title="Black (NG) 67016001">Black (NG) 67016001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_67006001.jpg" data-srcset="/images/product/detail/D_67006001.jpg"title="S-435" alt="S-435"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>S-435</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Genesis-II-S-435-4-Burner-Propane-Gas-Grill-Stainless-Steel/62006001.pcrp"
+                                    title="SS (LP) 62006001">SS (LP) 62006001</a> <br><a
+                                    href="/Weber/Weber-Genesis-II-S-435-4-Burner-Natural-Gas-Grill-Stainless-Steel/67006001.pcrp"
+                                    title="SS (NG) 67006001">SS (NG) 67006001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_cat_title">SPIRIT &reg;</div>
+    <div class="app">
+        <div class="product_block matrix-d">
+            <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7271001.jpg" data-srcset="/images/product/detail/D_7271001.jpg"title="Grill Specs" alt="Grill Specs"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+            <div class="product_specs">
+                <ul>
+                    <li>GRILLING SYSTEM</li>
+                    <li>Porcelain-Enameled Flavorizer &reg; bars</li>
+                    <li>Stainless Steel Flavorizer &reg; bars</li>
+                    <li>Porcelain-Enameled, Cast Iron Cooking</li>
+                    <li>9mm Stainless Steel Cooking Grates</li>
+                    <li>Stainless Steel Burners</li>
+                    <li>Fold down side table(s)</li>
+                    <li>Cabinet for storage</li>
+                    <li>Side burner</li>
+                    <li>Sear Station &reg;</li>
+                    <li>Handle light(s)</li>
+                    <li>iGrill 3 compatible (sold separately)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-d">
+            <div id="standardline" class="app_scroll">
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_44010001.jpg" data-srcset="/images/product/detail/D_44010001.jpg"title="E-210" alt="E-210"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-210</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>1 (left side)</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li> <a href="/Weber/Weber-Spirit-II-E-210-2-Burner-Propane-Gas-Grill-Black/44010001.pcrp"
+                                    title="Black (LP) 44010001"> Black (LP) 44010001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_66011001.jpg" data-srcset="/images/product/detail/D_66011001.jpg"title="E-310" alt="E-310"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-310</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>1 (left side)</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li> <a href="/Weber/Weber-Spirit-II-E-310-3-Burner-Propane-Gas-Grill-Black/45010001.pcrp"
+                                    title="Black (LP) 45010001"> Black (LP) 45010001</a> <br><a
+                                    href="/Weber/Weber-Spirit-E-310-II-3-Burner-Natural-Gas-Grill-Black/49010001.pcrp"
+                                    title="Black (NG) 49010001"> Black (NG) 49010001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_46110001.jpg" data-srcset="/images/product/detail/D_46110001.jpg"title="E-210" alt="E-210"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-310</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>2</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Spirit-E-210-2-Burner-Propane-Gas-Grill/46110001.pcrp"
+                                    title="Black (LP) 46110001"> Black (LP) 46110001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_46510001.jpg" data-srcset="/images/product/detail/D_46510001.jpg"title="E-310" alt="E-310"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-310</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Spirit-E-310-3-Burner-Propane-Gas-Grill/46510001.pcrp"
+                                    title="Black (LP) 46510001"> Black (LP) 46510001</a> <br><a
+                                    href="/Weber/Weber-Spirit-E-310-3-Burner-Natural-Gas-Grill/47510001.pcrp"
+                                    title="Black (NG) 47510001"> Black (NG) 47510001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_46810001.jpg" data-srcset="/images/product/detail/D_46810001.jpg"title="E-330" alt="E-330"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-330</h2></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Spirit-E-330-3-Burner-Propane-Grill-with-Side-Burner/46810001.pcrp"
+                                    title="Black (LP) 46810001">Black (LP) 46810001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_46502001.jpg" data-srcset="/images/product/detail/D_46502001.jpg"title="S-315" alt="S-315"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>S-315</h2></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Spirit-S-315-3-Burner-Propane-Gas-Grill/46502001.pcrp"
+                                    title="SS (LP) 46502001"> SS (LP) 46502001</a> <br><a
+                                    href="/Weber/Weber-Spirit-S-315-3-Burner-Natural-Gas-Grill/47502001.pcrp"
+                                    title="SS (NG) 47502001"> SS (NG) 47502001</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_cat_title">SUMMIT &reg;</div>
+    <div class="app">
+        <div class="product_block matrix-d">
+            <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7271001.jpg" data-srcset="/images/product/detail/D_7271001.jpg"title="Grill Specs" alt="Grill Specs"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+            <div class="product_specs">
+                <ul>
+                    <li>GRILLING SYSTEM</li>
+                    <li>Porcelain-Enameled Flavorizer &reg; bars</li>
+                    <li>Stainless Steel Flavorizer &reg; bars</li>
+                    <li>Porcelain-Enameled, Cast Iron Cooking</li>
+                    <li>9mm Stainless Steel Cooking Grates</li>
+                    <li>Stainless Steel Burners</li>
+                    <li>Fold down side table(s)</li>
+                    <li>Cabinet for storage</li>
+                    <li>Side burner</li>
+                    <li>Sear Station &reg;</li>
+                    <li>Handle light(s)</li>
+                    <li>iGrill 3 compatible (sold separately)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-d">
+            <div class="app_scroll">
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7271001.jpg" data-srcset="/images/product/detail/D_7271001.jpg"title="E-470" alt="E-470"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-470</h2></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Summit-Grill-4-Burner-Propane-Gas-Grill-Black/7171001.pcrp"
+                                    title="7171001"> 7171001</a> <br><a
+                                    href="/Weber/Weber-Summit-E-470-4-Burner-Natural-Gas-Grill-with-Rotisserie-and-Side-Burner/7271001.pcrp"
+                                    title="(NG) 7271001"> (NG) 7271001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7170001.jpg" data-srcset="/images/product/detail/D_7170001.jpg"title="S-470" alt="S-470"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>S-470</h2></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Summit-S-470-4-Burner-Stainless-Steel-Propane-Grill-with-Rotisserie-and-Side-Burner/7170001.pcrp"
+                                    title="7170001"> 7170001</a> <br><a
+                                    href="/Weber/Weber-Summit-S-470-4-Burner-Stainless-Steel-Natural-Gas-Grill-with-Rotisserie-and-Side-Burner/7270001.pcrp"
+                                    title="(NG) 7270001"> (NG) 7270001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7371001.jpg" data-srcset="/images/product/detail/D_7371001.jpg"title="E-670" alt="E-670"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>E-670</h2></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Summit-E-670-6-Burner-Propane-Grill-with-Rotisserie-and-Side-Burner/7371001.pcrp"
+                                    title="7371001"> 7371001</a> <br><a
+                                    href="/Weber/Weber-Summit-E-670-Natural-Gas-Grill/7471001.pcrp"
+                                    title="(NG) 7471001">(NG) 7471001</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy"  itemprop="image" data-src="/images/product/detail/D_7370001.jpg" data-srcset="/images/product/detail/D_7370001.jpg"title="S-670" alt="S-670"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li><h2>S-670</h2></li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li>&check;</li>
+                            <li></li>
+                            <li> <a href="/Weber/Weber-Summit-S-670-6-Burner-Propane-Gas-Grill-with-Rotisserie-and-Side-Burner/7370001.pcrp"
+                                    title="7370001"> 7370001</a><br><a
+                                    href="/Weber/Weber-Summit-S-670-6-Burner-Natural-Gas-Grill-with-Rotisserie-and-Side-Burner/7470001.pcrp"
+                                    title="(NG) 7470001">(NG) 7470001</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
