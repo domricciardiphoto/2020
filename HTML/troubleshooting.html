@@ -1,0 +1,1265 @@
+<style type="text/css">
+    .wrapper {
+        width: 100%;
+        float: left;
+        max-width: 1200px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1%;
+    }
+
+    .app {
+        width: 100%;
+        float: left;
+    }
+
+    .app_sub_cat {
+        width: 20%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .app_sub_cat img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .app_title {
+        width: 100%;
+        float: left;
+        font-size: 1.2em;
+        font-weight: 600;
+        border-bottom: 1px solid #D71920;
+        margin-bottom: 10px;
+    }
+
+    .app_content {
+        width: 100%;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .app_content_inner {
+        width: 100%;
+        float: left;
+        display: none;
+
+    }
+
+    .app_content_inner .app_title {
+        font-size: 2em;
+        border: none;
+        padding: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .app_question_answer {
+        width: 100%;
+        float: left;
+        background-color: #f8f8f8;
+        padding-bottom: 10px;
+        padding-left: 1%;
+    }
+
+    .cat_header {
+        width: 60% !important;
+        float: left;
+        max-width: 1200px;
+        margin-left: 20%;
+
+    }
+
+    .cat_header_images {
+        width: 20%;
+        float: left;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+
+    .cat_header_images img {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cat_header_images .app_title {
+        border: none;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 0.875em;
+        color: #333;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .matrix {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+    .app_question {
+        width: 100%;
+        float: left;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .app_answer {
+        width: 85%;
+        float: left;
+        font-size: 0.875em;
+        line-height: 25px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .app_bold {
+        font-weight: 600;
+    }
+
+    .app_darker {
+        float: left;
+        width: 96%;
+        padding: 2%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .page_title-d {
+        text-align: center;
+        font-size: 2.5em;
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .page_title-d h1 {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    .cat_header_scroll {
+        width: 100% !important;
+        position: fixed;
+        top: 11.1%;
+        z-index: 99999;
+        background-color: #fff;
+        margin: 0%;
+        border-bottom: 2px solid #666;
+        max-width: 1176px;
+    }
+
+    .cat_header_scroll .cat_header_images {
+        width: 10%;
+        float: left;
+        margin-left: 11%;
+        cursor: pointer;
+    }
+
+    .cat_header_scroll .cat_header_images img {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .cat_header_scroll .cat_header_images .app_title {
+        margin-top: 5px;
+        font-size: 0.775em;
+    }
+
+    .app_container {
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+    .plus-minus {
+        float: right;
+        font-size: 1.6em;
+        margin-right: 1%;
+        font-weight: 100;
+    }
+
+    .cat_sub_cat {
+        width: 100%;
+    text-align: center;
+    font-size: 0.875em;
+    }
+
+
+
+    @media (max-width:767px){
+        .cat_header_images {
+            width: 25%;
+            float: left;
+            margin-left: 0%;
+            cursor: pointer;
+        }
+
+        .cat_header {
+            width: 100% !important;
+            margin-left: 0%;
+        }
+
+        .cat_header_images .app_title {
+            border: none;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.7em;
+            color: #333;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .page_title-d {
+            font-size: 2em;
+        }
+
+        .cat_header_scroll {
+            position: fixed;
+            top: 8%;
+            left: 0px;
+            padding-top: 10px;
+        }
+
+        .cat_header_scroll .cat_header_images {
+            width: 25%;
+            float: left;
+            margin-left: 0%;
+            cursor: pointer;
+        }
+
+        .cat_header_scroll .cat_header_images .app_title {
+            margin-top: 5px;
+            font-size: 0.7em;
+        }
+
+        .app_content_inner .app_title {
+            font-size: 1.3em;
+        }
+
+        .app_sub_cat {
+            width: 19%;
+            float: left;
+            cursor: pointer;
+            margin-right: 1%;
+        }
+
+        .cat_sub_cat {
+            font-size: 0.8em;
+        }
+
+    }
+
+
+</style>
+
+
+
+
+<div class="wrapper">
+    <div class="page_title-d">
+        <h1 itemprop="name">Product Troubleshooting</h1>
+    </div>
+
+    <div class="cat_header">
+
+
+       
+            <div class="cat_header_images" data="0" data2="0">
+                <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/refrigerators_freezers-trouble-05-01-13.jpg" data-srcset="/images/promos/refrigerators_freezers-trouble-05-01-13.jpg" title="Refrigerators"
+                    alt="Refrigerators">
+                <div class="app_title">Appliances</div>
+            </div>
+
+      
+     
+            <div class="cat_header_images" data="340" data2="230">
+                <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/laundry-trouble-05-01-13.jpg" data-srcset="/images/promos/laundry-trouble-05-01-13.jpg" title="Laundry" alt="Laundry">
+                <div class="app_title">Laundry</div>
+            </div>
+
+    
+
+    
+            <div class="cat_header_images" data="540" data2="410">
+                <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/air_conditioners-trouble-05-01-13.jpg"data-srcset="/images/promos/air_conditioners-trouble-05-01-13.jpg" title="Air Conditioners"
+                    alt="Air Conditioners">
+                <div class="app_title">Air Conditioners</div>
+            </div>
+       
+
+            <div class="cat_header_images" data="740" data2="580">
+                <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/flat_tvs-trouble-05-01-13.jpg" data-srcset="/images/promos/flat_tvs-trouble-05-01-13.jpg" title="Televisions" alt="Televisions">
+                <div class="app_title">Televisions</div>
+            </div>
+    
+
+
+
+    </div>
+
+
+
+
+<div class="app_container">
+    <div class="app" id="Appliances">
+        <div class="app_title">Appliances</div>
+
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/refrigerators_freezers-trouble-05-01-13.jpg" data-srcset="/images/promos/refrigerators_freezers-trouble-05-01-13.jpg" data="Refrigerators"
+                title="Refrigerators" alt="Refrigerators">
+                <div class="cat_sub_cat">Refrigerators</div>
+        </div>
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/ranges-trouble-05-01-13.jpg" data-srcset="/images/promos/ranges-trouble-05-01-13.jpg" data="Ranges" title="Ranges" alt="Ranges">
+            <div class="cat_sub_cat">Ranges</div>
+        </div>
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/cooktops_wall_ovens-trouble-05-01-13.jpg" data-srcset="/images/promos/cooktops_wall_ovens-trouble-05-01-13.jpg" data="Cooktops"
+                title="Cooktops / Wall Ovens" alt="Cooktops / Wall Ovens">
+                <div class="cat_sub_cat">Cooktops / Wall Ovens</div>
+        </div>
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/microwaves-trouble-05-01-13.jpg" data-srcset="/images/promos/microwaves-trouble-05-01-13.jpg" data="Microwaves" title="Microwaves"
+                alt="Microwaves">
+                <div class="cat_sub_cat">Microwaves</div>
+        </div>
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/Dishwashers-trouble-05-01-13.jpg" data-srcset="/images/promos/Dishwashers-trouble-05-01-13.jpg" data="Dishwashers" title="Dishwashers"
+                alt="Dishwashers">
+                <div class="cat_sub_cat">Dishwashers</div>
+        </div>
+
+
+        <div class="app_content">
+
+            <div class="app_content_inner app_Refrigerators">
+                <div class="app_title">Refrigerators:</div>
+                <div class="app_question_answer">
+
+
+                    <div class="matrix">
+                        <div class="app_question">The dispensed water has bad taste or smell.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Your water filter may need to be changed. We have many water filters
+                            available in-store or online.</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The refrigerator is not making any or enough ice.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Increasing the freezer temperature can speed up ice production.<br>
+                            On new installations: The ice maker does not start immediately after being turned on. It
+                            will take about 24 hours to produce ice cubes after the refrigerator is plugged in.
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">One door pops open when the other door closes.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Air flows between the refrigerator and the freezer, so this will happen
+                            depending on how much load is on the door. Try adding heavier items in the door</div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The doors are not aligning.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">The refrigerator may be out of level. If P.C. Richard &amp; Son did not
+                            make the delivery, please adjust the leveling legs. If we did make the delivery, please
+                            contact your local P.C. Richard &amp; Son Superstore or online customer service.</div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">My food in the refrigerator freezes.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Your temperature control setting may be too high. Please try turning the
+                            temperature control to a lower setting.</div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The ice maker not working<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check for any obstructions if the freezer door is closing all the way.<br>
+                            Is the ice maker plugged in to the refrigerator? Sometimes the wire harness has been moved
+                            by the contents of the freezer.<br>
+                            Check to see if the icemaker arm is in the "on" position.<br>
+                            If all else fails, the water filter may be clogged. Please change water filter. We have many
+                            water filters available in-store or online.<br>
+
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The ice and water dispenser is leaking.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Fill up a pitcher of water from the refrigerator's water dispenser. This
+                            will clear trapped air out of the waterline. This is especially true of new installations.
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The refrigerator or freezer is making too much noise.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Modern refrigerators are more efficient. The compressors run more often,
+                            leading consumers to notice the sound of the compressor more than on older models.<br>
+                            The compressor sound or hum is normal.
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The refrigerator or freezer never shuts off.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Modern refrigerators are designed to run 80-90% of the time. This makes
+                            them more energy efficient because the most energy is used when the compressor first comes
+                            on.</div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The refrigerator or freezer is not cooling.<div class="plus-minus">+</div></div>
+                        <div class="app_answer"> The coils may be dirty. Take off the kick plate on the bottom or top
+                            panel of the refrigerator and either brush or vacuum the condenser coils.<br>
+                            Check the temperature control. It should be to set to 5 or higher.<br>
+                            Check that the vent coming from the freezer to the refrigerator is not blocked and air can
+                            flow freely.
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">The refrigerator or freezer is not getting any power.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Make sure the temperature control switch is to the "on" position.<br>
+                            If the lights do not come on, check if the circuit breaker has tripped.<br>
+                            Check to see the refrigerator is plugged in.
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question"> Ice is not dispensing.<div class="plus-minus">+</div></div>
+                        <div class="app_answer"> Check to see if ice is being made inside. If it is making ice, check
+                            the door to see if there is an obstruction with the flow of ice in the door. If ice is not
+                            being made, please check for a clog in the water filter (if there is one).</div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">Water is not dispensing.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check to see if the water is working in the rest of the house.<br>
+                            If the refrigerator has a water filter, check that it is not clogged. This is the most
+                            common problem.<br>
+                            Make sure a water line is installed to the refrigerator.
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="matrix">
+                        <div class="app_question">There is an odor.<div class="plus-minus">+</div></div>
+
+
+                        <div class="app_answer">Odor can be caused by food or other items stored too long in the
+                            refrigerator. Please try the following solutions:
+                            <div class="app_darker">
+                                <span class="app_bold">1)</span> Remove all the items from refrigerator/freezer and
+                                throw out spoiled food. Leave an open box of baking soda in the refrigerator for a few
+                                days.
+                                Wash all removable parts and the door gasket with mild detergent in warm water. Rinse
+                                well and wipe dry.<br>
+                                <span class="app_bold">2)</span> Wash the interior walls and door liner with a solution
+                                of 1-2 tablespoons of baking soda to 1 quart warm water. Wipe dry.
+                                Leave the door open and let it air out well, with a fan directed inside. Weather
+                                permitting, please also open the windows.<br>
+                                <span class="app_bold">3)</span> Pour several ounces imitation vanilla (not pure
+                                extract) in a shallow saucer, put on a shelf, and let the refrigerator run empty for a
+                                few days.<br>
+                                <span class="app_bold">4)</span> Spread activated charcoal (which is specially treated
+                                to remove odor molecules from air) out in shallow pans and put on shelves. Turn the
+                                refrigerator on with a low setting and, if possible, let it run empty for a few days.
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="app_content_inner app_Ranges">
+                <div class="app_title">Ranges:</div>
+                <div class="app_question_answer">
+
+
+                    <div class="matrix">
+                        <div class="app_question">There is a beeping noise.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Either unplug the appliance or turn off the circuit breaker for 30
+                            seconds.</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The flame is too high or too low.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">If a new installation, is fuel propane or natural gas? Does range
+                            configuration match type of fuel, i.e. if propane, has range been converted? If natural gas
+                            is range configured for natural gas?</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">No power is reaching the range.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check that the circuit breaker hasn't tripped.</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">Self-clean is not locking or unlocking.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Turn off the circuit breaker or unplug the range for 1 minute to reset
+                            the power.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app_content_inner app_Cooktops">
+                <div class="app_title">Cooktops / Wall Ovens:</div>
+                <div class="app_question_answer">
+
+                    <div class="matrix">
+                        <div class="app_question">The flame is too high or too low.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">If a new installation, is fuel propane or natural gas? Does range
+                            configuration match type of fuel, i.e. if propane, has range been converted? If natural gas
+                            is range configured for natural gas?</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is no power to the cooktop.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Please check that the circuit breaker hasn't tripped.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app_content_inner app_Microwaves">
+                <div class="app_title">Microwaves:</div>
+                <div class="app_question_answer">
+                    <div class="matrix">
+                        <div class="app_question">There is no power to the microwave.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check the outlet with another product, that the door is closed all the
+                            way, and that the circuit breaker hasn't tripped.</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app_content_inner app_Dishwashers">
+                <div class="app_title">Dishwashers:</div>
+                <div class="app_question_answer">
+
+                    <div class="matrix">
+                        <div class="app_question">There is a burning smell.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check for plastic items resting against the heating element.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The control panel is not responding.<div class="plus-minus">+</div></div>
+                        <div class="app_answer"> Make sure the dishwasher door is closed all the way and locks.<br>
+                            Turn off the circuit breaker for 30 seconds.
+
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The dishwasher won't fill with water.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            The float switch could be blocked. Check for utensils on bottom of the dishwasher.<br>
+                            Make sure the door is fully closed and latched.<br>
+                            Check that upper rack is fully recessed and not blocking the door.<br>
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Dishes are not coming clean.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">If the machine is equipped with automatic soap dispenser, check to see
+                            that it has soap.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The dishwasher is not draining.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            If you have a garbage disposer, please check that the disposer is clear of any waste. DO NOT
+                            PUT YOUR HANDS IN THE DISPOSER!<br>
+                            Turn on disposer to clear the waste.<br>
+                            Is the sink clogged? It must have a clear drain for dishwasher to drain properly.<br>
+                            Is there any food on the bottom of the dishwasher?<br>
+                            It must be clear for the dishwasher to drain properly.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The dishes are not drying.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">In order to dry properly, dishwasher manufacturers recommend a drying
+                            agent such as Rinse Aid or Jet Dry, either of which can be purchased at any grocery store.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The dishwasher is leaking.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check to see that the disposer is not clogged. Run the disposer.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">There is a squeaking noise.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check that there is nothing stuck on the bottom of the dishwasher.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">There is no power.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that the circuit breaker hasn't tripped.<br>
+                            Is the door completely closed and locked?<br>
+                            Check to see that the spray arms are free and clear of any obstructions.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Odor Coming From Dishwasher.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check for food waste on the bottom of the dishwasher and clean.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Doesn't clean dishes.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">If machine is equipped with automatic soap dispenser, check to see that
+                            soap dispenser has soap.</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--end app-->
+    <div class="app" id="Laundry">
+        <div class="app_title">Laundry</div>
+
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/laundry-trouble-05-01-13.jpg" data-srcset="/images/promos/laundry-trouble-05-01-13.jpg" data="Washers" title="Washers" alt="Washers">
+            <div class="cat_sub_cat">Washers</div>
+        </div>
+
+        <div class="app_sub_cat">
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/laundry-trouble-05-01-13.jpg" data-srcset="/images/promos/laundry-trouble-05-01-13.jpg" data="Dryers" title="Dryers" alt="Dryers">
+            <div class="cat_sub_cat">Dryers</div>
+        </div>
+
+        <div class="app_content">
+            <div class="app_content_inner app_Washers">
+                <div class="app_title">Washers:</div>
+                <div class="app_question_answer">
+
+                    <div class="matrix">
+                        <div class="app_question">The washer doesn't start.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that the circuit breaker hasn't tripped or the unit has not been unplugged.<br>
+                            Check to see if the outlet is a GFI outlet with its own circuit breaker. This outlet will
+                            have buttons on it. Push the reset button.
+
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The washer is loud or is making banging noises.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            Check for unbalanced load.<br>
+                            The machine could be out of level.<br>
+                            If you are physically able, tilt the machine forward approximately 8 inches, then tilt back.
+                            This will reset the self-leveling legs.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Clothes are coming out too wet or dripping.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            This is usually caused by using too much detergent. Most detergents are highly
+                            concentrated.<br>
+                            Purchase Affresh either at P.C. Richard &amp; Son or a supermarket.<br>
+                            Underloading or overloading the machine could result in wet clothes.<br>
+                            Try leaving a machine open between loads.<br>
+                            Try a load with less detergent. If the problem persists, please call customer service.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Clothes Have Odor<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Purchase Affresh either at P.C. Richard &amp; Son or a supermarket.<br>
+                            Try leaving the machine open between loads.
+
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The spin cycle does not complete.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            This can be caused by an uneven load. Please redistribute the load.<br>
+                            Make sure the water level is acceptable for the load size.<br>
+                            There may be too much detergent. Try a load with no/very little to see if the machine runs
+                            through the cycle.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The washer is leaking.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Please unplug the machine for 30 minutes to reset it.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The washer is locked with clothes and/or water inside.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Please check to see if the hoses are reversed or that the controls are
+                            set to hot.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">There is no hot water.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check that the circuit breaker hasn't tripped or the unit has not been
+                            unplugged.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The washer will not turn on.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check to see if the outlet is a GFI outlet with its own circuit breaker.
+                            This outlet will have buttons on it. Push the reset button.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Clothes are ripping during the cycle.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check for any foreign objects in the tub, such as screws or pens.</div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="app_content_inner app_Dryers">
+                <div class="app_title">Dryers:</div>
+                <div class="app_question_answer">
+
+
+                    <div class="matrix">
+                        <div class="app_question">There is a burning smell.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check for a clogged vent by inspecting for airflow outside where the vent exits the
+                            building. If there is no airflow, then vent is clogged.<br>
+                            Please clean the vent or call a vent-cleaning service.<br>
+                            Check to ensure the lint filter and housing are clear.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">Clothes are taking too long to dry.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that the dryer vent isn't clogged.<br>
+                            Check that the exhaust hood outside the home isn't blocked.<br>
+                            Check the circuit breaker panel for any tripped breakers. For electric dryers, even if a
+                            dryer is spinning, it may have blown the breaker that powers the heating element.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is no heat.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that the lint filter is clean.<br>
+                            Check the vent. If the vent is clogged, the dryer will not function correctly.<br>
+                            If you have an electric dryer, check the circuit breaker panel for any tripped breakers.
+                            Even if a dryer is tumbling, the breaker that powers the heating element may have blown.<br>
+                            If you have a gas dryer, check that the gas works in the house by testing the range. If the
+                            range doesn't light, please call your gas company. <br>
+                            If you have propane gas, please check to make sure the tank is full.<br>
+                            If Electric Dryer - check the circuit breaker panel for any tripped breaker. Even if a dryer
+                            is tumbling, the breaker that powers the heating element may have blown.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is no power.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Check that the circuit breaker hasn't tripped.</div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The dryer is not tumbling.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            Check that the circuit breaker hasn't tripped.<br>
+                            Is the dryer plugged in? Even a gas dryer requires electricity.<br>
+                            If you have a GFI outlet with its own breaker, press the reset button.
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--end app-->
+    <div id="air" class="app">
+        <div class="app_title">Air Conditioners</div>
+
+        <div class="app_sub_cat">
+
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/air_conditioners-trouble-05-01-13.jpg" data-srcset="/images/promos/air_conditioners-trouble-05-01-13.jpg" data="Air" title="Air Conditioners"
+                alt="Air Conditioners">
+                <div class="cat_sub_cat">Air Conditioners</div>
+        </div>
+
+        <div class="app_content">
+            <div class="app_content_inner app_Air">
+                <div class="app_question_answer">
+                    <div class="app_title">Air Conditioners:</div>
+                    <div class="matrix">
+                        <div class="app_question">The compressor won't turn on when it's cool out.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">Air conditioners are designed to work when the temperature outside
+                            is
+                            above 60 degrees. It will not operate in cool weather.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The air conditioner will not turn on.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Air conditioners are designed to work when the temperature outside is above 60 degrees.
+                            It
+                            will not operate in cool weather.<br>
+                            Plug something else into the outlet. If the other item does not work check the circuit
+                            breaker.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">The remote control does not work.<div class="plus-minus">+</div></div>
+                        <div class="app_answer"> Try changing the batteries in the remote.</div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Water is leaking from the unit outside of the house.</div>
+                        <div class="app_answer">
+                            Water leaking or dripping outside is perfectly normal. Air conditioners remove humidity
+                            from
+                            the home.<br>
+                            The water goes to the pan on the bottom of the air conditioner. The more humid it is,
+                            the
+                            more it will leak.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Water leaking on Inside of Wall.<div class="plus-minus">+</div></div>
+                        <div class="app_answer"> Check to see if air conditioner is pitched towards outside of
+                            house.
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Frost Forms On Inside Coil<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            The air filter may be dirty.<br>
+                            The air conditioner may be oversized for the room. Consult a sales counselor.
+
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="app_question">Not Cooling<div class="plus-minus">+</div></div>
+                        <div class="app_answer">The air filter may be dirty.
+                            <br>
+                            The air conditioner may be oversized for the room. Consult a sales counselor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end app-->
+    <div id="tele" class="app">
+        <div class="app_title">Televisions</div>
+        <div class="app_sub_cat">
+ 
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-src="/images/promos/flat_tvs-trouble-05-01-13.jpg"  data-srcset="/images/promos/flat_tvs-trouble-05-01-13.jpg" data="Televisions" title="Flat Panel Televisions"
+                alt="Flat Panel Televisions">
+                <div class="cat_sub_cat">Flat Panel Televisons</div>
+        </div>
+
+        <div class="app_sub_cat">
+          
+            <img class="lazy" itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="  data-src="/images/promos/projection_tvs-trouble-05-01-13.jpg" data-srcset="/images/promos/projection_tvs-trouble-05-01-13.jpg" data="Projector" title="Projector Televisions"
+                alt="Projector Televisions">
+                <div class="cat_sub_cat">Projector Televisions</div>
+        </div>
+
+        <div class="app_content">
+            <div class="app_content_inner app_Televisions">
+                <div class="app_title">Flat Panel Televisions:</div>
+                <div class="app_question_answer">
+
+                    <div class="matrix">
+                        <div class="app_question">The TV will not connect to the internet.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Please first power off all components.<br>
+                            Unplug the modem and the wireless router for 1 minute.<br>
+                            If there is a network password for the wireless network, please enter it in the settings
+                            menu of the television.<br>
+
+                            If the problem occurs in just one of the TV's applications, there is nothing wrong with
+                            the television itself; the issue may be with the application.<br>
+                            If the problem occurs in just one of the TV's applications, there is nothing wrong with
+                            the television itself; the issue may be with the application.<br>
+                            There may be username and password issues. Go onto the application's website to attempt
+                            login. Use forgot username/password feature.
+
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">HDMI or other inputs are not functioning.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Use a device you know that works in the port that is not working.<div class="plus-minus">+</div><br>
+                            If the port now functions, unplug the television and all devices for one minute.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is a loud humming sound coming from the TV.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that all cables are securely connected to the television and any amplifiers.
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is picture but no sound.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Is the television connected to a sound system?<br>
+                            If so, check to see the sound system is on and is set to the correct input.<br>
+                            This can be a cable/satellite issue. Unplug the television and cable box for 1 minute
+                            and then plug them back in.<br>
+                            If above does not work, test with a DVD Player.<br>
+                            If it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is sound but no picture.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            This can be a cable/satellite issue. Unplug the television and cable box for 1 minute
+                            and then plug them back in.<br>
+                            If above does not work, test with a DVD player.<br>
+
+                            if it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The picture is not fitting on the screen.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Press the button on the remote that says "format" or "picture size" to change
+                            formatting.<br>
+                            Check cable/satellite settings menu for picture size or format.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">Picture is too dark or too bright.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            The TV may have an auto-dimming feature that can be disabled in the video menu.<br>
+                            Check the DVD player.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The picture freezes.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            If the issue does not appear on the DVD player, then the issue is due to a problem with
+                            the cable/satellite box. Call your cable or satellite provider to report the issue.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is poor picture quality on all channels.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check to see if problem exists with another source, such as a DVD player.<br>
+
+                            If the issue does not appear on the DVD player, please check the following:<br>
+                            Adjust picture quality setting to a minimum of 720p, 1080i or 1080p.<br>
+                            Check in your cable or satellite menu for picture quality settings.<br>
+                            Change settings to 720p, 1080i or 1080p; the higher the better.<br>
+                            If neither solution corrects the problem, please contact your cable or satellite
+                            provider to report a weak signal.
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is poor picture quality on some channels.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            Please adjust the picture quality setting to a minimum of 720p, 1080i or 1080p. Check
+                            your cable/satellite menu for picture quality settings.<br>
+                            Change settings to 720p, 1080i or 1080p; the higher the better<br>
+                            If neither solution corrects the problem, please contact your cable or satellite
+                            provider to report a weak signal.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The sound is not synced to the picture.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            This is usually a cable/satellite issue. Unplug the television and cable box for 1
+                            minute and then plug them back in. • If above does not work test, with a DVD player. •
+                            If it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The volume is too high or too low.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check the volume setting on the cable menu.<br>
+                            The cable box could be set too low or too high. Try controlling the volume from the
+                            cable/satellite box itself and not the remote.<br>
+                            If above does not work, test with a DVD player.<br>
+                            If the volume works correctly with the DVD player then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="app_content_inner app_Projector">
+                <div class="app_title">Projector Televisons:</div>
+                <div class="app_question_answer">
+
+                    <div class="matrix">
+                        <div class="app_question">The TV will not connect to the internet.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Please first power off all components.<br>
+                            Unplug the modem and the wireless router for 1 minute.<br>
+                            If there is a network password for the wireless network, please enter it in the settings
+                            menu of the television.<br>
+
+                            If the problem occurs in just one of the TV's applications, there is nothing wrong with
+                            the television itself; the issue may be with the application.<br>
+                            If the problem occurs in just one of the TV's applications, there is nothing wrong with
+                            the television itself; the issue may be with the application.<br>
+                            There may be username and password issues. Go onto the application's website to attempt
+                            login. Use forgot username/password feature.
+
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">HDMI or other inputs are not functioning.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Use a device you know that works in the port that is not working.<br>
+                            If the port now functions, unplug the television and all devices for one minute.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is a loud humming sound coming from the TV.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check that all cables are securely connected to the television and any amplifiers.
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is picture but no sound.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Is the television connected to a sound system?<br>
+                            If so, check to see the sound system is on and is set to the correct input.<br>
+                            This can be a cable/satellite issue. Unplug the television and cable box for 1 minute
+                            and then plug them back in.<br>
+                            If above does not work, test with a DVD Player.<br>
+                            If it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is sound but no picture.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            This can be a cable/satellite issue. Unplug the television and cable box for 1 minute
+                            and then plug them back in.<br>
+                            If above does not work, test with a DVD player.<br>
+
+                            if it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The picture is not fitting on the screen.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Press the button on the remote that says "format" or "picture size" to change
+                            formatting.<br>
+                            Check cable/satellite settings menu for picture size or format.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">Picture is too dark or too bright.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            The TV may have an auto-dimming feature that can be disabled in the video menu.<br>
+                            Check the DVD player.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The picture freezes.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            If the issue does not appear on the DVD player, then the issue is due to a problem with
+                            the cable/satellite box. Call your cable or satellite provider to report the issue.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is poor picture quality on all channels.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check to see if problem exists with another source, such as a DVD player.<br>
+
+                            If the issue does not appear on the DVD player, please check the following:<br>
+                            Adjust picture quality setting to a minimum of 720p, 1080i or 1080p.<br>
+                            Check in your cable or satellite menu for picture quality settings.<br>
+                            Change settings to 720p, 1080i or 1080p; the higher the better.<br>
+                            If neither solution corrects the problem, please contact your cable or satellite
+                            provider to report a weak signal.
+
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">There is poor picture quality on some channels.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            Please adjust the picture quality setting to a minimum of 720p, 1080i or 1080p. Check
+                            your cable/satellite menu for picture quality settings.<br>
+                            Change settings to 720p, 1080i or 1080p; the higher the better<br>
+                            If neither solution corrects the problem, please contact your cable or satellite
+                            provider to report a weak signal.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The sound is not synced to the picture.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+
+                            This is usually a cable/satellite issue. Unplug the television and cable box for 1
+                            minute and then plug them back in. • If above does not work test, with a DVD player. •
+                            If it works correctly with the DVD player, then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+                    <div class="matrix">
+                        <div class="app_question">The volume is too high or too low.<div class="plus-minus">+</div></div>
+                        <div class="app_answer">
+                            Check the volume setting on the cable menu.<br>
+                            The cable box could be set too low or too high. Try controlling the volume from the
+                            cable/satellite box itself and not the remote.<br>
+                            If above does not work, test with a DVD player.<br>
+                            If the volume works correctly with the DVD player then the problem is with the cable or
+                            satellite provider.
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--end app-->
+
+
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function () {
+        (function ($) {
+
+            $('.app_question').on('click' , function() {
+
+                if($(this).parent('div').children('.app_answer').is(':hidden')){
+                    $('.plus-minus').html('+')
+                    $('.app_answer').hide()
+                  $(this).parent('div').children('.app_question').children('.plus-minus').html('-');
+                  $(this).parent('div').children('.app_answer').show();
+                } else {
+                    $(this).parent('div').children('.app_question').children('.plus-minus').html('+');
+                    $(this).parent('div').children('.app_answer').hide()
+                }
+
+            })
+
+
+
+
+
+            $('.app_sub_cat').on('click', function () {
+                $('.app_content_inner').hide()
+                whattoopen = '.app_' + $(this).children('img').attr('data');
+                $(whattoopen).slideDown()
+            })
+
+            $('.cat_header_images').on('click', function () {
+                $('.app_content_inner').hide()
+                if ($(window).width() < 767) {
+                    what_cat = $(this).attr('data2');
+                    $("html").animate({scrollTop: what_cat}, 400, 'swing');
+                 }
+                 else {
+                    what_cat = $(this).attr('data');
+                    $("html").animate({scrollTop: what_cat}, 400, 'swing');
+                 }
+            })
+ 
+
+            $(window).on('scroll', function() {
+                scrollPosition = $(this).scrollTop();
+                if (scrollPosition >= 200) {
+                    // If the function is only supposed to fire once
+                  $('.cat_header').addClass('cat_header_scroll')
+            
+                    // Other function stuff here...
+                } else {
+                    $('.cat_header').removeClass('cat_header_scroll')
+                }
+            });
+
+        })(jQuery);
+    });
+</script>

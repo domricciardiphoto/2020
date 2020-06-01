@@ -4,5 +4,16 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {},
+	"launch": {
+		"configurations": [
+		{
+			"type": "pwa-chrome",
+			"request": "launch",
+			"name": "File",
+			"url": "http://localhost:9222",
+			"file": "${workspaceFolder}"
+		}
+		]
+	}
 }

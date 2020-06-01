@@ -6,12 +6,12 @@
     "configurations": [
 
         {
-            "type": "chrome",
+            "name": "Launch Chrome",
+            "type":"pwa-chrome",
             "request": "launch",
-            "name": "Testing Server",
-            "url": "http://10.4.6.20/webtest/uploader_dom/dompageV2.php?gamelaunch=black-friday--CORE--1.html",
+            "url": "http://localhost:8080",
+            "runtimeExecutable": "stable",
             "webRoot": "${workspaceFolder}"
         }
-
     ]
 }
