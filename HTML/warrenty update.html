@@ -1,0 +1,626 @@
+<style type="text/css">
+    .app {
+        max-width: 1200px;
+        width: 100%;
+        float: left;
+        position: relative;
+        font-weight: 500
+    }
+
+    .cov19-info {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px
+    }
+
+    .bluecontent {
+        background-color: #dae3f3;
+        padding: 1%
+    }
+
+    .app_title {
+        font-weight: 700;
+        font-size: 1.2em;
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 5px
+    }
+
+    .app_content {
+        font-size: .875em;
+        width: 100%;
+        float: left;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        min-height: 117px
+    }
+
+    .app_content ul {
+        list-style-type: disc;
+        margin-left: 1%
+    }
+
+    .redcontent {
+        font-size: 2em;
+        color: #d0191e;
+        margin-bottom: 0
+    }
+
+    .reditalic {
+        color: #d0191e;
+        font-style: italic;
+        font-size: 1.5em
+    }
+
+    .icon_content {
+        width: 25%;
+        float: left;
+        min-height: 70px
+    }
+
+    .icon_image {
+        width: 35%;
+        float: left
+    }
+
+    .icon_text {
+        float: left;
+        width: 50%;
+        margin-left: 5%;
+        font-size: .875em;
+        padding-top: 10%;
+        font-weight: 600
+    }
+
+    .icon_image img {
+        width: 100%
+    }
+
+    .app_content ul li {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        line-height: 25px
+    }
+
+    .addBottomBorder {
+        border-bottom: 1px solid #d71920;
+        position: relative
+    }
+
+    .addBottomBorderSmall {
+        border-bottom: 1px solid #d71920;
+        position: relative;
+        padding-left: 4%;
+        background-color: #f8f8f8;
+        min-height: 36px;
+        line-height: 35px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        background-repeat: no-repeat;
+        background-size: 3.2%;
+        background-position: 5px
+    }
+
+    .BlackText {
+        color: #333 !important
+    }
+
+    .iconImage {
+        width: 25%;
+        max-width: 50px;
+        float: left;
+        margin-right: 6%;
+        margin-top: 3px
+    }
+
+    .iconImageSmall {
+        position: absolute;
+        width: 30px;
+        top: -22px;
+        left: -13px
+    }
+
+    .iconImageText {
+        width: 75%;
+        float: left
+    }
+
+    .iconImage img {
+        width: 100%;
+        margin-top: 13px;
+        margin-left: 15px
+    }
+
+    .titleIcons {
+        width: 24.7%;
+        min-height: 145px;
+        margin-right: .3%;
+        background-color: #f8f8f8;
+        position: relative
+    }
+
+    .descript-text1002 {
+        width: 50%;
+        float: right;
+        font-size: .875em;
+        font-weight: 500;
+        margin-top: 5px;
+        text-align: right;
+        padding-right: 2%;
+        position: absolute;
+        bottom: 5px;
+        right: 5px
+    }
+
+    .app_page_title {
+        width: 100%;
+        float: left;
+        font-size: 2em;
+        font-weight: 500;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        text-align: center
+    }
+
+    .pctech_content {
+        background-color: #000;
+        background-image: url(/images/promos/pcr_tech_logo_2_18_2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+        min-height: 163px;
+        background-position-y: 64%
+    }
+
+    .apple_content50 {
+        width: 50%;
+        float: left;
+        margin-bottom: 0
+    }
+
+    h2.apple_title {
+        font-size: 1.5em
+    }
+
+    .apple_content50 strong {
+        font-size: 1.4em
+    }
+
+    .apple_content50 ul li sup {
+        font-size: .7em
+    }
+
+    .modal-dialog .iconImage {
+        width: 50%;
+        margin-left: 15%;
+        max-width: inherit;
+        float: left;
+        margin-right: 6%;
+        margin-top: 3px
+    }
+
+    .modal-dialog .iconImageText {
+        width: 100%;
+        float: left;
+        padding-left: 5%
+    }
+
+    .modal-dialog .descript-text1002 {
+        width: 100%
+    }
+
+    .modal-dialog .iconImage {
+        width: 35%;
+        margin-left: 22%;
+        max-width: inherit;
+        float: left;
+        margin-right: 6%;
+        margin-top: 3px
+    }
+
+    .modal-dialog .app_title {
+        font-weight: 700;
+        width: 100%;
+        margin-left: 0;
+        font-size: .9em;
+        padding-left: 1%
+    }
+
+    .modal-dialog .addBottomBorderSmall {
+        padding-left: 6%;
+        min-height: 36px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0
+    }
+
+    .modal-dialog .titleIcons {
+        width: 24.7%;
+        min-height: 255px;
+        margin-right: .3%;
+        background-color: #f8f8f8;
+        position: relative
+    }
+
+    @media (max-width:767px) {
+        .app {
+            width: 98%;
+            margin-left: 1%
+        }
+
+        .modal-dialog .iconImage {
+            width: 20%;
+            margin-left: 0
+        }
+
+        .modal-dialog .iconImageText {
+            width: 70%;
+            float: left
+        }
+
+        .modal-dialog .titleIcons {
+            min-height: 145px;
+            width: 100%
+        }
+
+        .modal-dialog .addBottomBorderSmall {
+            padding-left: 10% !important;
+            line-height: inherit;
+            padding-bottom: 1%;
+            font-size: 1em;
+            background-size: 6.2%;
+            padding-top: 7px
+        }
+
+        .apple_content50 {
+            width: 100%
+        }
+
+        .addBottomBorderSmall {
+            padding-left: 10% !important;
+            line-height: 36px;
+            padding-bottom: 1%;
+            font-size: 1em;
+            background-size: 6.2%
+        }
+
+        .titleIcons {
+            width: 100%
+        }
+
+        .app {
+            max-width: 1200px;
+            width: 98%;
+            margin-left: 1%;
+            float: left;
+            position: relative;
+            font-weight: 500
+        }
+
+        .redcontent {
+            font-size: 150%
+        }
+
+        .icon_image {
+            width: 100%;
+            float: left;
+            min-height: 30px
+        }
+
+        .icon_text {
+            float: left;
+            width: 98%;
+            margin-left: 1%;
+            font-size: .875em
+        }
+
+        .icon_text {
+            float: left;
+            width: 98%;
+            margin-left: 1%;
+            font-size: .875em;
+            text-align: center
+        }
+
+        .app_content ul {
+            list-style-type: disc;
+            margin-left: 5%;
+            width: 92%
+        }
+
+        .app_content ul li {
+            margin-bottom: 10px
+        }
+
+        .app_title {
+            padding-left: 2%
+        }
+
+        .icon_content {
+            width: 23%;
+            float: left;
+            min-height: 70px;
+            margin-left: 1%
+        }
+
+        .reditalic {
+            color: #d0191e;
+            font-style: italic;
+            font-size: 1.1em;
+            font-weight: 600
+        }
+
+        .iconImage img {
+            margin-top: 20px
+        }
+
+        .app_page_title {
+            width: 100%;
+            float: left;
+            font-size: 1.1em;
+            margin-bottom: 4%;
+            margin-top: 4%;
+            text-align: center
+        }
+
+        .app_page_title h1 {
+            font-weight: 600;
+            width: 100%
+        }
+
+        .app_content {
+            min-height: inherit;
+            margin-bottom: initial
+        }
+
+        .pctech_content {
+            min-height: 120px;
+            background-position-y: 94%
+        }
+    }
+</style>
+<div class="app"  itemscope="" itemtype="http://schema.org/LocalBusiness">
+    <meta itemprop="url" content="https://www.pcrichard.com/content/warranty">
+    <div class="app_page_title">
+        <h1>Extended Warranty Service Protection Plan</h1>
+    </div><a class="BlackText" href="#Extendwarr">
+        <div class="cov19-info titleIcons">
+            <div class="iconImage"><img itemprop="image" alt="Extemded Warranty"
+                    src="/images/promos/warranty-page-icon-dd03.png"></div>
+            <div class="app_content iconImageText">
+                <div class="app_title">P.C. Richard &amp; Son Extended Warranty </div>Available on most products. Learn more about our extended warranty program.
+            </div>
+            <div class="descript-text1002" style="color:#034694;">See Details Below</div>
+        </div>
+    </a> <a class="BlackText" href="#PCTECH">
+        <div class="cov19-info titleIcons">
+            <div class="iconImage"><img itemprop="image" alt="Extemded Warranty"
+                    src="/images/promos/pctech-icon-small-d2020.jpg"></div>
+            <div class="app_content iconImageText">
+                <div class="app_title">P.C. Richard &amp; Son<br>P.C. TECH</div>Let Us Take Care Of Your Computer So You
+                Don't Have To
+            </div>
+            <div class="descript-text1002" style="color:#034694;">See Details Below</div>
+        </div>
+    </a> <a class="BlackText" href="#Guardian">
+        <div class="cov19-info titleIcons">
+            <div class="iconImage" style="margin-bottom:5px;"><img itemprop="image" alt="Guardian Recliner Warranty."
+                    src="/images/promos/warranty-page-icon-dd02.png"></div>
+            <div class="app_content iconImageText">
+                <div class="app_title">Guardian Recliner Chair Warranty Program</div>Guardian Recliner Chair Warranty
+                Program
+            </div>
+            <div class="descript-text1002" style="color:#034694;">See Details Below</div>
+        </div>
+    </a> <a class="BlackText" href="#applecare">
+        <div id="Extendwarr" class="cov19-info titleIcons">
+            <div class="iconImage" style="margin-bottom:5px;"><img itemprop="image" alt="Apple Care +"
+                    src="/images/promos/warranty-page-icon-dd01.png"></div>
+            <div class="app_content iconImageText">
+                <div class="app_title">AppleCare+ </div>Available on most Apple products. Learn more about AppleCare for
+                your new Apple product.
+            </div>
+            <div class="descript-text1002" style="color:#034694;">See Details Below</div>
+        </div>
+    </a>
+    <div class="cov19-info ">
+        <div class="app_title addBottomBorderSmall"
+            style="background-image: url(/images/promos/warranty-page-icon-dd03.png);"> P.C. Richard &amp; Son Extended
+            Warranty </div>
+        <div class="app_content">     
+            <br>The following outlines your Extended Service Protection Plan coverage. Please review the details
+            carefully and feel free to contact our warranty specialists for additional information.<br><br>
+            <ul>
+                <li>If P.C. Richard &amp; Son determines your product is un-repairable, it will be replaced with a
+                    product of comparable performance, not to exceed the original purchase price. For display models, we
+                    reserve the right to issue a store credit for the original purchase price. Note: A replacement
+                    product with a lower selling price than your original product may result due to technological
+                    advances. The obligations of this agreement are fulfilled when the related product(s) has been
+                    replaced or, in the case of a display model, a store credit has been issued.</li>
+                <li>P.C. Richard &amp; Son agrees to provide service which includes parts and labor FREE for the life of
+                    this Agreement as shown on your sales receipt. We reserve the right to assign and/or outsource any
+                    service under this Agreement and the right to cancel the contract and issue a pro-rated refund of
+                    the original Agreement purchase price if the product does not remain in our service area.</li>
+                <li>P.C. Richard &amp; Son will provide service and repair the product, provided the product failure is
+                    within the parameters of this Agreement and the product has not been repaired prior, by a party not
+                    authorized by P.C. Richard &amp; Son. This Agreement shall not provide compensation of any kind,
+                    during the product "down-time."</li>
+                <li>Televisions 37" &amp; larger, with in-home service, may still need to be transported to our
+                    state-of-the-art service facility at no additional charge. This may require additional time for
+                    pick-up and delivery. For in-home service, the product must be free and clear of all encumbrances
+                    (built-in walls, cabinetry, etc.), and be easily accessible to the service technician. Please note
+                    that the customer shall be responsible for any property damage and additional service expenses, if
+                    the product is not accessible as described above.</li>
+                <li>This Agreement is a contract of warranty that covers only defects in material &amp; workmanship.
+                    Please read the owner's manual, exercise proper care in use and storage of your product and follow
+                    the instructions. This Agreement does not cover TV viewing screens; cosmetic parts such as knobs,
+                    glass shelves/doors, plastic panels/liners; consumable items such as filters, toner cartridges, ink
+                    cartridges, belts, bags, etc. This Agreement also does not cover: damage caused by external
+                    substances (water, sand, etc.), impact damage, lightning, power surges, floods or natural disasters;
+                    product defacement; products with altered serial numbers, burned in images in television screens,
+                    insect infestation, rust, or physical damage.</li>
+                <li>Additional service time may be required for the shipping and handling of cameras, computers, or any
+                    other product that must be sent to the manufacturers' service facility.</li>
+                <li>Regarding cameras, camcorders, computers, disc players, and Blu-Ray or DVD players/recorders, P.C.
+                    Richard &amp; Son shall not be responsible for damage or loss to tapes, discs, software, media, or
+                    stored data. Additionally, computer viruses/software failures are not covered under this Agreement
+                </li>
+                <li>P.C. Richard &amp; Son shall only provide reimbursement for parts or labor to a party previously
+                    authorized by P.C. Richard &amp; Son to service the covered product. Any unauthorized service shall
+                    not be reimbursed.</li>
+                <li>The Holder of this Agreement shall be allowed to cancel said Agreement within ninety days of
+                    issuance, provided no claims have been made. Upon cancellation, this Agreement shall be null and
+                    void and Holder shall be refunded the original Agreement purchase price.</li>
+                <li>This agreement excludes any pre-existing conditions, and is transferable only if product(s) remains
+                    within our servicing area.</li>
+            </ul>
+            <div id="PCTECH" class="app_title">For Small Appliances &amp; Personal Electronics </div>
+            <ul>
+                <li> An "Inoperable Product Replace Agreement" (IPR), provides the Holder "over-the-counter-exchange"
+                    FREE of charge, provided the product's malfunction is within the Agreement timeframe as reflected on
+                    the sales receipt. You must have your sales receipt, original carton with all packing, accessories
+                    and manuals, and no physical damage to the product. If the same model is no longer available, you
+                    will receive a product of comparable performance, not to exceed the original purchase price. For
+                    display models, we reserve the right to issue a store credit for the original purchase price. Note:
+                    A replacement product with a lower selling price than your original product may result due to
+                    technological advances. The obligations of this agreement are fulfilled when the related product(s)
+                    has been replaced or, in the case of a display model, a store credit has been issued. </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cov19-info ">
+<style type="text/css">@media (max-width:767px) {#lineheight-fix {line-height: 20px;}}</style>
+
+        <div id="lineheight-fix" class="app_title addBottomBorderSmall"
+            style="background-image: url(/images/promos/pctech-icon-small-d2020.jpg);"> PC Tech- Let Us Take Care Of
+            Your Computer So You Don't Have To </div>
+        <div class="app_content" id="Guardian">
+            <ul>
+                <li>Premium Technical Support</li>
+                <li>New Computer Optimization</li>
+                <li>New Tablet Setup</li>
+                <li>Remote Wireless Network Setup</li>
+                <li>Back-Up &amp; Assist Annual Subscription Service</li>
+                <li><a title="Learn More" href="/content/PCTECH">Learn More</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cov19-info ">
+        <div class="app_title addBottomBorderSmall"
+            style="background-image: url(/images/promos/warranty-page-icon-dd02.png);"> Guardian Recliner Chair Warranty
+            Program </div>
+        <div class="app_content" id="applecare"> The following are covered, subject to the Exclusions To Coverage and
+            other Plan conditions: <ul>
+                <li>FABRIC, LEATHER AND VINYL FURNITURE: <ul>
+                        <li>Stains caused by any food or beverage normally consumed by humans</li>
+                        <li>Mold and mildew stains caused by food or beverage spills</li>
+                        <li>Stains caused by human or pet bodily fluids.</li>
+                        <li>Stains caused by grass, grease, ballpoint pen ink, iodine, nail polish, cosmetics, lipstick,
+                            crayon, and shoe polish.</li>
+                        <li>Rips, cuts, punctures or burns from a specific incident</li>
+                        <li>Breakage of frames, springs, and sleeper, reclining, inclining, heating, and vibrating
+                            mechanisms will be covered if they were originally covered by a manufacturer’s warranty and
+                            such warranty has expired.</li>
+                        <li><a title="Guardian Warrenty PDF"
+                                href="/images/promos/Recliner-Protection-Plan-Coverage-2020.pdf" target="_blank">Learn
+                                More</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cov19-info ">
+        <div class="app_title addBottomBorderSmall"
+            style="background-image: url(/images/promos/warranty-page-icon-dd01.png);"> AppleCare+ </div>
+        <div class="app_content">
+            <h2 class="apple_title">AppleCare+ For Mac</h2>
+            <div class="app_content apple_content50"> <strong>Hardware coverage for your Mac.</strong>
+                <ul>
+                    <li>Your Mac computer</li>
+                    <li>Battery<sup> 1</sup></li>
+                    <li>Included accessories such as the power adapter</li>
+                    <li>Apple memory (RAM)</li>
+                    <li>AirPort<sup>4</sup></li>
+                    <li>Apple USB SuperDrive</li>
+                    <li>Up to two incidents of accidental damage, each subject to a service fee of $99 for screen damage
+                        or external enclosure damage, or $299 for other damage, plus applicable tax<sup>1</sup></li>
+                </ul>
+            </div>
+            <div class="app_content apple_content50"> <strong>Software support</strong>
+                <ul>
+                    <li>Using macOS and iCloud<sup> 5</sup></li>
+                    <li>Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages,
+                        Numbers, and Keynote and more</li>
+                    <li>Connecting to printers and AirPort networks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="app_content">
+            <h2 class="apple_title">AppleCare+ For iPad</h2>
+            <div class="app_content apple_content50"> <strong>Hardware coverage for your iPad</strong>
+                <ul>
+                    <li>Hardware coverage for your iPad, battery,<sup>1</sup> Apple Pencil and Apple-branded iPad
+                        Keyboard</li>
+                    <li>Coverage for up to two incidents of accidental damage from handling, each subject to a service
+                        fee of $49 for iPad and $29 for Apple Pencil or Apple‑branded iPad keyboard, plus applicable tax
+                    </li>
+                </ul>
+            </div>
+            <div class="app_content apple_content50"> <strong>Software Support</strong>
+                <ul>
+                    <li>For iOS, Icloud and Apple-branded iPad apps</li>
+                    <li>Conntecting to wireless networks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="app_content">
+            <h2 class="apple_title">AppleCare+ For Apple TV</h2>
+            <div class="app_content apple_content50"> <strong>Apple hardware coverage</strong>
+                <ul>
+                    <li>Your Apple TV</li>
+                    <li>Airport</li>
+                    <li>Included Apple Remote and power cord</li>
+                </ul>
+            </div>
+            <div class="app_content apple_content50"> <strong>Software support included</strong>
+                <ul>
+                    <li>Setting up Apple TV and connecting to your Wi-Fi netword and iCloud</li>
+                    <li>Renting and purchasing movies and TV shows from the iTunes store</li>
+                    <li>Using AirPlay to play content from iPhone, iPad, iPod touch, or Mac on your HDTV</li>
+                    <li>Connecting to additional services such as MLB.TV and more</li>
+                </ul>
+            </div>
+        </div>
+        <div class="app_content">
+            <h2 class="apple_title">AppleCare+ For AirPods</h2>
+            <div class="app_content"> <strong>Hardware coverage for your Airpods, Beats earphones, or Beats
+                    headphones.</strong>
+                <ul>
+                    <li>Hardware coverage for your headphones and battery</li>
+                    <li>Coverage for up to two incidents of accidental damage from handling, each subject to a service
+                        fee of $29 plus applicable tax</li>
+                    <li>Bluetooth connectivity</li>
+                </ul>
+            </div>
+        </div>
+        <div class="app_content">
+            <h2 class="apple_title">AppleCare+ For iPod</h2>
+            <div class="app_content apple_content50"> <strong>Apple hardware coverage</strong>
+                <ul>
+                    <li>Your iPod, battery and included accessories</li>
+                    <li>Coverage for up to two incidents of accidental damage for handling of your iPod, each subject to
+                        a $29 service fee plus applicable tax</li>
+                </ul>
+            </div>
+            <div class="app_content apple_content50"> <strong>Software support included</strong>
+                <ul>
+                    <li>For IOS, iCloud and Apple-branded iPod Apps</li>
+                    <li>Connecting to wireless networks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

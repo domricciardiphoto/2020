@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DFSI Builder Alpha</title>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="scripts/jquery-ui.min.js"></script>
+    <link href="css/core.css" rel="stylesheet" type="text/css">
+    <link href="css/menuitems.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  
+
+
+<div id="app">
+    <div id="finalcode">
+
+        <div class="finalcode-center">
+            <div class="button_matrix"><button id="closeCodeFinalizer">Close Code Finalizer</button><button
+                    class="downloader" data="final_code_copy">Download Full Code</button></div>
+            <div class="final_code_copy">
+
+
+                &lt;link type="text/css" rel="stylesheet" href="/images/promos/gridflyer-beta3.css"&gt; <br><br>
+
+                &lt;div class="wrapper-d"&gt; <br> <br>
+
+
+                <span class="addmenucodeFinalizer">HERE IS WHERE THE MENU CODE IS GOING!!</span> <br> <br>
+
+
+                &lt;div id="pages" class="pages"&gt; <br><br>
+
+
+                <span class="bodycontent">HERE IS WHERE THE PAGE CODE IS GOING!!</span><br><br>
+
+                &lt;/div&gt;<br><br>
+
+
+
+                &lt;/div&gt;
+                <br> <br>
+                &lt;script type="text/Javascript" src="/images/promos/gridflyer_beta3.min.js" &gt;&lt;/script&gt;
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="app">
+
+        <div class="content">
+
+            <div class="techleft">
+
+                <div class="buttonmatrix">
+                   
+                    <div class="techtitle previewcontent" data="menu" style="background-color: chocolate;color:#fff">DFSI Structure Builder</div>
+                    <div class="techtitle previewcontent" data="content">Page Content Builder</div>
+                    <div class="techtitle previewcontent" data="structure">Deal of the Day Builder</div>
+                </div>
+
+
+                <div class="previewcode">
+                    <div data="Menu" class="label">Menu</div>
+                    <div class="menupreview showlive"></div>
+                    <div data="Pages" class="label">Pages</div>
+                    <div class="pagepreview">
+                    </div>
+                    <div class="totalpreview showlive"></div>
+                </div>
+
+
+                <div class="copycode">
+
+
+                    <code class="snippet" translate="no" dir="ltr">
+
+                        &lt;div class="topmenu"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;div class="internal_menu"&gt;<br>
+
+
+                        &nbsp; &nbsp;&nbsp;&lt;div class="internal_overflow"&gt;<br>
+                        <span id="addmenucodeblocks"></span><br>
+
+                        &nbsp;&nbsp;&nbsp; &lt;/div&gt;
+                        <br>&nbsp;&nbsp;&lt;/div&gt;<br>
+
+
+                        &lt;/div&gt;
+
+
+
+
+                    </code>
+
+
+                </div>
+
+
+                <div class="bodycode">
+
+                    <code class="snippet" translate="no" dir="ltr">
+                    &lt;div id="pages" class="pages"&gt;
+
+                    <span id="pageslivecode"></span>
+
+                        <br> &lt;/div&gt;
+                    
+                    </code>
+                </div>
+
+
+
+
+            <div class="page_creator">
+                <div class="label_inside">Page Creator</div>
+
+
+                <div class="page_creator_info"></div>
+                <div class="page_creator_block"></div>
+                <div class="page_creator_block_code">
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            </div>
+
+
+
+            <div class="techright">
+                <div class="techtitle previewcontent" style="width: 48%;" data="3">Control Panel</div>
+                <div class="techtitle previewcontent" style="width: 46%;" data="4">Help</div>
+
+                <div class="controlpanel">
+
+
+                    <div class="control_section menu00">
+                        <div class="sectiontitle">Flyer Attributes</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div id="flattr" class="section_options">
+                            <div class="fl_attributes">Flyer Name (<span id="att0">data</span>)</div>
+                            <div class="fl_attributes">Amount of Menu Icons (<span id="att1">0</span>)</div>
+                            <div class="fl_attributes">Amount of Pages (<span id="att2">0</span>)</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="control_section menu2a">
+                        <div class="sectiontitle">Select Page to Work on</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div class="section_options">
+                            <div  class="block_container">
+
+                                <select style="width: 58%;" name="whatPageAmIworkingOn" id="whatPageAmIworkingOn">
+                             <option>No Structure Created Yet</option>
+                                </select>
+                                <button id="whatPageAmIworkingOn_button">Select Page</button>
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+
+                    <div class="control_section pageinfo_controller">
+                        <div class="sectiontitle">Promo Image Attributes</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div id="flattr2" class="section_options">
+                            <div class="fl_attributes" style="text-align: left;">Image URL</div>
+                            <textarea id="imageurl_refresh"  style="width: 98%;margin-left:2%"></textarea>
+                            <div class="fl_attributes"   style="text-align: left;">Image Width</div>
+                            <select id="refresh_selected" style="width: 98%; margin-left:2%">
+                                <option value="100">100%</option>
+                                <option value="50">50%</option>
+                                <option value="33">33%</option>
+                                <option value="25">25%</option>
+                            </select>
+                            <div class="fl_attributes"  style="text-align: left;">Link URL</div>
+                            <textarea id="linkurl_refresh" style="width: 98%; margin-left:2%"></textarea>
+                            
+                            <button id="newinfoforimage_close" style="float: left; margin-left:8px">Close</button>
+                            <button id="newinfoforimage" style="float: right;">Submit</button>
+                        </div>
+                      
+                    </div>
+
+                    <div class="control_section menu3">
+                        <div class="sectiontitle">Page Creator</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div class="flattr section_options">
+
+
+                            <div class="block_container">
+                                <label for="pageamountloop">Page Amount</label>
+                                <select name="pageamountloop" id="pageamountloop" ></select>
+                                <button id="addStructurePages">Submit Page Count</button>
+                                <button id="addStructurePages2">Add an Additional Page</button>
+                            </div>
+
+                        </div>
+
+
+                
+
+                    </div>
+
+                    <div class="control_section menu1">
+                        <div class="sectiontitle">Add Menu Items</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div class="flattr section_options">
+
+
+
+                            <div class="addcatt">
+                                <label for="appliances">Appliances Categories</label>
+                                <select class="mycatname" name="appliances" id="appliances">
+
+                                    <option selected value="Appliances" data="/images/promos/kitchen-appliances.png">
+                                        Appliances</option>
+                                    <option value="Appliance_Packages" data="/images/promos/kitchen-appliances.png">
+                                        Appliance Packages</option>
+                                    <option value="ACs" data="/images/product/detail/D_EBRC10RSE1.jpg">ACs</option>
+                                    <option value="BBQs" data="/images/product/detail/D_L42TRFLP.jpg">BBQs</option>
+                                    <option value="Cooking" data="/images/promos/range-updated1-215x215.jpg">Cooking
+                                    </option>
+                                    <option value="Laundry" data="/images/promos/washdry-updated-item1-215x215.jpg">
+                                        Laundry</option>
+                                    <option value="Refrigerators" data="/images/promos/kitchen-appliances.png">
+                                        Refrigerators</option>
+
+                                </select>
+                                <label for="appliances">Page Number</label>
+                                <select name="pagenum" id="pagenum"  class="pagenum">
+                               
+                                </select>
+                                <button>Add Category</button>
+                            </div>
+
+
+
+
+
+
+                            <div class="addcatt">
+                                <label for="electronics">Electronics Categories</label>
+
+
+                                <select class="mycatname" name="electronics" id="electronics">
+                                    <option value="Bluetooth_Audio" data="/images/product/detail/D_JBLBOOMBOXBK.jpg">
+                                        Bluetooth Audio</option>
+                                    <option value="Computers" data="/images/promos/comp-tab-item3-200x228.jpg">Computers
+                                    </option>
+                                    <option value="Headphones" data="/images/product/detail/D_BTSSTUWRLSRD.jpg">
+                                        Headphones</option>
+                                    <option value="Smart_Home" data="/images/product/detail/D_4K11S7-0EN0.jpg">Smart
+                                        Home</option>
+                                    <option value="Soundbars" data="/images/product/detail/D_JBLSB5.1.jpg">Soundbars
+                                    </option>
+                                    <option value="Tablets" data="/images/product/detail/D_MW762LL-A.jpg">Tablets
+                                    </option>
+                                    <option value="Televisions" data="/images/promos/tv-cat-redesign1-200x228.jpg">
+                                        Televisions</option>
+                                    <option value="Video_Games" data="/images/product/detail/D_3003346.jpg">Video Games
+                                    </option>
+
+                                </select>
+                                <label for="seasonal">Page Number</label>
+                                <select name="pagenum" id="pagenum" class="pagenum">
+                                 
+                                </select>
+                                <button>Add Category</button>
+                            </div>
+
+                            <div class="addcatt">
+                                <label for="Furniture">Furniture Categories</label>
+
+
+                                <select class="mycatname" name="Furniture" id="Furniture">
+
+                                    <option value="Outdoor Furniture"
+                                        data="/images/promos/furniture-item-1-200x228.jpg">Outdoor Furniture</option>
+                                    <option value="Mattresses" data="/images/promos/mattress-bedset-200x228.jpg">
+                                        Mattresses</option>
+                                    <option value="Recliners" data="/images/product/detail/D_4050-COFFEE.jpg">Recliners
+                                    </option>
+
+                                </select>
+                                <label for="Furniture">Page Number</label>
+                                <select name="pagenum" id="pagenum"  class="pagenum">
+                                 
+                                </select>
+
+                                <button>Add Category</button>
+
+                            </div>
+
+                        </div>
+
+                        <div id="resubmit">Complete Menu Changes</div>
+
+                    </div>
+
+                   
+
+
+
+                    <div class="control_section menu2">
+                        <div class="sectiontitle">Add Images</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div class="section_options">
+
+                            <div id="adddynamicImgs" class="block_container">
+
+                                <label for="imagefilename">Image Filename</label>
+                                <textarea id="imagename" placeholder="promoimage.jpg"></textarea>
+                                <textarea id="imageurl" placeholder="/content/promopage"></textarea>
+                                <label for="gridwidth">Grid Width</label>
+                                <select name="adpageiamges" id="adpageiamges">
+                                    <option value="100">100%</option>
+                                    <option value="50">50%</option>
+                                    <option value="33">33%</option>
+                                    <option value="25">25%</option>
+                                </select>
+
+                                <button>Submit Image</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="control_section  menu2">
+                        <div class="sectiontitle">Add Products</div>
+                        <div class="sectionhide" dis="0">-</div>
+                        <div class="section_options">
+
+                            <div class="block_container">
+                                <label for="addproductsURL">Products URL Structure</label>
+
+                            
+                                <label for="addproducts">Products Grid Width</label>
+                                <select name="addproductsString" id="addproductsString">
+                                    <option value="4">4 Products Across</option>
+                                    <option selected value="3">3 Products Across</option>
+                                    <option value="2">2 Products Across</option>
+                                    <option value="1">1 Products Across</option>
+                                </select>
+
+                                <textarea style="width: 98%;" name="gridurl" id="gridurl1"  placeholder="Product 1" cols="1"rows="1"></textarea>
+                                <textarea style="width: 98%;" name="gridurl" id="gridurl2"  placeholder="Product 2" cols="1"rows="1"></textarea>
+                                <textarea style="width: 98%;" name="gridurl" id="gridurl3"  placeholder="Product 3" cols="1"rows="1"></textarea>
+                                <textarea style="width: 98%;" name="gridurl" id="gridurl4"  placeholder="Product 4" cols="1"rows="1"></textarea>
+
+                                <button id="addproductString">Submit Produts</button>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+                <div class="help">{{help}}</div>
+
+            </div>
+            
+
+        </div>
+        <div id="cleareverfthing">
+           <div class="cleareverything_button">Click Here To Clear Everything</div>
+        
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="leftContent">
+            <button id="workbench">Open Code Finalizer</button> <button class="downloader" data="snippet">Download Menu
+                Code ONLY</button></div>
+        <div class="rightContent"><strong><span id="core_name"></span> <span id="core_version"></span> </strong>
+            <br>By:<span id="core_author"></span></div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+<script src="scripts/core-att.js"></script>
+<script src="scripts/core.js"></script>
+<script src="scripts/edit.js"></script>
+<script src="scripts/dev.js"></script>
+<script src="scripts/local_storage.js"></script>

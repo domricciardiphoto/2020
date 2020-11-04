@@ -1,0 +1,536 @@
+body {
+    background-color: #383333;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.app {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: fit-content;
+    float: left;
+    margin-bottom: 150px;
+ 
+}
+
+.footer {
+    width: 98%;
+    float: left;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0%;
+    padding-bottom: 10px;
+    margin-left: 0%;
+    position: fixed;
+    bottom: 0px;
+    left: 1%;
+    background-color: #f8f8f8;
+}
+.content {
+   width: 100%;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   min-height: fit-content;
+}
+.leftContent {
+    float: left;
+    text-align: left;
+    color: #fff;
+    width: 50%;
+    margin-top: 5px;
+    padding-left: 0.5%;
+}
+
+.rightContent {
+    float: right;
+    text-align: right;
+    font-size: 0.7em;
+    color: #333;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.techleft {
+    width: 69%;
+    float: left;
+    min-height: 1000px;
+    border: 1px solid #ccc;
+    margin-right: .5%;
+    background-color: #fff;
+}
+
+.techright {
+    width: 30%;
+    float: left;
+    min-height: 1000px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+ 
+}
+
+.techtitle {
+    width: 31.38%;
+    text-align: center;
+    float: left;
+    margin-top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.techtitle:hover {
+    background-color: #ccc;
+
+}
+
+.techtitle:first-of-type {
+    margin-left: 0.5%;
+}
+
+.techtitle:last-of-type {
+    margin-right: 0px;
+}
+
+.previewcode {
+    width: 100%;
+    float: left;
+    min-height: fit-content;
+    background-color: #f8f8f8;
+    max-height: 600px;
+    overflow: auto;
+}
+
+
+.copycode ,  .bodycode {
+    width: 97.6%;
+    float: left;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.bodycode {
+    background-color: #f8f8f8;
+}
+
+
+.controlpanel {
+    width: 100%;
+    border-top:  1px solid #ccc;
+    float: left;
+    margin-top: 5px;
+    max-height: 960px;
+    overflow: auto;
+}
+
+.control_section {
+    width: 98%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: chocolate;
+}
+
+
+.sectiontitle {
+    width: fit-content;
+    font-size: 0.8em;
+    text-align: left;
+    padding-left: 1%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.sectionhide {
+    text-align: right;
+    color: #fff;
+    float: right;
+    width: 10%;
+    font-size: 1.5em;
+    padding-right: 1.5%;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+
+
+.section_options {
+    min-height: fit-content;
+    float: left;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.buttonmatrix {
+    width: 100%;
+    float: left;
+    padding-bottom: 5px;
+}
+
+.showlive {
+    width: 99%;
+    position: relative;
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 3px;
+    margin-left: 0.2%;
+}
+
+.menupreview {
+    display: block;
+}
+
+.help {
+    width: 100%;
+    float: left;
+    min-height: 200px;
+    display: none;
+}
+
+.addcatt , .block_container {
+    width: 100%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+}
+
+.addcatt  button , .block_container button {
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.addcatt label,  .block_container label{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 1%;
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
+.addcatt select, .block_container select {
+    width: 48%;
+    float: left;
+}
+
+.menu2 ,.menu2a {
+    display: none;
+}
+
+#finalcode {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #383333;
+    z-index: 99999999999;
+   display: none; 
+}
+
+.finalcode-center {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    background-color: #fff;
+    min-height: 500px;
+    margin-top: 10px;
+}
+
+#resubmit {
+    width: 100%;
+    float: left;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.snippet {
+    font-size: 0.75em;
+}
+
+
+.button_matrix , .final_code_copy {
+    width: 100%;
+    background-color: #bd9494;
+    float: left;
+    min-height: 55px;
+}
+
+.final_code_copy {
+    padding: 1%;
+    width: 98%;
+}
+
+.button_matrix {
+    min-height: fit-content;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 1%;
+    width: 98%;
+    margin-left: 0.5%;
+}
+button {
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    min-height: 30px;
+    margin-right: 0.5%;
+    font-weight: 600;
+    background-color: chocolate;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+.fl_attributes {
+    width: 98%;
+    float: left;
+    font-size: 0.875em;
+    margin-top: 10px;
+    padding-left: 2%;
+    text-align: right;
+}
+
+#flattr , .flattr , #flattr2 {
+    min-height: fit-content;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    width: 93%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    -webkit-box-shadow: inset 0 0 5px 5px #878080;
+    box-shadow: inset 0 0 5px 2px #878080;
+    background-color: #fff;
+}
+
+.label {
+    width: 98%;
+    float: left;
+    background-color: chocolate;
+    padding: .5%;
+    margin-left: 0.5%;
+    color: #fff;
+}
+
+
+.label_inside {
+    width: 98%;
+    float: left;
+    background-color: chocolate;
+    padding: .5%;
+    margin-left: 0.5%;
+    color: #fff;  
+}
+
+
+.page_creator_info , .page_creator_block  , .page_creator_block_code {
+    float: left;
+    margin-top: 5px;
+    border: 1px solid chocolate;
+    width: 96.6%;
+    margin-left: 0.5%;
+    padding: 1%;
+    min-height: 30px;
+}
+
+.page_creator_block {
+    min-height: 250px;
+    padding: 3%;
+    width: 92.5%;
+}
+
+
+
+
+.pagepreview {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    border: 1px solid chocolate;
+    width: 96.6%;
+    margin-left: 0.5%;
+    padding: 1%;
+    min-height: 200px;
+}
+
+
+.pageloaded {
+    width: 98%;
+    float: left;
+    border: 1px solid chocolate;
+    margin-left: 1%;
+    text-align: center;
+    margin-top: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.pageloaded:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+.bodycontent {
+    width: 100%;
+    min-height: 100px;
+    background-color: cyan;
+}
+
+.addmenucodeFinalizer {
+    background-color: cyan;
+    min-height: 100px;
+    
+}
+
+.edit , .delete {
+
+    float: right;
+    padding-right: 2%;
+    background-color: chocolate;
+    padding-left: 2%;
+    color: #fff;
+    font-size: 0.875em;
+
+}
+
+.delete {
+    margin-left: 5px;
+    background-color: firebrick;
+}
+
+#addStructurePages2 {
+    display: none;
+    float: right;
+    width: 57%;
+}
+
+.page_creator {
+    width: 100%;
+    float: left;
+    background-color: #f8f8f8;
+    min-height: 500px;
+    display: none;
+
+}
+
+
+.promo_box_100 {
+    width: 100%;
+    float: left;
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5%;
+}
+
+.promo_box_50 {
+    width: 49.16%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    float: left;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.promo_box_33 {
+    width: 32.4%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    float: left;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.promo_box_25 {
+    width: 24%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    float: left;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.promo_box_100 img , .promo_box_50 img , .promo_box_33 img , .promo_box_25 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.theX {
+    width: 25px;
+    background-color: chocolate;
+    color: #fff;
+    min-height: 25px;
+    line-height: 25px;
+    position: absolute;
+    z-index: 9999999;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pageinfo_controller {
+    display: none;
+}
+
+textarea {
+    width: 96% !important;
+    min-height: 20px;
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+#gridurl4 {
+    display: none;
+}
+
+
+#whatPageAmIworkingOn_button {
+    display: none;
+    margin-top: 0px;
+}
+
+#whatPageAmIworkingOn {
+    min-height: 30px; 
+    padding-left: 5px;  
+}
+
+#cleareverfthing {
+     color:#fff; 
+     margin-left:auto;
+     margin-right:auto;
+     min-height:50px;
+     width:100%;
+     float:left
+}
+
+.cleareverything_button {
+    width: 100%;
+    max-width: 1198px;
+    background-color: black;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 50px;
+    cursor: pointer;
+}

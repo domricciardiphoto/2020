@@ -1,0 +1,579 @@
+<style type="text/css">
+    .app {
+        width: 90%;
+        float: left;
+        min-height: 800px;
+        margin-top: 20px;
+        font-size: 0.875em;
+        margin-left: 5%;
+        font-weight: 500;
+    }
+
+
+    .promo100 {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .promo100 img {
+        width: 90%;
+        margin-left: 5%;
+        max-height: 150px;
+    }
+
+    .promo100 p {
+        margin-bottom: 10px;
+    }
+
+    .promo50 {
+        width: 50%;
+        float: left;
+    }
+
+    .promo50 img,
+    .promo50 img {
+        width: 95%;
+        max-width: 450px;
+    }
+
+    .minheight {
+        min-height: auto;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .promo100 h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .maxtrix {
+        width: 100%;
+        float: left;
+    }
+
+    .question {
+        font-size: 0.875em;
+        margin-bottom: 2px;
+        margin-top: 3px;
+    }
+
+    .answer {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 96%;
+        padding: 2%;
+        cursor: pointer;
+        display: none;
+    }
+
+    .promo100 ul li {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 0.875em;
+    }
+
+    .promo100 ul {
+        list-style: disc;
+        width: 96%;
+        margin-left: 3%;
+    }
+
+    .primary_title {
+        margin-bottom: 10px;
+        background-color: transparent !important;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .primary_title h2 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .details_title {
+        text-align: left;
+        width: fit-content;
+        float: left;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .details_click {
+        text-align: left;
+        width: 40%;
+        float: left;
+        font-size: 0.875em;
+        color: #2767A0;
+        cursor: pointer;
+    }
+
+    .question .promo100 {
+        margin-bottom: 2px;
+    }
+
+    .highlight_title {
+        color: #27679e;
+        font-weight: bold;
+        list-style: none;
+        margin-bottom: 15px !important;
+        font-size: 1em !important;
+    }
+
+    .list_nobull {
+        list-style: none;
+    }
+
+
+    .subjectblock {
+        padding-top: 10px;
+    }
+
+    .inline_ing {
+        max-width: 250px !important;
+    }
+
+    .page_title-d {
+        text-align: center;
+        font-size: 2.5em;
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+    .page_title-d h1 {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .answer .promo100 {
+        background-color: #fff !important;
+    }
+
+
+    .promo6 {
+        width: 16%;
+        float: left;
+        margin-right: 0.5%;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    .promo6_title {
+        background-color: #f8f8f8;
+        color: #333;
+        font-size: 90%;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-right: none;
+    }
+
+    #monotate_in {
+        display: none;
+    }
+
+    .promo100 h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .promo50_button {
+        width: fit-content;
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        color: #000;
+    }
+
+
+    .small_text {
+        font-size: 0.7em;
+    }
+
+    .promo6:hover  {
+        opacity: 0.8;
+    }
+
+   .promo50_button:hover {
+       background-color: #ebe7e7;
+       opacity: 0.8;
+   } 
+
+
+    @media (width: 768px) {
+
+        .promo50 img,
+        .promo50 img {
+            width: 100%;
+            max-width: 300px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+
+        .page_title-d h1 {
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 80% !important;
+        }
+
+
+        .promo100 img {
+            width: 90%;
+            margin-left: 5%;
+            max-height: 140px;
+        }
+
+        .promo6 {
+            width: 49%;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        .inline_ing {
+            max-width: 70% !important;
+            margin-left: 15%;
+            margin-right: auto;
+        }
+
+        .promo50 {
+            width: 100%;
+        }
+
+
+        .question {
+            font-size: 0.9em;
+            margin-bottom: 2px;
+            margin-top: 3px;
+            font-weight: bold;
+            background-color: #f8f8f8;
+            padding-top: 5px;
+            padding-left: 1%;
+            border-bottom: 1px solid #ccc;
+            min-height: 40px;
+            line-height: 30px;
+        }
+
+
+        .answer {
+            background-color: #f8f8f8;
+            width: 100%;
+            padding: 2%;
+
+        }
+
+        .details_title {
+            text-align: left;
+            width: 70%;
+            float: left;
+            margin-right: 0px;
+            line-height: 26px;
+        }
+
+
+        .details_click {
+            width: 30%;
+            float: left;
+            font-size: 1em;
+            color: #2767A0;
+            cursor: pointer;
+            font-weight: 600;
+            line-height: 25px;
+        }
+
+        .promo100 ul {
+            list-style: disc;
+            width: 96%;
+            margin-left: 4%;
+        }
+
+        .promo50 img,
+        .promo50 img {
+            width: 100%;
+            max-width: inherit;
+        }
+
+        .page_title-d h1 {
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 90% !important;
+        }
+
+        .nomobile {
+            display: none;
+        }
+
+        .primary_title {
+            margin-bottom: 10px;
+            background-color: transparent !important;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+    }
+</style>
+
+<div class="app" itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+
+
+    <meta itemprop="url" content="hhttps://www.pcrichard.com/content/pc-richard-coupons">
+    <meta itemprop="name" content="P.C. Richard & Son Promo Code & Coupon Info">
+    <meta itemprop="description"
+        content="Sign-up to get notified of promo and coupon codes that are exclusive to our email subscribers. Get access to coupons that can be used on appliances, TVs, electronics & more at P.C. Richard & Son.">
+
+
+
+
+    <div class="page_title-d" style="margin-bottom: 10px;">
+        <h1>The Truth about P.C. Richard &amp; Son Coupons</h1>
+    </div>
+
+
+    <div class="promo100">
+        <p> You may have come across other websites claiming to have P.C. Richard &amp; Son coupons or promotional
+            codes, but the truth is P.C. Richard &amp; Son only offers coupon codes and promotional codes occasionally
+            throughout the year via e-mail. Our e-mail subscribers get exclusive access to promotional codes and coupon
+            codes that can be used towards great appliance deals, TV deals, electronic deals and more!
+        </p>
+    </div>
+
+      <div class="promo100">
+      <div class="promo100">Please enter email here to sign up for our e-mail list!</div>
+        <form title="Sign Up For Newsletter" aria-label="Sign Up For Newsletter"
+        aria-labelledby="Sign Up For Newsletter" action="https://news.pcrichard.com/public/webform/process/"
+        method="post">
+        <input type="hidden" name="fid" value="05mvynp9w0f8d0gnen7fglvrmevja">
+        <input type="hidden" name="sid" value="319ae528ab7e3f665e1a6f24e15e4c78">
+        <input type="hidden" name="delid" value="">
+        <input type="hidden" name="subid" value="">
+        <input type="hidden" name="td" value="">
+        <input type="hidden" name="formtype" value="addcontact">
+        <script type="text/javascript">
+            var fieldMaps = {};
+        </script>
+        <div class="section" id="row_6109">
+            <div class="container" id="column_7671" style="text-align: left; width: 100%;">
+                <div></div>
+            </div>
+           
+        </div>
+        <div class="section" id="row_6110">
+            <div class="container" id="column_7672" style="text-align: left; width: 100%;">
+
+
+                <div class="email field_block" style="width:100%; float:left; margin-bottom:20px;">
+
+
+                    <div id="field-d" class="field" aria-label="Enter Email Address to sign up for Newsletter"
+                        aria-labelledby="Enter Email Address to sign up for Newsletter">
+                        <span>
+                            <input type="text" class="text field fb-email" size="35" name="18136"
+                                title="Email Address" value="">
+                        </span>
+                        <div class="field_error">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="container" id="column_7673" style="text-align: left; width: 357px;">
+                <div class="field_block" field_id="77451">
+                    <div class="field">
+                        <span>
+                            <input type="hidden" id="field_77451" class="hidden field" name="25157[77451]" value="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="section" id="row_6111">
+            <div class="container" id="column_7674" style="text-align: left; width: 100%;">
+                <div class="field_block">
+                    <div class="field">
+                        <span>
+                            <input id="suscribe-d" aria-label="Subscribe" aria-labelledby="Subscribe" type="submit"
+                                value="Subscribe" title="Subscribe">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </form>
+
+      </div>
+
+      <div class="promo100">
+
+        <p>P.C. Richard &amp; Son does not offer coupon codes to the open market for various reasons; one of them being
+            that we will meet or beat any advertised price. We run sales on thousands of the products we sell and offer
+            free shipping on thousands of items throughout our site.</p>
+        <p>If within 30 days of your purchase from P.C. Richard &amp; Son you should see a lower advertised price from
+            any "Brick and Mortar" or "Authorized Online" retailer, we will gladly mail you a check for 100% of the
+            difference (learn more about <a title="Low Price Guarantee" href="/content/low_price_guarantee">our low
+                price guarantee here</a></p>
+
+        <p>We also seek to add value with our <a title="Installation Information"
+                href="/help-center/installation-info">professional appliance and electronics installation teams</a>, a
+            <a title="Service Information" href="/content/service">customer service team </a>available to you 7 days a
+            week, and two electronics service centers staffed by our very own factory-trained, authorized technicians to
+            service televisions, computers, digital cameras, camcorders, audio components, vacuum cleaners and more.</p>
+        <p>When you see other websites offering P.C. Richard and Son coupons, <span
+                style="text-decoration: underline;">know that these coupons are not valid.</span></p>
+
+    </div>
+
+
+    <div class="promo100 primary_title">
+        <h2>Find Great Deals – Browse Popular Categories</h2>
+    </div>
+
+    <div class="promo100">
+
+
+
+        <a title="Televisions" href="/category/TV-Video/HDTVs/_/N-1ellc99">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Televisions</div>
+                <div class="promo100">
+                
+                    <img itemprop="image" class="lazy" data-src="/images/promos/hdtv-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/hdtv-img-blk-fri-2014.jpg" title="Televisions" alt="Televisions"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+
+
+                </div>
+            </div>
+        </a>
+
+        <a title="Kitchen Appliances" href="/category/Appliances-Housewares/Kitchen-Appliances/_/N-qlzjfx">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Kitchen Appliances</div>
+                <div class="promo100">
+                    <img itemprop="image" class="lazy" data-src="/images/promos/appliance-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/appliance-img-blk-fri-2014.jpg" title="Kitchen Appliances" alt="Kitchen Appliances"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+                </div>
+            </div>
+        </a>
+
+        <a title="Washers &amp; Dryers" href="/category/Appliances-Housewares/Washers-and-Dryers/_/N-15f1bhj">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Washers &amp; Dryers</div>
+                <div class="promo100">
+    
+                    <img itemprop="image" class="lazy" data-src="/images/promos/laundry-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/laundry-img-blk-fri-2014.jpg" title="Washers &amp; Dryers" alt="Washers &amp; Dryers"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+                </div>
+            </div>
+        </a>
+
+        <a title="Computers &amp; Tablets" href="/category/Computers-Tablets/_/N-riyg0a">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Computers &amp; Tablets</div>
+                <div class="promo100">
+               
+
+
+                    <img itemprop="image" class="lazy" data-src="/images/promos/computers-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/computers-img-blk-fri-2014.jpg" title="Computers &amp; Tablets" alt="Computers &amp; Tablets"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+
+                </div>
+            </div>
+        </a>
+
+        <a title="Video Games &amp; Consoles" href="/category/Video-Games/_/N-e5x817">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Video Games &amp; Consoles</div>
+                <div class="promo100">
+
+                    <img itemprop="image" class="lazy" data-src="/images/promos/videogames-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/videogames-img-blk-fri-2014.jpg" title="Video Games &amp; Consoles" alt="Video Games &amp; Consoles"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+
+                  
+                </div>
+            </div>
+
+        </a>
+        <a title="Home Furnishings" href="/category/Home-Furnishings/_/N-10gwzg3">
+            <div class="promo6">
+                <div class="promo100 promo6_title">Home Furnishings</div>
+                <div class="promo100">
+
+                    <img itemprop="image" class="lazy" data-src="/images/promos/mattresse-img-blk-fri-2014.jpg"
+                    data-srcset="/images/promos/mattresse-img-blk-fri-2014.jpg" title="Home Furnishings" alt="Home Furnishings"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+                </div>
+            </div>
+        </a>
+
+
+
+
+    </div>
+
+
+    <div class="promo100">
+        <div class="promo100">
+            <h2>Choose P.C. Richard &amp; Son</h2>
+        </div>
+
+        <div class="promo100">Remember P.C. Richard &amp; Son has built a reputation of Honesty, Integrity and
+            Reliability. We are known for superior customer service and quality brands at a guaranteed low price! That's
+            why we are America's #1 family-owned and operated electronics and appliance retailer for over 100 years.
+        </div>
+
+    </div>
+
+    <div class="promo100">
+
+        <p>Special offers** for those protecting us:</p>
+        <a title="Military Discount" href="/content/military-discount">
+            <div class="promo50_button">Military Discount</div>
+            <a title="first Repsonder Discount" href="/content/first-responder-discount">
+                <div class="promo50_button">First Repsonder Discount</div>
+            </a>
+
+    </div>
+
+
+    <div class="promo100">
+        <span class="small_text">**This discount must be applied by a manager in-store and cannot be applied to an
+            online purchase.</span>
+
+    </div>
+
+
+    <div id="monotate_in" class="promo100">
+        <div class="promo100">
+            <h2>Top Deals &amp; Savings Opportunities</h2>
+        </div>
+        <div id="monotate_content"></div>
+    </div>
+</div>

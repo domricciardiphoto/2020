@@ -1,0 +1,62 @@
+
+
+.menuitem {
+    width: 88px;
+    height: 90px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.submenu_title {
+    width: 100%;
+    text-align: center;
+    float: left;
+    font-size: .765em;
+    font-weight: 500;
+}
+
+.menuitem img {
+    padding: 5%;
+    position: relative;
+    margin-left: 30%;
+    float: left;
+    height: auto;
+    width: 40%;
+}
+
+.pagenumbox {
+    width: fit-content;
+    height: 17px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    color: #333;
+    font-size: 0.7em;
+    line-height: 17px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-left: none;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+.closenumbox {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    background-color: chocolate;
+    color: #fff;
+    line-height: 20px;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+

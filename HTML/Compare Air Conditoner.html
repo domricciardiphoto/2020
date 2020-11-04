@@ -1,0 +1,962 @@
+<style type="text/css">
+    .pagename {
+        width: 98%;
+        margin-left: 1%;
+        float: left;
+        text-align: left;
+        margin-top: 10px;
+        max-width: 1200px;
+        font-size: 0.875em
+    }
+
+    .wrapper-d ::-webkit-scrollbar {
+        width: 5px
+    }
+
+    .wrapper-d ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+        border-radius: 5px
+    }
+
+    .wrapper-d ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .5);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, .5);
+        background-color: #6c6763
+    }
+
+    .product_specs li:nth-child(even) {
+        background: #f9f9f9;
+        line-height: 17px;
+    }
+
+    .product_specs li:nth-child(even)::first-line {
+        line-height: inherit;
+    }
+
+    .product_specs li:nth-child(odd) {
+        background: #f9f9f9;
+        line-height: 17px;
+    }
+
+    .product_specs li:nth-child(odd)::first-line {
+        line-height: inherit;
+    }
+
+
+
+    .matrix-d li:nth-child(even) {
+        background: 0 0
+    }
+
+    .fatcheck {
+        color: #795;
+        font-size: 2em
+    }
+
+    .wrapper-d {
+        width: 100%;
+        max-width: 1200px;
+        font-size: .875em;
+        padding: 1%;
+        margin-bottom: 10px;
+        position: relative;
+        float: left;
+        margin-top: 15px;
+        background-color: #076698
+    }
+
+    .product_cat_title {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        float: left;
+        color: #fff
+    }
+
+    .product_cat_title:first-of-type {
+        margin-top: 0
+    }
+
+    .product_cat_title2 {
+        background-color: #f2f2f2;
+        width: 80%;
+        margin-left: 20%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .product_cat_title3 {
+        background-color: #f2f2f2;
+        width: 37%;
+        margin-left: 20%;
+        margin-right: .8%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .product_cat_title4 {
+        background-color: #f2f2f2;
+        width: 37%;
+        float: left;
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 5px;
+        margin-bottom: 5px
+    }
+
+    .app {
+        width: 100%;
+        position: relative;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        background-color: #fff;
+        padding-bottom: 10px;
+        padding-top: 3px;
+        background-color: #f2f2f2
+    }
+
+    .app_scroll {
+        width: max-content;
+        position: relative;
+        float: left
+    }
+
+    .content-d {
+        width: 78.5%;
+        float: left;
+        overflow: auto
+    }
+
+    .product_block {
+        width: 20%;
+        float: left;
+        background-color: #f2f2f2;
+        max-height: fit-content;
+        max-width: 240px;
+        min-width: 200px;
+    }
+
+    .product_image {
+        width: 94%;
+        background-color: #fff;
+        margin-left: 3%;
+        margin-top: 10px;
+        max-height: 155px;
+    }
+
+    .product_image img {
+        width: 70%;
+        margin-left: 10%;
+        max-height: 160px;
+    }
+
+    .product_specs {
+        width: 94%;
+        margin-left: 3%;
+        background-color: #fff;
+        min-height: 420px;
+        margin-bottom: 20px
+    }
+
+    .product_specs ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        padding-left: 0
+    }
+
+    .product_specs ul li {
+        padding: 2px;
+        font-size: 80%;
+        min-height: 40px;
+        line-height: 30px;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        padding-right: 3px;
+        list-style: none;
+        margin: 0;
+        padding-left: 5px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .product_specs ul li:last-of-type {
+        border: none;
+        min-height: 92px;
+        line-height: 17px;
+        padding-top: 5px
+    }
+
+    .product_specs ul li:first-of-type {
+        background-color: #011425;
+        color: #fff;
+        margin-top: 10px;
+        padding-left: 10px;
+        line-height: 25px;
+        min-height: 25px;
+        line-height: 25px;
+        padding-right: 5px
+    }
+
+    .product_specs ul li:first-of-type {
+        margin-top: 8px
+    }
+
+    .matrix-d .product_specs ul li {
+        font-size: 83% !important;
+        min-height: 40px;
+        line-height: 15px;
+        max-height: 40px;
+        overflow: hidden;
+        padding-top: 3.5% !important
+    }
+
+    .matrix-d .product_specs ul li:first-of-type {
+        min-height: 30px
+    }
+
+    .m_small {
+        font-size: 75%
+    }
+
+    .matrix-d {
+        width: 25%;
+        float: left;
+        max-height: fit-content;
+        max-width: 240px;
+        position: relative
+    }
+
+    .matrix-d .product_specs {
+        background-color: transparent;
+        text-align: right
+    }
+
+    .matrix-d .product_image {
+        background-color: transparent;
+        width: 59.2%;
+        min-width: 230px
+    }
+
+    .matrix-d .product_image img {
+        opacity: 0
+    }
+
+    .standardline .product_block .product_specs {
+        min-height: 360px !important;
+        max-height: fit-content
+    }
+
+    .product_cat_title sup {
+        font-size: .6em
+    }
+
+    .topheader {
+        margin-bottom: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 2.2em;
+    }
+
+    .topheader h1 {
+        font-weight: 600
+    }
+
+    .product_specs li h4 {
+        line-height: 27px;
+        font-size: 1.2em
+    }
+
+    .product_specs li:nth-last-child(2) {
+        text-align: center;
+        background-color: brown;
+        font-size: 1em;
+        padding: 5px
+    }
+
+    .product_specs li:nth-last-child(2) a {
+        padding: 5px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+        zoom: 1
+    }
+
+    .product_specs li:nth-last-child(2) a:hover {
+        zoom: 1.1
+    }
+
+    .matrix-d .product_specs li:nth-last-child(2) {
+        text-align: right;
+        background-color: #f2f2f2;
+        font-size: 63%;
+        padding: 0
+    }
+
+    .microinfo {
+        width: 75%;
+        float: left;
+        font-style: italic;
+        position: absolute;
+        bottom: 28px;
+        z-index: 999;
+        font-size: .8em;
+        padding-left: 5px;
+        left: 21%
+    }
+
+    .noscroller {
+        bottom: 8px
+    }
+
+    .topheader SVG {
+        width: 100%;
+        margin: 0px
+    }
+
+    @media (max-width:1170px) {
+        .content-d {
+            width: 73%
+        }
+    }
+
+    @media (max-width:800px) {
+        .content-d {
+            width: 71%
+        }
+
+        .topheader SVG {
+            margin: 0
+        }
+    }
+
+    @media (max-width:727px) {
+        .content-d {
+            width: 67%
+        }
+    }
+
+    @media (max-width:727px) {
+        .content-d {
+            width: 65%
+        }
+    }
+
+    @media (max-width:569px) {
+        .matrix-d {
+            width: 67%;
+            float: left;
+            max-height: fit-content;
+            max-width: 240px;
+            text-align: left;
+            -webkit-box-shadow: 2px 0 15px 0 #7a7a7a;
+            box-shadow: 2px 0 15px 0 #7a7a7a;
+            z-index: 9999
+        }
+
+        .noscroller {
+            bottom: 28px
+        }
+
+        .content-d {
+            width: 57%;
+            float: left;
+            overflow: auto;
+            border: 1px solid #ccc;
+            -webkit-box-shadow: inset 3px 0 5px #b5b5b5;
+            box-shadow: inset 3px 0 5px #b5b5b5
+        }
+
+        .microinfo {
+            width: 36%;
+            float: left;
+            font-style: italic;
+            position: absolute;
+            bottom: 10px;
+            z-index: 999;
+            font-size: .75em;
+            padding-left: 0;
+            left: 0;
+            text-align: right
+        }
+
+        .product_specs ul li {
+            padding: 2px;
+            font-size: 80%;
+            min-height: 50px;
+            line-height: 23px;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            padding-right: 3px;
+            list-style: none;
+            margin: 0;
+            padding-left: 5px
+        }
+
+        .matrix-d .product_specs ul li {
+            padding: 2px;
+            font-size: 77%;
+            min-height: 50px;
+            line-height: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid #ccc;
+            padding-right: 3px;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            padding-top: 5px
+        }
+
+        .fatcheck {
+            color: #795;
+            font-size: 2.2em;
+            line-height: 40px
+        }
+
+        .product_specs ul li:first-of-type {
+            text-align: center;
+            min-height: 60px;
+        }
+
+        .product_specs li:nth-last-child(2) a {
+            line-height: 40px
+        }
+
+        .matrix-d .product_specs ul li:first-of-type {
+            text-align: right;
+            min-height: 32px;
+            margin-top: 8px
+        }
+
+        .matrix-d .product_specs ul li:first-of-type {
+            min-height: 57px;
+        }
+
+        .product_specs ul li:last-of-type {
+            border: none !important
+        }
+
+        .matrix-d .product_image {
+            width: 59.2%;
+            min-width: 144px
+        }
+
+        .product_block {
+            width: 15%;
+            max-width: 210px;
+            min-width: 150px;
+        }
+
+
+        .product_image {
+            width: 94%;
+            background-color: #fff;
+            margin-left: 3%;
+            margin-top: 10px;
+            max-height: 100px;
+        }
+
+        .product_image img {
+            width: 50%;
+            margin-left: 30%;
+            max-height: 160px;
+            margin-bottom: 60px;
+        }
+
+
+    }
+
+    @media (max-width:320px) {
+        .content-d {
+            width: 52%
+        }
+    }
+
+    /*expander css*/
+    .expander {
+        width: 98%;
+        float: left;
+        position: relative;
+        user-select: none;
+        background-color: #fff;
+        margin-left: 1%;
+        padding-bottom: 1%;
+    }
+
+    .expander_content {
+        width: 98%;
+        float: left;
+        position: relative;
+        margin-left: 1%;
+        margin-top: 1%;
+        margin-bottom: 1.5%;
+        font-size: 0.875em;
+        line-height: 17px;
+
+    }
+
+    .expander_clamp {
+        max-height: 60px;
+        overflow: hidden;
+    }
+
+
+    .expander_open {
+        width: 97%;
+        float: left;
+        position: absolute;
+        text-align: right;
+        color: #034694;
+        font-weight: 600;
+        font-size: .8em;
+        bottom: 5px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .expander_content h3 {
+        line-height: inherit;
+        font-size: 1em;
+        user-select: none
+    }
+
+    .microinfo2 {
+        width: 98%;
+        font-style: italic;
+        font-size: .8em;
+        float: left;
+        margin-left: 1%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+    }
+
+    #monetate_selectorHTML_2716dc_0,
+    .monetate_selectorHTML_2716dc {
+        width: 100%;
+        padding-left: 1%;
+        background-color: #f2f2f2;
+        border: 1PX SOLID #CCC;
+        margin-bottom: 10px !important;
+        padding-top: 5px;
+        padding-right: 1%;
+    }
+
+    @media (max-width:767px) {
+        .expander_open {
+            font-size: 1em;
+            bottom: 5px;
+        }
+
+        .expander {
+            margin-bottom: 4%;
+            margin-top: 1%;
+            padding-bottom: 7%;
+        }
+
+        .microinfo2 {
+            margin-top: 2%;
+            border-bottom: 1px solid #ccc
+        }
+
+    }
+
+    .check-shop-modals {
+        display: none;
+    }
+
+
+</style>
+
+
+<style type="text/css">
+    li.check-shop-button,
+    li.check-warranty,
+    li.check-filter,
+    li.check-restart,
+    li.check-energystar,
+    li.check-quietmaster,
+    li.check-timer,
+    li.check-voice,
+    li.check-wifi,
+    li.check-capacities,
+    li.check-voltage,
+    li.check-installation,
+    li.check-function
+    {
+    line-height: 30px !important;
+    }
+
+</style>
+
+
+<div class="pagename">
+    <h1 itemprop="name">Compare Air Conditioners</h1><br>
+    <p>Every grill master knows that they can only be as great as their equipment allows them to be. At PC Richard &amp;
+        Son, we know “the best” is synonymous with <a
+            href="/category/Shop-by-Brand/Weber/Weber-Barbeques/_/N-xv61mu">Weber Grills</a>. You’ll be hard pressed to
+        find a better grill at a better price point that boasts the same high-grade steel, long lasting burners, and
+        top-quality grates. With Weber’s wide variety of models available, it can be hard to find which <a
+            href="/library/blogArticle/grill-buying-guide/6000214.pcra">setup is best for your needs</a>, but we’re here
+        to help you compare Weber Grills and make the perfect choice. </p>
+</div>
+<div class="wrapper-d" itemscope="" itemtype="http://schema.org/LocalBusiness">
+    <meta itemprop="url" content="https://www.pcrichard.com/compare-air-conditioners" />
+
+<div class="product_cat_title topheader">
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 104" style="enable-background:new 0 0 1200 104;" xml:space="preserve"><style type="text/css">.st0{fill:#FCFCFC;}.st1{fill:url(#SVGID_1_);}.st2{fill:#999999;}.st3{clip-path:url(#SVGID_3_);}.st4{clip-path:url(#SVGID_5_);}.st5{clip-path:url(#SVGID_7_);}.st6{clip-path:url(#SVGID_9_);}.st7{clip-path:url(#SVGID_11_);fill:url(#SVGID_12_);}.st8{clip-path:url(#SVGID_14_);fill:url(#SVGID_15_);}.st9{clip-path:url(#SVGID_17_);fill:url(#SVGID_18_);}.st10{clip-path:url(#SVGID_20_);fill:url(#SVGID_21_);}.st11{clip-path:url(#SVGID_23_);fill:url(#SVGID_24_);}.st12{clip-path:url(#SVGID_26_);fill:url(#SVGID_27_);}.st13{clip-path:url(#SVGID_29_);fill:url(#SVGID_30_);}.st14{clip-path:url(#SVGID_32_);fill:url(#SVGID_33_);}.st15{clip-path:url(#SVGID_35_);fill:url(#SVGID_36_);}.st16{clip-path:url(#SVGID_38_);fill:url(#SVGID_39_);}.st17{clip-path:url(#SVGID_41_);}.st18{clip-path:url(#SVGID_43_);}.st19{fill:#868D8A;}</style><rect x="0" class="st0" width="1200" height="102"/><g><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="600" y1="0" x2="600" y2="104"><stop offset="0.514" style="stop-color:#FFFFFF;stop-opacity:0.4"/><stop offset="1" style="stop-color:#076698"/></linearGradient><rect class="st1" width="1200" height="104"/></g><g><path class="st2" d="M68.5,66.5c-2.1,1.1-6.4,2.1-11.8,2.1c-12.6,0-22.1-7.9-22.1-22.6c0-14,9.5-23.4,23.3-23.4c5.6,0,9.1,1.2,10.6,2l-1.4,4.7c-2.2-1.1-5.3-1.9-9-1.9c-10.5,0-17.4,6.7-17.4,18.4c0,10.9,6.3,18,17.2,18c3.5,0,7.1-0.7,9.4-1.9L68.5,66.5z"/><path class="st2" d="M112.5,45.2c0,15.4-9.3,23.5-20.7,23.5C80,68.7,71.7,59.6,71.7,46c0-14.2,8.8-23.4,20.7-23.4C104.6,22.6,112.5,31.9,112.5,45.2z M77.9,45.9C77.9,55.4,83,64,92.1,64c9.1,0,14.3-8.4,14.3-18.5c0-8.9-4.6-18.1-14.2-18.1C82.6,27.3,77.9,36.1,77.9,45.9z"/><path class="st2" d="M157.6,48.4c-0.3-6.2-0.7-13.7-0.7-19.3h-0.2c-1.5,5.2-3.4,10.8-5.6,17l-7.9,21.7h-4.4l-7.2-21.3c-2.1-6.3-3.9-12.1-5.2-17.4h-0.1c-0.1,5.6-0.5,13-0.9,19.7L124.3,68h-5.5l3.1-44.6h7.4l7.6,21.6c1.9,5.5,3.4,10.4,4.5,15h0.2c1.1-4.5,2.7-9.4,4.7-15l7.9-21.6h7.4l2.8,44.6h-5.6L157.6,48.4z"/><path class="st2" d="M173.2,23.9c2.8-0.5,6.4-0.9,11.1-0.9c5.7,0,9.9,1.3,12.5,3.7c2.5,2.1,3.9,5.4,3.9,9.3c0,4-1.2,7.2-3.4,9.5c-3,3.2-8,4.9-13.6,4.9c-1.7,0-3.3-0.1-4.6-0.4V68h-5.8V23.9z M179,45.4c1.3,0.3,2.8,0.5,4.8,0.5c7,0,11.2-3.4,11.2-9.5c0-5.9-4.2-8.7-10.5-8.7c-2.5,0-4.4,0.2-5.4,0.5V45.4z"/><path class="st2" d="M210.1,53.9l-4.6,14h-6l15.2-44.6h7L236.9,68h-6.2l-4.8-14H210.1z M224.8,49.4l-4.4-12.9c-1-2.9-1.7-5.6-2.3-8.1h-0.1c-0.7,2.6-1.4,5.4-2.3,8.1l-4.4,12.9H224.8z"/><path class="st2" d="M243.4,23.9c2.9-0.6,7.1-0.9,11.1-0.9c6.2,0,10.1,1.1,12.9,3.6c2.3,2,3.5,5,3.5,8.5c0,5.9-3.7,9.8-8.4,11.4v0.2c3.4,1.2,5.5,4.4,6.6,9c1.5,6.2,2.5,10.5,3.4,12.3h-6c-0.7-1.3-1.7-5.1-3-10.7c-1.3-6.2-3.7-8.5-8.9-8.7h-5.4V68h-5.8V23.9z M249.2,44.3h5.9c6.2,0,10.1-3.4,10.1-8.5c0-5.8-4.2-8.3-10.3-8.3c-2.8,0-4.8,0.3-5.7,0.5V44.3z"/><path class="st2" d="M302.2,47h-17.4v16.1h19.3V68h-25.1V23.3h24.1v4.8h-18.3v14.1h17.4V47z"/></g><g><path class="st2" d="M662.2,54.1l-4.6,14h-6l15.2-44.6h7L689,68.2h-6.2l-4.8-14H662.2z M676.8,49.6l-4.4-12.9c-1-2.9-1.7-5.6-2.3-8.1H670c-0.7,2.6-1.4,5.4-2.3,8.1l-4.4,12.9H676.8z"/><path class="st2" d="M701.3,23.5v44.6h-5.8V23.5H701.3z"/><path class="st2" d="M711.3,24.1c2.9-0.6,7.1-0.9,11.1-0.9c6.2,0,10.1,1.1,12.9,3.6c2.3,2,3.5,5,3.5,8.5c0,5.9-3.7,9.8-8.4,11.4v0.2c3.4,1.2,5.5,4.4,6.6,9c1.5,6.2,2.5,10.5,3.4,12.3h-6c-0.7-1.3-1.7-5.1-3-10.7c-1.3-6.2-3.7-8.5-8.9-8.7h-5.4v19.3h-5.8V24.1z M717.1,44.5h5.9c6.2,0,10.1-3.4,10.1-8.5c0-5.8-4.2-8.3-10.3-8.3c-2.8,0-4.8,0.3-5.7,0.5V44.5z"/><path class="st2" d="M792.2,66.7c-2.1,1.1-6.4,2.1-11.8,2.1c-12.6,0-22.1-7.9-22.1-22.6c0-14,9.5-23.4,23.3-23.4c5.6,0,9.1,1.2,10.6,2l-1.4,4.7c-2.2-1.1-5.3-1.9-9-1.9c-10.5,0-17.4,6.7-17.4,18.4c0,10.9,6.3,18,17.2,18c3.5,0,7.1-0.7,9.4-1.9L792.2,66.7z"/><path class="st2" d="M836.2,45.4c0,15.4-9.3,23.5-20.7,23.5c-11.8,0-20.1-9.1-20.1-22.7c0-14.2,8.8-23.4,20.7-23.4C828.3,22.8,836.2,32.1,836.2,45.4z M801.5,46.1c0,9.5,5.2,18.1,14.2,18.1c9.1,0,14.3-8.4,14.3-18.5c0-8.9-4.6-18.1-14.2-18.1C806.3,27.5,801.5,36.3,801.5,46.1z"/><path class="st2" d="M843.7,68.2V23.5h6.3l14.3,22.6c3.3,5.2,5.9,9.9,8,14.5l0.1-0.1c-0.5-6-0.7-11.4-0.7-18.3V23.5h5.4v44.6h-5.8l-14.2-22.7c-3.1-5-6.1-10.1-8.3-14.9l-0.2,0.1c0.3,5.6,0.5,11,0.5,18.4v19.1H843.7z"/><path class="st2" d="M887.3,24.1c3.5-0.5,7.7-0.9,12.3-0.9c8.3,0,14.2,1.9,18.1,5.6c4,3.6,6.3,8.8,6.3,16c0,7.3-2.3,13.2-6.4,17.4c-4.2,4.2-11.1,6.4-19.7,6.4c-4.1,0-7.6-0.2-10.5-0.5V24.1z M893,63.6c1.5,0.3,3.6,0.3,5.8,0.3c12.3,0,19-6.9,19-18.9c0.1-10.5-5.9-17.2-18.1-17.2c-3,0-5.2,0.3-6.8,0.6V63.6z"/><path class="st2" d="M937.1,23.5v44.6h-5.8V23.5H937.1z"/><path class="st2" d="M955.7,28.4h-13.6v-4.9h33.1v4.9h-13.6v39.7h-5.8V28.4z"/><path class="st2" d="M985.9,23.5v44.6h-5.8V23.5H985.9z"/><path class="st2" d="M1034.1,45.4c0,15.4-9.3,23.5-20.7,23.5c-11.8,0-20.1-9.1-20.1-22.7c0-14.2,8.8-23.4,20.7-23.4C1026.2,22.8,1034.1,32.1,1034.1,45.4z M999.5,46.1c0,9.5,5.2,18.1,14.2,18.1c9.1,0,14.3-8.4,14.3-18.5c0-8.9-4.6-18.1-14.2-18.1C1004.2,27.5,999.5,36.3,999.5,46.1z"/><path class="st2" d="M1041.6,68.2V23.5h6.3l14.3,22.6c3.3,5.2,5.9,9.9,8,14.5l0.1-0.1c-0.5-6-0.7-11.4-0.7-18.3V23.5h5.4v44.6h-5.8l-14.2-22.7c-3.1-5-6.1-10.1-8.3-14.9l-0.2,0.1c0.3,5.6,0.5,11,0.5,18.4v19.1H1041.6z"/><path class="st2" d="M1108.3,47.2h-17.4v16.1h19.3v4.8h-25.1V23.5h24.1v4.8h-18.3v14.1h17.4V47.2z"/><path class="st2" d="M1117.7,24.1c2.9-0.6,7.1-0.9,11.1-0.9c6.2,0,10.1,1.1,12.9,3.6c2.3,2,3.5,5,3.5,8.5c0,5.9-3.7,9.8-8.4,11.4v0.2c3.4,1.2,5.5,4.4,6.6,9c1.5,6.2,2.5,10.5,3.4,12.3h-6c-0.7-1.3-1.7-5.1-3-10.7c-1.3-6.2-3.7-8.5-8.9-8.7h-5.4v19.3h-5.8V24.1z M1123.5,44.5h5.9c6.2,0,10.1-3.4,10.1-8.5c0-5.8-4.2-8.3-10.3-8.3c-2.8,0-4.8,0.3-5.7,0.5V44.5z"/><path class="st2" d="M1152.6,61.2c2.6,1.6,6.4,2.9,10.3,2.9c5.9,0,9.3-3.1,9.3-7.6c0-4.2-2.4-6.6-8.4-8.9c-7.3-2.6-11.8-6.4-11.8-12.7c0-7,5.8-12.1,14.4-12.1c4.6,0,7.9,1.1,9.9,2.2l-1.6,4.7c-1.5-0.8-4.4-2.1-8.5-2.1c-6.1,0-8.4,3.6-8.4,6.7c0,4.2,2.7,6.2,8.9,8.6c7.6,2.9,11.4,6.6,11.4,13.1c0,6.9-5.1,12.9-15.6,12.9c-4.3,0-9-1.3-11.4-2.8L1152.6,61.2z"/></g><g><g><g><defs><path id="SVGID_2_" d="M361.1,29.2c-1.6,1.2-4.8,4-7.1,6.7c-1.9,2.2-4.8,6.4-5.8,7.9c1.5,0,3.7,0,4.7,0h0.1c0.7,0,1.9,0,2.2,0.3c0,0,0,0.1,0,0.1c0,0.4-0.9,1.2-1.9,1.2c-0.1,0-3.2,0-4.5,0c-0.7,0-1.4,0-1.9,0c-1.9,2.6-3.9,5.4-5.7,7.9c-1,1.4-2,2.7-2.9,4c-0.8,1.1-2,2.8-3.4,4.8c2.6,6.1,7.9,11.1,14.5,14.2c9.8-4.5,16.4-13.2,16.4-23.2V53h0V26.9C363.8,27.4,362.2,28.4,361.1,29.2"/></defs><clipPath id="SVGID_3_"><use xlink:href="#SVGID_2_" style="overflow:visible;"/></clipPath><g class="st3"><g><defs><rect id="SVGID_4_" x="334.6" y="26.6" width="31.7" height="50.3"/></defs><clipPath id="SVGID_5_"><use xlink:href="#SVGID_4_" style="overflow:visible;"/></clipPath><g class="st4"><image style="overflow:visible;enable-background:new ;" width="17" height="27" xlink:href="/images/promos/216B27DB.jpg" transform="matrix(1.7968 0 0 1.8652 335.1301 26.6204)"></image></g></g></g></g></g><g><g><defs><path id="SVGID_6_" d="M358.1,28c0,0,0.1,0,0.1-0.1C358.2,27.9,358.1,28,358.1,28 M358.3,27.9C358.3,27.9,358.2,27.9,358.3,27.9C358.2,27.9,358.3,27.9,358.3,27.9S358.3,27.9,358.3,27.9C358.3,27.8,358.3,27.9,358.3,27.9 M358.3,27.8C358.4,27.8,358.4,27.8,358.3,27.8C358.4,27.8,358.4,27.8,358.3,27.8 M358.4,27.8c0.5-0.3,1-0.5,1.5-0.8C359.4,27.2,358.9,27.5,358.4,27.8 M333,22v31.2c0,1.1,0.1,2.1,0.2,3.1c2.6-3.5,13.4-18.1,14.4-19.3c4.2-5,7.8-7.5,10.4-9c-2.7,1.6-6.2,4.1-10.4,9.1c-0.9,1-9,12-12.9,17.2c0-0.3,0-0.7,0-1.1V24l0,0v-0.3c0-0.2,0.1-0.4,0.3-0.5c4.4-1.1,9.3-1.7,14.3-1.7s10,0.6,14.4,1.7c0.1,0,0.3,0.2,0.3,0.4v2c0.6-0.1,1.2-0.2,1.8-0.3V22c-4.7-1.4-10.4-2.2-16.4-2.2C343.4,19.7,337.8,20.6,333,22"/></defs><clipPath id="SVGID_7_"><use xlink:href="#SVGID_6_" style="overflow:visible;"/></clipPath><g class="st5"><g><defs><rect id="SVGID_8_" x="332.5" y="19.2" width="33.7" height="37.5"/></defs><clipPath id="SVGID_9_"><use xlink:href="#SVGID_8_" style="overflow:visible;"/></clipPath><g transform="matrix(1 0 0 1 0 0)" class="st6"><image style="overflow:visible;enable-background:new ;" width="18" height="20" xlink:href="/images/promos/216B27DE.jpg" transform="matrix(1.8753 0 0 1.8741 332.5093 19.1649)"></image></g></g></g></g></g><g><g><defs><polygon id="SVGID_10_" points="394.5,37.1 394.5,54.9 398.4,54.9 398.4,48.1 406.9,48.1 406.9,44.5 398.4,44.5 398.4,40.7 408.1,40.7 408.1,37.1 "/></defs><clipPath id="SVGID_11_"><use xlink:href="#SVGID_10_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-383.2944" x2="-666.5358" y2="-383.2944" gradientTransform="matrix(0 6.5344 -6.5344 0 -2103.3418 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="394.5" y="37.1" class="st7" width="13.6" height="17.8"/></g></g><g><g><defs><path id="SVGID_13_" d="M426.6,40.6h3.9c1.9,0,3.1,0.9,3.1,2.6v0c0,1.5-1.1,2.5-3,2.5h-4L426.6,40.6L426.6,40.6z M422.7,37.1v17.8h3.9v-5.7h3h0l3.8,5.7h4.6l-4.4-6.4c2.3-0.8,3.8-2.7,3.8-5.5v0c0-1.7-0.5-3.1-1.5-4.1c-1.2-1.2-2.9-1.8-5.2-1.8L422.7,37.1L422.7,37.1z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-386.1732" x2="-666.5358" y2="-386.1732" gradientTransform="matrix(0 6.5344 -6.5344 0 -2093.0283 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="422.7" y="37.1" class="st8" width="15.4" height="17.8"/></g></g><g><g><defs><rect id="SVGID_16_" x="452.7" y="37.1" width="3.9" height="17.8"/></defs><clipPath id="SVGID_17_"><use xlink:href="#SVGID_16_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-388.2093" x2="-666.5358" y2="-388.2093" gradientTransform="matrix(0 6.5344 -6.5344 0 -2082.0215 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="452.7" y="37.1" class="st9" width="3.9" height="17.8"/></g></g><g><g><defs><polygon id="SVGID_19_" points="472.6,37.1 472.6,54.9 486.1,54.9 486.1,51.5 476.5,51.5 476.5,47.7 484.9,47.7 484.9,44.2 476.5,44.2 476.5,40.6 486,40.6 486,37.1 "/></defs><clipPath id="SVGID_20_"><use xlink:href="#SVGID_19_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_21_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-390.8743" x2="-666.5358" y2="-390.8743" gradientTransform="matrix(0 6.5344 -6.5344 0 -2074.7556 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="472.6" y="37.1" class="st10" width="13.6" height="17.8"/></g></g><g><g><defs><path id="SVGID_22_" d="M505,40.6h3c3.2,0,5.4,2.2,5.4,5.4v0c0,3.1-2.2,5.3-5.4,5.3h-3V40.6z M501.1,37.1v17.8h7c5.6,0,9.5-3.9,9.5-8.9v0c0-5-3.9-8.9-9.5-8.9L501.1,37.1L501.1,37.1z"/></defs><clipPath id="SVGID_23_"><use xlink:href="#SVGID_22_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_24_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-393.8607" x2="-666.5358" y2="-393.8607" gradientTransform="matrix(0 6.5344 -6.5344 0 -2064.3108 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="501.1" y="37.1" class="st11" width="16.5" height="17.8"/></g></g><g><g><defs><path id="SVGID_25_" d="M536.4,40.6h3.9c1.9,0,3.1,0.9,3.1,2.6v0c0,1.5-1.1,2.5-3,2.5h-4V40.6L536.4,40.6z M532.4,37.1v17.8h3.9v-5.7h3h0l3.8,5.7h4.6l-4.4-6.4c2.3-0.8,3.8-2.7,3.8-5.5v0c0-1.7-0.5-3.1-1.5-4.1c-1.2-1.2-2.9-1.8-5.2-1.8L532.4,37.1L532.4,37.1z"/></defs><clipPath id="SVGID_26_"><use xlink:href="#SVGID_25_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_27_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-396.819" x2="-666.5358" y2="-396.819" gradientTransform="matrix(0 6.5344 -6.5344 0 -2052.8223 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="532.4" y="37.1" class="st12" width="15.4" height="17.8"/></g></g><g><g><defs><rect id="SVGID_28_" x="562.5" y="37.1" width="3.9" height="17.8"/></defs><clipPath id="SVGID_29_"><use xlink:href="#SVGID_28_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_30_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-398.8622" x2="-666.5358" y2="-398.8622" gradientTransform="matrix(0 6.5344 -6.5344 0 -2041.8131 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="562.5" y="37.1" class="st13" width="3.9" height="17.8"/></g></g><g><g><defs><path id="SVGID_31_" d="M581.6,46.1L581.6,46.1c0,5.2,3.9,9.2,9.1,9.2c3.4,0,5.5-1.2,7.3-3.2l-2.5-2.5c-1.4,1.3-2.7,2.1-4.7,2.1c-3,0-5.2-2.6-5.2-5.6v0c0-3,2.2-5.5,5.2-5.5c1.8,0,3.2,0.8,4.6,2l2.5-2.9c-1.7-1.6-3.7-2.8-7-2.8C585.4,36.8,581.6,41,581.6,46.1"/></defs><clipPath id="SVGID_32_"><use xlink:href="#SVGID_31_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_33_" gradientUnits="userSpaceOnUse" x1="-667.8253" y1="-403.5695" x2="-665.0927" y2="-403.5695" gradientTransform="matrix(0 6.7581 -6.7581 0 -2137.582 4550.0483)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="581.6" y="36.8" class="st14" width="16.5" height="18.5"/></g></g><g><g><defs><polygon id="SVGID_34_" points="623.8,37.1 623.8,44.2 616.6,44.2 616.6,37.1 612.6,37.1 612.6,54.9 616.6,54.9 616.6,47.8 623.8,47.8 623.8,54.9 627.7,54.9 627.7,37.1 "/></defs><clipPath id="SVGID_35_"><use xlink:href="#SVGID_34_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_36_" gradientUnits="userSpaceOnUse" x1="-669.2642" y1="-404.5743" x2="-666.5358" y2="-404.5743" gradientTransform="matrix(0 6.5344 -6.5344 0 -2023.4672 4410.3535)"><stop offset="0" style="stop-color:#BABEBD"/><stop offset="1" style="stop-color:#9DA19E"/></linearGradient><rect x="612.6" y="37.1" class="st15" width="15.1" height="17.8"/></g></g><g><g><defs><path id="SVGID_37_" d="M359.9,27c1.4-0.6,2.8-1.1,4.2-1.4l0,0C362.7,25.9,361.3,26.4,359.9,27"/></defs><clipPath id="SVGID_38_"><use xlink:href="#SVGID_37_" style="overflow:visible;"/></clipPath><linearGradient id="SVGID_39_" gradientUnits="userSpaceOnUse" x1="-659.5138" y1="-417.9983" x2="-656.7827" y2="-417.9983" gradientTransform="matrix(1.9498 11.0579 -11.0579 1.9498 -2975.6086 8126.4468)"><stop offset="0" style="stop-color:#FFFFFF"/><stop offset="1.578107e-02" style="stop-color:#F1F1F6"/><stop offset="6.855782e-02" style="stop-color:#C8C9DC"/><stop offset="0.1261" style="stop-color:#A4A5C5"/><stop offset="0.188" style="stop-color:#8587B2"/><stop offset="0.2555" style="stop-color:#6D6EA2"/><stop offset="0.3308" style="stop-color:#5A5B96"/><stop offset="0.4184" style="stop-color:#4C4E8D"/><stop offset="0.5294" style="stop-color:#444688"/><stop offset="0.7418" style="stop-color:#424487"/><stop offset="1" style="stop-color:#424487"/></linearGradient><polygon class="st16" points="364,24.9 364.4,27 360.1,27.7 359.7,25.6 "/></g></g><g><g><defs><path id="SVGID_40_" d="M335.1,23.2c-0.2,0-0.3,0.2-0.3,0.5V24l0,0v29.2c0,0.3,0,0.7,0,1.1c3.9-5.3,12-16.2,12.9-17.2c4.3-5.1,7.9-7.6,10.6-9.2c0.5-0.3,1.1-0.6,1.6-0.9c1.4-0.6,2.8-1.1,4.2-1.4v-2c0-0.2-0.1-0.3-0.3-0.4c-4.4-1.1-9.3-1.7-14.4-1.7C344.4,21.5,339.5,22.1,335.1,23.2"/></defs><clipPath id="SVGID_41_"><use xlink:href="#SVGID_40_" style="overflow:visible;"/></clipPath><g class="st17"><g><defs><rect id="SVGID_42_" x="334.2" y="20.9" width="30.4" height="33.7"/></defs><clipPath id="SVGID_43_"><use xlink:href="#SVGID_42_" style="overflow:visible;"/></clipPath><g class="st18"><image style="overflow:visible;enable-background:new ;" width="17" height="18" xlink:href="216B27DD.jpg" transform="matrix(1.7862 0 0 1.765 334.2022 21.8508)"></image></g></g></g></g></g><polygon class="st19" points="367.5,76.5 367.5,72 365.8,72 365.8,71.4 369.9,71.4 369.9,72 368.2,72 368.2,76.5 "/><path class="st19" d="M370.9,76.5v-5.1h1l1.2,3.6c0.1,0.3,0.2,0.6,0.2,0.7c0-0.2,0.1-0.4,0.2-0.8l1.2-3.5h0.9v5.1h-0.6v-4.2l-1.5,4.2H373l-1.5-4.3v4.3L370.9,76.5L370.9,76.5z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+</div>
+    <div class="product_cat_title">
+
+        <h2>Friedrich</h2>
+        <a name="GENESIS" id="GENESIS"></a>
+    </div>
+    <div class="app standardline">
+        <div class="product_block matrix-d">
+            <div class="product_image"> <img class="lazy" data-src="/images/product/detail/D_SS16N30C.jpg"
+                    data-srcset="/images/product/detail/D_SS16N30C.jpg" title="Air Conditoiner Specs"
+                    alt="Air Conditoiner Specs"
+                    src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="> </div>
+            <div class="product_specs">
+                <ul>
+                    <li>Series</li>
+                    <li>Function</li>
+                    <li>Installation Type</li>
+                    <li>Best For</li>
+                    <li>Voltage</li>
+                    <li>Capacities (Btu)</li>
+                    <li>Built-in Wi-Fi</li>
+                    <li>Voice Command</li>
+                    <li>24-hr. Timer</li>
+                    <li>QuietMaster&reg; Technology</li>
+                    <li>EnergyStar Models</li>
+                    <li>Auto restart</li>
+                    <li>Filter</li>
+                    <li>Warranty</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-d dragscroll">
+            <div class="app_scroll">
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_SS16N30C.jpg"
+                            data-srcset="/images/product/detail/D_SS16N30C.jpg" title="Kühl" alt="Kühl"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>Kühl &reg;</h4>
+                            </li>
+                            <li class="check-function">Cool and cool / heat</li>
+                            <li class="check-installation">Window or thru-wall</li>
+                            <li class="check-best">Efficiency, durability, extensive features </li>
+                            <li class="check-voltage">115v and 230v</li>
+                            <li class="check-capacities">6,000 TO 36,000</li>
+                            <li class="check-wifi">Yes,Smartphone app</li>
+                            <li class="check-voice">Amazon Alexa, Google Home</li>
+                            <li class="check-timer"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-quietmaster"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-energystar"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial &amp; carbon filter</li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Window-Wall-Slide-Out-Air-Conditioners/Friedrich/_/N-10wy0xaZc5h9bmZ5l4e0sZxcas9t?nofollow=1&pagetype=category"
+                                    title="Kühl ">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_CCW24B30A.jpg"
+                            data-srcset="/images/product/detail/D_CCW24B30A.jpg" title="Chill Premier"
+                            alt="Chill Premier"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>Chill &reg; Premier CCF Models</h4>
+                            </li>
+                            <li class="check-function">Cool only</li>
+                            <li class="check-installation">Window only</li>
+                            <li class="check-best">Efficiency, easy installation</li>
+                            <li class="check-voltage">115v</li>
+                            <li class="check-capacities">5,200 TO 12,000</li>
+                            <li class="check-wifi">Yes, Smartphone app</li>
+                            <li class="check-voice">Amazon Alexa, Google Home</li>
+                            <li class="check-timer"><span class="fatcheck">&check;</span>Yes</li>
+                            <li class="check-quietmaster"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-energystar"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Window-Air-Conditioners/Friedrich/_/N-3vo50iZc5h9bm?nofollow=1&pagetype=category"
+                                    title="Chill Premier">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_CCW06B10A.jpg"
+                            data-srcset="/images/product/detail/D_CCW06B10A.jpg" title="Chill Premier"
+                            alt="Chill Premier"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>Chill &reg; Premier CCW, CCE Models</h4>
+                            </li>
+                            <li class="check-function">Cool and cool / heat</li>
+                            <li class="check-installation">Window or thru-wall</li>
+                            <li class="check-best">Efficiency, flexible installation</li>
+                            <li class="check-voltage">115v and 230v</li>
+                            <li class="check-capacities">6,000 TO 24,000</li>
+                            <li class="check-wifi">Yes, Smartphone app</li>
+                            <li class="check-voice">Amazon Alexa Google Home</li>
+                            <li class="check-timer"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-quietmaster"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-energystar"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Window-Wall-Slide-Out-Air-Conditioners/_/N-10wy0xa#/category/Heating-and-Cooling/Air-Conditioners/Window-Wall-Slide-Out-Air-Conditioners/_/N-10wy0xaZ1f64uff?nofollow=1&pagetype=category"
+                                    title="Chill Premier">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_WCT10A30A.jpg"
+                            data-srcset="/images/product/detail/D_WCT10A30A.jpg" title="Wallmaster" alt="Wallmaster"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>Wallmaster &reg;</h4>
+                            </li>
+                            <li class="check-function">Cool and cool / heat</li>
+                            <li class="check-installation">Thru-wall</li>
+                            <li class="check-best">Efficiency, durability, exact fit in 27" sleeves </li>
+                            <li class="check-voltage">115v and 230v</li>
+                            <li class="check-capacities">8,000 TO 15,400</li>
+                            <li class="check-wifi">Yes, Smartphone app</li>
+                            <li class="check-voice">Amazon Alexa Google Home</li>
+                            <li class="check-timer"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-quietmaster"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-energystar"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Wall-Sleeve-Replacement-Air-Conditioners/Friedrich/_/N-bld96wZc5h9bmZnaqu0o?nofollow=1&pagetype=category"
+                                    title="Wallmaster">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_UCT14A30A.jpg"
+                            data-srcset="/images/product/detail/D_UCT14A30A.jpg" title="Uni-Fit" alt="Uni-Fit"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>Uni-Fit &reg;</h4>
+                            </li>
+                            <li class="check-function">Cool and cool / heat</li>
+                            <li class="check-installation">Thru-wall</li>
+                            <li class="check-best">Efficiency, universal fit in 24 1/2 TO 27" sleeves </li>
+                            <li class="check-voltage">115v and 230v</li>
+                            <li class="check-capacities">8,000 TO 14,000</li>
+                            <li class="check-wifi">Yes, Smartphone app</li>
+                            <li class="check-voice">Amazon Alexa, Google Home</li>
+                            <li class="check-timer"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-quietmaster"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-energystar"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Wall-Sleeve-Replacement-Air-Conditioners/Friedrich/_/N-bld96wZc5h9bmZdnz4fq?nofollow=1&pagetype=category"
+                                    title="Uni-Fit">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_P10SA.jpg"
+                            data-srcset="/images/product/detail/D_P10SA.jpg" title="ZoneAire Portable"
+                            alt="ZoneAire Portable"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>ZoneAire &reg; Portable</h4>
+                            </li>
+                            <li class="check-function">Cool / dehumidify / fan heat </li>
+                            <li class="check-installation">Window / vent kit</li>
+                            <li class="check-best">Easy set up, temporary cooling</li>
+                            <li class="check-voltage">115v</li>
+                            <li class="check-capacities">12,000 AND 14,000</li>
+                            <li class="check-wifi"></li>
+                            <li class="check-voice"></li>
+                            <li class="check-timer"></li>
+                            <li class="check-quietmaster"></li>
+                            <li class="check-energystar"></li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Portable-Air-Conditioners/Friedrich/_/N-ui75geZc5h9bm?nofollow=1&pagetype=category"
+                                    title="ZoneAire Portable">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+                <div class="product_block">
+                    <div class="product_image"> <img class="lazy" itemprop="image"
+                            data-src="/images/product/detail/D_P10SA.jpg"
+                            data-srcset="/images/product/detail/D_P10SA.jpg" title="ZoneAire Compact Portable"
+                            alt="ZoneAire Compact Portable"
+                            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+                    </div>
+                    <div class="product_specs">
+                        <ul>
+                            <li class="check-series">
+                                <h4>ZoneAire &reg; Compact Portable</h4>
+                            </li>
+                            <li class="check-function">Cool / heat / dehumidify</li>
+                            <li class="check-installation">Window / vent kit</li>
+                            <li class="check-best">Easy set up, temporary cooling</li>
+                            <li class="check-voltage">115v</li>
+                            <li class="check-capacities">8,000 TO 12,000</li>
+                            <li class="check-wifi"></li>
+                            <li class="check-voice"></li>
+                            <li class="check-timer"></li>
+                            <li class="check-quietmaster"></li>
+                            <li class="check-energystar"></li>
+                            <li class="check-restart"><span class="fatcheck">&check;</span> Yes</li>
+                            <li class="check-filter">Washable / antimicrobial </li>
+                            <li class="check-warranty">5-yr limited</li>
+                            <li class="check-shop-button"> <a
+                                    href="/category/Heating-and-Cooling/Air-Conditioners/Portable-Air-Conditioners/Friedrich/_/N-ui75geZc5h9bm?nofollow=1&pagetype=category"
+                                    title="ZoneAire Compact Portable">Shop Now</a></li>
+                            <li class="check-shop-modals"></li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="microinfo2"></div>
+        <div class="expander">
+            <div class="expander_content expander_clamp">
+
+                <h2><strong>Weber Genesis II&reg; Series</strong></h2>
+                The Weber Genesis II Series is all about the upgrades. Each Genesis II grill includes stainless steel
+                flavorizer bars and a tuck away warming rack to keep food warm while the main course finishes grilling
+                that folds away for easy storage. Propane (LP) models come with an easy to read fuel gauge to take away
+                the worry of an empty tank. The most advanced Genesis II models (E-330, E/S-335, and E/S-435) boast a
+                side burner for simmering or sautéing and a quick sear station guaranteed to get those beautiful grill
+                marks on your meat. You can’t go wrong!<br><br>
+                <h3><strong>Genesis vs. Spirit Grills</strong></h3>
+                Weber Genesis grills are almost twice the size of smaller Spirit models, and differ with stainless steel
+                flavorizer bars compared to the porcelain enameled bars on the Spirit line. Both lines feature porcelain
+                enameled cast iron cooking grates on most models and use three burners.<br><br>
+                <h3><strong>Genesis vs. Summit Grills</strong></h3>
+                Weber Genesis and Weber Summit grills share the same stainless steel flavorizer bars and variety of
+                finish options, and some Genesis models include the same sear station and side burner found on most
+                Summit models. Summit grills are typically larger and have more burners.
+
+            </div>
+            <div class="expander_open" data="0">Read More &darr;</div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function () {
+        ! function (e) {
+
+            $('.expander_open').on('click', function () {
+                openclick = $(this).attr('data');
+                if (openclick === '0') {
+                    $(this).html('Read Less &uarr;'),
+                        $(this).attr('data', '1'),
+                        $(this).parent('div').children('.expander_content').removeClass(
+                            'expander_clamp');
+                    return false;
+                } else {
+                    $(this).html('Read More &darr;'),
+                        $(this).attr('data', '0');
+
+                    $(this).parent('div').children('.expander_content').addClass('expander_clamp');
+                    return false;
+                }
+            });
+
+            var n;
+            n = function (e) {
+                    var n, t, o = window,
+                        r = document,
+                        i = [],
+                        s = function (e, s) {
+                            for (e = 0; e < i.length;)(s = (s = i[e++]).container || s).removeEventListener(
+                                    "mousedown", s.md, 0), o.removeEventListener("mouseup", s.mu, 0), o
+                                .removeEventListener("mousemove", s.mm, 0);
+                            for (i = [].slice.call(r.getElementsByClassName("dragscroll")), e = 0; e < i
+                                .length;) ! function (e, i, s, d, l, c) {
+                                (c = e.container || e).addEventListener("mousedown", c.md = function (n) {
+                                    e.hasAttribute("nochilddrag") && r.elementFromPoint(n.pageX, n
+                                        .pageY) != c || (d = 1, i = n.clientX, s = n.clientY, n
+                                        .preventDefault())
+                                }, 0), o.addEventListener("mouseup", c.mu = function () {
+                                    d = 0
+                                }, 0), o.addEventListener("mousemove", c.mm = function (o) {
+                                    d && ((l = e.scroller || e).scrollLeft -= n = -i + (i = o
+                                            .clientX), l.scrollTop -= t = -s + (s = o.clientY),
+                                        e == r.body && ((l = r.documentElement).scrollLeft -= n,
+                                            l.scrollTop -= t))
+                                }, 0)
+                            }(i[e++])
+                        };
+                    s(), e.reset = s
+                }, "function" == typeof define && define.amd ? define(["exports"], n) : "undefined" !=
+                typeof exports ? n(exports) : n(this.dragscroll = {})
+        }(jQuery)
+    });
+</script>

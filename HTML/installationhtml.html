@@ -1,0 +1,934 @@
+<style type="text/css">
+    .app {
+        width: 90%;
+        float: left;
+        min-height: 800px;
+        margin-top: 20px;
+        font-size: 0.875em;
+        margin-left: 5%;
+        font-weight: 500;
+    }
+
+
+    .promo100 {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        background-color: #f8f8f8;
+    }
+
+    .promo50 {
+        width: 50%;
+        float: left;
+    }
+
+    .promo50 img,
+    .promo50 img {
+        width: 95%;
+        max-width: 450px;
+    }
+
+    .minheight {
+        min-height: auto;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .promo100 h1 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .maxtrix {
+        width: 100%;
+        float: left;
+    }
+
+    .question {
+        font-size: 0.875em;
+        margin-bottom: 2px;
+        margin-top: 3px;
+    }
+
+    .answer {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 96%;
+        padding: 2%;
+        cursor: pointer;
+        display: none;
+    }
+
+    .promo100 ul li {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 0.875em;
+    }
+
+    .promo100 ul {
+        list-style: disc;
+        width: 96%;
+        margin-left: 3%;
+    }
+
+    .primary_title {
+        margin-bottom: 10px;
+        background-color: transparent !important;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .primary_title h2 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .details_title {
+        text-align: left;
+        width: fit-content;
+        float: left;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .details_click {
+        text-align: left;
+        width: 40%;
+        float: left;
+        font-size: 0.875em;
+        color: #2767A0;
+        cursor: pointer;
+    }
+
+    .question .promo100 {
+        margin-bottom: 2px;
+    }
+
+    .highlight_title {
+        color: #27679e;
+        font-weight: bold;
+        list-style: none;
+        margin-bottom: 15px !important;
+        font-size: 1em !important;
+    }
+
+    .list_nobull {
+        list-style: none;
+    }
+
+
+    .subjectblock {
+        padding-top: 10px;
+    }
+
+    .inline_ing {
+        max-width: 250px !important;
+    }
+
+    .page_title-d {
+        text-align: center;
+        font-size: 2.5em;
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+    .page_title-d h1 {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .answer .promo100 {
+        background-color: #fff !important;
+    }
+ 
+  
+    @media (width: 768px) {
+
+        .promo50 img, .promo50 img {
+            width: 100%;
+            max-width: 300px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .inline_ing {
+            max-width: 70% !important;
+            margin-left: 15%;
+            margin-right: auto;
+        }
+
+        .promo50 {
+            width: 100%;
+        }
+
+
+        .question {
+            font-size: 0.9em;
+            margin-bottom: 2px;
+            margin-top: 3px;
+            font-weight: bold;
+            background-color: #f8f8f8;
+            padding-top: 5px;
+            padding-left: 1%;
+            border-bottom: 1px solid #ccc;
+            min-height: 40px;
+            line-height: 30px;
+        }
+
+
+        .answer {
+            background-color: #f8f8f8;
+            width: 100%;
+            padding: 2%;
+
+        }
+
+        .details_title {
+            text-align: left;
+            width: 70%;
+            float: left;
+            margin-right: 0px;
+            line-height: 26px;
+        }
+
+
+       .details_click {
+    width: 30%;
+    float: left;
+    font-size: 1em;
+    color: #2767A0;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+        .promo100 ul {
+            list-style: disc;
+            width: 96%;
+            margin-left: 4%;
+        }
+
+        .promo50 img, .promo50 img {
+            width: 100%;
+            max-width: inherit;
+        }
+
+        .page_title-d h1 {
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 90% !important;
+        }
+
+        .nomobile {
+            display: none;
+        }
+
+        .primary_title {
+            margin-bottom: 10px;
+            background-color: transparent !important;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+    }
+</style>
+
+<div class="app" itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+   
+
+    <meta itemprop="url" content="https://www.pcrichard.com/help-center/installation-info">
+    <meta itemprop="name" content="Installation Information">
+    <meta itemprop="image" content="https://www.pcrichard.com/images/promos/installation-2011-installers.jpg">
+    <meta itemprop="description" content="Our Certified Installers Do It Right... The First Time! Professional appliance and electronics installations are available in the NY, NJ, PA and CT areas through P.C. Richard &amp; Son.">
+    <div class="page_title-d" style="margin-bottom: 10px;">
+        <h1>Installation Information</h1>
+    </div>
+
+
+    <div class="promo100">
+        <div class="promo50">
+    
+            <img itemprop="image" class="lazy" data-src="/images/promos/installation-2011-installers.jpg"
+            data-srcset="/images/promos/installation-2011-installers.jpg" title="Installation Inforamtion" alt="Installation Inforamtion"
+            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+        </div>
+        <div class="promo50">
+      
+            <div class="promo100 minheight">
+                <h2><strong>We Have An Installation Package That's Right For You!</strong></h2>
+            </div>
+            <div class="promo100 minheight">Our Certified Installers Do It Right... The First Time! Professional
+                appliance and electronics installations are available in the NY, NJ, PA and CT areas through P.C.
+                Richard &amp; Son. Please call <a href="tel:631773-4900">(631) 773-4900</a> or <a
+                    href="877 PCR-1909">(877) PCR-1909</a> for a quote and to arrange a convenient installation date
+            </div>
+        </div>
+    </div>
+
+
+    <div class="promo100 primary_title">
+        <h2>HDTV and Home Theater Installations</h2>
+    </div>
+
+    <div class="promo100 subjectblock">
+        <div class="promo50 imgcontent">
+
+            <img itemprop="image" class="lazy" data-src="/images/promos/installation-d-2020-d0.png"
+            data-srcset="/images/promos/installation-d-2020-d0.png" title="Flat Panel TVs Installation" alt="Flat Panel TVs Installation"
+            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+
+        </div>
+
+        <div class="promo50">
+
+
+
+            <div class="promo100">
+             
+
+
+                <img itemprop="image" class="lazy inline_ing" data-src="/images/promos/installation-d-2020-d00.png"
+                data-srcset="/images/promos/installation-d-2020-d00.png" title="Flat Panel TVs Installation" alt="Flat Panel Easy Install"
+                src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+            </div>
+
+           
+            <div class="promo100">
+                <div class="maxtrix">
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Flat Panel HDTVs </div>
+                        <div class="promo100 details_click"  gallery="/images/promos/installation-d-2020-d0.png"  ><span class="nomobile">-</span> Click For Details</div>
+
+                    </div>
+                    <div class="promo100 answer">
+
+                        <div class="promo100">
+                            <ul>
+                                <li class="highlight_title">Basic Flat Panel Installation</li>
+                                <li class="highlight_title">Deluxe Flat Panel Installation</li>
+                                <li>Delivery of your Flat Panel television is included with this installation</li>
+                                <li>We will connect your Flat Panel television to a power outlet and three existing
+                                    video sources.</li>
+                                <li>We will attach the manufacturer/factory supplied pedestal and place your new
+                                    television on a flat, stable surface.</li>
+                                <li>A basic demonstration of features will be provided by our factory-trained
+                                    installers.</li>
+                                <li>If you have any questions regarding installation, please contact one of our customer
+                                    service representatives at
+                                    <a href="tel:631773-4900">(631) 773-4900</a> or <a href="tel:877 727-1909">(877)
+                                        727-1909</a>.</li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Wall-Mounted Flat Panel HDTVs </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d4.png"  ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+
+
+
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>We will uncrate, inspect and test your new TV.</li>
+                            <li> Install your wall mounting bracket to the television and a structurally-sound wall</li>
+                            <li>All audio and video cables will be snaked through a white wall plate in the same
+                                vertical hollow stud bay.</li>
+                            <li>If audio and video cables are not able to be snaked through the wall,wires will we
+                                placed within a white paintable track molding.</li>
+                            <li>We will connect your TV to three existing video sources and power outlet.</li>
+                            <li>A basic demonstration of features will be provided by our factory-trained installers.
+                            </li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+
+                    </div>
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Furniture </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d5.png"  ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li class="highlight_title">Basic Television Stand</li>
+                            <li>Delivery is included with this installation.</li>
+                            <li>A site survey of the installation area will be performed prior to assembly.</li>
+                            <li>We will assemble your basic television stand and put your existing audio and video
+                                equipment in place.</li>
+                            <li class="highlight_title">Flat Panel Mountable Television Stand</li>
+                            <li>Delivery is included with this installation.</li>
+                            <li>A site survey of the installation area will be performed prior to assembly.</li>
+                            <li>We will assemble your flat panel mountable stand, mount your TV to the stand, and put
+                                your existing audio
+                                and video equipment in place.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Home Audio</div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d6.png"  ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li class="highlight_title">Basic Home Audio Installation</li>
+                            <li>A site survey of the installation area will be performed prior to installation.</li>
+                            <li>We will provide up to 1 1/2 hours of labor for the placement, wiring and configuration
+                                of your home audio system.</li>
+                            <li>We will place up to six speakers on your existing tables or stands. We can mount them on
+                                a wall by request, where all wiring will be run neatly, but exposed.</li>
+                            <li>We will connect up to four components and a television to your basic home audio system.
+                            </li>
+                            <li>A basic demonstration of features will be provided by our factory trained installers.
+                            </li>
+                            <li class="highlight_title">Deluxe Home Audio Installation</li>
+                            <li>A site survey of the installation area will be performed prior to installation</li>
+                            <li>We will provide up to 4 hours of labor for the placement, wiring and configuration of
+                                your home audio system.</li>
+                            <li>We will place up to seven speakers on your existing tables or stands. We can mount them
+                                on a wall by request.
+                                <br> All wiring will be concealed in the wall where possible, or under the carpet or
+                                floor.
+                                <br>Concealing of the wires in the wall may require the notching of sheetrock.
+                                <br>In such cases, wall repair will be the responsibility of the homeowner.
+
+                            </li>
+                            <li>We will connect up to four components and a television to your deluxe home audio system.
+                            </li>
+                            <li>A basic demonstration of features will be provided by our factory-trained installers.
+                            </li>
+                            <li class="highlight_title">Deluxe 2-Zone Home Audio Installation</li>
+                            <li>A site survey of the installation area will be performed prior to installation</li>
+                            <li>We will provide up to 6 hours of labor for the placement, wiring and configuration of
+                                your home audio system.</li>
+                            <li>We will place up to seven speakers in the same room and two additional speakers in
+                                another area, inside or outside.</li>
+                            <li>We will place your speakers on your existing tables or stands. We can mount them on a
+                                wall by request.</li>
+                            <li> All wiring will be concealed in the wall where possible, or under the carpet or
+                                floor.<br>
+                                <br> Concealing of the wires in the wall may require the notching of sheetrock.
+                                <br> In such cases, wall repair will be the responsibility of the homeowner.
+                                <br>We will connect up to four components and a television to your deluxe 2-zone home
+                                audio system.
+                                <br>A basic demonstration of features will be provided by our factory-trained
+                                installers.
+
+                            </li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Audio/Video Site Survey and Consultations </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d7.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li class="list_nobull">If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Additional Services </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d0.png"  ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li class="highlight_title"> Add An Additional Component</li>
+                            <li>We will connect an additional component to your existing audio video system.</li>
+                            <li class="highlight_title"> Combine Your Remotes</li>
+                            <li>Consolidate your existing TV and/or Cable/Satellite box remotes into one easy-to-use
+                                device.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="promo100 primary_title">
+        <h2>Appliance Installation</h2>
+    </div>
+
+
+    <div class="promo100 subjectblock">
+        <div class="promo50 imgcontent">
+     
+
+
+
+            <img itemprop="image" class="lazy" data-src="/images/promos/installation-d-2020-d1.png"
+            data-srcset="/images/promos/installation-d-2020-d1.png" title="Appliances Installation" alt="Appliances Installation"
+            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+        </div>
+        <div class="promo50">
+
+
+
+            <div class="promo100">
+                <div class="maxtrix">
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Dishwashers </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d9.png" ><span class="nomobile">-</span> Click For Details</div>
+
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away your existing dishwasher.</li>
+                            <li>Connect to code-compliant, existing electric and plumbing.</li>
+                            <li>If necessary, we will replace the water line.</li>
+                            <li>Connect a new drain hose to your existing drain &quote;T&quote;.</li>
+                            <li>Level the dishwasher on a solid floor.</li>
+                            <li>Secure the dishwasher to your counter-top or cabinet.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Refrigerator / Icemaker </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d10.png" ><span class="nomobile">-</span>  Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Disconnect existing icemaker water line.</li>
+                            <li>Set refrigerator in place and connect to existing copper water line.</li>
+                            <li>If required, we will install a new icemaker in your freezer, a new compression shutoff
+                                saddle valve on a existing cold water pipe, and a new copper water line through
+                                continuous base cabinets, unfinished basement ceiling, or ceiling with removable tiles.
+                            </li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Microwaves </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d11.png" ><span class="nomobile">-</span>  Click For Details</div>
+                    </div>
+
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <ul>
+                                <li>Delivery is included with this installation.</li>
+                                <li>Disconnect and haul away your existing microwave.</li>
+                                <li>Mount microwave to solid cabinet structure.</li>
+                                <li>Secure the mounting bracket to the wall.</li>
+                                <li>Connect the electrical cord to your existing outlet.</li>
+                                <li class="highlight_title">Over the Range</li>
+                                <li>Direct replacement of microwave or range hood to existing duct work and transition.
+                                </li>
+                                <li class="highlight_title">Built-In</li>
+                                <li>Secure the support mount into cabinet or opening.</li>
+                                <li>If you have any questions regarding installation, please contact one of our customer
+                                    service representatives at
+                                    <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                        727-1909</a>.</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+
+
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Ranges </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d12.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away your existing range.</li>
+                            <li>Connect the electrical cord to your existing outlet.</li>
+                            <li>Level the range on solid floor.</li>
+                            <li class="highlight_title">Gas</li>
+                            <li>Install a new gas flex line to existing code compliant gas service.</li>
+                            <li class="highlight_title">Electric</li>
+                            <li>If necessary, we will convert your existing aluminum wiring to a new code-compliant
+                                electrical outlet.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Washers </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d13.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Disconnect and haul away of your existing washing machine.</li>
+                            <li>Install manufacturer-supplied hot water, cold water, and drain hoses to code-compliant
+                                existing plumbing</li>
+                            <li>Connect the electrical cord to your existing outlet</li>
+                            <li> Level the washing machine on solid floor.</li>
+                            <li class="highlight_title"> Pedestals</li>
+                            <li> If an optional pedestal was ordered for your new washing machine, we will install it at
+                                no additional charge.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Dryers </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d14.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away of your existing dryer.</li>
+                            <li>Installation of a new semi-rigid exhaust vent to your existing wall cap.</li>
+                            <li>Connect the electrical cord to your existing outlet.</li>
+                            <li>Level the dryer on solid floor.</li>
+                            <li>Install a new gas flex line to existing code-compliant gas service</li>
+                            <li>Electric</li>
+                            <li> If necessary, we will convert your existing aluminum wiring to a new code compliant
+                                electrical outlet.</li>
+                            <li>Pedestals</li>
+                            <li>If an optional pedestal was ordered for your new dryer, we will install it at no
+                                additional charge</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Range Hood </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d15.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li> Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away of your existing range hood.</li>
+                            <li>Direct replacement of range hood to your existing duct work and transition.</li>
+                            <li>Secure new hood to your existing cabinetry or framework.</li>
+                            <li> Connect to code-compliant existing electric.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Wall Ovens </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d16.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away of your existing wall oven.</li>
+                            <li> Secure the wall oven to your existing cabinet.</li>
+                            <li class="highlight_title">Gas</li>
+                            <li>Install a new gas flex line to existing code-compliant gas service.</li>
+                            <li>Connect the electrical cord to your existing outlet.</li>
+                            <li class="highlight_title">Electric</li>
+                            <li>Connect electrical cord to your existing code-compliant service.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Stackmate Laundry Centers </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d17.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li> Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away of your existing laundry center.</li>
+                            <li>Installation of a new semi rigid exhaust vent to your existing wall cap.</li>
+                            <li>Install manufacturer supplied hot water, cold water, and drain hoses to code-compliant
+                                existing plumbing.</li>
+                            <li>Connect the electrical cord to your existing outlet.</li>
+                            <li>Level the laundry center on solid floor.</li>
+                            <li class="highlight_title">Gas</li>
+                            <li>Install a new gas flex line to existing code-compliant gas service.</li>
+                            <li class="highlight_title">Electric</li>
+                            <li>Install a new four foot electrical cord and connect to your
+                                existing outlet.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Cooktops </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d18.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away your existing cooktop.</li>
+                            <li>Secure the cooktop to your countertop.</li>
+                            <li class="highlight_title">Gas</li>
+                            <li>Install a new gas flex line to existing code-compliant gas service.</li>
+                            <li>Connect the electrical cord to your existing outlet.</li>
+                            <li class="highlight_title">Electric</li>
+                            <li>Connect the electrical cord to your existing code-compliant service.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Food Waste Disposer Replacement </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d19.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>Delivery is included with this installation.</li>
+                            <li>Disconnect and haul away your existing food waste disposer.</li>
+                            <li>Secure food waste disposer to existing quality sink basket.</li>
+                            <li>Connect to code-compliant existing plumbing.</li>
+                            <li>Connect the electrical cord to your existing outlet</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Trash Compactors </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d20.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <ul>
+                                <li> Delivery is included with this installation.</li>
+                                <li>Disconnect and haul away your existing trash compactor.</li>
+                                <li> If required, we will install customer-supplied decorator panels and trim kit.</li>
+                                <li>Secure the trash compactor to the countertop or cabinet.</li>
+                                <li>Connect the electrical cord to your existing outlet.</li>
+                                <li>Level the trash compactor on solid floor.</li>
+                                <li>If you have any questions regarding installation, please contact one of our customer
+                                    service representatives at
+                                    <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                        727-1909</a>.</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="promo100 primary_title">
+        <h2>Air Conditioner Installation</h2>
+    </div>
+
+    <div class="promo100 subjectblock">
+        <div class="promo50 imgcontent">
+        
+            <img itemprop="image" class="lazy" data-src="/images/promos/installation-d-2020-d2.png"
+            data-srcset="/images/promos/installation-d-2020-d2.png" title="Air Conditioners Installation" alt="Air Conditioners Installation"
+            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+        </div>
+        <div class="promo50">
+       
+            <div class="promo100">
+                <div class="maxtrix">
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Window Air Conditioners </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d2.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>We will install your new air conditioner in your wood, vinyl, or steel frame window.
+                            </li>
+                            <li>The air conditioner will be placed in the bottom half of your window and secured.</li>
+                            <li>We will connect the electrical cord to your existing outlet.</li>
+                            <li> Brackets will be installed if supplied by the manufacturer or purchased by the
+                                customer.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="promo100 question">
+                        <div class="promo100 details_title">&bull; Through-the-Wall Air Conditioners </div>
+                        <div class="promo100 details_click" gallery="/images/promos/installation-d-2020-d21.png" ><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+
+                    <div class="promo100 answer">
+                        <ul>
+                            <li>We will cut a new opening in your homes wood, brick, vinyl or aluminum structure to the
+                                proper size in the location approved by you.</li>
+                            <li>The air conditioner will be secured to existing wall studs and caulked on the top and
+                                sides on both
+                                the interior and exterior of your home.</li>
+                            <li>We will connect the electrical cord to your existing outlet.</li>
+                            <li class="highlight_title">Additional Services Available</li>
+                            <li>Four-Sided Framing</li>
+                            <li>We will frame the opening with 2 x 4's prior to installing your new air conditioner.
+                            </li>
+                            <li class="highlight_title">J-Channel</li>
+                            <li>White or almond vinyl j-channel will be provided and installed in the new cutout of the
+                                exterior of your home giving you a more finished look.</li>
+                            <li class="highlight_title">White Paintable Molding</li>
+                            <li>2 1/2" white paintable clam shell molding will be provided and installed on the interior
+                                of your home around your new air conditioner,
+                                giving you a more finished look.</li>
+                            <li>If you have any questions regarding installation, please contact one of our customer
+                                service representatives at
+                                <a href="tel:1631773-4900">(631) 773-4900</a> or <a href="tel:1877727-1909">(877)
+                                    727-1909</a>.</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="promo100 primary_title">
+        <h2> Mobile Entertainment Installation</h2>
+    </div>
+
+    <div class="promo100 subjectblock">
+        <div class="promo50 imgcontent">
+       
+            <img itemprop="image" class="lazy" data-src="/images/promos/installation-d-2020-d3.png"
+            data-srcset="/images/promos/installation-d-2020-d3.png" title="Mobile Entertainment Installation" alt="Mobile Entertainment Installation"
+            src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==">
+
+        </div>
+        <div class="promo50">
+          
+
+            <div class="promo100">
+                <div class="maxtrix">
+                    <a href="/content/mobile-installation-center" title="Mobile Installation Center">
+                    <div id="outsideclick" class="promo100 question">
+                        <div class="promo100 details_title" style="color: #333 !important;">&bull; Mobile Entertainment Installation </div>
+                        <div class="promo100 details_click"><span class="nomobile">-</span> Click For Details</div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', function() {(function($) {
+
+$('#outsideclick').on('click', function() {
+document.location = '/content/mobile-installation-center'
+})
+
+
+
+$('.question').not('#outsideclick').on('click', function () {
+$(this).parent('.maxtrix').parent('div').parent('div').parent('div').children('.imgcontent').children('img').attr('src' , $(this).children('.details_click').attr('gallery'))
+if($(this).next('.answer').is(':visible')=== true) {
+$(this).children('.details_click').html('<span class="nomobile">-</span> Click For Details'),
+$('.question').css('font-weight' , '500'),
+$(this).next('.answer').slideUp()
+return false;
+}
+
+$('.answer').hide()
+          
+if($(window).width() < '768') {
+    $('.question').css('border-bottom' , '1px solid #ccc')
+} else {
+    $('.question').css('border-bottom' , 'none')  
+}
+            $('.question').css('font-weight' , '500')
+            $('.details_click').html('<span class="nomobile">-</span> Click For Details')
+            $(this).children('.details_click').html('<span class="nomobile">-</span> Click To Close')
+            $(this).next('.answer').slideDown();
+            $(this).css('font-weight' , '700')
+            $(this).css('border-bottom' , 'none')
+        })
+   })(jQuery);});
+
+ 
+</script>
